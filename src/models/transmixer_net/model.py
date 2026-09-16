@@ -63,6 +63,10 @@ class DecoupledTransMixerBlock(nn.Module):
     5. 1x1 卷积重组融合
 
     支持消融实验开关 mode:
+    - "soft":      优化模型1: 基于物理步长 Delta_t 的自适应连续软门控分流 (方向一)
+    - "gate":      优化模型2: 原始静态解耦 + 双流交叉互补门控 (方向二)
+    - "dyngate":   优化模型3: 动态软门控 + 双流交叉互补门控复合优化 (方向一 + 方向二)
+    - "dynamic":   优化点1: 基于物理步长 Delta_t 的自适应动态解耦 (Delta Ranking + Gather/Scatter)
     - "decoupled": 完整解耦方案 (50% 全局注意力 + 50% 局部卷积)
     - "only_conv":  对照组 A (100% 纯局部深度卷积)
     - "only_attn":  对照组 B (100% 纯全局自注意力)
@@ -77,7 +81,7 @@ class DecoupledTransMixerBlock(nn.Module):
 
         self.norm1 = nn.LayerNorm(dim)
 
-        if self.mode == "decoupled":
+        if self.mode in ("decoupled", "dynamic", "soft", "gate", "dyngate"):
             self.ssm = SelectiveSSM2D(d_model=dim)
             # 全局流：轻量多头自注意力
             self.global_attn = nn.MultiheadAttention(embed_dim=self.global_dim, num_heads=num_heads, batch_first=True)
@@ -90,6 +94,22 @@ class DecoupledTransMixerBlock(nn.Module):
                 nn.Conv2d(self.local_dim, self.local_dim, kernel_size=1, bias=False),
                 nn.BatchNorm2d(self.local_dim)
             )
+            if self.mode in ("soft", "dyngate"):
+                # 方向一：基于 Delta_t 的自适应通道软门控
+                self.soft_gate = nn.Sequential(
+                    nn.Linear(dim, dim),
+                    nn.Sigmoid()
+                )
+            if self.mode in ("gate", "dyngate"):
+                # 方向二：双流交叉互补校准门控
+                self.cross_g2l = nn.Sequential(
+                    nn.Linear(self.global_dim, self.local_dim),
+                    nn.Sigmoid()
+                )
+                self.cross_l2g = nn.Sequential(
+                    nn.Linear(self.local_dim, self.global_dim),
+                    nn.Sigmoid()
+                )
         elif self.mode == "only_attn":
             # 对照组 B: 全通道自注意力
             self.global_attn = nn.MultiheadAttention(embed_dim=dim, num_heads=num_heads, batch_first=True)
@@ -120,7 +140,73 @@ class DecoupledTransMixerBlock(nn.Module):
         residual = x_tokens
         norm_x = self.norm1(x_tokens)
 
-        if self.mode == "decoupled":
+        if self.mode in ("soft", "gate", "dyngate"):
+            ssm_out, delta = self.ssm(norm_x)
+            B, L, D = ssm_out.shape
+
+            # 方向一软门控分流
+            if self.mode in ("soft", "dyngate"):
+                delta_channel = delta.mean(dim=1)  # [B, D]
+                g = self.soft_gate(delta_channel).unsqueeze(1)  # [B, 1, D]
+                x_g = ssm_out[:, :, :self.global_dim] * (1.0 + g[:, :, :self.global_dim])
+                x_l = ssm_out[:, :, self.global_dim:] * (1.0 + (1.0 - g[:, :, self.global_dim:]))
+            else:
+                x_g = ssm_out[:, :, :self.global_dim]
+                x_l = ssm_out[:, :, self.global_dim:]
+
+            # 全局流与局部流处理
+            attn_out, _ = self.global_attn(self.global_norm(x_g), self.global_norm(x_g), self.global_norm(x_g))
+            x_g_out = x_g + attn_out
+
+            x_l_2d = x_l.transpose(1, 2).view(B, self.local_dim, H, W)
+            conv_out = self.local_dw(x_l_2d).view(B, self.local_dim, L).transpose(1, 2)
+            x_l_out = conv_out
+
+            # 方向二双流交叉互补校准
+            if self.mode in ("gate", "dyngate"):
+                gate_l = self.cross_g2l(x_g_out)
+                gate_g = self.cross_l2g(x_l_out)
+                x_g_final = x_g_out * (1.0 + gate_g)
+                x_l_final = x_l_out * (1.0 + gate_l)
+            else:
+                x_g_final = x_g_out
+                x_l_final = x_l_out
+
+            fused = torch.cat([x_g_final, x_l_final], dim=-1)
+            out = residual + self.fusion(fused)
+
+        if self.mode == "dynamic":
+            # 1. SSM 线性前向扫描，获取潜特征与离散时间步长 delta
+            ssm_out, delta = self.ssm(norm_x)  # [B, L, D]
+            B, L, D = ssm_out.shape
+
+            # 2. 优化点1: 基于 Delta_t 物理步长的自适应动态解耦 (Delta Ranking)
+            # 较小步长 -> 历史记忆衰减慢 -> 全局关注
+            # 较大步长 -> 历史记忆快速衰减 -> 局部瞬时敏感
+            with torch.no_grad():
+                delta_channel = delta.mean(dim=1)  # [B, D]
+                sorted_idx = torch.argsort(delta_channel, dim=-1)  # [B, D]
+                g_idx = sorted_idx[:, :self.global_dim].unsqueeze(1).expand(-1, L, -1)
+                l_idx = sorted_idx[:, self.global_dim:].unsqueeze(1).expand(-1, L, -1)
+
+            # 3. 动态 Gather 分流
+            x_g = torch.gather(ssm_out, dim=2, index=g_idx)
+            x_l = torch.gather(ssm_out, dim=2, index=l_idx)
+
+            # 4. 全局分支
+            attn_out, _ = self.global_attn(self.global_norm(x_g), self.global_norm(x_g), self.global_norm(x_g))
+            x_g_out = x_g + attn_out
+
+            # 5. 局部分支
+            x_l_2d = x_l.transpose(1, 2).view(B, self.local_dim, H, W)
+            conv_out = self.local_dw(x_l_2d).view(B, self.local_dim, L).transpose(1, 2)
+            x_l_out = conv_out
+
+            # 6. Scatter 动态重构回原始通道排列
+            out_tokens = torch.zeros_like(ssm_out).scatter(2, g_idx, x_g_out).scatter(2, l_idx, x_l_out)
+            out = residual + self.fusion(out_tokens)
+
+        elif self.mode == "decoupled":
             # 1. SSM 线性前向扫描
             ssm_out, delta = self.ssm(norm_x)  # ssm_out: [B, L, D], delta: [B, L, D]
 
