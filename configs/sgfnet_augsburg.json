@@ -1,0 +1,19 @@
+{
+  "experiment_name": "sgfnet_augsburg",
+  "dataset_type": 4,
+  "model_name": "SGFNet",
+  "cuda_device": "cuda:0",
+  "learning_rate": 0.001,
+  "epochs": 100,
+  "batch_size": 32,
+  "num_workers": 0,
+  "random_seed": 6,
+  "channels": 30,
+  "window_size": 11,
+  "enable_training": true,
+  "enable_testing": true,
+  "enable_visualization": true,
+  "enable_tsne": false,
+  "enable_erf": false,
+  "enable_email_notification": false
+}

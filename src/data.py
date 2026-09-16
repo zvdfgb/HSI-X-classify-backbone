@@ -7,7 +7,10 @@ from sklearn.decomposition import PCA
 from torchvision.transforms import ToTensor
 from torchvision import transforms
 from torch.utils.data import DataLoader, Dataset
-import hdf5storage
+try:
+    import hdf5storage
+except ImportError:
+    hdf5storage = None
 from sklearn import preprocessing
 
 import os
@@ -15,10 +18,20 @@ from pathlib import Path
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_ROOT = PROJECT_ROOT.parent / 'data'
+DATA_ROOT = PROJECT_ROOT / 'data' if (PROJECT_ROOT / 'data').exists() else PROJECT_ROOT.parent / 'data'
 
 
 def dataset_path(*parts):
+    p1 = PROJECT_ROOT / 'data' / Path(*parts)
+    if p1.exists():
+        return str(p1)
+    if len(parts) >= 2:
+        p_nested = PROJECT_ROOT / 'data' / parts[0] / 'data' / Path(*parts[1:])
+        if p_nested.exists():
+            return str(p_nested)
+        p_parent_nested = DATA_ROOT / parts[0] / 'data' / Path(*parts[1:])
+        if p_parent_nested.exists():
+            return str(p_parent_nested)
     return str(DATA_ROOT.joinpath(*parts))
 
 # 设置随机数种子
@@ -202,12 +215,13 @@ def getData(hsi_path, X_path, gt_path, index_path, keys, channels, windowSize, b
     '''
     train_loader = DataLoader(
         HXtrainset, batch_size=batch_size, shuffle=True, num_workers=num_workers, drop_last=True, pin_memory=pin_memory)    #drop_last=True
+    eval_batch_size = max(batch_size, 128)
     test_loader = DataLoader(
-        HXtestset, batch_size=batch_size, shuffle=False, num_workers=num_workers, drop_last=True, pin_memory=pin_memory)
+        HXtestset, batch_size=eval_batch_size, shuffle=False, num_workers=num_workers, drop_last=False, pin_memory=pin_memory)
     trntst_loader = DataLoader(
-        HXtrntstset, batch_size=batch_size, shuffle=False, num_workers=num_workers, drop_last=True, pin_memory=pin_memory)
+        HXtrntstset, batch_size=eval_batch_size, shuffle=False, num_workers=num_workers, drop_last=False, pin_memory=pin_memory)
     all_loader = DataLoader(
-        HXallset, batch_size=batch_size, shuffle=False, num_workers=num_workers, drop_last=True, pin_memory=pin_memory)
+        HXallset, batch_size=eval_batch_size, shuffle=False, num_workers=num_workers, drop_last=False, pin_memory=pin_memory)
     print("Success!")
     return train_loader, test_loader, trntst_loader, all_loader, hsi_pca_wight
 

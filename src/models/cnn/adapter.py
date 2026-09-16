@@ -13,8 +13,10 @@ def build_model(config, dataset_type, device):
 
 
 def forward_train(bundle, batch):
-    return bundle["net"](batch["hsi_pca"].squeeze(1), batch["aux"])
+    out = bundle["net"](batch["hsi_pca"].squeeze(1), batch["aux"])
+    return out[1] if isinstance(out, tuple) else out
 
 
 def forward_eval(bundle, batch):
-    return bundle["net"](batch["hsi_pca"].squeeze(1), batch["aux"])
+    out = bundle["net"](batch["hsi_pca"].squeeze(1), batch["aux"])
+    return out[1] if isinstance(out, tuple) else out

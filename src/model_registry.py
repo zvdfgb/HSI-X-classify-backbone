@@ -13,6 +13,14 @@ MODEL_REGISTRY = {
     "HCTNet": "src.models.hctnet.adapter",
     "MACN": "src.models.macn.adapter",
     "RSCNet": "src.models.rscnet.adapter",
+    "DFFNet": "src.models.dffnet.adapter",
+    "SGFNet": "src.models.sgfnet.adapter",
+    "TransMixerNet": "src.models.transmixer_net.adapter",
+    "TransMixer_Conv": "src.models.transmixer_net.adapter",
+    "TransMixer_Attn": "src.models.transmixer_net.adapter",
+    "TransMixer_SSM": "src.models.transmixer_net.adapter",
+    "DEGConvNet": "src.models.transmixer_deg.adapter",
+    "TransMixer_DEG": "src.models.transmixer_deg.adapter",
 }
 
 

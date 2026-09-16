@@ -6,7 +6,7 @@
 import os
 import json
 import argparse
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, fields
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
@@ -50,6 +50,7 @@ class ExperimentConfig:
     channels: int = 30
     window_size: int = 11
     depth: List[List[int]] = None
+    ablation_mode: str = "decoupled"
 
     # 功能开关
     enable_training: bool = True
@@ -57,6 +58,8 @@ class ExperimentConfig:
     enable_visualization: bool = True
     enable_tsne: bool = False
     enable_erf: bool = False
+    enable_email_notification: bool = False
+    email_recipient_override: str = ""
 
     # 数据集信息 (自动根据dataset_type设置)
     out_features: List[int] = None
@@ -220,7 +223,9 @@ class ConfigManager:
         with open(path, 'r', encoding='utf-8') as f:
             config_dict = json.load(f)
 
-        self.config = ExperimentConfig(**config_dict)
+        valid_keys = {f.name for f in fields(ExperimentConfig)}
+        filtered_dict = {k: v for k, v in config_dict.items() if k in valid_keys}
+        self.config = ExperimentConfig(**filtered_dict)
         self._parameter_dict = self._create_parameter_dict()
 
     def create_from_args(self, args: argparse.Namespace) -> None:

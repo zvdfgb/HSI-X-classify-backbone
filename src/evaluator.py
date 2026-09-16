@@ -53,7 +53,10 @@ def myTest(datasetType, model, max_test_samples=None):
 
     print(f"测试参数: cuda={cuda}, visualization={visualization}, tsne={tsne}")
 
-    net = torch.load(model_savepath[datasetType])
+    try:
+        net = torch.load(model_savepath[datasetType], weights_only=False)
+    except TypeError:
+        net = torch.load(model_savepath[datasetType])
     model_adapter = get_model_adapter(model)
     model_bundle = {"net": net}
     set_random_seed(random_seed)

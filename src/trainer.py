@@ -36,8 +36,9 @@ def train(epochs, lr, model, cuda, train_loader, test_loader, out_features, mode
     net.to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(net.parameters(), lr=lr)
+    optimizer = torch.optim.AdamW(net.parameters(), lr=lr, weight_decay=0.01)
     max_acc = 0
+    last_acc = 0.0
     sum_time = 0
 
     current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
@@ -69,9 +70,11 @@ def train(epochs, lr, model, cuda, train_loader, test_loader, out_features, mode
             loss.backward()
             optimizer.step()
 
-        if epoch % 1 == 0:
+        is_eval_epoch = (epoch == 0) or ((epoch + 1) % 10 == 0) or ((epoch + 1) in [85, 95, 100])
+        if is_eval_epoch:
             net.eval()
-            count = 0
+            pred_list = []
+            gt_list = []
 
             for hsi_pca, hsi, sar, gtlabels in test_loader:
                 batch = {
@@ -84,21 +87,20 @@ def train(epochs, lr, model, cuda, train_loader, test_loader, out_features, mode
                 with torch.no_grad():
                     outputs = model_adapter.forward_eval(model_bundle, batch)
 
-                outputs = np.argmax(outputs.detach().cpu().numpy(), axis=1)
-                if count == 0:
-                    y_pred_test = outputs
-                    gty = gtlabels
-                    count = 1
-                else:
-                    y_pred_test = np.concatenate((y_pred_test, outputs))
-                    gty = np.concatenate((gty, gtlabels))
+                pred_list.append(torch.argmax(outputs, dim=1).cpu().numpy())
+                gt_list.append(gtlabels.numpy() if isinstance(gtlabels, torch.Tensor) else np.array(gtlabels))
 
+            y_pred_test = np.concatenate(pred_list)
+            gty = np.concatenate(gt_list)
             acc1 = accuracy_score(gty, y_pred_test)
+            last_acc = acc1
 
             if acc1 > max_acc:
                 os.makedirs(os.path.dirname(model_savepath), exist_ok=True)
                 torch.save(net, model_savepath)
                 max_acc = acc1
+        else:
+            acc1 = last_acc
 
             time_elapsed = time.time() - since
             sum_time += time_elapsed
