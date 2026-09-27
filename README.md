@@ -1,5 +1,7 @@
 # HSI-X-Classify-Backbone
 
+固定 1:1 TransMixer 的 B1–B4 特征提取消融：在 VS Code 中运行 `scripts/train_transmixer_ablation.py`，即可依次训练并测试四个模型。默认 Houston2013、种子 6、100 epochs，不重跑 B0。参数见 `configs/feature_ablation.json`，说明见 [B1–B4 实验指南](report/TransMixer_experiment_guide.md)。
+
 用于高光谱与辅助模态（LiDAR / SAR / MSI）融合分类的统一实验骨架。项目提供了统一的实验配置、数据加载、模型注册、训练、评估与可视化流程，便于在多个公开数据集上复现实验、横向对比不同模型，并继续扩展新模型。
 
 如果本项目对你的研究有所帮助，欢迎引用我们的最新工作：
@@ -79,7 +81,10 @@ HSI-X-classify-backbone/
         ├── asyffnet/
         ├── hctnet/
         ├── macn/
-        └── rscnet/
+        ├── rscnet/
+        ├── transmixer_net/
+        ├── transmixer_ablation/
+        └── transmixer_deg/
 ```
 
 ### 2.2 核心执行链路
@@ -200,7 +205,18 @@ HSI-X-classify-backbone/
 
 ## 4. 支持的模型
 
-当前注册模型以 [src/model_registry.py:3-15](src/model_registry.py#L3-L15) 为准：
+当前注册模型以 [src/model_registry.py](src/model_registry.py) 为准。TransMixer 家族采用统一的 `TransMixer_` 前缀和功能后缀：
+
+- `TransMixer_B0_Decoupled`：固定 1:1 光谱-空间解耦基线
+- `TransMixer_B1_LocalResidual`：局部分支残差旁路
+- `TransMixer_B2_PreSSMResidual`：SSM 前局部残差旁路
+- `TransMixer_B3_DeltaInit`：Delta 步长初始化优化
+- `TransMixer_B4_MultiScaleDW`：多尺度深度可分离卷积
+- `TransMixer_DynamicSplit`、`TransMixer_SoftChannelGate`、`TransMixer_CrossStreamGate`、`TransMixer_HybridGate`
+- `TransMixer_LocalConv`、`TransMixer_GlobalAttention`、`TransMixer_PureSSM`：结构对照组
+- `TransMixer_DEG`、`TransMixer_DEGOnly`：方向引导边缘门控卷积及纯 DEGConv 对照
+
+旧配置中的 `TransMixerNet`、`TransMixer_B1` 等名称仍可读取，会自动映射到上述规范名称；新实验只使用规范名称，避免 `train_all.py` 重复训练别名。
 
 - `FusAtNet`
 - `ExViT`

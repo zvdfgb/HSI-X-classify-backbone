@@ -24,7 +24,7 @@ def build_model(config, dataset_type, device):
     # 区分单独 B 还是 A+B:
     # DEGConvNet -> 纯 DEGConv 各向异性条形门控主干 (单独 B)
     # TransMixer_DEG -> TransMixer 解耦 + 局部流嵌入 DEGConv (A + B)
-    if "degconvnet" in name_lower or "deg_only" in name_lower:
+    if "degconvnet" in name_lower or "deg_only" in name_lower or "degonly" in name_lower:
         arch = "deg_only"
     else:
         arch = "transmixer_deg"

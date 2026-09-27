@@ -2,6 +2,17 @@ from .model import TransMixerNet
 
 MODEL_NAME = "TransMixerNet"
 
+CANONICAL_MODES = {
+    "TransMixer_B0_Decoupled": "decoupled",
+    "TransMixer_DynamicSplit": "dynamic",
+    "TransMixer_SoftChannelGate": "soft",
+    "TransMixer_CrossStreamGate": "gate",
+    "TransMixer_HybridGate": "dyngate",
+    "TransMixer_LocalConv": "only_conv",
+    "TransMixer_GlobalAttention": "only_attn",
+    "TransMixer_PureSSM": "pure_ssm",
+}
+
 
 def build_model(config, dataset_type, device):
     """
@@ -24,23 +35,26 @@ def build_model(config, dataset_type, device):
     mode = getattr(exp_cfg, "ablation_mode", None) if exp_cfg else None
     if not mode or mode == "decoupled":
         model_name = getattr(exp_cfg, "model_name", "TransMixerNet") if exp_cfg else "TransMixerNet"
-        name_lower = model_name.lower()
-        if "dyngate" in name_lower:
-            mode = "dyngate"
-        elif "soft" in name_lower:
-            mode = "soft"
-        elif "gate" in name_lower:
-            mode = "gate"
-        elif "dyn" in name_lower:
-            mode = "dynamic"
-        elif "conv" in name_lower:
-            mode = "only_conv"
-        elif "attn" in name_lower:
-            mode = "only_attn"
-        elif "ssm" in name_lower:
-            mode = "pure_ssm"
+        if model_name in CANONICAL_MODES:
+            mode = CANONICAL_MODES[model_name]
         else:
-            mode = "decoupled"
+            name_lower = model_name.lower()
+            if "dyngate" in name_lower:
+                mode = "dyngate"
+            elif "soft" in name_lower:
+                mode = "soft"
+            elif "gate" in name_lower:
+                mode = "gate"
+            elif "dyn" in name_lower:
+                mode = "dynamic"
+            elif "conv" in name_lower:
+                mode = "only_conv"
+            elif "attn" in name_lower or "attention" in name_lower:
+                mode = "only_attn"
+            elif "ssm" in name_lower:
+                mode = "pure_ssm"
+            else:
+                mode = "decoupled"
 
     net = TransMixerNet(
         hsi_channels=in_channels,
