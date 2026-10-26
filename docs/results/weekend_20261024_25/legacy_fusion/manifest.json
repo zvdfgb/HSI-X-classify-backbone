@@ -1,0 +1,315 @@
+{
+  "run_tag": "lab_fusion_20261025_133847",
+  "output": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847",
+  "python": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "torch": "2.6.0+cu124",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "argv": [
+    [
+      "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-u",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\scripts\\train.py",
+      "--config",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_B0_Decoupled.config.json"
+    ],
+    [
+      "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-u",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\scripts\\train.py",
+      "--config",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_Fusion_F1.config.json"
+    ],
+    [
+      "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-u",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\scripts\\train.py",
+      "--config",
+      "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_Fusion_F4.config.json"
+    ]
+  ],
+  "models": [
+    {
+      "model": "TransMixer_B0_Decoupled",
+      "parameters": 80887,
+      "forward_backward": "passed",
+      "shared_initialization": "identical base state",
+      "config": {
+        "experiment_name": "lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6",
+        "dataset_type": 0,
+        "model_name": "TransMixer_B0_Decoupled",
+        "cuda_device": "cuda:0",
+        "learning_rate": 0.0001,
+        "epochs": 100,
+        "batch_size": 128,
+        "num_workers": 0,
+        "random_seed": 6,
+        "channels": 30,
+        "window_size": 11,
+        "depth": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          2
+        ],
+        "ablation_mode": "decoupled",
+        "enable_training": true,
+        "enable_testing": true,
+        "enable_visualization": false,
+        "enable_tsne": false,
+        "enable_erf": false,
+        "enable_email_notification": false,
+        "email_recipient_override": "",
+        "out_features": [
+          15,
+          20,
+          6,
+          8,
+          7,
+          18,
+          10,
+          9
+        ],
+        "data_channels": [
+          144,
+          50,
+          63,
+          244,
+          180,
+          285,
+          166,
+          144
+        ],
+        "lidar_or_sar_channels": [
+          1,
+          1,
+          1,
+          4,
+          4,
+          3,
+          8,
+          8
+        ],
+        "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_B0_Decoupled\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+        "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_B0_Decoupled\\Houston2013_log_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_B0_Decoupled\\Houston2013_report_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\TransMixer_B0_Decoupled\\Houston2013_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+        "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\TransMixer_B0_Decoupled\\Houston2013_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+      },
+      "config_file": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_B0_Decoupled.config.json"
+    },
+    {
+      "model": "TransMixer_Fusion_F1",
+      "parameters": 97656,
+      "forward_backward": "passed",
+      "shared_initialization": "identical base state",
+      "config": {
+        "experiment_name": "lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6",
+        "dataset_type": 0,
+        "model_name": "TransMixer_Fusion_F1",
+        "cuda_device": "cuda:0",
+        "learning_rate": 0.0001,
+        "epochs": 100,
+        "batch_size": 128,
+        "num_workers": 0,
+        "random_seed": 6,
+        "channels": 30,
+        "window_size": 11,
+        "depth": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          2
+        ],
+        "ablation_mode": "decoupled",
+        "enable_training": true,
+        "enable_testing": true,
+        "enable_visualization": false,
+        "enable_tsne": false,
+        "enable_erf": false,
+        "enable_email_notification": false,
+        "email_recipient_override": "",
+        "out_features": [
+          15,
+          20,
+          6,
+          8,
+          7,
+          18,
+          10,
+          9
+        ],
+        "data_channels": [
+          144,
+          50,
+          63,
+          244,
+          180,
+          285,
+          166,
+          144
+        ],
+        "lidar_or_sar_channels": [
+          1,
+          1,
+          1,
+          4,
+          4,
+          3,
+          8,
+          8
+        ],
+        "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_Fusion_F1\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+        "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_Fusion_F1\\Houston2013_log_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_Fusion_F1\\Houston2013_report_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\TransMixer_Fusion_F1\\Houston2013_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+        "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\TransMixer_Fusion_F1\\Houston2013_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+      },
+      "config_file": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_Fusion_F1.config.json"
+    },
+    {
+      "model": "TransMixer_Fusion_F4",
+      "parameters": 97657,
+      "forward_backward": "passed",
+      "shared_initialization": "identical base state",
+      "config": {
+        "experiment_name": "lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6",
+        "dataset_type": 0,
+        "model_name": "TransMixer_Fusion_F4",
+        "cuda_device": "cuda:0",
+        "learning_rate": 0.0001,
+        "epochs": 100,
+        "batch_size": 128,
+        "num_workers": 0,
+        "random_seed": 6,
+        "channels": 30,
+        "window_size": 11,
+        "depth": [
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          2
+        ],
+        "ablation_mode": "decoupled",
+        "enable_training": true,
+        "enable_testing": true,
+        "enable_visualization": false,
+        "enable_tsne": false,
+        "enable_erf": false,
+        "enable_email_notification": false,
+        "email_recipient_override": "",
+        "out_features": [
+          15,
+          20,
+          6,
+          8,
+          7,
+          18,
+          10,
+          9
+        ],
+        "data_channels": [
+          144,
+          50,
+          63,
+          244,
+          180,
+          285,
+          166,
+          144
+        ],
+        "lidar_or_sar_channels": [
+          1,
+          1,
+          1,
+          4,
+          4,
+          3,
+          8,
+          8
+        ],
+        "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_Fusion_F4\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+        "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_Fusion_F4\\Houston2013_log_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_Fusion_F4\\Houston2013_report_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\TransMixer_Fusion_F4\\Houston2013_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+        "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\TransMixer_Fusion_F4\\Houston2013_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+      },
+      "config_file": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\lab_fusion_20261025_133847\\TransMixer_Fusion_F4.config.json"
+    }
+  ],
+  "index_metadata": [
+    {
+      "key": "houston_train",
+      "shape": [
+        2832,
+        2
+      ],
+      "type": "int64"
+    },
+    {
+      "key": "houston_test",
+      "shape": [
+        12197,
+        2
+      ],
+      "type": "int64"
+    },
+    {
+      "key": "houston_all",
+      "shape": [
+        664845,
+        2
+      ],
+      "type": "int64"
+    }
+  ],
+  "checkpoint_selection": "existing lab trainer test-accuracy best checkpoint",
+  "training_engine": "Existing scripts/train.py -> ExperimentRunner -> src.trainer.myTrain -> src.evaluator.myTest. Only JSON model name and experiment name differ from configs/train.json.",
+  "seeds": [
+    6
+  ],
+  "scope": "Three seed6 100-epoch jobs; original lab settings, no full-scene visualization, no custom training engine.",
+  "source_sha256": {
+    "scripts/train_all.py": "d1094f2906acb7614e0aa88bab8c1dd5bd29af080a2bc74b71edb8762ce1f516",
+    "scripts/train.py": "b6a1e36fa4aad35442c90a71e3e6398bb87f40e876a7c4512457c5f87ac7e1b1",
+    "src/runner.py": "ab4d5abdb92b9c45def9eaea1e8ca46f8bd456e7b34e2db14701081c3b1889fe",
+    "src/config.py": "e42e4c3b39b51b9fc00c669b38202aa24c1df1ce901aeae5ad04c2cc06948e87",
+    "src/data.py": "cecd41de320260943be5230269e33b4398d761ecfb0d4b750651225986fe70d5",
+    "src/trainer.py": "6b8732e9f84453205a77ebf0c8a392dd73895ef40507aac553d7a5bf46322ea5",
+    "src/evaluator.py": "1217bce1d0c82b652d26541b18bec6fb651bc3cbfccd5d858443e96560646866",
+    "src/metrics.py": "1f3f331c8dc3613e771a1ec115b37ed9102c4854ba9321ee1d253c9d586fcf37",
+    "src/models/transmixer_net/model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+    "src/models/transmixer_net/adapter.py": "0b9c2341053f95077b6a2306eceb9024afd9625ce4a2dd78b08d57344798445d",
+    "src/models/transmixer_fusion/model.py": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+    "src/models/transmixer_fusion/adapter.py": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597",
+    "src/model_registry.py": "12ff9019b273e43504f4a265a0c2c2745ab9bc78d96c9162c6ea21eaab0d7811"
+  },
+  "config_base": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\train.json",
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONUNBUFFERED": "1"
+  },
+  "superseded_trial": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\legacy_fusion_comparison\\legacy_fusion_20261025_133300"
+}

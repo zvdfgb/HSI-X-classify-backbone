@@ -1,0 +1,2 @@
+# Keep archived experiment evidence byte-identical for SHA256 verification.
+docs/results/weekend_20261024_25/** -text whitespace=cr-at-eol

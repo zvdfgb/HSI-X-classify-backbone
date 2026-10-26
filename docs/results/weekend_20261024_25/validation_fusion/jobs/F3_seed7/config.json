@@ -1,0 +1,43 @@
+{
+  "stage": "confirm",
+  "variants": [
+    "F0",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6"
+  ],
+  "datasets": [
+    "Houston2013"
+  ],
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "epochs": 100,
+  "batch_size": 128,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "channels": 30,
+  "window_size": 11,
+  "validation_fraction": 0.2,
+  "split_seed": 20261024,
+  "preprocess_seed": 20261024,
+  "device": "cuda:0",
+  "cpu_threads": 4,
+  "evaluate_test": true,
+  "variant": "F3",
+  "seed": 7,
+  "model_args": {
+    "variant": "F3",
+    "hsi_channels": 30,
+    "aux_channels": 1,
+    "num_classes": 15,
+    "hidden_dim": 64,
+    "num_blocks": 2,
+    "window_size": 11
+  }
+}

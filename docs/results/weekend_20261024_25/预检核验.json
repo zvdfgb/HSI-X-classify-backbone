@@ -1,0 +1,27 @@
+{
+  "tests": "unittest passed; see 接口测试.log",
+  "GPU": [
+    {
+      "model": "RSCNet",
+      "forward_backward": "passed",
+      "parameters": 3339493
+    },
+    {
+      "model": "CNN",
+      "forward_backward": "passed",
+      "parameters": 548751
+    },
+    {
+      "model": "TransMixer_B0_Decoupled",
+      "forward_backward": "passed",
+      "parameters": 80887
+    },
+    {
+      "model": "TransMixer_Fusion_F4",
+      "forward_backward": "passed",
+      "parameters": 97657
+    }
+  ],
+  "torch": "2.6.0+cu124",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

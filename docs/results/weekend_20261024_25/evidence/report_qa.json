@@ -1,0 +1,134 @@
+{
+  "pages": 12,
+  "checks": {
+    "F0_OA": true,
+    "F1_OA": true,
+    "F4_OA": true,
+    "T1_OA": true,
+    "T2_OA": true,
+    "K1_OA": true,
+    "K2_OA": true,
+    "K3_OA": true,
+    "K4_OA": true,
+    "C1_OA": true,
+    "F0_AA": true,
+    "F1_AA": true,
+    "F4_AA": true,
+    "T1_AA": true,
+    "T2_AA": true,
+    "K1_AA": true,
+    "K2_AA": true,
+    "K3_AA": true,
+    "K4_AA": true,
+    "C1_AA": true,
+    "F0_Kappa": true,
+    "F1_Kappa": true,
+    "F4_Kappa": true,
+    "T1_Kappa": true,
+    "T2_Kappa": true,
+    "K1_Kappa": true,
+    "K2_Kappa": true,
+    "K3_Kappa": true,
+    "K4_Kappa": true,
+    "C1_Kappa": true,
+    "no_inline_dollar_math": true,
+    "all_pages_have_text": true,
+    "expected_twelve_pages": true,
+    "title_is_title_style": true
+  },
+  "passed": true,
+  "page_text": [
+    {
+      "page": 1,
+      "characters": 883,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  1 \nTransMixer 周末融合与知识蒸馏实验全面报告 \n31 次正式 训练   两套选模规则   全部正 负结 果 \n1 ",
+      "end": "此属于探索结果，不是独立测试或统计显著性证明。 \n本轮数据是 Houston2013 的 HSI 与 LiDAR。没有新增 Berlin 或 SAR 实验，不能将本报告的结论扩展到这\n些场景。 \n  "
+    },
+    {
+      "page": 2,
+      "characters": 775,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  2 \n2 本周末做了哪些实验 \n批次 正式训练 数据与选模 用途 \n验证选模融合批次 F0 至 F6 × seed6 7 8 共",
+      "end": "估流程 \n \n两套协议的训练中心数、选模依据和数值设置不同。不能将验证批次的 85% 与原流程的约 89% 直接相减，\n并把差额归因于网络或某一个设置。所有模块效果都应使用同一批次内的对照。  \n  "
+    },
+    {
+      "page": 3,
+      "characters": 833,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  3 \n3 你的网络和教师分别在做什么 \n直接融合与跨模态交互 \nB0 的 HSI 分支先通过 3D 卷积和投影，再进入 Tran",
+      "end": "理时仅保留原 B0 或 F4；教师不进入学生模型文件。 \nRSCNet 与 CNN 的比较同时改变了网络结构和输入信息量。即使其中一位教师带来的收益更大，也不能只归\n因为该网络结构更适合蒸馏。 \n  "
+    },
+    {
+      "page": 4,
+      "characters": 797,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  4 \n4 原版融合复现与历史结果 \n组 方法 OA % AA % Kappa ×100 参数 \nF0 F0 原版直接融合 88.",
+      "end": "极小单次差值并未证明稳定收益。关于历史 CNN 89.60% 与 \nRSCNet 90.01% 的记录，本轮已有重新训练的教师结果，下一页将以本轮实际值评价，避免把历史分数当作\n当前教师能力。 \n  "
+    },
+    {
+      "page": 5,
+      "characters": 831,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  5 \n5 两位教师的实际表现 \n组 方法 OA % AA % Kappa ×100 参数 \nT1 RSCNet 教师 91.63",
+      "end": "量相同。 \n这种方法把额外成本放在训练阶段：先训练教师，再在学生每一步计算教师输出。本轮没有开展标准化推理计\n时，因此只能确认学生结构和参数量没有增加，不能进一步声称实际时延或能耗完全不变。  \n  "
+    },
+    {
+      "page": 6,
+      "characters": 761,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  6 \n6 新增蒸馏对照如何设计 \n组 学生与训练方法 主要回答的问题 \nK1 B0 向 RSCNet 蒸馏 直接融合能否单独受益",
+      "end": "前通过，覆盖 KL 方向与温度缩放、零蒸馏权重、全拒绝、\n教师无梯度、配置兼容和保存恢复。它们验证实现能按设计运行，不代替性能实验。蒸馏公式参考  Hinton 等\n的原始工作，来源列于末页。 \n  "
+    },
+    {
+      "page": 7,
+      "characters": 735,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  7 \n7 新增蒸馏实验的完整结果 \n组 方法 OA % AA % Kappa ×100 参数 \nF0 F0 原版直接融合 88.",
+      "end": "对普通 RSC 蒸馏 K2 为 -0.0492 个百分点。负值意味着该固定设置\n没有得到更高 OA，不能将失败组从报告中移除。AA 和 Kappa 同时列出，避免只看 OA 忽略类别不均衡。 \n  \n"
+    },
+    {
+      "page": 8,
+      "characters": 870,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  8 \n8 收益能归因于什么 \n关键比较 OA 差值 百分点 能够检验的范围 \nK1−F0 -0.2706 RSC 蒸馏对直接融合",
+      "end": "格匹配教师 KL 的所有梯度。本轮它优于四种蒸馏学生，但仍只\n增加了单次的小幅 OA，不能据此认定稳定有效。常规 KL 蒸馏和双向交互本身已有研究基础，不能仅因把两\n者组合就宣布论文创新成立。 \n  "
+    },
+    {
+      "page": 9,
+      "characters": 527,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  9 \n9 哪些类别受益和受损 \n \n图 2  各训练方法相对自身未蒸馏基线的逐类召回率变化 \n类别 F4 召回率 K2 召回率 ",
+      "end": "些类别下降，应如实保留。AA 有助于观察各类平均表现，但也不能替代具体业务类别要求。\n这里的类别分析是在看过测试结果后进行，只能为下一轮假设提供线索，不能反过来据此选择阈值并声称独立\n验证。 \n  \n"
+    },
+    {
+      "page": 10,
+      "characters": 769,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  10 \n10 验证选模的三种子融合实验 \n组 方法 OA 均值±样本 SD AA 均值 Kappa 均值 相对 F0 \nF0 原",
+      "end": "1 次中 20 次最佳验证 OA 达到 \n100%。窗口重叠本身不等于使用测试标签，但说明随机验证过易。原流程则直接用测试 OA 选模；两套规则\n各有限制，都没有完成空间隔离的独立泛化确认。 \n  \n"
+    },
+    {
+      "page": 11,
+      "characters": 749,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  11 \n11 训练代价和科研定位 \n新增组 包含启动与预处理的作业耗时 模型推理参数 \nT1 8.3 分钟 3,339,493 ",
+      "end": " \n本报告不自动追加这些训练。可发展的具体问题是轻量且不对称的模态分支如何避免传递不可靠信息，而非笼\n统地“加交互”或“加蒸馏”。已有分数只能帮助筛选假设，机制解释仍需要预先设计的可靠性对照。 \n  "
+    },
+    {
+      "page": 12,
+      "characters": 1023,
+      "start": "TransMixer 周末实验复盘  |  Houston2013 \n2026 年 10 月 25 日  ·  12 \n12 数据来源与复核索引 \n本地证据 \n周末实验总汇.json 保存十组原流程指标、对照差值、21 次验证批次统计和核验",
+      "end": "种子确认、空间隔离验证、独立测试、Berlin 或 SAR 泛化结果；没有标准化推理时延或能耗测\n量。整份报告包含成功与失败组，未因指标高低删除实验。Word 与 PDF 需经渲染逐页检查后才交付。 "
+    }
+  ],
+  "renderer": "Word or canonical DOCX renderer to PDF; Poppler 130 dpi PNG",
+  "visual_review": {
+    "status": "passed",
+    "reviewed_at": "2026-10-25T18:15:58.082336+08:00",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "findings": "All 12 page PNGs inspected at full supplied resolution. No clipped text, overlapping content, missing glyphs, broken tables or orphan pages. Charts and values readable."
+  }
+}

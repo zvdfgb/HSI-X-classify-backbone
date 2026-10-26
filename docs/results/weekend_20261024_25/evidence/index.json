@@ -1,0 +1,82 @@
+[
+  {
+    "id": "F0",
+    "report": "evidence/native_reports/F0.txt",
+    "config": "evidence/native_configs/F0.json",
+    "report_sha256": "8fc0bd57ae19c180c750d7942fcd5b15338fb31c374729416d559286341e22e6",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_B0_Decoupled\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "F1",
+    "report": "evidence/native_reports/F1.txt",
+    "config": "evidence/native_configs/F1.json",
+    "report_sha256": "101f12894b0761b8ebe2f71b2fc3a5700d39a79569b5af4f7efd12765b6c91ea",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_Fusion_F1\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_Fusion_F1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "F4",
+    "report": "evidence/native_reports/F4.txt",
+    "config": "evidence/native_configs/F4.json",
+    "report_sha256": "7bdca1bf62762ee78849de3ee4274aa31981704d3505b60fd79b117bbd9c68cb",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_Fusion_F4\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_Fusion_F4_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "T1",
+    "report": "evidence/native_reports/T1.txt",
+    "config": "evidence/native_configs/T1.json",
+    "report_sha256": "e438db3b8ca033850ee49d558e28979b6ec549927310031c7a92b36bf8aac706",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\RSCNet\\Houston2013_model_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "T2",
+    "report": "evidence/native_reports/T2.txt",
+    "config": "evidence/native_configs/T2.json",
+    "report_sha256": "f583e03573eb8cc0293a00d14ca6538f3e26e4ee8c6090938a77c715941c597c",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\CNN\\Houston2013_model_weekend_kd_20261025_T2_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "K1",
+    "report": "evidence/native_reports/K1.txt",
+    "config": "evidence/native_configs/K1.json",
+    "report_sha256": "b7755e6655fc8713b37c7099309e8f119ebf92c85db7696aa52868eb6a075e3a",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_KD_B0_RSC\\Houston2013_model_weekend_kd_20261025_K1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "K2",
+    "report": "evidence/native_reports/K2.txt",
+    "config": "evidence/native_configs/K2.json",
+    "report_sha256": "930bf05d54ce182fa42707bc6fc21fe2e758641a405e44a44899b96d95ab22b4",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_KD_F4_RSC\\Houston2013_model_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "K3",
+    "report": "evidence/native_reports/K3.txt",
+    "config": "evidence/native_configs/K3.json",
+    "report_sha256": "9e47e23209035037a143190ba0ce45b147a3a4c835d96833a21f4a822eea416f",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_KD_F4_CNN\\Houston2013_model_weekend_kd_20261025_K3_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "K4",
+    "report": "evidence/native_reports/K4.txt",
+    "config": "evidence/native_configs/K4.json",
+    "report_sha256": "dd111b864956b8e6529b0e4f411f025410fc56a0bd3f74da3f78f1e3b850db26",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_KD_F4_RSC_Confidence\\Houston2013_model_weekend_kd_20261025_K4_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  },
+  {
+    "id": "C1",
+    "report": "evidence/native_reports/C1.txt",
+    "config": "evidence/native_configs/C1.json",
+    "report_sha256": "0b4218e61db79e8c99fe66d062d6c9d433dbcb8c83d819be4e7d00ff1f23da04",
+    "checkpoint_in_git": false,
+    "original_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_Control_F4_LabelSmooth\\Houston2013_model_weekend_kd_20261025_C1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth"
+  }
+]

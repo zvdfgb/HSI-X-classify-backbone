@@ -1,0 +1,25 @@
+{
+  "steps": 2200,
+  "samples": 281600,
+  "teacher_acceptance_fraction": 1.0,
+  "mean_ce": 0.5846128001342401,
+  "mean_kd": 10.062339318882335,
+  "mean_total_loss": 3.6033147140795534,
+  "mode": "kd",
+  "settings": {
+    "temperature": 4.0,
+    "weight": 0.3,
+    "diagnostics_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\weekend_distillation\\weekend_kd_20261025\\K3\\损失与教师核验.json",
+    "teacher_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\CNN\\Houston2013_model_weekend_kd_20261025_T2_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "teacher_sha256": "49af87f9094c77a8a126d3ccb9e3471edecf93347044dd7923069da00a4e3f01"
+  },
+  "student_parameters": 97657,
+  "teacher_in_student_state_dict": false,
+  "scope": "Training-batch diagnostics on augmented patches, not test performance",
+  "teacher_checkpoint_sha256": "49af87f9094c77a8a126d3ccb9e3471edecf93347044dd7923069da00a4e3f01",
+  "teacher_initial_state_sha256": "f243d0d9bba6f44e5d444a9bbd498ae0433525c28e38e554d7de822418aaa3d2",
+  "teacher_final_state_sha256": "f243d0d9bba6f44e5d444a9bbd498ae0433525c28e38e554d7de822418aaa3d2",
+  "teacher_unchanged": true,
+  "teacher_has_no_grad": true,
+  "teacher_training_accuracy": 1.0
+}

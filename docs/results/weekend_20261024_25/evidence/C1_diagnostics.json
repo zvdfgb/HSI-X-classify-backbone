@@ -1,0 +1,18 @@
+{
+  "steps": 2200,
+  "samples": 281600,
+  "teacher_acceptance_fraction": 0.0,
+  "mean_ce": 0.9624320197105408,
+  "mean_kd": 0.0,
+  "mean_total_loss": 0.9624320197105408,
+  "mode": "label_smoothing",
+  "settings": {
+    "temperature": 4.0,
+    "weight": 0.3,
+    "diagnostics_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\weekend_distillation\\weekend_kd_20261025\\C1\\损失与教师核验.json",
+    "label_smoothing": 0.1
+  },
+  "student_parameters": 97657,
+  "teacher_in_student_state_dict": false,
+  "scope": "Training-batch diagnostics on augmented patches, not test performance"
+}

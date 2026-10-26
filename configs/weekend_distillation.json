@@ -1,0 +1,21 @@
+{
+  "run_tag": "weekend_kd_20261025",
+  "legacy_run": "report/legacy_fusion_comparison/lab_fusion_20261025_133847",
+  "legacy_process_id": 38624,
+  "base_config": "configs/train.json",
+  "seed": 6,
+  "epochs": 100,
+  "temperature": 4.0,
+  "weight": 0.3,
+  "confidence_threshold": 0.7,
+  "label_smoothing": 0.1,
+  "jobs": [
+    {"id": "T1", "model": "RSCNet", "role": "teacher"},
+    {"id": "T2", "model": "CNN", "role": "teacher"},
+    {"id": "K1", "model": "TransMixer_KD_B0_RSC", "role": "kd", "teacher": "T1", "baseline": "TransMixer_B0_Decoupled"},
+    {"id": "K2", "model": "TransMixer_KD_F4_RSC", "role": "kd", "teacher": "T1", "baseline": "TransMixer_Fusion_F4"},
+    {"id": "K3", "model": "TransMixer_KD_F4_CNN", "role": "kd", "teacher": "T2", "baseline": "TransMixer_Fusion_F4"},
+    {"id": "K4", "model": "TransMixer_KD_F4_RSC_Confidence", "role": "confidence", "teacher": "T1", "baseline": "TransMixer_Fusion_F4"},
+    {"id": "C1", "model": "TransMixer_Control_F4_LabelSmooth", "role": "label_smoothing", "baseline": "TransMixer_Fusion_F4"}
+  ]
+}

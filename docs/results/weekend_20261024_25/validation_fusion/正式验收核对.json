@@ -1,0 +1,33 @@
+{
+  "completed_jobs": 21,
+  "epochs_per_job": 100,
+  "all_histories_complete": true,
+  "all_centers_disjoint": true,
+  "checkpoint_selection_matches_validation_history": true,
+  "checkpoint_metadata_matches_results_and_weights_are_finite": true,
+  "saved_confusion_matrices_match_reported_metrics": true,
+  "validation_predictions_match_reported_metrics": true,
+  "training_source_sha256_matches": {
+    "src\\models\\transmixer_net\\model.py": true,
+    "src\\models\\transmixer_fusion\\model.py": true,
+    "src\\models\\transmixer_fusion\\adapter.py": true,
+    "src\\fusion_experiment.py": true,
+    "scripts\\train_transmixer_fusion.py": true,
+    "src\\model_registry.py": true
+  },
+  "spatial_neighborhood_audit": {
+    "Houston2013": {
+      "validation": {
+        "median_nearest_chebyshev_distance": 1.0,
+        "within_training_window_pct": 100.0,
+        "overlapping_training_window_pct": 100.0
+      },
+      "test": {
+        "median_nearest_chebyshev_distance": 15.0,
+        "within_training_window_pct": 14.757727309994262,
+        "overlapping_training_window_pct": 34.000163974747885
+      }
+    }
+  },
+  "scope": "Checks saved artifacts and current source; does not rerun inference or establish how many historical invocations occurred."
+}

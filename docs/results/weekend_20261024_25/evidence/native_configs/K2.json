@@ -1,0 +1,76 @@
+{
+  "experiment_name": "weekend_kd_20261025_K2_seed6",
+  "dataset_type": 0,
+  "model_name": "TransMixer_KD_F4_RSC",
+  "cuda_device": "cuda:0",
+  "learning_rate": 0.0001,
+  "epochs": 100,
+  "batch_size": 128,
+  "num_workers": 0,
+  "random_seed": 6,
+  "distillation": {
+    "temperature": 4.0,
+    "weight": 0.3,
+    "diagnostics_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\weekend_distillation\\weekend_kd_20261025\\K2\\损失与教师核验.json",
+    "teacher_checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\RSCNet\\Houston2013_model_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "teacher_sha256": "0f1b9e9b46d4e7340a9bb0c50ef0c682b6f958d96be050e02976372ed42d9797"
+  },
+  "channels": 30,
+  "window_size": 11,
+  "depth": [
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    2
+  ],
+  "ablation_mode": "decoupled",
+  "enable_training": true,
+  "enable_testing": true,
+  "enable_visualization": false,
+  "enable_tsne": false,
+  "enable_erf": false,
+  "enable_email_notification": false,
+  "email_recipient_override": "",
+  "out_features": [
+    15,
+    20,
+    6,
+    8,
+    7,
+    18,
+    10,
+    9
+  ],
+  "data_channels": [
+    144,
+    50,
+    63,
+    244,
+    180,
+    285,
+    166,
+    144
+  ],
+  "lidar_or_sar_channels": [
+    1,
+    1,
+    1,
+    4,
+    4,
+    3,
+    8,
+    8
+  ],
+  "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_KD_F4_RSC\\Houston2013_model_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+  "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_KD_F4_RSC\\Houston2013_log_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+  "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_KD_F4_RSC\\Houston2013_report_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+  "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\TransMixer_KD_F4_RSC\\Houston2013_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+  "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\TransMixer_KD_F4_RSC\\Houston2013_weekend_kd_20261025_K2_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+}

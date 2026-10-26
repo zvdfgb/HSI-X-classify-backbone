@@ -1,0 +1,238 @@
+{
+  "legacy_seal_rechecked_after_kd": [
+    {
+      "model": "TransMixer_B0_Decoupled",
+      "report_matches_frozen_sha256": true,
+      "checkpoint_matches_frozen_sha256": true,
+      "all_100_epochs_complete": true
+    },
+    {
+      "model": "TransMixer_Fusion_F1",
+      "report_matches_frozen_sha256": true,
+      "checkpoint_matches_frozen_sha256": true,
+      "all_100_epochs_complete": true
+    },
+    {
+      "model": "TransMixer_Fusion_F4",
+      "report_matches_frozen_sha256": true,
+      "checkpoint_matches_frozen_sha256": true,
+      "all_100_epochs_complete": true
+    }
+  ],
+  "note": "Rechecked saved files only. Intentional optional hooks are covered by new manifest; no inference or training repeated.",
+  "validation_21_jobs_rechecked": [
+    {
+      "job": "F0_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F0_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F0_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F1_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F1_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F1_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F2_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F2_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F2_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F3_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F3_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F3_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F4_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F4_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F4_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F5_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F5_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F5_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F6_seed6",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F6_seed7",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    },
+    {
+      "job": "F6_seed8",
+      "epochs": 100,
+      "matrix_metrics_recomputed": true,
+      "checkpoint_exists": true
+    }
+  ],
+  "new_7_jobs": [
+    {
+      "id": "T1",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 3339493,
+      "checkpoint_sha256": "0f1b9e9b46d4e7340a9bb0c50ef0c682b6f958d96be050e02976372ed42d9797"
+    },
+    {
+      "id": "T2",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 548751,
+      "checkpoint_sha256": "49af87f9094c77a8a126d3ccb9e3471edecf93347044dd7923069da00a4e3f01"
+    },
+    {
+      "id": "K1",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 80887,
+      "checkpoint_sha256": "aa23fbaa370c6e07db8fa57c6cb64702adf331f89f22edb587d5322156414a86"
+    },
+    {
+      "id": "K2",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 97657,
+      "checkpoint_sha256": "fc5e6bb455332a32959d7f4608108ae7ebd965650b78c680f2e3162f38326ee1"
+    },
+    {
+      "id": "K3",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 97657,
+      "checkpoint_sha256": "e44f69833a77b81fcff06fd0afa5506902e0abc6af1f143f3fd05f39566d4910"
+    },
+    {
+      "id": "K4",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 97657,
+      "checkpoint_sha256": "e24991f1836fe61269f59dff2e6ac0a1978244d153f8744aa549eece67127683"
+    },
+    {
+      "id": "C1",
+      "all_100_epochs_complete": true,
+      "matrix_metrics_recomputed": true,
+      "parameters": 97657,
+      "checkpoint_sha256": "bb1f83b46423fff70ccf5b004950b7fe3dcb1298d43e3c7521f282955500dfa1"
+    }
+  ],
+  "new_source_hashes_unchanged": true,
+  "counts": {
+    "validation_fusion": 21,
+    "lab_fusion": 3,
+    "new_teacher_student_controls": 7,
+    "total_formal_training_runs": 31
+  },
+  "report_qa": {
+    "status": "passed",
+    "reviewed_at": "2026-10-25T18:15:58.082336+08:00",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "findings": "All 12 page PNGs inspected at full supplied resolution. No clipped text, overlapping content, missing glyphs, broken tables or orphan pages. Charts and values readable."
+  },
+  "completed_at": "2026-10-25T18:16:40.113932+08:00",
+  "artifacts_sha256": {
+    "TransMixer 周末融合与知识蒸馏实验全面报告.docx": "6fe5b9a9155a054bbc5c63e0552c809c45b360bbc5cd9ce26676a63e234b903e",
+    "TransMixer 周末融合与知识蒸馏实验全面报告.md": "1c1415dd99d68d5ff4aa73e90b7384fe7109ced871b017b78a0d3819b472754a",
+    "TransMixer 周末融合与知识蒸馏实验全面报告.pdf": "f9b4b42e23a3f5c233c8b4337052e68d7f5cf681144d81e8223a45b42e1b77f6",
+    "原始证据索引.csv": "c018e5a387a90ed17cf3b7a386954599d62a21b946ee5574f4e0c417f6101fc1",
+    "原流程十组结果.csv": "6c0f667d9b359d23121c7133dcd68c909cdc2f1c1722c9f69e76082977f40153",
+    "周末实验全面报告.md": "91324fd0a2fc28f310d9530f587a13d74c690d25e38027df73d94a406b53bbef",
+    "逐类召回率.csv": "9f6dea695ba79deb608e3ff84500df928bcb8164b598e7ab40b9edc0e766d243"
+  }
+}

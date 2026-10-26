@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-25T15:25:28.324661+08:00",
+  "changes": [
+    {
+      "file": "src/config.py",
+      "before": "e42e4c3b39b51b9fc00c669b38202aa24c1df1ce901aeae5ad04c2cc06948e87",
+      "after": "7bfc7a1655ea72b68ee270dea243e8b22de1f496bbb33b58bfb4c64e70aa0a6e"
+    },
+    {
+      "file": "src/trainer.py",
+      "before": "6b8732e9f84453205a77ebf0c8a392dd73895ef40507aac553d7a5bf46322ea5",
+      "after": "ae2afdd4f13e6855be4772b3328dcfaa61ed2789b4f7b639c5e897c22d5c8ef9"
+    },
+    {
+      "file": "src/model_registry.py",
+      "before": "12ff9019b273e43504f4a265a0c2c2745ab9bc78d96c9162c6ea21eaab0d7811",
+      "after": "3091fc7d5b8500e58201ec5e18516716f0efb2b5f3b77b7282623aaefdbfe534"
+    }
+  ],
+  "scope": "Optional loss and completion hooks; original CE fallback, optimizer, data, checkpoint and evaluation remain."
+}

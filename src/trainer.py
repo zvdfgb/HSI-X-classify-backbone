@@ -65,7 +65,9 @@ def train(epochs, lr, model, cuda, train_loader, test_loader, out_features, mode
 
             optimizer.zero_grad()
             outputs = model_adapter.forward_train(model_bundle, batch)
-            loss = criterion(outputs, batch["label"])
+            compute_loss = getattr(model_adapter, "compute_loss", None)
+            loss = (compute_loss(model_bundle, outputs, batch, criterion)
+                    if compute_loss is not None else criterion(outputs, batch["label"]))
 
             loss.backward()
             optimizer.step()
@@ -117,6 +119,10 @@ def train(epochs, lr, model, cuda, train_loader, test_loader, out_features, mode
     getLog(log_path, mac_acc_log)
     getLog(log_path, finish_time_log)
     getLog(log_path, '-------------------Finished Training-------------------')
+
+    on_training_complete = getattr(model_adapter, "on_training_complete", None)
+    if on_training_complete is not None:
+        on_training_complete(model_bundle)
 
 
 def myTrain(datasetType, model):

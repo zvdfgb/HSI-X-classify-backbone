@@ -35,3 +35,6 @@ data/
 email_config.json
 
 .claude/
+
+# Local preparation scripts and transfer scratch files
+tmp/

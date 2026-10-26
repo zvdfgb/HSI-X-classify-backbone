@@ -4,6 +4,12 @@ from importlib import import_module
 # Canonical names are used by new experiments and by train_all. Legacy names
 # remain accepted through MODEL_ALIASES without creating duplicate jobs.
 MODEL_REGISTRY = {
+    "TransMixer_KD_B0_RSC": "src.models.transmixer_distill.adapter",
+    "TransMixer_KD_F4_RSC": "src.models.transmixer_distill.adapter",
+    "TransMixer_KD_F4_CNN": "src.models.transmixer_distill.adapter",
+    "TransMixer_KD_F4_RSC_Confidence": "src.models.transmixer_distill.adapter",
+    "TransMixer_Control_F4_LabelSmooth": "src.models.transmixer_distill.adapter",
+    **{f"TransMixer_Fusion_F{i}": "src.models.transmixer_fusion.adapter" for i in range(7)},
     "TransMixer_B0_Decoupled": "src.models.transmixer_net.adapter",
     "TransMixer_B1_LocalResidual": "src.models.transmixer_ablation.adapter",
     "TransMixer_B2_PreSSMResidual": "src.models.transmixer_ablation.adapter",

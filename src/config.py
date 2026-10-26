@@ -45,6 +45,7 @@ class ExperimentConfig:
     batch_size: int = 128
     num_workers: int = 0
     random_seed: int = 6
+    distillation: Optional[Dict[str, Any]] = None  # optional training-only adapter settings
 
     # 网络参数
     channels: int = 30

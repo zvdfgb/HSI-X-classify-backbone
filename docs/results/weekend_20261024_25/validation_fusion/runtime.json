@@ -1,0 +1,17 @@
+{
+  "torch": "2.6.0+cu124",
+  "numpy": "2.3.5",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "source_sha256": {
+    "src\\models\\transmixer_net\\model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+    "src\\models\\transmixer_fusion\\model.py": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+    "src\\models\\transmixer_fusion\\adapter.py": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597",
+    "src\\fusion_experiment.py": "5a1b0a746a37640b68c067d055cc88fea4a5b01e7594433762958d8778c8c290",
+    "scripts\\train_transmixer_fusion.py": "afc981b489f016c012db4077bbb8edda426cc195a96e10dd0ae9432a91cdfd14",
+    "src\\model_registry.py": "12ff9019b273e43504f4a265a0c2c2745ab9bc78d96c9162c6ea21eaab0d7811"
+  },
+  "determinism": "strict deterministic algorithms; SDP math only; TF32 disabled; cuDNN benchmark disabled",
+  "test_evaluation_enabled": true,
+  "selection": "validation OA, tie-break lower validation loss"
+}
