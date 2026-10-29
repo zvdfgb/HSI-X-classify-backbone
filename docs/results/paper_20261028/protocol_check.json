@@ -1,0 +1,136 @@
+{
+  "python": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "python_version": "3.13.5",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.3.5",
+  "cuda": "12.4",
+  "reference": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\fusion_ablation\\fusion_20261024_210925_749584",
+  "reference_runtime_sha256": "4dffc82c61fd29261ab03456f6561244df2469a9f27428e5b4eb7ba0f0de111e",
+  "shared_config": {
+    "stage": "confirm",
+    "variants": [
+      "F0",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6"
+    ],
+    "datasets": [
+      "Houston2013"
+    ],
+    "seeds": [
+      6,
+      7,
+      8
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "channels": 30,
+    "window_size": 11,
+    "validation_fraction": 0.2,
+    "split_seed": 20261024,
+    "preprocess_seed": 20261024,
+    "device": "cuda:0",
+    "cpu_threads": 4,
+    "evaluate_test": false
+  },
+  "unchanged_backbone_sources": {
+    "src/models/transmixer_net/model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+    "src/models/transmixer_fusion/model.py": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+    "src/models/transmixer_fusion/adapter.py": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597"
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "data": {
+    "dataset": "Houston2013",
+    "shape": [
+      349,
+      1905
+    ],
+    "classes": 15,
+    "aux_channels": 1,
+    "train": 2267,
+    "validation": 565,
+    "test": 12197,
+    "class_counts": {
+      "train": [
+        158,
+        152,
+        154,
+        150,
+        149,
+        146,
+        157,
+        153,
+        154,
+        153,
+        145,
+        154,
+        147,
+        145,
+        150
+      ],
+      "validation": [
+        40,
+        38,
+        38,
+        38,
+        37,
+        36,
+        39,
+        38,
+        39,
+        38,
+        36,
+        38,
+        37,
+        36,
+        37
+      ],
+      "test": [
+        1053,
+        1064,
+        505,
+        1056,
+        1056,
+        143,
+        1072,
+        1053,
+        1059,
+        1036,
+        1054,
+        1041,
+        285,
+        247,
+        473
+      ]
+    },
+    "split_sha256": "38336ef13d8a027d228f4c9fb2aee25f6e94ad28689621e2a0d1a5f129493458",
+    "pca_solver": "covariance_eigh",
+    "preprocessing": "unlabelled full-scene PCA and standardization (transductive)",
+    "spatial_protocol": "disjoint centers; overlapping neighbourhoods possible; same-scene validation",
+    "files": {
+      "hsi": {
+        "path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\data\\Houston2013\\houston_hsi.mat",
+        "sha256": "7bc47f763d4b981b4c2593d929872265f76869844befbab122ca708534116978"
+      },
+      "lidar": {
+        "path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\data\\Houston2013\\houston_lidar.mat",
+        "sha256": "58110d1ad502d4c6117359dda77b06e204da9de6cff54ef3fdec9eec2733085b"
+      },
+      "gt": {
+        "path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\data\\Houston2013\\houston_gt.mat",
+        "sha256": "93f492bb1af3fb35dfb730740523062c42539235cb80a3723d87b75d703e8d14"
+      },
+      "index": {
+        "path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\data\\Houston2013\\houston_index.mat",
+        "sha256": "65b036488f47d7b02cde0ee8645851d1845fbfb04ae5d9145be00f494f1aa287"
+      }
+    }
+  },
+  "split_arrays_equal": true,
+  "split_file_sha256_equal": true
+}

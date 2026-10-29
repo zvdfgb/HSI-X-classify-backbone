@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-10-28T12:16:09.699825+08:00",
+  "plan": {
+    "protocol_reference": "report/fusion_ablation/fusion_20261024_210925_749584",
+    "variants": [
+      "G0",
+      "SR1",
+      "SR2",
+      "SR3",
+      "PN1",
+      "PN2",
+      "OC1",
+      "OC2",
+      "OC3"
+    ],
+    "seeds": [
+      6,
+      7,
+      8
+    ],
+    "reuse_verified_baselines": true,
+    "correction_epochs": 50,
+    "spatial_sigma": 3.0,
+    "correction_hidden": 16,
+    "concept_weight": 0.1,
+    "final_test": true
+  },
+  "protocol_audit": {
+    "python": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "python_version": "3.13.5",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.3.5",
+    "cuda": "12.4",
+    "reference": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\fusion_ablation\\fusion_20261024_210925_749584",
+    "reference_runtime_sha256": "4dffc82c61fd29261ab03456f6561244df2469a9f27428e5b4eb7ba0f0de111e",
+    "shared_config": {
+      "stage": "confirm",
+      "variants": [
+        "F0",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "datasets": [
+        "Houston2013"
+      ],
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "epochs": 100,
+      "batch_size": 128,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.01,
+      "channels": 30,
+      "window_size": 11,
+      "validation_fraction": 0.2,
+      "split_seed": 20261024,
+      "preprocess_seed": 20261024,
+      "device": "cuda:0",
+      "cpu_threads": 4,
+      "evaluate_test": false
+    },
+    "unchanged_backbone_sources": {
+      "src/models/transmixer_net/model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+      "src/models/transmixer_fusion/model.py": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+      "src/models/transmixer_fusion/adapter.py": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597"
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "source_sha256": {
+    "README.md": "2c17072154023985aa94290546316aafe8947ccd60e1d504890121cb9618d6e5",
+    "src/data.py": "cecd41de320260943be5230269e33b4398d761ecfb0d4b750651225986fe70d5",
+    "src/trainer.py": "ae2afdd4f13e6855be4772b3328dcfaa61ed2789b4f7b639c5e897c22d5c8ef9",
+    "src/evaluator.py": "1217bce1d0c82b652d26541b18bec6fb651bc3cbfccd5d858443e96560646866",
+    "src/metrics.py": "1f3f331c8dc3613e771a1ec115b37ed9102c4854ba9321ee1d253c9d586fcf37",
+    "src/runner.py": "ab4d5abdb92b9c45def9eaea1e8ca46f8bd456e7b34e2db14701081c3b1889fe",
+    "src/config.py": "34b88d0861691e503fb8ac929beda4ab1ae919c220ae23968239aa8c9501b8ac",
+    "src/model_registry.py": "87a18dd56fc549b58467e970ce0c5d010807f98a4de710ed0fe4625344f840b0",
+    "src/fusion_experiment.py": "de5ac7d612bb93400791349b2ed87cb29d7a707a670808315c68eafafc151ef8",
+    "src/models/transmixer_net/model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+    "src/models/transmixer_net/adapter.py": "0b9c2341053f95077b6a2306eceb9024afd9625ce4a2dd78b08d57344798445d",
+    "src/models/transmixer_fusion/model.py": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+    "src/models/transmixer_fusion/adapter.py": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597",
+    "src/models/transmixer_paper/model.py": "9983233985e66a77a4f1579876be8cf695c87559d9c818557666103ad142b43d",
+    "src/models/transmixer_paper/adapter.py": "06b2a3c02a7139a03f414448918dc412e302d6d5103f40f1062c0b5629441258",
+    "src/paper_transfer_experiment.py": "89f241a022b48bd53025b4e24195fb0ec4f9bd2720549cf5dd25b1c6b87574f2",
+    "scripts/train_transmixer_paper.py": "dda2e2470cad4855743446e96431144bfe97f00bc271fd253cf703286a55754b",
+    "configs/paper_transfer.json": "094ff1211202023d3075e0254bac28610634db9741ce77e1bf1d74c59e8b6a77",
+    "src/models/transmixer_paper/test_paper.py": "0aa27f23d87358d053fd5bb198bceb6a8465442254d270dedd8e830de25ab88a",
+    "scripts/check_transmixer_paper.py": "6dd6a09b7f8e940fdbddc7c530519adc3f120ea48ed36c8408e6d2ec2ab391e4"
+  },
+  "training_loop": "src.fusion_experiment.run_one with the native model adapter hooks",
+  "test_policy": "one evaluation per fixed configuration after all training; no test-based tuning"
+}

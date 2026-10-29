@@ -1,0 +1,11 @@
+{
+  "protocol_reference": "report/fusion_ablation/fusion_20261024_210925_749584",
+  "variants": ["G0", "SR1", "SR2", "SR3", "PN1", "PN2", "OC1", "OC2", "OC3"],
+  "seeds": [6, 7, 8],
+  "reuse_verified_baselines": true,
+  "correction_epochs": 50,
+  "spatial_sigma": 3.0,
+  "correction_hidden": 16,
+  "concept_weight": 0.1,
+  "final_test": true
+}

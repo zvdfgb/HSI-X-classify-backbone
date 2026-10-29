@@ -4,6 +4,8 @@ from importlib import import_module
 # Canonical names are used by new experiments and by train_all. Legacy names
 # remain accepted through MODEL_ALIASES without creating duplicate jobs.
 MODEL_REGISTRY = {
+    **{f"TransMixer_Paper_{key}": "src.models.transmixer_paper.adapter"
+       for key in ("SR1", "SR2", "SR3", "PN1", "PN2", "OC1", "OC2", "OC3")},
     "TransMixer_KD_B0_RSC": "src.models.transmixer_distill.adapter",
     "TransMixer_KD_F4_RSC": "src.models.transmixer_distill.adapter",
     "TransMixer_KD_F4_CNN": "src.models.transmixer_distill.adapter",

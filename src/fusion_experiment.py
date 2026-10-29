@@ -257,14 +257,22 @@ def benchmark(net, dataset, device):
             "scope": "model forward only, fixed validation inputs; excludes data transfer"}
 
 
-def run_one(cfg, variant, seed, data, folder):
+def run_one(cfg, variant, seed, data, folder, *, model_adapter=None, model_config=None):
     folder.mkdir(parents=True, exist_ok=False)
     seed_everything(seed, cfg["cpu_threads"])
     device = torch.device(cfg["device"])
     info = data["info"]
     model_args = dict(variant=variant, hsi_channels=cfg["channels"], aux_channels=info["aux_channels"],
                       num_classes=info["classes"], hidden_dim=64, num_blocks=2, window_size=cfg["window_size"])
-    net = FusionTransMixerNet(**model_args).to(device)
+    if model_adapter is None:
+        net = FusionTransMixerNet(**model_args).to(device)
+        bundle = None
+    else:
+        bundle = model_adapter.build_model(model_config, 0, device)
+        net = bundle["net"]
+        model_args = {"model_name": model_config.config.model_name,
+                      "paper_transfer": model_config.config.paper_transfer,
+                      "channels": cfg["channels"], "window_size": cfg["window_size"]}
     train_set = FusionPatchDataset(data, "train", cfg["window_size"], augment=True)
     val_set = FusionPatchDataset(data, "validation", cfg["window_size"])
     generator = torch.Generator().manual_seed(seed)
@@ -285,7 +293,14 @@ def run_one(cfg, variant, seed, data, folder):
         for h, a, y in train_loader:
             h, a, y = h.to(device), a.to(device), y.to(device)
             optimizer.zero_grad(set_to_none=True)
-            loss = nn.functional.cross_entropy(net(h, a), y)
+            if model_adapter is None:
+                loss = nn.functional.cross_entropy(net(h, a), y)
+            else:
+                batch = {"hsi_pca": h, "aux": a, "label": y}
+                logits = model_adapter.forward_train(bundle, batch)
+                loss_hook = getattr(model_adapter, "compute_loss", None)
+                loss = (loss_hook(bundle, logits, batch, nn.CrossEntropyLoss()) if loss_hook
+                        else nn.functional.cross_entropy(logits, y))
             if not torch.isfinite(loss):
                 raise FloatingPointError("Non-finite training loss")
             loss.backward()
@@ -301,13 +316,16 @@ def run_one(cfg, variant, seed, data, folder):
         sync(device)
         record = {"epoch": epoch, "train_loss": loss_sum/samples, "train_samples": samples,
                   "validation": val, "seconds": time.perf_counter()-epoch_start,
-                  "strengths": net.interaction_strengths(), "best_epoch": best_epoch}
+                  "strengths": net.interaction_strengths() if hasattr(net, "interaction_strengths") else {},
+                  "best_epoch": best_epoch}
         history.append(record)
         with (folder / "history.jsonl").open("a", encoding="utf-8") as out:
             out.write(json.dumps(record, ensure_ascii=False, allow_nan=False)+"\n")
         print(f"{info['dataset']} {variant} seed{seed} {epoch:03}/{cfg['epochs']} "
               f"loss={record['train_loss']:.4f} valOA={val['oa']:.2f} "
               f"valAA={val['aa']:.2f} best={best_epoch} time={record['seconds']:.1f}s", flush=True)
+    if model_adapter is not None and hasattr(model_adapter, "on_training_complete"):
+        model_adapter.on_training_complete(bundle)
     training_seconds = time.perf_counter()-start
     peak = torch.cuda.max_memory_allocated(device)/1024**2 if device.type == "cuda" else None
     checkpoint = torch.load(folder / "best.pth", map_location=device, weights_only=True)
@@ -316,11 +334,12 @@ def run_one(cfg, variant, seed, data, folder):
     with (folder / "validation_predictions.csv").open("w", encoding="utf-8-sig", newline="") as out:
         writer = csv.writer(out); writer.writerow(["row", "column", "true_class_1based", "predicted_class_1based"])
         writer.writerows((int(r), int(c), y+1, p+1) for (r, c), y, p in zip(data["validation"], ys, preds))
-    result = {"status": "completed", "variant": variant, "label": LABELS[variant], "dataset": info["dataset"],
+    result = {"status": "completed", "variant": variant, "label": LABELS.get(variant, variant), "dataset": info["dataset"],
               "seed": seed, "stage": cfg["stage"], "epochs": cfg["epochs"], "best_epoch": best_epoch,
               "validation": val, "test": None, "selection_split": "validation", "parameters": parameters,
               "training_seconds": training_seconds, "peak_train_memory_mb": peak,
-              "strengths": net.interaction_strengths(), "checkpoint": str(folder / "best.pth"),
+              "strengths": net.interaction_strengths() if hasattr(net, "interaction_strengths") else {},
+              "checkpoint": str(folder / "best.pth"),
               "benchmark": benchmark(net, val_set, device), "split_sha256": info["split_sha256"]}
     if cfg["evaluate_test"]:
         test_set = FusionPatchDataset(data, "test", cfg["window_size"])

@@ -1,0 +1,14 @@
+{
+  "spectral_scale": 0.2748182415962219,
+  "height_scale": 0.0010004951618611813,
+  "concept_mean": [
+    0.07617481052875519,
+    0.293067067861557
+  ],
+  "concept_std": [
+    0.3642452657222748,
+    0.3430939316749573
+  ],
+  "samples": 2267,
+  "scope": "training input patches only; no validation/test labels"
+}
