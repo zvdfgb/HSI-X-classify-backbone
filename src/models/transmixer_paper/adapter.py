@@ -1,5 +1,6 @@
 """Native lab model adapter and optional loss/finish hooks."""
 from pathlib import Path
+import hashlib
 
 import torch
 from torch.nn import functional as F
@@ -31,9 +32,8 @@ def build_model(config, dataset_type, device):
         net = ConceptTransMixer(variant, concept_mean=settings.get("concept_mean", [0., 0.]),
                                 concept_std=settings.get("concept_std", [1., 1.]), **kwargs)
     else:
-        from ...fusion_experiment import sha256
         path = Path(settings["baseline_checkpoint"])
-        if sha256(path) != settings["baseline_sha256"]:
+        if hashlib.sha256(path.read_bytes()).hexdigest() != settings["baseline_sha256"]:
             raise ValueError("Frozen baseline checkpoint SHA256 mismatch")
         checkpoint = torch.load(path, map_location="cpu", weights_only=True)
         if checkpoint.get("selection_split") != "validation":

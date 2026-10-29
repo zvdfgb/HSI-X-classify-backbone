@@ -47,6 +47,7 @@ class ExperimentConfig:
     random_seed: int = 6
     distillation: Optional[Dict[str, Any]] = None  # optional training-only adapter settings
     paper_transfer: Optional[Dict[str, Any]] = None  # model-specific settings; native adapter interface
+    sr: Optional[Dict[str, Any]] = None  # SR model settings only; native training rules are unchanged
 
     # 网络参数
     channels: int = 30

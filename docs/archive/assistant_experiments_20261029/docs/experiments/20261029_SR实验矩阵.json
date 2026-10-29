@@ -1,6 +1,11 @@
 {
-  "status": "review_only",
+  "status": "requires_lab_protocol_revision",
   "execution_enabled": false,
+  "active_counts": null,
+  "historical_reuse_authorized_for_lab_protocol": false,
+  "required_training_entry": "scripts/train.py -> ExperimentRunner -> src.trainer.myTrain/train -> src.data.getMyData",
+  "required_evaluation_entry": "src.evaluator.myTest",
+  "revision_reason": "Prior proposal inherited assistant-authored validation protocol; groups and counts below are historical design only, not an executable or approved lab-protocol matrix.",
   "scope": "SR with fixed local/global channel allocation; historical PN/OC preserved",
   "dataset": "Houston2013",
   "seeds": [6, 7, 8],

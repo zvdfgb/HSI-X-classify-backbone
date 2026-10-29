@@ -1,5 +1,7 @@
 # TransMixer：两个模态怎么交流的对照实验
 
+> 历史方案，已停止使用。下文旧命令、配置及训练器已移入 `docs/archive/assistant_experiments_20261029/`，不能直接执行。后续统一遵循 [项目导航](PROJECT_GUIDE.md)。
+
 这批实验研究的是：在你已有的固定1:1 TransMixer上，HSI与LiDAR/SAR在最终融合之前交换信息，是否比直接拼接更有用，以及应当怎样交换。代码已实现7组；本机实际数据实验使用Houston2013的HSI＋LiDAR。SAR接口通过了4通道合成输入的前向、反向检查，尚无真实SAR数据结果。
 
 ## 先读懂每一组在问什么

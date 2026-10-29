@@ -1,10 +1,10 @@
 # HSI-X-Classify-Backbone
 
-2026 年 10 月 24–25 日 TransMixer 周末研究已完成：21 次验证选模融合实验、3 次原实验室流程融合复现和7次教师／蒸馏／标签平滑对照。代码、配置、完整报告与原始结果见 [周末实验归档](docs/results/weekend_20261024_25/README.md)。不同选模协议分开解释，负结果完整保留。
+当前研究方向：固定1:1局部／全局通道分工＋SR邻域加权汇总。后续训练严格使用实验室原入口和原规则，详见 [项目目录与训练导航](docs/PROJECT_GUIDE.md) 和 [代码复用规则](AGENTS.md)。
 
-双模态交互 F0–F6 对照：运行 `python scripts/train_transmixer_fusion.py`，默认完成 Houston2013 的7组10轮初筛，只按验证集选模型。实验设计、正式多种子命令和结果解释见 [双模态交互实验指南](docs/transmixer_fusion_experiments.md)。
+三篇论文迁移实验27项已经完成，结果保留、不重跑，见 [论文迁移结果](docs/results/paper_20261028/README.md)。SR2保留为后续主方向；其他探索不再新增实验。
 
-固定 1:1 TransMixer 的 B1–B4 特征提取消融：在 VS Code 中运行 `scripts/train_transmixer_ablation.py`，即可依次训练并测试四个模型。默认 Houston2013、种子 6、100 epochs，不重跑 B0。参数见 `configs/feature_ablation.json`，说明见 [B1–B4 实验指南](report/TransMixer_experiment_guide.md)。
+助手重复编写的旧训练流程、批量脚本和配置已 [归档](docs/archive/assistant_experiments_20261029/README.md)，不再作为日常入口。此前不同协议的实验见 [周末实验结果](docs/results/weekend_20261024_25/README.md)。
 
 用于高光谱与辅助模态（LiDAR / SAR / MSI）融合分类的统一实验骨架。项目提供了统一的实验配置、数据加载、模型注册、训练、评估与可视化流程，便于在多个公开数据集上复现实验、横向对比不同模型，并继续扩展新模型。
 

@@ -1,0 +1,137 @@
+[
+  {
+    "original": "src/fusion_experiment.py",
+    "archived": "docs/archive/assistant_experiments_20261029/src/fusion_experiment.py",
+    "sha256": "de5ac7d612bb93400791349b2ed87cb29d7a707a670808315c68eafafc151ef8"
+  },
+  {
+    "original": "src/paper_transfer_experiment.py",
+    "archived": "docs/archive/assistant_experiments_20261029/src/paper_transfer_experiment.py",
+    "sha256": "89f241a022b48bd53025b4e24195fb0ec4f9bd2720549cf5dd25b1c6b87574f2"
+  },
+  {
+    "original": "scripts/train_transmixer_fusion.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/train_transmixer_fusion.py",
+    "sha256": "afc981b489f016c012db4077bbb8edda426cc195a96e10dd0ae9432a91cdfd14"
+  },
+  {
+    "original": "scripts/train_transmixer_paper.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/train_transmixer_paper.py",
+    "sha256": "dda2e2470cad4855743446e96431144bfe97f00bc271fd253cf703286a55754b"
+  },
+  {
+    "original": "scripts/check_transmixer_paper.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/check_transmixer_paper.py",
+    "sha256": "6dd6a09b7f8e940fdbddc7c530519adc3f120ea48ed36c8408e6d2ec2ab391e4"
+  },
+  {
+    "original": "scripts/train_transmixer_ablation.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/train_transmixer_ablation.py",
+    "sha256": "0ce01c6878b467715f4b333f347b942b62a183517adceb8e60493d0628911986"
+  },
+  {
+    "original": "scripts/train_transmixer_distillation.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/train_transmixer_distillation.py",
+    "sha256": "7e6da76d2e0abac83c1018b3502544f3e0315a037deea75a9a79fa9f15b30ba5"
+  },
+  {
+    "original": "scripts/analyze_transmixer_fusion.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/analyze_transmixer_fusion.py",
+    "sha256": "d911507c323858321e333227889802cf41e7dc1ee8bf182c43ce3176ace6adfc"
+  },
+  {
+    "original": "scripts/summarize_fusion_confirmation.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/summarize_fusion_confirmation.py",
+    "sha256": "de066285965822496e8b03346fef0c61520816d8836293fc5ace8260a669040e"
+  },
+  {
+    "original": "scripts/compare_lab_fusion.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/compare_lab_fusion.py",
+    "sha256": "77e550e24cef2cc80ad59ddb6dc0a4792815b95bd720de48329988d882f4a576"
+  },
+  {
+    "original": "scripts/summarize_weekend_distillation.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/summarize_weekend_distillation.py",
+    "sha256": "93fbd96b6f7c27b1d0c6d7f326986bb839799e536a533bfe827a8dd4d12d1c78"
+  },
+  {
+    "original": "scripts/build_weekend_report.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/build_weekend_report.py",
+    "sha256": "fed9b80a0b3adee8aa4d1aaaeec0b9fee2c7e919c0a9643a4ef3607072da9e4b"
+  },
+  {
+    "original": "scripts/plot_weekend_results.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/plot_weekend_results.py",
+    "sha256": "58fe21248c4e1f34a755cce90a07e9a2dee6118bc0c7f9ef4761eea1f4f24457"
+  },
+  {
+    "original": "scripts/qa_weekend_report.py",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/qa_weekend_report.py",
+    "sha256": "79a2aaeca1597364bb7f2ae572e685c9c28db4a817e8fd06731c69cc3c124e22"
+  },
+  {
+    "original": "scripts/finalize_weekend_report.ps1",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/finalize_weekend_report.ps1",
+    "sha256": "d240e3e11e876149059425653abd3e3e90c2133f1f5ad734cb5e5667877cc890"
+  },
+  {
+    "original": "scripts/export_weekend_word.ps1",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/export_weekend_word.ps1",
+    "sha256": "eaa19e5113c5b42eb6ee80e8532d185caa6e79702db73ef9438f88a7e8692850"
+  },
+  {
+    "original": "scripts/keep_training_awake.ps1",
+    "archived": "docs/archive/assistant_experiments_20261029/scripts/keep_training_awake.ps1",
+    "sha256": "ad6cb098a34e25b239c58274333887f3cb453021810f17f4917a1d53a023c78c"
+  },
+  {
+    "original": "configs/feature_ablation.json",
+    "archived": "docs/archive/assistant_experiments_20261029/configs/feature_ablation.json",
+    "sha256": "18278d3d08e62052bbbdde74de74a4ebb2c15821fac0fd47b97991d7ae7750e6"
+  },
+  {
+    "original": "configs/fusion_pilot.json",
+    "archived": "docs/archive/assistant_experiments_20261029/configs/fusion_pilot.json",
+    "sha256": "f854b56623c8e4e62e7f4b4c438ddb6751426a4d7e48a6a8264c8e3350c9e23a"
+  },
+  {
+    "original": "configs/fusion_confirm.json",
+    "archived": "docs/archive/assistant_experiments_20261029/configs/fusion_confirm.json",
+    "sha256": "39ceec9d7ef22c331d905bd5d511c61977858adc1f00556293f28ab9315b79c5"
+  },
+  {
+    "original": "configs/paper_transfer.json",
+    "archived": "docs/archive/assistant_experiments_20261029/configs/paper_transfer.json",
+    "sha256": "094ff1211202023d3075e0254bac28610634db9741ce77e1bf1d74c59e8b6a77"
+  },
+  {
+    "original": "configs/weekend_distillation.json",
+    "archived": "docs/archive/assistant_experiments_20261029/configs/weekend_distillation.json",
+    "sha256": "1b9e6c33caceac81ab3ff5a0fe907243858cbe97519e8a8cdee64d7c036c731d"
+  },
+  {
+    "original": "src/models/transmixer_paper/test_paper.py",
+    "archived": "docs/archive/assistant_experiments_20261029/src/models/transmixer_paper/test_paper.py",
+    "sha256": "0aa27f23d87358d053fd5bb198bceb6a8465442254d270dedd8e830de25ab88a"
+  },
+  {
+    "original": "src/models/transmixer_fusion/test_protocol.py",
+    "archived": "docs/archive/assistant_experiments_20261029/src/models/transmixer_fusion/test_protocol.py",
+    "sha256": "70a5c4d9438bae19c84f69b46f152930e85bfd1f7618ba68984ee384340ae6b1"
+  },
+  {
+    "original": "src/models/transmixer_ablation/test_feature_ablation.py",
+    "archived": "docs/archive/assistant_experiments_20261029/src/models/transmixer_ablation/test_feature_ablation.py",
+    "sha256": "0e4664e85db42a5ec76979a981de780ee879a8dacd1e021b5a031adebaf8b933"
+  },
+  {
+    "original": "docs/experiments/20261029_SR与局部全局融合_实验审核稿.md",
+    "archived": "docs/archive/assistant_experiments_20261029/docs/experiments/20261029_SR与局部全局融合_实验审核稿.md",
+    "sha256": "3ceccca9ead2f6c954a06ed51ad3f122d394d886d042f6c4cde67021dc6c1a11"
+  },
+  {
+    "original": "docs/experiments/20261029_SR实验矩阵.json",
+    "archived": "docs/archive/assistant_experiments_20261029/docs/experiments/20261029_SR实验矩阵.json",
+    "sha256": "0a6ef387cc82b3dc3005e5bfd51e382928c59b628d2b4eace9675069bc54b847"
+  }
+]
