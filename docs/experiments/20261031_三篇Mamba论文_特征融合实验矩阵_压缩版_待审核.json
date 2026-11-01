@@ -1,0 +1,421 @@
+{
+  "artifact_type": "experiment_review_matrix_not_runner_config",
+  "status": "superseded_by_approved_seed6_plan",
+  "created_date": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "training_authorized": false,
+  "executable": false,
+  "proposed_batch": "fusion_papers_20261031",
+  "definitions": {
+    "R": "existing pure SSM + original fusion + mean pooling (M0)",
+    "A": "existing fixed 1:1 local/global + original fusion + SR2 (M3)"
+  },
+  "protocol": {
+    "dataset": "Houston2013",
+    "split": "official",
+    "train_samples": 2832,
+    "test_samples": 12197,
+    "input": "PCA30 + LiDAR",
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 0,
+    "drop_last": true,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "classification_loss": "CrossEntropyLoss",
+    "seeds": [
+      6,
+      7,
+      8
+    ],
+    "selection": "existing test-OA checkpoint selection at existing evaluation epochs",
+    "spatial_sigma": 3.0,
+    "recorded_spectral_scale": 0.2775005102157593,
+    "spectral_scale_source": "existing native training input statistics; recheck provenance before execution",
+    "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "data_entry": "src/data.py",
+    "evaluation_entries": [
+      "src/evaluator.py",
+      "src/metrics.py"
+    ]
+  },
+  "fusion_settings": {
+    "insertion": "after feature extraction, before original fusion_conv",
+    "modality_channels": 64,
+    "spatial_tokens": 121,
+    "residual_scale_init": 0.0,
+    "B1": {
+      "state_dim": 16,
+      "directions": [
+        "row_major",
+        "reverse_row_major"
+      ],
+      "share_across_modalities": true,
+      "share_across_directions": true
+    },
+    "B2": {
+      "state_dim": 16,
+      "directions": [
+        "row_major",
+        "reverse_row_major"
+      ],
+      "share_across_modalities": false,
+      "share_across_directions": true
+    },
+    "B3": {
+      "expert_channels": [
+        128,
+        16,
+        128
+      ],
+      "gate_input": "GAP(concat(H,L)) + GMP(concat(H,L))",
+      "gate_channels": [
+        128,
+        16,
+        4
+      ],
+      "training_and_inference": "all four experts, dense routing",
+      "consensus": "per-position channel-RMS-normalized expert residual variance",
+      "consensus_eps": 1e-06,
+      "noise": false,
+      "top_k": null,
+      "diversity_loss": false,
+      "epoch_schedule": false
+    }
+  },
+  "groups": [
+    {
+      "id": "G00",
+      "label": "R",
+      "family": "baseline",
+      "planned_action": "reuse",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "reuse_from": {
+        "batch": "sr_native_20261029",
+        "group": "M0"
+      }
+    },
+    {
+      "id": "G01",
+      "label": "A",
+      "family": "baseline",
+      "planned_action": "reuse",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "reuse_from": {
+        "batch": "sr_native_20261029",
+        "group": "M3"
+      }
+    },
+    {
+      "id": "G03",
+      "label": "A + 整段拼接扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "scan_order": "block_concat"
+    },
+    {
+      "id": "G04",
+      "label": "A + B1交错扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "scan_order": "interleave"
+    },
+    {
+      "id": "G05",
+      "label": "R + B1交错扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "scan_order": "interleave"
+    },
+    {
+      "id": "G06",
+      "label": "A + 自条件状态层",
+      "family": "B2",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "ssm_condition_source": "self"
+    },
+    {
+      "id": "G08",
+      "label": "A + B2跨模态B/C/Δ",
+      "family": "B2",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "ssm_condition_source": "cross_bc_delta"
+    },
+    {
+      "id": "G09",
+      "label": "R + B2跨模态B/C/Δ",
+      "family": "B2",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "ssm_condition_source": "cross_bc_delta"
+    },
+    {
+      "id": "G10",
+      "label": "A + 均匀4专家",
+      "family": "B3",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "expert_count": 4,
+      "expert_hidden": 16,
+      "router_hidden": 16,
+      "routing": "uniform",
+      "lambda_balance": 0.0,
+      "lambda_consensus": 0.0
+    },
+    {
+      "id": "G11",
+      "label": "A + 动态4专家",
+      "family": "B3",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "expert_count": 4,
+      "expert_hidden": 16,
+      "router_hidden": 16,
+      "routing": "dense_softmax",
+      "lambda_balance": 0.0,
+      "lambda_consensus": 0.0
+    },
+    {
+      "id": "G13",
+      "label": "A + B3动态4专家 + 均衡 + 共识",
+      "family": "B3",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "expert_count": 4,
+      "expert_hidden": 16,
+      "router_hidden": 16,
+      "routing": "dense_softmax",
+      "lambda_balance": 0.01,
+      "lambda_consensus": 0.001
+    },
+    {
+      "id": "G14",
+      "label": "R + B3动态4专家 + 均衡 + 共识",
+      "family": "B3",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "expert_count": 4,
+      "expert_hidden": 16,
+      "router_hidden": 16,
+      "routing": "dense_softmax",
+      "lambda_balance": 0.01,
+      "lambda_consensus": 0.001
+    }
+  ],
+  "primary_comparisons": [
+    [
+      "G04",
+      "G01"
+    ],
+    [
+      "G08",
+      "G01"
+    ],
+    [
+      "G13",
+      "G01"
+    ]
+  ],
+  "mechanism_comparisons": [
+    [
+      "G04",
+      "G03"
+    ],
+    [
+      "G08",
+      "G06"
+    ],
+    [
+      "G11",
+      "G10"
+    ],
+    [
+      "G13",
+      "G11"
+    ]
+  ],
+  "without_A_comparisons": [
+    [
+      "G05",
+      "G00"
+    ],
+    [
+      "G09",
+      "G00"
+    ],
+    [
+      "G14",
+      "G00"
+    ]
+  ],
+  "interaction_formulas": {
+    "B1": "(G04-G01)-(G05-G00)",
+    "B2": "(G08-G01)-(G09-G00)",
+    "B3": "(G13-G01)-(G14-G00)"
+  },
+  "counts": {
+    "groups": 12,
+    "group_seed_results": 36,
+    "planned_reuse_results": 6,
+    "new_training_runs": 30,
+    "epochs_per_new_run": 100,
+    "total_new_training_epochs": 3000
+  },
+  "priority_rule": {
+    "mean_OA_gain_pp_at_least": 0.5,
+    "positive_seeds_for_strict_priority": 3,
+    "total_seeds": 3,
+    "mechanism_control_positive_seeds_at_least": 2,
+    "is_significance_test": false
+  },
+  "reuse_failure_policy": "report drift and revise counts before any extra baseline training",
+  "excluded": [
+    "paper_20261028 reruns",
+    "B1+B2/B1+B3/B2+B3 combinations",
+    "new seeds",
+    "new datasets",
+    "hyperparameter grid",
+    "PN",
+    "OC",
+    "distillation"
+  ],
+  "papers": [
+    {
+      "name": "MMMamba",
+      "url": "https://arxiv.org/abs/2512.15261v1",
+      "sha256": "b084651ae6dfca56fb2e08702bf645c60f1c47995aaed5e319b07ca41e3b6773"
+    },
+    {
+      "name": "AMTrack",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38195",
+      "sha256": "7e3fabbc9f2efb81e29293d509fe0f258785d1d88b2dc0b74402da69fa8dffa3"
+    },
+    {
+      "name": "SMC-Mamba",
+      "url": "https://arxiv.org/abs/2512.20921v1",
+      "sha256": "9d0eb5a97bc06662197ea49756fce562105b7ce3b70a4fc2c9dee1afe1f093ce"
+    }
+  ],
+  "revision": "compressed_12_groups_v2",
+  "supersedes": "20261031_三篇Mamba论文_特征融合实验矩阵_待审核.json",
+  "mechanism_interpretations": {
+    "G04-G03": "interleaved versus block-concatenated scanning",
+    "G08-G06": "full cross-modal conditioning versus self conditioning; delta contribution not isolated",
+    "G11-G10": "dynamic versus uniform expert routing",
+    "G13-G11": "balance and consensus regularization as a combined package; individual contributions not isolated"
+  },
+  "removed_groups": [
+    {
+      "id": "G02",
+      "reason": "defer independent-to-cross-modal scan decomposition"
+    },
+    {
+      "id": "G07",
+      "reason": "defer separate delta-conditioning contribution"
+    },
+    {
+      "id": "G12",
+      "reason": "defer balance-versus-consensus decomposition"
+    }
+  ],
+  "estimated_serial_training_hours": {
+    "B1": [
+      9,
+      13.5
+    ],
+    "B2": [
+      9,
+      13.5
+    ],
+    "B3": [
+      5,
+      8
+    ],
+    "total": [
+      23,
+      35
+    ],
+    "basis": "structural estimate from previous plan; new modules not benchmarked",
+    "excludes": "implementation and debugging"
+  },
+  "superseded_by": "20261031_三篇Mamba论文_15组_seed6_已批准.json"
+}

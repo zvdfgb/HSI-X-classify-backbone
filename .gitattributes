@@ -1,3 +1,6 @@
 # Keep archived experiment evidence byte-identical for SHA256 verification.
 docs/results/weekend_20261024_25/** -text whitespace=cr-at-eol
 docs/archive/assistant_experiments_20261029/** -text whitespace=cr-at-eol
+docs/results/sr_native_20261029/** -text whitespace=cr-at-eol
+docs/results/fusion_papers_seed6_20261031/** -text whitespace=cr-at-eol
+docs/results/fusion_B1_seed78_20261101/** -text whitespace=cr-at-eol

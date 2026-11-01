@@ -1,0 +1,28 @@
+{
+  "state": "training",
+  "total": 18,
+  "reused": 10,
+  "completed": 10,
+  "new_completed": 0,
+  "new_total": 8,
+  "queue_pid": 67372,
+  "training_pid": 26784,
+  "current": {
+    "id": "G02_seed7",
+    "group": "G02",
+    "seed": 7,
+    "model": "TransMixer_FP_G02",
+    "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\fusion_B1_seed78_20261101\\G02_seed7.json",
+    "reused": false,
+    "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_FP_G02\\Houston2013_model_fusion_B1_seed78_20261101_G02_seed7_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FP_G02\\Houston2013_report_fusion_B1_seed78_20261101_G02_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+    "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_FP_G02\\Houston2013_log_fusion_B1_seed78_20261101_G02_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+    "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_B1_seed78_20261101\\G02_seed7.stdout.log",
+    "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_B1_seed78_20261101\\G02_seed7.stderr.log"
+  },
+  "started_at": "2026-11-01T10:39:50.352945+08:00",
+  "updated_at": "2026-11-01T10:46:03.099031+08:00",
+  "current_epoch": 9,
+  "current_started_at": "2026-11-01T10:39:52.293426+08:00",
+  "current_elapsed_seconds": 370.8
+}

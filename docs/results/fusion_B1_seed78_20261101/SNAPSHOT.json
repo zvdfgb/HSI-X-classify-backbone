@@ -1,0 +1,118 @@
+{
+  "captured_at_beijing": "2026-11-01T10:46:01.048986+08:00",
+  "batch": "fusion_B1_seed78_20261101",
+  "completed_at_capture": 10,
+  "source_state_updated_at": "2026-11-01T10:46:03.099031+08:00",
+  "immutable_snapshot": true,
+  "note": "This is an upload-time snapshot, not a live monitor. Original byte hashes are preserved via .gitattributes. Local data/checkpoints/full logs are excluded.",
+  "files": [
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/manifest.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/manifest.json",
+      "sha256": "5063f980a69a4e6df831a474f088963a57f4fc79d7f6d5ed34086e41fbe45446",
+      "bytes": 36250
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/summary.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/summary.json",
+      "sha256": "9b376e708c797f9e206f50a815c90dddf38b7a7b013fab14fbe285c6a858da77",
+      "bytes": 7129
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/preflight.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/preflight.json",
+      "sha256": "96c7220c117af01569a589ad7bf8db5719d28683bbdc96d73c6ac24505503737",
+      "bytes": 2494
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/reuse_audit.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/reuse_audit.json",
+      "sha256": "0add2a3e125e6926232787fd15d0d94f53fa3fc7a48331d0e7513b0246862322",
+      "bytes": 4422
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/运行状态.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/运行状态.json",
+      "sha256": "5349f2e79176bc1f28d1a10da4f7c17ed88659bd0d1b1a9a309b03d2bc813fdb",
+      "bytes": 1510
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/实验报告.md",
+      "export": "docs/results/fusion_B1_seed78_20261101/实验报告.md",
+      "sha256": "594939d7dcbfcaef9d63668b76304aca43fa6d2f7e1aed382e5bc5f264f256eb",
+      "bytes": 2946
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/逐组结果.csv",
+      "export": "docs/results/fusion_B1_seed78_20261101/逐组结果.csv",
+      "sha256": "2732f2555c8652a6e477a11501809cbb2b86ee08e4b594a40ded5b8134cc1653",
+      "bytes": 2427
+    },
+    {
+      "source": "report/fusion_papers/fusion_B1_seed78_20261101/power_protection.json",
+      "export": "docs/results/fusion_B1_seed78_20261101/power_protection.json",
+      "sha256": "1e3170b368448379f7f22653842734d0cb309a3f55016f1d9608047fc281ce52",
+      "bytes": 387
+    },
+    {
+      "source": "report/TransMixer_PureSSM/Houston2013_report_sr_native_20261029_M0_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G00_seed6.txt",
+      "sha256": "9cb7f9474b8acae8aa17390c5443d77b5e2a2b11f7481f8bd5eac229ca6bd56f",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_SR2/Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G01_seed6.txt",
+      "sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FP_G02/Houston2013_report_fusion_papers_seed6_20261031_G02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G02_seed6.txt",
+      "sha256": "e317cc09be3766120010b1eceea03a9f99153129252bc13858ca3e6ec96bcc97",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FP_G03/Houston2013_report_fusion_papers_seed6_20261031_G03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G03_seed6.txt",
+      "sha256": "f9a737fee128f98d13400d590bf96d00b1058ced3ad9024255b57323d6c2e508",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FP_G04/Houston2013_report_fusion_papers_seed6_20261031_G04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G04_seed6.txt",
+      "sha256": "4dd69d0d3d22a8ac1aaf8f71b344667fade3552a06450ee0cf6da82f8984c448",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FP_G05/Houston2013_report_fusion_papers_seed6_20261031_G05_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G05_seed6.txt",
+      "sha256": "c32c6ea970d480483c8e33517fd9abbb8a7f8843c09f4c9b41c6d10ee2e6e525",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_PureSSM/Houston2013_report_sr_native_20261029_M0_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G00_seed7.txt",
+      "sha256": "f7c59e23a8225b112551dbf117fff45fd587544549e05293db4aac4a2d5977ba",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_SR2/Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G01_seed7.txt",
+      "sha256": "32942e2263f898624148d36924f42002d3fb06bd1f7fa8302cb857251c80782e",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_PureSSM/Houston2013_report_sr_native_20261029_M0_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G00_seed8.txt",
+      "sha256": "00ef2aa30282106d6425b36b891c5d605f4be448c036f911d321ee346529f2a5",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_SR2/Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_B1_seed78_20261101/native_reports/G01_seed8.txt",
+      "sha256": "acc65045f0f5a0d2786ad018f42d483a27b5b0c8df1372a2b66d721a665e5fcd",
+      "bytes": 2704
+    }
+  ]
+}

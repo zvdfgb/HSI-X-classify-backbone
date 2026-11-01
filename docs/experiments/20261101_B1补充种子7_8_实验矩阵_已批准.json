@@ -1,0 +1,286 @@
+{
+  "artifact_type": "experiment_review_matrix_not_runner_config",
+  "status": "approved",
+  "training_authorized": true,
+  "executable": false,
+  "created_date": "2026-11-01",
+  "proposed_batch": "fusion_B1_seed78_20261101",
+  "definitions": {
+    "R": "existing pure SSM + original fusion + mean pooling (M0)",
+    "A": "existing fixed 1:1 local/global + original fusion + SR2 (M3)"
+  },
+  "protocol": {
+    "dataset": "Houston2013",
+    "split": "official",
+    "train_samples": 2832,
+    "test_samples": 12197,
+    "input": "PCA30 + LiDAR",
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 0,
+    "drop_last": true,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "classification_loss": "CrossEntropyLoss",
+    "seeds": [
+      6,
+      7,
+      8
+    ],
+    "selection": "existing test-OA checkpoint selection at existing evaluation epochs",
+    "spatial_sigma": 3.0,
+    "recorded_spectral_scale": 0.2775005102157593,
+    "spectral_scale_source": "existing native training input statistics; recheck provenance before execution",
+    "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "data_entry": "src/data.py",
+    "evaluation_entries": [
+      "src/evaluator.py",
+      "src/metrics.py"
+    ]
+  },
+  "fusion_settings": {
+    "insertion": "after feature extraction, before original fusion_conv",
+    "modality_channels": 64,
+    "spatial_tokens": 121,
+    "residual_scale_init": 0.0,
+    "B1": {
+      "state_dim": 16,
+      "directions": [
+        "row_major",
+        "reverse_row_major"
+      ],
+      "share_across_modalities": true,
+      "share_across_directions": true
+    }
+  },
+  "groups": [
+    {
+      "id": "G00",
+      "label": "R",
+      "family": "baseline",
+      "planned_action": "reuse",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "reuse_from": {
+        "batch": "sr_native_20261029",
+        "group": "M0"
+      },
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "reuse"
+    },
+    {
+      "id": "G01",
+      "label": "A",
+      "family": "baseline",
+      "planned_action": "reuse",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "reuse_from": {
+        "batch": "sr_native_20261029",
+        "group": "M3"
+      },
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "reuse"
+    },
+    {
+      "id": "G02",
+      "label": "A + 独立扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "scan_order": "independent",
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "new_training"
+    },
+    {
+      "id": "G03",
+      "label": "A + 整段拼接扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "scan_order": "block_concat",
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "new_training"
+    },
+    {
+      "id": "G04",
+      "label": "A + B1交错扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "decoupled",
+      "pooling": "SR2",
+      "scan_order": "interleave",
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "new_training"
+    },
+    {
+      "id": "G05",
+      "label": "R + B1交错扫描",
+      "family": "B1",
+      "planned_action": "new_training",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "backbone_mode": "pure_ssm",
+      "pooling": "mean",
+      "scan_order": "interleave",
+      "seed6_action": "reuse_existing_completed_result",
+      "seed7_8_action": "new_training"
+    }
+  ],
+  "new_jobs": [
+    {
+      "group": "G02",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "group": "G03",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "group": "G04",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "group": "G05",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "group": "G02",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "group": "G03",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "group": "G04",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "group": "G05",
+      "seed": 8,
+      "epochs": 100
+    }
+  ],
+  "counts": {
+    "groups": 6,
+    "seeds_after_extension": [
+      6,
+      7,
+      8
+    ],
+    "final_group_seed_results": 18,
+    "reused_seed6_results": 6,
+    "reused_seed7_8_baselines": 4,
+    "new_training_runs": 8,
+    "new_training_epochs": 800
+  },
+  "primary_comparisons": [
+    [
+      "G04",
+      "G01"
+    ]
+  ],
+  "secondary_comparisons": [
+    [
+      "G02",
+      "G01"
+    ],
+    [
+      "G03",
+      "G02"
+    ],
+    [
+      "G04",
+      "G03"
+    ],
+    [
+      "G04",
+      "G02"
+    ],
+    [
+      "G05",
+      "G00"
+    ]
+  ],
+  "interaction_formula": "(G04-G01)-(G05-G00), paired within each seed",
+  "reporting": {
+    "metrics": [
+      "OA",
+      "AA",
+      "Kappa"
+    ],
+    "aggregate": "all seed6/7/8 results; mean and sample standard deviation (ddof=1)",
+    "paired_effects": "each seed difference, mean difference, and number of positive differences; no selection of best seed",
+    "limitations": "three seeds; original test-OA checkpoint selection; exploratory repeatability evidence, not independent testing"
+  },
+  "implementation_gap": "Existing model adapter and old batch queue lock seed6. After design approval, minimally permit seed7/8 only for B1 G02-G05 and use a separate dated batch; preserve model computation, original training/data/evaluation code, and old batch manifests.",
+  "excluded": [
+    "B2",
+    "B3",
+    "seed6 reruns",
+    "baseline reruns",
+    "new hyperparameters",
+    "new datasets",
+    "additional seeds"
+  ],
+  "estimated_training_hours": {
+    "central": 11.8,
+    "observed_range_extrapolation": [
+      8.6,
+      19.2
+    ],
+    "basis": "G02-G05 seed6 observed 65.0/64.5/80.5/143.7 minutes, repeated for two seeds; subject to machine load"
+  },
+  "baseline_reuse_check": {
+    "batch": "sr_native_20261029",
+    "ids": [
+      "M0_seed7",
+      "M0_seed8",
+      "M3_seed7",
+      "M3_seed8"
+    ],
+    "checkpoint_and_report_hashes_match_completed_markers": true
+  },
+  "approved_at": "2026-11-01T10:35:55.787964+08:00",
+  "approval_basis": "用户明确指示：按照你设计的实验，按照之前的实验标准，开始实验。"
+}

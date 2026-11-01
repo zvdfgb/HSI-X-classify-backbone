@@ -1,0 +1,11 @@
+{
+  "approved_at": "2026-11-01T10:35:55.787964+08:00",
+  "previous_batch_manifest": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\fusion_papers\\fusion_papers_seed6_20261031\\manifest.json",
+  "all_previous_pins_verified_before_change": true,
+  "only_authorized_existing_source_change": "src/models/transmixer_fusion_papers/adapter.py",
+  "old_adapter_sha256": "7ace4b9fc71c8f356f994667830470ae7054929da1e8765b27f6cf7f93d248e2",
+  "archive": "adapter_seed6_before_extension.py.txt",
+  "reason": "Permit seeds7/8 only for existing B1 groups G02-G05; no model computation change.",
+  "new_adapter_sha256": "fe62f4ad98038c234d2200973b4a47a9ae21df4b8b3d68cf24b513d8ac255d0e",
+  "verified_at": "2026-11-01T10:38:52.148790+08:00"
+}

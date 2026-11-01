@@ -1,0 +1,19 @@
+{
+  "id": "G09_seed6",
+  "started_at": "2026-11-01T02:19:34.243058+08:00",
+  "finished_at": "2026-11-01T03:22:12.545314+08:00",
+  "elapsed_seconds": 3758.301853900004,
+  "epochs": 100,
+  "checkpoint_sha256": "ae054682a0349e976c2436cdc3dfa98b0fddf7dfa51acad2a82146b531ece43d",
+  "report_sha256": "35be34ff1fd5e7ffa7d67feac4fa275574ec6f5ad214e72cc1e7231f1b7d0341",
+  "metrics": {
+    "oa": 87.76748380749365,
+    "aa": 89.764661914737,
+    "kappa": 86.71642124207133
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "G09",
+    "alpha_h": -0.04326479882001877,
+    "alpha_l": 0.04250824451446533
+  }
+}

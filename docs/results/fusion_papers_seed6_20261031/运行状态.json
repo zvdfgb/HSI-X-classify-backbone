@@ -1,0 +1,16 @@
+{
+  "state": "completed",
+  "total": 15,
+  "reused": 2,
+  "completed": 15,
+  "new_completed": 13,
+  "queue_pid": 41600,
+  "training_pid": null,
+  "current": null,
+  "started_at": "2026-10-31T16:04:57.954976+08:00",
+  "updated_at": "2026-11-01T05:22:58.683846+08:00",
+  "current_epoch": 100,
+  "current_started_at": "2026-11-01T04:59:14.785957+08:00",
+  "current_elapsed_seconds": 1422.8,
+  "finished_at": "2026-11-01T05:22:58.683757+08:00"
+}

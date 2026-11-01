@@ -1,0 +1,449 @@
+{
+  "total": 27,
+  "completed": 27,
+  "runs": [
+    {
+      "id": "M0_seed6",
+      "group": "M0",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_PureSSM\\Houston2013_report_sr_native_20261029_M0_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.69369517094367,
+      "aa": 89.87053055462906,
+      "kappa": 86.63781272993324
+    },
+    {
+      "id": "M0_seed7",
+      "group": "M0",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_PureSSM\\Houston2013_report_sr_native_20261029_M0_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 86.69344920882183,
+      "aa": 88.03214551529389,
+      "kappa": 85.5550306084859
+    },
+    {
+      "id": "M0_seed8",
+      "group": "M0",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_PureSSM\\Houston2013_report_sr_native_20261029_M0_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 86.80003279494957,
+      "aa": 88.73215966365457,
+      "kappa": 85.6655644471468
+    },
+    {
+      "id": "M1_seed6",
+      "group": "M1",
+      "seed": 6,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\results\\weekend_20261024_25\\evidence\\native_reports\\F0.txt",
+      "oa": 88.8907108305321,
+      "aa": 90.54265647323221,
+      "kappa": 87.93548370330527
+    },
+    {
+      "id": "M1_seed7",
+      "group": "M1",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_B0_Decoupled\\Houston2013_report_sr_native_20261029_M1_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 83.80749364597851,
+      "aa": 86.31427273703036,
+      "kappa": 82.41496121010503
+    },
+    {
+      "id": "M1_seed8",
+      "group": "M1",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_B0_Decoupled\\Houston2013_report_sr_native_20261029_M1_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.40698532426006,
+      "aa": 90.37358841718196,
+      "kappa": 87.41814196204248
+    },
+    {
+      "id": "M2_seed6",
+      "group": "M2",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M2_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.58735754693777,
+      "aa": 90.4222858535239,
+      "kappa": 87.60814068289791
+    },
+    {
+      "id": "M2_seed7",
+      "group": "M2",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M2_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.69394113306551,
+      "aa": 90.53108852215658,
+      "kappa": 87.73530171149783
+    },
+    {
+      "id": "M2_seed8",
+      "group": "M2",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M2_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.17717471509387,
+      "aa": 89.51323031845054,
+      "kappa": 86.10482277047986
+    },
+    {
+      "id": "M3_seed6",
+      "group": "M3",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.4079691727474,
+      "aa": 93.50584925960878,
+      "kappa": 91.75534305565003
+    },
+    {
+      "id": "M3_seed7",
+      "group": "M3",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.68549643354923,
+      "aa": 89.33857986484632,
+      "kappa": 86.62561251052117
+    },
+    {
+      "id": "M3_seed8",
+      "group": "M3",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.10363204066573,
+      "aa": 90.09449487537687,
+      "kappa": 87.08268936294795
+    },
+    {
+      "id": "M4_seed6",
+      "group": "M4",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR1\\Houston2013_report_sr_native_20261029_M4_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.50512421087151,
+      "aa": 89.97250136688312,
+      "kappa": 86.43251881271544
+    },
+    {
+      "id": "M4_seed7",
+      "group": "M4",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR1\\Houston2013_report_sr_native_20261029_M4_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.09518734114945,
+      "aa": 88.9668078376349,
+      "kappa": 86.00687583087937
+    },
+    {
+      "id": "M4_seed8",
+      "group": "M4",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR1\\Houston2013_report_sr_native_20261029_M4_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.21841436418791,
+      "aa": 90.42545034574937,
+      "kappa": 87.20737465159306
+    },
+    {
+      "id": "C1_seed6",
+      "group": "C1",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\ExViT\\Houston2013_report_sr_native_20261029_C1_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 89.72698204476511,
+      "aa": 91.40050976798408,
+      "kappa": 88.84623268667595
+    },
+    {
+      "id": "C1_seed7",
+      "group": "C1",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\ExViT\\Houston2013_report_sr_native_20261029_C1_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 89.65319340821513,
+      "aa": 91.01711113101291,
+      "kappa": 88.76740038478292
+    },
+    {
+      "id": "C1_seed8",
+      "group": "C1",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\ExViT\\Houston2013_report_sr_native_20261029_C1_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.54636385996557,
+      "aa": 89.34395911386811,
+      "kappa": 87.56136795300624
+    },
+    {
+      "id": "C2_seed6",
+      "group": "C2",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\MACN\\Houston2013_report_sr_native_20261029_C2_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.66934492088218,
+      "aa": 90.43019219687676,
+      "kappa": 87.69410152481917
+    },
+    {
+      "id": "C2_seed7",
+      "group": "C2",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\MACN\\Houston2013_report_sr_native_20261029_C2_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.2355497253423,
+      "aa": 92.84635922948557,
+      "kappa": 90.48270908496293
+    },
+    {
+      "id": "C2_seed8",
+      "group": "C2",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\MACN\\Houston2013_report_sr_native_20261029_C2_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.35057801098631,
+      "aa": 93.29893710590386,
+      "kappa": 91.69277326452338
+    },
+    {
+      "id": "C3_seed6",
+      "group": "C3",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\DFFNet\\Houston2013_report_sr_native_20261029_C3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.7923259817988,
+      "aa": 90.56475761766791,
+      "kappa": 87.82887730264727
+    },
+    {
+      "id": "C3_seed7",
+      "group": "C3",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\DFFNet\\Houston2013_report_sr_native_20261029_C3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 89.24325653849307,
+      "aa": 90.90335426030713,
+      "kappa": 88.32833471550765
+    },
+    {
+      "id": "C3_seed8",
+      "group": "C3",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\DFFNet\\Houston2013_report_sr_native_20261029_C3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 89.06288431581537,
+      "aa": 90.75749723824022,
+      "kappa": 88.12439664657292
+    },
+    {
+      "id": "C4_seed6",
+      "group": "C4",
+      "seed": 6,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\results\\weekend_20261024_25\\evidence\\native_reports\\T1.txt",
+      "oa": 91.63728785766992,
+      "aa": 92.44717419973708,
+      "kappa": 90.92056917862325
+    },
+    {
+      "id": "C4_seed7",
+      "group": "C4",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\RSCNet\\Houston2013_report_sr_native_20261029_C4_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 90.300893662376,
+      "aa": 91.7659462557625,
+      "kappa": 89.46800819345046
+    },
+    {
+      "id": "C4_seed8",
+      "group": "C4",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\RSCNet\\Houston2013_report_sr_native_20261029_C4_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 89.57120603427072,
+      "aa": 91.146927330437,
+      "kappa": 88.67523814390096
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "candidate": "M1",
+      "control": "M0",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 1.1970156595884305
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -2.8859555628433213
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": 1.6069525293104903
+        }
+      ]
+    },
+    {
+      "candidate": "M2",
+      "control": "M0",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 0.8936623759940971
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": 2.0004919242436756
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": 0.3771419201442967
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "M1",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 3.5172583422152996
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": 3.878002787570722
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -0.30335328359433333
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "M2",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 3.820611625809633
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -1.008444699516275
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": 0.9264573255718602
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "M4",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 4.902844961875886
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": 0.590309092399778
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -0.11478232352217788
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "C1",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 2.6809871279822914
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -1.9676969746658983
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -0.44273181929983707
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "C2",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 3.738624251865218
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -3.5500532917930627
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -4.246945970320581
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "C3",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 3.615643190948603
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -1.5577601049438385
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -0.9592522751496375
+        }
+      ]
+    },
+    {
+      "candidate": "M3",
+      "control": "C4",
+      "n": 3,
+      "differences": [
+        {
+          "seed": 6,
+          "oa_delta_pp": 0.770681315077482
+        },
+        {
+          "seed": 7,
+          "oa_delta_pp": -2.6153972288267653
+        },
+        {
+          "seed": 8,
+          "oa_delta_pp": -1.4675739936049865
+        }
+      ]
+    }
+  ]
+}

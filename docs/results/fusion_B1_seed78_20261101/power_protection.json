@@ -1,0 +1,12 @@
+{
+  "helper_pid": 66496,
+  "scope": "temporary idle sleep/hibernate prevention during B1 seed7/8 batch",
+  "power_plan_changed": false,
+  "display_required": false,
+  "started_at": "2026-11-01T10:39:51.261990+08:00",
+  "state": "active",
+  "native_request_succeeded": true,
+  "ac_connected": true,
+  "battery_percent": 100,
+  "checked_at": "2026-11-01T10:45:51.315975+08:00"
+}

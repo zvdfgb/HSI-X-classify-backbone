@@ -1,0 +1,119 @@
+[
+  {
+    "group": "G02",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 96633,
+    "trainable_parameters": 96633,
+    "peak_synthetic_allocated_MiB": 1104.56298828125,
+    "synthetic_check_seconds": 3.42126979999739
+  },
+  {
+    "group": "G03",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 96633,
+    "trainable_parameters": 96633,
+    "peak_synthetic_allocated_MiB": 1121.72705078125,
+    "synthetic_check_seconds": 2.4058784000008018
+  },
+  {
+    "group": "G04",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 96633,
+    "trainable_parameters": 96633,
+    "peak_synthetic_allocated_MiB": 1121.72705078125,
+    "synthetic_check_seconds": 2.0807894999998098
+  },
+  {
+    "group": "G05",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 85177,
+    "trainable_parameters": 85177,
+    "peak_synthetic_allocated_MiB": 1013.2451171875,
+    "synthetic_check_seconds": 2.347087599999213
+  },
+  {
+    "group": "G06",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 112121,
+    "trainable_parameters": 112121,
+    "peak_synthetic_allocated_MiB": 1105.1875,
+    "synthetic_check_seconds": 1.9965114999977231
+  },
+  {
+    "group": "G07",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 112121,
+    "trainable_parameters": 112121,
+    "peak_synthetic_allocated_MiB": 1112.75,
+    "synthetic_check_seconds": 2.0095696999997017
+  },
+  {
+    "group": "G08",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 112121,
+    "trainable_parameters": 112121,
+    "peak_synthetic_allocated_MiB": 1112.75,
+    "synthetic_check_seconds": 2.008870300000126
+  },
+  {
+    "group": "G09",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 100665,
+    "trainable_parameters": 100665,
+    "peak_synthetic_allocated_MiB": 1004.92431640625,
+    "synthetic_check_seconds": 1.9528862999977719
+  },
+  {
+    "group": "G10",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 99981,
+    "trainable_parameters": 97849,
+    "peak_synthetic_allocated_MiB": 644.79833984375,
+    "synthetic_check_seconds": 0.9211620000023686
+  },
+  {
+    "group": "G11",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 99981,
+    "trainable_parameters": 99981,
+    "peak_synthetic_allocated_MiB": 663.775390625,
+    "synthetic_check_seconds": 0.7348515000012412
+  },
+  {
+    "group": "G12",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 99981,
+    "trainable_parameters": 99981,
+    "peak_synthetic_allocated_MiB": 663.77685546875,
+    "synthetic_check_seconds": 0.72195489999649
+  },
+  {
+    "group": "G13",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 99981,
+    "trainable_parameters": 99981,
+    "peak_synthetic_allocated_MiB": 724.03955078125,
+    "synthetic_check_seconds": 0.7530446000018856
+  },
+  {
+    "group": "G14",
+    "passed": true,
+    "batch_size": 128,
+    "parameters": 88525,
+    "trainable_parameters": 88525,
+    "peak_synthetic_allocated_MiB": 616.2138671875,
+    "synthetic_check_seconds": 0.7457629999989877
+  }
+]

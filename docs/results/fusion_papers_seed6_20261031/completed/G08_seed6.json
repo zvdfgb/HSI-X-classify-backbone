@@ -1,0 +1,19 @@
+{
+  "id": "G08_seed6",
+  "started_at": "2026-11-01T01:16:14.691301+08:00",
+  "finished_at": "2026-11-01T02:19:32.520207+08:00",
+  "elapsed_seconds": 3797.828910299999,
+  "epochs": 100,
+  "checkpoint_sha256": "c51a6e039e3705bd97acd122c917f3b6c2f788c41bbd28538efd68873c11a2d2",
+  "report_sha256": "ace1691874f1c50e6a135f69612fae34a39ecb673b5af567b0e119c6ed360432",
+  "metrics": {
+    "oa": 90.39927851110929,
+    "aa": 91.83164139129218,
+    "kappa": 89.57394921967662
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "G08",
+    "alpha_h": -0.03484964370727539,
+    "alpha_l": 0.05867798253893852
+  }
+}

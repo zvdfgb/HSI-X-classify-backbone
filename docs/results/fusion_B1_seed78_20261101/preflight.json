@@ -1,0 +1,113 @@
+{
+  "seed6_regression": [
+    {
+      "group": "G02",
+      "state_and_logits_bit_exact": true
+    },
+    {
+      "group": "G03",
+      "state_and_logits_bit_exact": true
+    },
+    {
+      "group": "G04",
+      "state_and_logits_bit_exact": true
+    },
+    {
+      "group": "G05",
+      "state_and_logits_bit_exact": true
+    }
+  ],
+  "seed_restrictions": [
+    {
+      "group": "G02",
+      "seed": 9,
+      "rejected": true
+    },
+    {
+      "group": "G06",
+      "seed": 7,
+      "rejected": true
+    },
+    {
+      "group": "G06",
+      "seed": 8,
+      "rejected": true
+    },
+    {
+      "group": "G13",
+      "seed": 7,
+      "rejected": true
+    },
+    {
+      "group": "G14",
+      "seed": 8,
+      "rejected": true
+    }
+  ],
+  "new_jobs": [
+    {
+      "id": "G02_seed7",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1104.4150390625,
+      "seconds": 2.8021927999943728
+    },
+    {
+      "id": "G03_seed7",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1121.7275390625,
+      "seconds": 2.4373770999955013
+    },
+    {
+      "id": "G04_seed7",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1121.7275390625,
+      "seconds": 2.5965589999977965
+    },
+    {
+      "id": "G05_seed7",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 85177,
+      "peak_synthetic_allocated_MiB": 1013.24560546875,
+      "seconds": 2.1107750999944983
+    },
+    {
+      "id": "G02_seed8",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1105.12841796875,
+      "seconds": 2.118535300003714
+    },
+    {
+      "id": "G03_seed8",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1121.7275390625,
+      "seconds": 2.154655599995749
+    },
+    {
+      "id": "G04_seed8",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 96633,
+      "peak_synthetic_allocated_MiB": 1121.7275390625,
+      "seconds": 2.1376283999998122
+    },
+    {
+      "id": "G05_seed8",
+      "passed": true,
+      "batch_size": 128,
+      "parameters": 85177,
+      "peak_synthetic_allocated_MiB": 1013.24560546875,
+      "seconds": 1.980225799998152
+    }
+  ]
+}

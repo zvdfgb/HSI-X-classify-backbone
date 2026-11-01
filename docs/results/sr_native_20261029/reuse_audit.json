@@ -1,0 +1,167 @@
+{
+  "F0": {
+    "accepted": true,
+    "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_B0_Decoupled\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "checkpoint_sha256": "16126859fbc26fe72ab8d96d3bebff5ddb17e3c4533488318447fdb7bfcda6d3",
+    "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\results\\weekend_20261024_25\\evidence\\native_reports\\F0.txt",
+    "report_sha256": "8fc0bd57ae19c180c750d7942fcd5b15338fb31c374729416d559286341e22e6",
+    "config": {
+      "experiment_name": "lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6",
+      "dataset_type": 0,
+      "model_name": "TransMixer_B0_Decoupled",
+      "cuda_device": "cuda:0",
+      "learning_rate": 0.0001,
+      "epochs": 100,
+      "batch_size": 128,
+      "num_workers": 0,
+      "random_seed": 6,
+      "channels": 30,
+      "window_size": 11,
+      "depth": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "ablation_mode": "decoupled",
+      "enable_training": true,
+      "enable_testing": true,
+      "enable_visualization": false,
+      "enable_tsne": false,
+      "enable_erf": false,
+      "enable_email_notification": false,
+      "email_recipient_override": "",
+      "out_features": [
+        15,
+        20,
+        6,
+        8,
+        7,
+        18,
+        10,
+        9
+      ],
+      "data_channels": [
+        144,
+        50,
+        63,
+        244,
+        180,
+        285,
+        166,
+        144
+      ],
+      "lidar_or_sar_channels": [
+        1,
+        1,
+        1,
+        4,
+        4,
+        3,
+        8,
+        8
+      ],
+      "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_B0_Decoupled\\Houston2013_model_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_B0_Decoupled\\Houston2013_log_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_B0_Decoupled\\Houston2013_report_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\TransMixer_B0_Decoupled\\Houston2013_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+      "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\TransMixer_B0_Decoupled\\Houston2013_lab_fusion_20261025_133847_TransMixer_B0_Decoupled_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+    },
+    "trainer_compatibility": "default CE path identical; only inactive optional callbacks were added",
+    "metrics": {
+      "oa": 88.8907108305321,
+      "aa": 90.54265647323221,
+      "kappa": 87.93548370330527
+    }
+  },
+  "T1": {
+    "accepted": true,
+    "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\RSCNet\\Houston2013_model_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "checkpoint_sha256": "0f1b9e9b46d4e7340a9bb0c50ef0c682b6f958d96be050e02976372ed42d9797",
+    "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\results\\weekend_20261024_25\\evidence\\native_reports\\T1.txt",
+    "report_sha256": "e438db3b8ca033850ee49d558e28979b6ec549927310031c7a92b36bf8aac706",
+    "config": {
+      "experiment_name": "weekend_kd_20261025_T1_seed6",
+      "dataset_type": 0,
+      "model_name": "RSCNet",
+      "cuda_device": "cuda:0",
+      "learning_rate": 0.0001,
+      "epochs": 100,
+      "batch_size": 128,
+      "num_workers": 0,
+      "random_seed": 6,
+      "distillation": null,
+      "channels": 30,
+      "window_size": 11,
+      "depth": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        2
+      ],
+      "ablation_mode": "decoupled",
+      "enable_training": true,
+      "enable_testing": true,
+      "enable_visualization": false,
+      "enable_tsne": false,
+      "enable_erf": false,
+      "enable_email_notification": false,
+      "email_recipient_override": "",
+      "out_features": [
+        15,
+        20,
+        6,
+        8,
+        7,
+        18,
+        10,
+        9
+      ],
+      "data_channels": [
+        144,
+        50,
+        63,
+        244,
+        180,
+        285,
+        166,
+        144
+      ],
+      "lidar_or_sar_channels": [
+        1,
+        1,
+        1,
+        4,
+        4,
+        3,
+        8,
+        8
+      ],
+      "model_save_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\RSCNet\\Houston2013_model_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "log_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\RSCNet\\Houston2013_log_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\RSCNet\\Houston2013_report_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "image_path": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\pic\\RSCNet\\Houston2013_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.png",
+      "image_path_web": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\static\\images\\RSCNet\\Houston2013_weekend_kd_20261025_T1_seed6_pca=30_window=11_lr=0.0001_epochs=100.png"
+    },
+    "trainer_compatibility": "byte-identical",
+    "metrics": {
+      "oa": 91.63728785766992,
+      "aa": 92.44717419973708,
+      "kappa": 90.92056917862325
+    }
+  }
+}

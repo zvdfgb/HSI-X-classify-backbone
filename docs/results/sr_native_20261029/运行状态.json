@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "total": 27,
+  "reused": 2,
+  "new_completed": 25,
+  "completed": 27,
+  "queue_pid": 44664,
+  "training_pid": null,
+  "current": null,
+  "updated_at": "2026-10-29T20:22:55.0431706+08:00"
+}

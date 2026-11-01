@@ -1,0 +1,19 @@
+{
+  "id": "G02_seed6",
+  "started_at": "2026-10-31T16:05:00.280919+08:00",
+  "finished_at": "2026-10-31T17:10:00.932077+08:00",
+  "elapsed_seconds": 3900.6511611999995,
+  "epochs": 100,
+  "checkpoint_sha256": "c768f5b4269654b9e57a0b4b9c40e0509453ed690b81f4ff00f3e4724c68b96e",
+  "report_sha256": "e317cc09be3766120010b1eceea03a9f99153129252bc13858ca3e6ec96bcc97",
+  "metrics": {
+    "oa": 92.30958432401411,
+    "aa": 92.91597557442431,
+    "kappa": 91.6472593167618
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "G02",
+    "alpha_h": 0.034108538180589676,
+    "alpha_l": -0.024991413578391075
+  }
+}

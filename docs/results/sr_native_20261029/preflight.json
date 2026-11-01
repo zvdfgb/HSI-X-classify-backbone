@@ -1,0 +1,92 @@
+[
+  {
+    "group": "M0",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 69431,
+    "passed": true
+  },
+  {
+    "group": "M1",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 80887,
+    "passed": true
+  },
+  {
+    "group": "M2",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 69431,
+    "passed": true
+  },
+  {
+    "group": "M3",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 80887,
+    "passed": true
+  },
+  {
+    "group": "M4",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 80887,
+    "passed": true
+  },
+  {
+    "group": "C1",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 233878,
+    "passed": true
+  },
+  {
+    "group": "C2",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 2347161,
+    "passed": true
+  },
+  {
+    "group": "C3",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 263791,
+    "passed": true
+  },
+  {
+    "group": "C4",
+    "batch_size": 128,
+    "shape": [
+      128,
+      15
+    ],
+    "parameters": 3339493,
+    "passed": true
+  }
+]

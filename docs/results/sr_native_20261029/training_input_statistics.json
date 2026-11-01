@@ -1,0 +1,17 @@
+{
+  "6": {
+    "spectral_scale": 0.2775005102157593,
+    "samples": 2832,
+    "source": "native HXDataset training inputs; no labels"
+  },
+  "7": {
+    "spectral_scale": 0.2775005102157593,
+    "samples": 2832,
+    "source": "native HXDataset training inputs; no labels"
+  },
+  "8": {
+    "spectral_scale": 0.2775005102157593,
+    "samples": 2832,
+    "source": "native HXDataset training inputs; no labels"
+  }
+}

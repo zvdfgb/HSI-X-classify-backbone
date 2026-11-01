@@ -1,0 +1,13 @@
+{
+  "helper_pid": 18284,
+  "scope": "temporary idle sleep/hibernate prevention during this training batch",
+  "power_plan_changed": false,
+  "display_required": false,
+  "started_at": "2026-10-31T16:11:07.344785+08:00",
+  "state": "released",
+  "native_request_succeeded": true,
+  "ac_connected": true,
+  "battery_percent": 100,
+  "checked_at": "2026-11-01T05:22:50.593617+08:00",
+  "updated_at": "2026-11-01T05:23:20.600237+08:00"
+}

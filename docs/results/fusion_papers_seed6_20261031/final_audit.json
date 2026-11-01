@@ -1,0 +1,1223 @@
+{
+  "checked_at": "2026-11-01T05:52:23.724562+08:00",
+  "passed": true,
+  "errors": [],
+  "batch": "fusion_papers_seed6_20261031",
+  "total": 15,
+  "reused": 2,
+  "new_training": 13,
+  "queue_finished_at": "2026-11-01T05:22:58.683757+08:00",
+  "wall_elapsed_seconds": 47880.728781,
+  "remaining_seconds": 0,
+  "processes": [
+    {
+      "pid": 41600,
+      "active": false
+    },
+    {
+      "pid": 18284,
+      "active": false
+    },
+    {
+      "pid": 43076,
+      "active": false
+    }
+  ],
+  "power_protection": {
+    "helper_pid": 18284,
+    "scope": "temporary idle sleep/hibernate prevention during this training batch",
+    "power_plan_changed": false,
+    "display_required": false,
+    "started_at": "2026-10-31T16:11:07.344785+08:00",
+    "state": "released",
+    "native_request_succeeded": true,
+    "ac_connected": true,
+    "battery_percent": 100,
+    "checked_at": "2026-11-01T05:22:50.593617+08:00",
+    "updated_at": "2026-11-01T05:23:20.600237+08:00"
+  },
+  "protected_original_file_count": 11,
+  "pins": {
+    "source_and_config_sha256": [
+      {
+        "path": "src/analysis.py",
+        "expected": "53c22029c99d9c7d655e5ba86002140a64d0f7269db004273ed6f066ef797211",
+        "actual": "53c22029c99d9c7d655e5ba86002140a64d0f7269db004273ed6f066ef797211",
+        "matches": true
+      },
+      {
+        "path": "src/config.py",
+        "expected": "cf2e82c1514323a1d879dcb8a6b590df15640d21dc2fa12ac18af71ea8e01fb9",
+        "actual": "cf2e82c1514323a1d879dcb8a6b590df15640d21dc2fa12ac18af71ea8e01fb9",
+        "matches": true
+      },
+      {
+        "path": "src/data.py",
+        "expected": "cecd41de320260943be5230269e33b4398d761ecfb0d4b750651225986fe70d5",
+        "actual": "cecd41de320260943be5230269e33b4398d761ecfb0d4b750651225986fe70d5",
+        "matches": true
+      },
+      {
+        "path": "src/email_notifier.py",
+        "expected": "1473a6f6b7642abc2e34a9eb392c796ae8a2317aaf27499e4119bab90b286adb",
+        "actual": "1473a6f6b7642abc2e34a9eb392c796ae8a2317aaf27499e4119bab90b286adb",
+        "matches": true
+      },
+      {
+        "path": "src/evaluator.py",
+        "expected": "1217bce1d0c82b652d26541b18bec6fb651bc3cbfccd5d858443e96560646866",
+        "actual": "1217bce1d0c82b652d26541b18bec6fb651bc3cbfccd5d858443e96560646866",
+        "matches": true
+      },
+      {
+        "path": "src/metrics.py",
+        "expected": "1f3f331c8dc3613e771a1ec115b37ed9102c4854ba9321ee1d253c9d586fcf37",
+        "actual": "1f3f331c8dc3613e771a1ec115b37ed9102c4854ba9321ee1d253c9d586fcf37",
+        "matches": true
+      },
+      {
+        "path": "src/model_registry.py",
+        "expected": "4e51de7a35d9d3ec544018fbf8037558cdd645bbea6126ffaf87cdbe358a4d5d",
+        "actual": "4e51de7a35d9d3ec544018fbf8037558cdd645bbea6126ffaf87cdbe358a4d5d",
+        "matches": true
+      },
+      {
+        "path": "src/runner.py",
+        "expected": "ab4d5abdb92b9c45def9eaea1e8ca46f8bd456e7b34e2db14701081c3b1889fe",
+        "actual": "ab4d5abdb92b9c45def9eaea1e8ca46f8bd456e7b34e2db14701081c3b1889fe",
+        "matches": true
+      },
+      {
+        "path": "src/show_erf.py",
+        "expected": "e022d8d42b941bc8cd5baff72b6da7a44503f024cc87984ae533461f81e5e465",
+        "actual": "e022d8d42b941bc8cd5baff72b6da7a44503f024cc87984ae533461f81e5e465",
+        "matches": true
+      },
+      {
+        "path": "src/trainer.py",
+        "expected": "ae2afdd4f13e6855be4772b3328dcfaa61ed2789b4f7b639c5e897c22d5c8ef9",
+        "actual": "ae2afdd4f13e6855be4772b3328dcfaa61ed2789b4f7b639c5e897c22d5c8ef9",
+        "matches": true
+      },
+      {
+        "path": "src/tsne.py",
+        "expected": "8fcf6ed57d0c5999c995e5c726ed44bd07e0e0de799e5d278c9b26d918ec6f55",
+        "actual": "8fcf6ed57d0c5999c995e5c726ed44bd07e0e0de799e5d278c9b26d918ec6f55",
+        "matches": true
+      },
+      {
+        "path": "src/visualize_erf.py",
+        "expected": "a4d19d162c1faba7a7f982ca9e7aa440f306408808e798a57cbc87cb4757e41a",
+        "actual": "a4d19d162c1faba7a7f982ca9e7aa440f306408808e798a57cbc87cb4757e41a",
+        "matches": true
+      },
+      {
+        "path": "src/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/asyffnet/adapter.py",
+        "expected": "83458d5b4a5ed672cc70d2467136a2f930655a846d2a1c766ce4c4354141bfb5",
+        "actual": "83458d5b4a5ed672cc70d2467136a2f930655a846d2a1c766ce4c4354141bfb5",
+        "matches": true
+      },
+      {
+        "path": "src/models/asyffnet/model.py",
+        "expected": "600e550335981f5965aedcf5ab6be9c05bcb82a0b20aa5da1ec9fe0fe2872b5b",
+        "actual": "600e550335981f5965aedcf5ab6be9c05bcb82a0b20aa5da1ec9fe0fe2872b5b",
+        "matches": true
+      },
+      {
+        "path": "src/models/asyffnet/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/cnn/adapter.py",
+        "expected": "92fe1ec65fda9f92ad07e4b200070b7cbdfe2c7839aeb6dadfe645f792e6a40c",
+        "actual": "92fe1ec65fda9f92ad07e4b200070b7cbdfe2c7839aeb6dadfe645f792e6a40c",
+        "matches": true
+      },
+      {
+        "path": "src/models/cnn/model.py",
+        "expected": "9c6bc63b790ab176be18c61de2f3f7674322d00f0ef871c6f701cea188c2fec1",
+        "actual": "9c6bc63b790ab176be18c61de2f3f7674322d00f0ef871c6f701cea188c2fec1",
+        "matches": true
+      },
+      {
+        "path": "src/models/cnn/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/dffnet/adapter.py",
+        "expected": "f650a9ce8a7698785aae1861fad45ce2fcef40808a81e89ca69596487d07c4cd",
+        "actual": "f650a9ce8a7698785aae1861fad45ce2fcef40808a81e89ca69596487d07c4cd",
+        "matches": true
+      },
+      {
+        "path": "src/models/dffnet/model.py",
+        "expected": "e83c1b58b0ab9c95b2ad8ebccc9bb483aff0ef3f637c1c72fa7b9adaf3a5ce06",
+        "actual": "e83c1b58b0ab9c95b2ad8ebccc9bb483aff0ef3f637c1c72fa7b9adaf3a5ce06",
+        "matches": true
+      },
+      {
+        "path": "src/models/dffnet/test_dffnet.py",
+        "expected": "aafaae4cef5c5becded54c8cdaa93bb80c98aed920f7776037bed89bbba3e0d6",
+        "actual": "aafaae4cef5c5becded54c8cdaa93bb80c98aed920f7776037bed89bbba3e0d6",
+        "matches": true
+      },
+      {
+        "path": "src/models/dffnet/__init__.py",
+        "expected": "c4a24d26fe532b7cbba623639f03cf7c65797ddba39a575845cf3aa6ee08f3fe",
+        "actual": "c4a24d26fe532b7cbba623639f03cf7c65797ddba39a575845cf3aa6ee08f3fe",
+        "matches": true
+      },
+      {
+        "path": "src/models/exvit/adapter.py",
+        "expected": "e9591f2a5af69f0f73e0bef09eb47c73a02b082b487ad9511bc24be604703e47",
+        "actual": "e9591f2a5af69f0f73e0bef09eb47c73a02b082b487ad9511bc24be604703e47",
+        "matches": true
+      },
+      {
+        "path": "src/models/exvit/model.py",
+        "expected": "6f9de1426abb166da0bddbaa1b7b776f7f830309010e9434f564f15049594d81",
+        "actual": "6f9de1426abb166da0bddbaa1b7b776f7f830309010e9434f564f15049594d81",
+        "matches": true
+      },
+      {
+        "path": "src/models/exvit/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/adapter.py",
+        "expected": "4c28527bb05eea83faee15c430b5bcddf66b25d44c017008eb2824052676bb3c",
+        "actual": "4c28527bb05eea83faee15c430b5bcddf66b25d44c017008eb2824052676bb3c",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/deform_conv.py",
+        "expected": "5898d3689d42d4f622085ce736affef25e79b40dab91fca7c2504b29671aa990",
+        "actual": "5898d3689d42d4f622085ce736affef25e79b40dab91fca7c2504b29671aa990",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/dwt_2d.py",
+        "expected": "b765010b1613dd2899bdd20fe8a6eacb992d327a9ee4afcdcda7c2bc53c0ff83",
+        "actual": "b765010b1613dd2899bdd20fe8a6eacb992d327a9ee4afcdcda7c2bc53c0ff83",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/dwt_3d.py",
+        "expected": "8051d3b66fc10891b5660db7fb28af7a4da8aad022b9f9b258132caebf743ec8",
+        "actual": "8051d3b66fc10891b5660db7fb28af7a4da8aad022b9f9b258132caebf743ec8",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/fae.py",
+        "expected": "623c0084da8c036f07fd805cf329b49d8de8c63325eb403c9c9b6b2ed45492f9",
+        "actual": "623c0084da8c036f07fd805cf329b49d8de8c63325eb403c9c9b6b2ed45492f9",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/model.py",
+        "expected": "8b6aa129aff8ce45de1b3d284fff2d508317fa303861ba957451bea0dfc3c7ad",
+        "actual": "8b6aa129aff8ce45de1b3d284fff2d508317fa303861ba957451bea0dfc3c7ad",
+        "matches": true
+      },
+      {
+        "path": "src/models/fdnet/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/fusatnet/adapter.py",
+        "expected": "ede746c38bfdb13b8656f73169769d7949ffe3e5899092624346788797512027",
+        "actual": "ede746c38bfdb13b8656f73169769d7949ffe3e5899092624346788797512027",
+        "matches": true
+      },
+      {
+        "path": "src/models/fusatnet/model.py",
+        "expected": "257ec468aae7d4e1580e6e55ac3926fff03c7e75d5e17429682efc84f9e51ebe",
+        "actual": "257ec468aae7d4e1580e6e55ac3926fff03c7e75d5e17429682efc84f9e51ebe",
+        "matches": true
+      },
+      {
+        "path": "src/models/fusatnet/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/hctnet/adapter.py",
+        "expected": "25f18a33d0e695efb46d36cfec2b74bbe6569300ca481b0ad1104b773bc3ab82",
+        "actual": "25f18a33d0e695efb46d36cfec2b74bbe6569300ca481b0ad1104b773bc3ab82",
+        "matches": true
+      },
+      {
+        "path": "src/models/hctnet/model.py",
+        "expected": "a5c0dbfc17a142c484bb6a0a28563af3b0b8df4e3820488bf026fa7892805739",
+        "actual": "a5c0dbfc17a142c484bb6a0a28563af3b0b8df4e3820488bf026fa7892805739",
+        "matches": true
+      },
+      {
+        "path": "src/models/hctnet/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/hybridsn/adapter.py",
+        "expected": "804431ba7a8be233d27e3de84337a92f1217c6dd472949ce6f175e91b6cadb21",
+        "actual": "804431ba7a8be233d27e3de84337a92f1217c6dd472949ce6f175e91b6cadb21",
+        "matches": true
+      },
+      {
+        "path": "src/models/hybridsn/model.py",
+        "expected": "76cd1d79388f195d44aef649013f7afdfa6573e6e928cc7cfe94432de7e9124d",
+        "actual": "76cd1d79388f195d44aef649013f7afdfa6573e6e928cc7cfe94432de7e9124d",
+        "matches": true
+      },
+      {
+        "path": "src/models/hybridsn/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/macn/adapter.py",
+        "expected": "d990bda6a3e875074681678e97ea73f44867bd1bebea4e8327ea5804cda17e31",
+        "actual": "d990bda6a3e875074681678e97ea73f44867bd1bebea4e8327ea5804cda17e31",
+        "matches": true
+      },
+      {
+        "path": "src/models/macn/model.py",
+        "expected": "aa82c96abfb47c0453bb27f7243e5de1be68ea4f523ad495f80bcaf383a03d6b",
+        "actual": "aa82c96abfb47c0453bb27f7243e5de1be68ea4f523ad495f80bcaf383a03d6b",
+        "matches": true
+      },
+      {
+        "path": "src/models/macn/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/micf_net/adapter.py",
+        "expected": "bc2fabfa0a34a02a71c3de0cdff472bd4b30552018bdd999b8083caf6a75812e",
+        "actual": "bc2fabfa0a34a02a71c3de0cdff472bd4b30552018bdd999b8083caf6a75812e",
+        "matches": true
+      },
+      {
+        "path": "src/models/micf_net/model.py",
+        "expected": "994653b03d3d0a3a2fd6f53a02a46507f21ac4074181422c4d8560a202e402ec",
+        "actual": "994653b03d3d0a3a2fd6f53a02a46507f21ac4074181422c4d8560a202e402ec",
+        "matches": true
+      },
+      {
+        "path": "src/models/micf_net/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/rscnet/adapter.py",
+        "expected": "40f0797919cefa379706e99967db14076526eb85f16356980843b35326b29e1b",
+        "actual": "40f0797919cefa379706e99967db14076526eb85f16356980843b35326b29e1b",
+        "matches": true
+      },
+      {
+        "path": "src/models/rscnet/model.py",
+        "expected": "572ad3f728df81e9f8cdbac2c79caf73a911cce26f8008b3803304aad658fc21",
+        "actual": "572ad3f728df81e9f8cdbac2c79caf73a911cce26f8008b3803304aad658fc21",
+        "matches": true
+      },
+      {
+        "path": "src/models/rscnet/__init__.py",
+        "expected": "961e482a8c4edfd8fe3eee992b202a44f8cb904da5419fb9b42191c71a091923",
+        "actual": "961e482a8c4edfd8fe3eee992b202a44f8cb904da5419fb9b42191c71a091923",
+        "matches": true
+      },
+      {
+        "path": "src/models/s2enet/adapter.py",
+        "expected": "36b7c798a425a7550e64f7cf13387a8f0f82252501f92b0e9a8b4fba92381f24",
+        "actual": "36b7c798a425a7550e64f7cf13387a8f0f82252501f92b0e9a8b4fba92381f24",
+        "matches": true
+      },
+      {
+        "path": "src/models/s2enet/model.py",
+        "expected": "d9541202f39f11e22f6e708e6d7275c5b9dd6dca4ad9b19f7986ea70d5290d5c",
+        "actual": "d9541202f39f11e22f6e708e6d7275c5b9dd6dca4ad9b19f7986ea70d5290d5c",
+        "matches": true
+      },
+      {
+        "path": "src/models/s2enet/__init__.py",
+        "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": true
+      },
+      {
+        "path": "src/models/sgfnet/adapter.py",
+        "expected": "c323ec5680d258cf64d1c12f0e35f1a0a2ce72b5f7d3b5bc71a5bf0f4018b23a",
+        "actual": "c323ec5680d258cf64d1c12f0e35f1a0a2ce72b5f7d3b5bc71a5bf0f4018b23a",
+        "matches": true
+      },
+      {
+        "path": "src/models/sgfnet/dct.py",
+        "expected": "2c38e201cddd927d7cac933297a8e8ffdd00b79ee1540cecea7cc3392361436d",
+        "actual": "2c38e201cddd927d7cac933297a8e8ffdd00b79ee1540cecea7cc3392361436d",
+        "matches": true
+      },
+      {
+        "path": "src/models/sgfnet/model.py",
+        "expected": "bec6dc75e85dfef7acfd027c60d4e281fa2089d4d60e5c2f657b713cbff05c8e",
+        "actual": "bec6dc75e85dfef7acfd027c60d4e281fa2089d4d60e5c2f657b713cbff05c8e",
+        "matches": true
+      },
+      {
+        "path": "src/models/sgfnet/__init__.py",
+        "expected": "9cf1f8d00c20deae85351377d0a3aa280835b5d0d0eeb5321adce7f5f972fc9f",
+        "actual": "9cf1f8d00c20deae85351377d0a3aa280835b5d0d0eeb5321adce7f5f972fc9f",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_ablation/adapter.py",
+        "expected": "1a3672f8772eba566336407bb06698348c09fef95ed51d672d49d5b4612dba56",
+        "actual": "1a3672f8772eba566336407bb06698348c09fef95ed51d672d49d5b4612dba56",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_ablation/model.py",
+        "expected": "7359bc32d57b1087ff55b1285d8a526d17befebde35cda4068ed385c5201e064",
+        "actual": "7359bc32d57b1087ff55b1285d8a526d17befebde35cda4068ed385c5201e064",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_ablation/__init__.py",
+        "expected": "deab771d25fce5593143d00e4bb9b698d381e548371e790a2cd1f27342edf14c",
+        "actual": "deab771d25fce5593143d00e4bb9b698d381e548371e790a2cd1f27342edf14c",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_deg/adapter.py",
+        "expected": "845c1e6a8f074f4eeee48a8251cffdd151ec407a599b0a4dd9dd4aedbb71ddae",
+        "actual": "845c1e6a8f074f4eeee48a8251cffdd151ec407a599b0a4dd9dd4aedbb71ddae",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_deg/model.py",
+        "expected": "5e1f5ba3f89f7a6f6c5dc4aa99c6de3a08fd995963a4721eb57e85e099ac9b41",
+        "actual": "5e1f5ba3f89f7a6f6c5dc4aa99c6de3a08fd995963a4721eb57e85e099ac9b41",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_deg/__init__.py",
+        "expected": "1d95030f6cbe26d59a8396e62bbbaf52875722947c97dd45389a8a961b53699d",
+        "actual": "1d95030f6cbe26d59a8396e62bbbaf52875722947c97dd45389a8a961b53699d",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_distill/adapter.py",
+        "expected": "0fca1a1ffb3affb04a2406c382a0b8b3fc20eccba3ac596124c36b3137208c25",
+        "actual": "0fca1a1ffb3affb04a2406c382a0b8b3fc20eccba3ac596124c36b3137208c25",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_distill/loss.py",
+        "expected": "211200e30866cb683df27a14e388de421877532913d98dd38c6dd46ec494d142",
+        "actual": "211200e30866cb683df27a14e388de421877532913d98dd38c6dd46ec494d142",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_distill/test_distillation.py",
+        "expected": "e52d61275e94d1ba1f7f9d6491de54694928c47186482a46ab2a29ded91ef2bd",
+        "actual": "e52d61275e94d1ba1f7f9d6491de54694928c47186482a46ab2a29ded91ef2bd",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_distill/__init__.py",
+        "expected": "36930f1c73428001555d74403553ad4f36a365a67e2618b0570849bffd3556e2",
+        "actual": "36930f1c73428001555d74403553ad4f36a365a67e2618b0570849bffd3556e2",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion/adapter.py",
+        "expected": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597",
+        "actual": "eb72397e1bda362d7b58a0f45dfff111d8a72786a68f1805cc9d9f913e0a4597",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion/model.py",
+        "expected": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+        "actual": "b23bd2bd546f273bdaf10d9b059f6180b223746def28b72ccb3289d4bdcbf99b",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion/test_fusion.py",
+        "expected": "bc306daca4941b55f320b3ac77cd33c0410214c2e16de6ee3af23e0e2d304aca",
+        "actual": "bc306daca4941b55f320b3ac77cd33c0410214c2e16de6ee3af23e0e2d304aca",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion/__init__.py",
+        "expected": "6168afc6bea5277a52d98148e5c9db8eadd427a41fe0b27f85b9d93c5446dd02",
+        "actual": "6168afc6bea5277a52d98148e5c9db8eadd427a41fe0b27f85b9d93c5446dd02",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion_papers/adapter.py",
+        "expected": "7ace4b9fc71c8f356f994667830470ae7054929da1e8765b27f6cf7f93d248e2",
+        "actual": "7ace4b9fc71c8f356f994667830470ae7054929da1e8765b27f6cf7f93d248e2",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion_papers/model.py",
+        "expected": "fb2b013dc69c120fcbcabcc7a60faa17a52cc5144605f0b99fb4c833a0e98715",
+        "actual": "fb2b013dc69c120fcbcabcc7a60faa17a52cc5144605f0b99fb4c833a0e98715",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion_papers/test_fusion.py",
+        "expected": "d3a979f3620e8e93a897d79fd73332b09459defd211970514824c9dc023f014a",
+        "actual": "d3a979f3620e8e93a897d79fd73332b09459defd211970514824c9dc023f014a",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_fusion_papers/__init__.py",
+        "expected": "6323eda1c903ae055878ff3f95e65c0d72c90e8c7d10acb17b48de35751e69a2",
+        "actual": "6323eda1c903ae055878ff3f95e65c0d72c90e8c7d10acb17b48de35751e69a2",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_net/adapter.py",
+        "expected": "0b9c2341053f95077b6a2306eceb9024afd9625ce4a2dd78b08d57344798445d",
+        "actual": "0b9c2341053f95077b6a2306eceb9024afd9625ce4a2dd78b08d57344798445d",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_net/model.py",
+        "expected": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+        "actual": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_net/__init__.py",
+        "expected": "d30d772f41734fee37b13a0806f8773b0481d53e5969423153250665e081ec4b",
+        "actual": "d30d772f41734fee37b13a0806f8773b0481d53e5969423153250665e081ec4b",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_paper/adapter.py",
+        "expected": "11e006ef3de267ba1499e004d80235db4fd2419057778b1161ed256127ef52f0",
+        "actual": "11e006ef3de267ba1499e004d80235db4fd2419057778b1161ed256127ef52f0",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_paper/model.py",
+        "expected": "9983233985e66a77a4f1579876be8cf695c87559d9c818557666103ad142b43d",
+        "actual": "9983233985e66a77a4f1579876be8cf695c87559d9c818557666103ad142b43d",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_paper/__init__.py",
+        "expected": "6df6fba75add20720b5f79422a2c1d8528b6d5aab8c30cc409af658c5afff6bd",
+        "actual": "6df6fba75add20720b5f79422a2c1d8528b6d5aab8c30cc409af658c5afff6bd",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_sr/adapter.py",
+        "expected": "d02d0ca3cd678b4e2411d5d0fa75aeead2ff05f01f2efb900a95f42a90f56879",
+        "actual": "d02d0ca3cd678b4e2411d5d0fa75aeead2ff05f01f2efb900a95f42a90f56879",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_sr/test_sr.py",
+        "expected": "bfbb0cb68b080ccef22c46b847873e7ca34f4d9f892b87686017f0a7730e9bda",
+        "actual": "bfbb0cb68b080ccef22c46b847873e7ca34f4d9f892b87686017f0a7730e9bda",
+        "matches": true
+      },
+      {
+        "path": "src/models/transmixer_sr/__init__.py",
+        "expected": "3dedfae3cc0db9fb108569eab53b10c9950766d226cb3eb3eb3a56847b21c4cf",
+        "actual": "3dedfae3cc0db9fb108569eab53b10c9950766d226cb3eb3eb3a56847b21c4cf",
+        "matches": true
+      },
+      {
+        "path": "scripts/train.py",
+        "expected": "b6a1e36fa4aad35442c90a71e3e6398bb87f40e876a7c4512457c5f87ac7e1b1",
+        "actual": "b6a1e36fa4aad35442c90a71e3e6398bb87f40e876a7c4512457c5f87ac7e1b1",
+        "matches": true
+      },
+      {
+        "path": "scripts/prepare_sr_native.py",
+        "expected": "5134acfd84979453858bf4cd5c15bfaf01c9bd9102b1eeaa2ab043c46e4fa244",
+        "actual": "5134acfd84979453858bf4cd5c15bfaf01c9bd9102b1eeaa2ab043c46e4fa244",
+        "matches": true
+      },
+      {
+        "path": "scripts/run_fusion_papers.py",
+        "expected": "4534779a95bf83b35fd3e91b325bcef2a8888459ecd3b4c7ef6d2eabc2762512",
+        "actual": "4534779a95bf83b35fd3e91b325bcef2a8888459ecd3b4c7ef6d2eabc2762512",
+        "matches": true
+      },
+      {
+        "path": "configs/train.json",
+        "expected": "4c8b9655c3d871af3cb12550cbb8e54366d33643bb025bb66021365743359ea9",
+        "actual": "4c8b9655c3d871af3cb12550cbb8e54366d33643bb025bb66021365743359ea9",
+        "matches": true
+      },
+      {
+        "path": "AGENTS.md",
+        "expected": "72f7242cb69bb8d529590c314680d812baea8ae041955b96af3be05a541a0517",
+        "actual": "72f7242cb69bb8d529590c314680d812baea8ae041955b96af3be05a541a0517",
+        "matches": true
+      },
+      {
+        "path": "docs/experiments/20261031_三篇Mamba论文_15组_seed6_已批准.json",
+        "expected": "13d6c0db2bbf2a63ffc0ea3b02a47a75bce105d009631f703bffc59963ef880f",
+        "actual": "13d6c0db2bbf2a63ffc0ea3b02a47a75bce105d009631f703bffc59963ef880f",
+        "matches": true
+      },
+      {
+        "path": "report/fusion_papers/fusion_papers_seed6_20261031/preflight.json",
+        "expected": "c846727018face9985c03a51684cf2b805b0a3d376b1f55a66b32eb1148f957f",
+        "actual": "c846727018face9985c03a51684cf2b805b0a3d376b1f55a66b32eb1148f957f",
+        "matches": true
+      },
+      {
+        "path": "report/fusion_papers/fusion_papers_seed6_20261031/reuse_audit.json",
+        "expected": "b16d9415f4a206d9dea8fbbe560142ad671a591484a238c4806a7b640d4ae294",
+        "actual": "b16d9415f4a206d9dea8fbbe560142ad671a591484a238c4806a7b640d4ae294",
+        "matches": true
+      },
+      {
+        "path": "report/sr_native/sr_native_20261029/training_input_statistics.json",
+        "expected": "1c403e47f5da9e92bb077a579b520feed4b1a78f0ab0394bba5b13006dc93d27",
+        "actual": "1c403e47f5da9e92bb077a579b520feed4b1a78f0ab0394bba5b13006dc93d27",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/sr_native_20261029/M0_seed6.json",
+        "expected": "fcebb51157d304169e33028f1401047cee52a7395d4ba819d215760bdefaf248",
+        "actual": "fcebb51157d304169e33028f1401047cee52a7395d4ba819d215760bdefaf248",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/sr_native_20261029/M3_seed6.json",
+        "expected": "a7af71c615baadbc12f841a8245a540e176bd66385b65f2dc5541cd3ed56998c",
+        "actual": "a7af71c615baadbc12f841a8245a540e176bd66385b65f2dc5541cd3ed56998c",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G02_seed6.json",
+        "expected": "b103890b6f6e8fe5c9e49ba8523f95801abbcfb88db59ae5ec367c85757a88dc",
+        "actual": "b103890b6f6e8fe5c9e49ba8523f95801abbcfb88db59ae5ec367c85757a88dc",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G03_seed6.json",
+        "expected": "8e109a6f06f537511d7af9b5d191084f798069afb945503a48f3f0ad57b98b2a",
+        "actual": "8e109a6f06f537511d7af9b5d191084f798069afb945503a48f3f0ad57b98b2a",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G04_seed6.json",
+        "expected": "7f9f4ff8e6aadf3e20215321fdbb4350434b36d48fb68d871653b46f3ca9a875",
+        "actual": "7f9f4ff8e6aadf3e20215321fdbb4350434b36d48fb68d871653b46f3ca9a875",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G05_seed6.json",
+        "expected": "56772c0fdbdd3204203e5460990acd15097a739e9e40eea95bbfe2d6b4018ed0",
+        "actual": "56772c0fdbdd3204203e5460990acd15097a739e9e40eea95bbfe2d6b4018ed0",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G06_seed6.json",
+        "expected": "32b5b0aa05254f112d91ec32daa032cdb6830db16eeda883a7585a3519b30622",
+        "actual": "32b5b0aa05254f112d91ec32daa032cdb6830db16eeda883a7585a3519b30622",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G07_seed6.json",
+        "expected": "df713f741ddf5bf70df8589a935fac8b6d2208e8b8a916ad8c37d17a02bd6d97",
+        "actual": "df713f741ddf5bf70df8589a935fac8b6d2208e8b8a916ad8c37d17a02bd6d97",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G08_seed6.json",
+        "expected": "1ded1962a6638ad3e9ecac46e035d4864f71942c8a0bb13495fff30195d6b8ed",
+        "actual": "1ded1962a6638ad3e9ecac46e035d4864f71942c8a0bb13495fff30195d6b8ed",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G09_seed6.json",
+        "expected": "d171a402c20e0794d0bc25039329b72073679dcc3eb61a2aaec113fdb19d1d2e",
+        "actual": "d171a402c20e0794d0bc25039329b72073679dcc3eb61a2aaec113fdb19d1d2e",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G10_seed6.json",
+        "expected": "33144df2e287ec4c97ee924530eabfe709549510b33a72718b724e5658714fff",
+        "actual": "33144df2e287ec4c97ee924530eabfe709549510b33a72718b724e5658714fff",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G11_seed6.json",
+        "expected": "10235a0d0e928129367c21b65214965a6284254fdd8fb4bad8a6361b7b5f1b7a",
+        "actual": "10235a0d0e928129367c21b65214965a6284254fdd8fb4bad8a6361b7b5f1b7a",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G12_seed6.json",
+        "expected": "82a779cdf26ffbe32676f3d15a3b20789ce4d75ee7434138fa46936039e78832",
+        "actual": "82a779cdf26ffbe32676f3d15a3b20789ce4d75ee7434138fa46936039e78832",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G13_seed6.json",
+        "expected": "78a6101682288947eb2bec134eee089835f2dfe634da34a4431bb6e6f5d07cd7",
+        "actual": "78a6101682288947eb2bec134eee089835f2dfe634da34a4431bb6e6f5d07cd7",
+        "matches": true
+      },
+      {
+        "path": "configs/runs/fusion_papers_seed6_20261031/G14_seed6.json",
+        "expected": "117b44a5ae80b54eabce7f8c73041cc40e28fa69ab4273e76c0244405cde2381",
+        "actual": "117b44a5ae80b54eabce7f8c73041cc40e28fa69ab4273e76c0244405cde2381",
+        "matches": true
+      }
+    ],
+    "data_sha256": [
+      {
+        "path": "data/Houston2013/houston_hsi.mat",
+        "expected": "7bc47f763d4b981b4c2593d929872265f76869844befbab122ca708534116978",
+        "actual": "7bc47f763d4b981b4c2593d929872265f76869844befbab122ca708534116978",
+        "matches": true
+      },
+      {
+        "path": "data/Houston2013/houston_lidar.mat",
+        "expected": "58110d1ad502d4c6117359dda77b06e204da9de6cff54ef3fdec9eec2733085b",
+        "actual": "58110d1ad502d4c6117359dda77b06e204da9de6cff54ef3fdec9eec2733085b",
+        "matches": true
+      },
+      {
+        "path": "data/Houston2013/houston_gt.mat",
+        "expected": "93f492bb1af3fb35dfb730740523062c42539235cb80a3723d87b75d703e8d14",
+        "actual": "93f492bb1af3fb35dfb730740523062c42539235cb80a3723d87b75d703e8d14",
+        "matches": true
+      },
+      {
+        "path": "data/Houston2013/houston_index.mat",
+        "expected": "65b036488f47d7b02cde0ee8645851d1845fbfb04ae5d9145be00f494f1aa287",
+        "actual": "65b036488f47d7b02cde0ee8645851d1845fbfb04ae5d9145be00f494f1aa287",
+        "matches": true
+      }
+    ]
+  },
+  "runs": [
+    {
+      "id": "G00_seed6",
+      "reused": true,
+      "metrics": {
+        "oa": 87.69369517094367,
+        "aa": 89.87053055462906,
+        "kappa": 86.63781272993324
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true
+      },
+      "checkpoint_sha256": "8f521bbaddea3ff808b8bdd209f348ae3d7b63aa9dbb583c9e185549a8e088e0",
+      "report_sha256": "9cb7f9474b8acae8aa17390c5443d77b5e2a2b11f7481f8bd5eac229ca6bd56f"
+    },
+    {
+      "id": "G01_seed6",
+      "reused": true,
+      "metrics": {
+        "oa": 92.4079691727474,
+        "aa": 93.50584925960878,
+        "kappa": 91.75534305565003
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true
+      },
+      "checkpoint_sha256": "eaecd5efb8cd3dc76b3dfaa1cd5eb0d26f24b594871cf60855aa30b11d31badd",
+      "report_sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878"
+    },
+    {
+      "id": "G02_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 92.30958432401411,
+        "aa": 92.91597557442431,
+        "kappa": 91.6472593167618
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "c768f5b4269654b9e57a0b4b9c40e0509453ed690b81f4ff00f3e4724c68b96e",
+      "report_sha256": "e317cc09be3766120010b1eceea03a9f99153129252bc13858ca3e6ec96bcc97",
+      "stdout_sha256": "1bfe5b4fdeb1f8d896d58b23ed241425d51439faf5a8bbf9689c3f2fb08066e9",
+      "stderr_sha256": "3954fc0905d32fb18cf0c7da781e326d2cb262619aee383229a0885d490d672a",
+      "started_at": "2026-10-31T16:05:00.280919+08:00",
+      "finished_at": "2026-10-31T17:10:00.932077+08:00",
+      "elapsed_seconds": 3900.6511611999995
+    },
+    {
+      "id": "G03_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 92.35877674838075,
+        "aa": 93.22057818523228,
+        "kappa": 91.7013507004047
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "f9f312548911e15bc6a1687db7e60ad606edac6604df0eb7efc7b1ae8a711714",
+      "report_sha256": "f9a737fee128f98d13400d590bf96d00b1058ced3ad9024255b57323d6c2e508",
+      "stdout_sha256": "730fae9e65a454a6048386831f64fdd90d860877c4a50e62580d18556a49d019",
+      "stderr_sha256": "99ed7c0f7da34f41f9f6abe7d593638743daf1b98aca116ca3590778574c4768",
+      "started_at": "2026-10-31T17:10:03.151625+08:00",
+      "finished_at": "2026-10-31T18:14:31.939448+08:00",
+      "elapsed_seconds": 3868.7878361000003
+    },
+    {
+      "id": "G04_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 91.91604492908093,
+        "aa": 92.74131357327788,
+        "kappa": 91.22023181158613
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "acb6634219f875941d97413c77b6b7783868fc86b240aaebf20d9efca13ec692",
+      "report_sha256": "4dd69d0d3d22a8ac1aaf8f71b344667fade3552a06450ee0cf6da82f8984c448",
+      "stdout_sha256": "ab0f1038fbfe404f651b3b34217222c9a1d8ae9ea3d66a4246780999990e182a",
+      "stderr_sha256": "7d69ed37dfe264dee53ea5f8ac42d887f5fd3c97ff132d0dbcd745528f15d703",
+      "started_at": "2026-10-31T18:14:33.608419+08:00",
+      "finished_at": "2026-10-31T19:35:05.133956+08:00",
+      "elapsed_seconds": 4831.525534100001
+    },
+    {
+      "id": "G05_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 87.75108633270476,
+        "aa": 89.99393289610192,
+        "kappa": 86.70077743627095
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "80df1af111ab9fdb2bcc8c87e017c270f777190b535938cca6d2716ebfdc14cc",
+      "report_sha256": "c32c6ea970d480483c8e33517fd9abbb8a7f8843c09f4c9b41c6d10ee2e6e525",
+      "stdout_sha256": "babba91b0242a3ce259e030ccd4355f445eab23495da6ea0306e25c3c4596441",
+      "stderr_sha256": "f0eac47db1dbe9aa01e1aa58d7b0e65c29b99160757b5afd393a801de02db2ea",
+      "started_at": "2026-10-31T19:35:06.856695+08:00",
+      "finished_at": "2026-10-31T21:58:50.030129+08:00",
+      "elapsed_seconds": 8623.173437899997
+    },
+    {
+      "id": "G06_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 91.53070427154219,
+        "aa": 92.54760283487826,
+        "kappa": 90.80245837832612
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "5bb64cc4035dbfa108db1a8b6535e5edf47be05ec84627207e54a72aba7c3103",
+      "report_sha256": "a6e7c2d86f64b205e3244ff5eaf2821e87f5d418309b2ba5ae48618f7b0f1e0a",
+      "stdout_sha256": "9cd0f4dab7882c4e886e029ed705832c0019181d14b5f556722e8e01c678fdfa",
+      "stderr_sha256": "e150924b2ee11d87ead53f1566ce8c97a827808737bfd7b1320fa39e25ccfa5f",
+      "started_at": "2026-10-31T21:58:51.742362+08:00",
+      "finished_at": "2026-11-01T00:12:43.017032+08:00",
+      "elapsed_seconds": 8031.274680399998
+    },
+    {
+      "id": "G07_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 91.28474214970895,
+        "aa": 92.58845534368274,
+        "kappa": 90.53658110396533
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "34a93db2bd2ff6a942a026b3a18348e87826ddf4c1578ca90fb6d34c973ab419",
+      "report_sha256": "12de3a918276feac986ce65dede65f351f97af09de9b7a98501fa4da50467141",
+      "stdout_sha256": "67d11a685cc23c9793cc9800ae6dd341daafc57bde8948d150b7f0e274c94571",
+      "stderr_sha256": "ce782f3891b8153de67ea2190f5b5b69fbef45ac72dc7e5ff6b6da50fd52d16c",
+      "started_at": "2026-11-01T00:12:45.052289+08:00",
+      "finished_at": "2026-11-01T01:16:12.927573+08:00",
+      "elapsed_seconds": 3807.875258400003
+    },
+    {
+      "id": "G08_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 90.39927851110929,
+        "aa": 91.83164139129218,
+        "kappa": 89.57394921967662
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "c51a6e039e3705bd97acd122c917f3b6c2f788c41bbd28538efd68873c11a2d2",
+      "report_sha256": "ace1691874f1c50e6a135f69612fae34a39ecb673b5af567b0e119c6ed360432",
+      "stdout_sha256": "44d7fa62a8eef5a4812e67f4873789cf8cdbda5d7547c6e14999bd99b64b2e55",
+      "stderr_sha256": "110afa56869129055c46253971c9318c1a4dde06a09356114fbb08e9fe7669ba",
+      "started_at": "2026-11-01T01:16:14.691301+08:00",
+      "finished_at": "2026-11-01T02:19:32.520207+08:00",
+      "elapsed_seconds": 3797.828910299999
+    },
+    {
+      "id": "G09_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 87.76748380749365,
+        "aa": 89.764661914737,
+        "kappa": 86.71642124207133
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "ae054682a0349e976c2436cdc3dfa98b0fddf7dfa51acad2a82146b531ece43d",
+      "report_sha256": "35be34ff1fd5e7ffa7d67feac4fa275574ec6f5ad214e72cc1e7231f1b7d0341",
+      "stdout_sha256": "c754655bca4381df42b56c2ac0d7bfc15585e5d033bb3faae15c4d36d3123153",
+      "stderr_sha256": "7c5bed11a512fbfed848e29a249c921778f0f9af7af27cf79af34d7b372a16ee",
+      "started_at": "2026-11-01T02:19:34.243058+08:00",
+      "finished_at": "2026-11-01T03:22:12.545314+08:00",
+      "elapsed_seconds": 3758.301853900004
+    },
+    {
+      "id": "G10_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 92.08001967696975,
+        "aa": 93.24838563863011,
+        "kappa": 91.39904791609061
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "b864db5d8df7f82b1e382bd9c50261c19849c514499c63a73f0c294a809f535d",
+      "report_sha256": "ebdd3049a8d6a0e5095e43f8270d042d9355b45da8d75dbf333ac2a0b6814476",
+      "stdout_sha256": "5b4043a759173677732b55327cd0cecfc0089daddd33f00500ffce1d502d011d",
+      "stderr_sha256": "1bfdcf327c3588db0f473cd519efcf2c8e656a586e74730b3d8030e304267c0d",
+      "started_at": "2026-11-01T03:22:14.700742+08:00",
+      "finished_at": "2026-11-01T03:46:28.000926+08:00",
+      "elapsed_seconds": 1453.3001893000037
+    },
+    {
+      "id": "G11_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 91.42412068541445,
+        "aa": 92.71352322756886,
+        "kappa": 90.68651327608158
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "e66e4778766ee8c96b6d1a1037bce2f70f3c2e28e956b4227dc8fd22bc6e856b",
+      "report_sha256": "210cd7a578c2bd5df080883b7d3e2f2818e0a3e31323900e1332bc4a095c0110",
+      "stdout_sha256": "90a0aafd535728c300846a0dbbad6072ca6bf20bfef3e9b0e587114c79e964b2",
+      "stderr_sha256": "a0b5a8e17033bcef647aa18f6f9c032b1b3b35fae7598c0c42b8154355767d97",
+      "started_at": "2026-11-01T03:46:29.962821+08:00",
+      "finished_at": "2026-11-01T04:10:43.198049+08:00",
+      "elapsed_seconds": 1453.2352265999943
+    },
+    {
+      "id": "G12_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 89.94014921702058,
+        "aa": 91.62137998262526,
+        "kappa": 89.07561164730139
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "9a9c811ac6c822e0abdc909d393a9b7d93ca20f9f15ced595a15d4708b94fa57",
+      "report_sha256": "db73b0f2e0bfb10a967d53066c95ced921f27260c0bf68748a6a9e14c7a0473f",
+      "stdout_sha256": "466af08365f336c78e9d6401be9bd5d51485fcd6e51ff9c89437b631732f932b",
+      "stderr_sha256": "bc82d92a8d602ec10ef23323108190cd717b68118d256e8dd1021083e3c18ce0",
+      "started_at": "2026-11-01T04:10:44.822862+08:00",
+      "finished_at": "2026-11-01T04:34:58.047264+08:00",
+      "elapsed_seconds": 1453.2243936000013
+    },
+    {
+      "id": "G13_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 89.30064770025416,
+        "aa": 91.11750910698161,
+        "kappa": 88.38044631914951
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "654ceef97699a7067f43dc3a67ed072ab2f6f14e3eedf95c65a70890cda2835e",
+      "report_sha256": "42c7db2218d7fd7d22374d46e8446f41cc20667c5f33e30426187494eb426a18",
+      "stdout_sha256": "20750b47c7c836025c98b56722b3d97d1311f84172dee101b7d7734bdc276347",
+      "stderr_sha256": "a90e1cfce21d911349eb39a19f509089ddc135b79457e16eb68b02e94c489586",
+      "started_at": "2026-11-01T04:34:59.720382+08:00",
+      "finished_at": "2026-11-01T04:59:13.131121+08:00",
+      "elapsed_seconds": 1453.410801799997
+    },
+    {
+      "id": "G14_seed6",
+      "reused": false,
+      "metrics": {
+        "oa": 87.5625153726326,
+        "aa": 89.80283555212183,
+        "kappa": 86.4950521183716
+      },
+      "checks": {
+        "config_dataset_type": true,
+        "config_epochs": true,
+        "config_batch_size": true,
+        "config_random_seed": true,
+        "config_channels": true,
+        "config_window_size": true,
+        "config_learning_rate": true,
+        "config_num_workers": true,
+        "checkpoint_hash": true,
+        "report_hash": true,
+        "native_metrics_match_summary": true,
+        "native_metrics_match_completion": true,
+        "epoch100_all22_batches": true,
+        "native_report_success": true,
+        "experiment_completed": true,
+        "marker_100_epochs": true
+      },
+      "checkpoint_sha256": "88d95dc4e1e185ca3d886f6555acfc486a8797c96b732dddd5a203eb238a8f2d",
+      "report_sha256": "46b9ce0fc087b40728037c02c156d9ba943d189170979ba5f5d60b7d0e55aeed",
+      "stdout_sha256": "e5f525a24f39610037a75b3f7bc0da97428c890aa7b72d4cceac6019f8d4029b",
+      "stderr_sha256": "9a189e57f4526884ce7c5b2999b6aae8766c0e5ebc950e4251c03ef15d4c3999",
+      "started_at": "2026-11-01T04:59:14.785957+08:00",
+      "finished_at": "2026-11-01T05:22:58.066464+08:00",
+      "elapsed_seconds": 1423.2805068000016
+    }
+  ],
+  "scope": "Read-only evidence and hash audit; no training or evaluation executed."
+}

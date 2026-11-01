@@ -1,0 +1,34 @@
+{
+  "id": "G10_seed6",
+  "started_at": "2026-11-01T03:22:14.700742+08:00",
+  "finished_at": "2026-11-01T03:46:28.000926+08:00",
+  "elapsed_seconds": 1453.3001893000037,
+  "epochs": 100,
+  "checkpoint_sha256": "b864db5d8df7f82b1e382bd9c50261c19849c514499c63a73f0c294a809f535d",
+  "report_sha256": "ebdd3049a8d6a0e5095e43f8270d042d9355b45da8d75dbf333ac2a0b6814476",
+  "metrics": {
+    "oa": 92.08001967696975,
+    "aa": 93.24838563863011,
+    "kappa": 91.39904791609061
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "G10",
+    "alpha_h": 0.10691777616739273,
+    "alpha_l": 0.11674977838993073,
+    "eval_samples": 12197,
+    "mean_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "mean_weight_entropy": 1.3862932920455933,
+    "mean_expert_rms": [
+      1.1228153705596924,
+      1.1132086515426636,
+      1.302319049835205,
+      0.9547126293182373
+    ],
+    "mean_pairwise_cosine": 0.15066342055797577
+  }
+}
