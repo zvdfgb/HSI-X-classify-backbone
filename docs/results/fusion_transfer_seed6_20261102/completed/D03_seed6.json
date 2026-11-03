@@ -1,0 +1,29 @@
+{
+  "id": "D03_seed6",
+  "seed": 6,
+  "started_at": "2026-11-02T17:30:53.376693+08:00",
+  "finished_at": "2026-11-02T17:56:07.068421+08:00",
+  "elapsed_seconds": 1513.691747600009,
+  "epochs": 100,
+  "metrics": {
+    "oa": 91.30113962449784,
+    "aa": 92.64597791654504,
+    "kappa": 90.55467018832515
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "D03",
+    "alpha_h": -0.08487728238105774,
+    "h_update_rms": 0.31678035855293274,
+    "l_update_rms": 0.1927921175956726,
+    "aux_ce": 1.0435105562210083,
+    "reconstruction": 0.3213202953338623,
+    "decomposition_mi": -0.18993747234344482,
+    "decomposition_critic_fit": -0.843809962272644,
+    "alpha_l": 0.04887551814317703
+  },
+  "checkpoint_sha256": "7a5ae9b7a84b407c6429ca548c4cb31e219847204d7701f54273b70191d71dda",
+  "report_sha256": "7e08a2062827a87890d035536ae2ec32636bb49bb37ee79b7d2f719d0808f3c2",
+  "stdout_sha256": "58c237c232c5e3b5d26442d4b7b2eba21f7c1a863548e0919a26ba0919401ce2",
+  "stderr_sha256": "fa04db6bf12dc6f7bb7e451b786ea17e3e3eb9d439ddfad847d543c6f0d4eb36",
+  "native_log_sha256": "d552e6ac86546db3c1779532c6f62af650a853c09e10fd0729107d7a000ae6f4"
+}

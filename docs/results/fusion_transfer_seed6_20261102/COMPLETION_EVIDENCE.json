@@ -1,0 +1,224 @@
+{
+  "captured_at_beijing": "2026-11-03T17:33:29.559083+08:00",
+  "all_passed": true,
+  "new_training_runs": 12,
+  "runs": [
+    {
+      "id": "F01_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:13<00:00,  1.68batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "81fdbeb08bca7a76709565372a98cb7e9e9a37aa6891ac589bb85d4820599425",
+        "report": "e2ddadc53e4add28221dd936e6b0a0422b11bba985c98a06ea8c2bc3fe54d4b1",
+        "stdout": "b56ef08e2450ee163181dccb6f78f294b4dbc854d1ba7203ee839bcbe55589a4",
+        "stderr": "e816b0f85ae3faba2f63d3227b802ec29026d2a83d791491ba12a8aef3bf3ebf",
+        "native_log": "d3cb79fcbc3c47e55a69e30f88eca4471b431b18d8a2536b8917e798a893b340"
+      },
+      "metrics": {
+        "oa": 91.08797245224235,
+        "aa": 92.5895386963006,
+        "kappa": 90.32328183835165
+      }
+    },
+    {
+      "id": "F02_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:11<00:00,  1.86batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "dbf5a6dedf853964b109b3118343c8b707eda770fcb1e820d1293ccafec345ba",
+        "report": "bc6ed1b4bf9dc3d6602175c69b22dfe4b3c162e3d16d989cd51b3f49e964683b",
+        "stdout": "b89afa2f203508d2e249b2841510de5fe1c6d7f4a702b38026f8a37765ebc7f2",
+        "stderr": "d2a254073e397dea19caa24ccfb96aca6fbf33fe9e3989685f96e2c35ca89418",
+        "native_log": "5b625d14962f7c391d6c1d48c982f148b90f9b0f69e0f5ef2a6080653cf4fcca"
+      },
+      "metrics": {
+        "oa": 90.33368861195376,
+        "aa": 91.79297882927823,
+        "kappa": 89.50209155684873
+      }
+    },
+    {
+      "id": "F03_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.77batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "3dd160bd28a151eff46e666300ba4402c32f53337fa8ce0dbebf0f0d04e73d73",
+        "report": "2cd074440a348754e2998503a5dde436b7c6d3370a370f311d1eb9f7383955d9",
+        "stdout": "679f25816396bc257795b774429514fb66817fe71ce87f9b0353e41532cdad9b",
+        "stderr": "5705e8615c0aa6fd5fc7e55e01a81f6579354e398fc30c7407f0f2b626253ca4",
+        "native_log": "61a9abe6cb3c03ae67b8cb1db7e83c554c1482f87d3059934c2e691ae506ef34"
+      },
+      "metrics": {
+        "oa": 91.70287775682546,
+        "aa": 92.97231815553975,
+        "kappa": 90.99093895317506
+      }
+    },
+    {
+      "id": "F04_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.79batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "637b1fac33a6221544062351c665de63ea6a21ee25d12c467d487cbd1af22c10",
+        "report": "90109dfe03589b57ed2d39a5e7f5c33029e2798514769513d8b69a1ee0ca51fe",
+        "stdout": "4313e0b288e3ca352414539a97e62071df67c091329ae7917e4e72906e267b87",
+        "stderr": "111cdf04e5e143dfffa72a1f13b59c454c1169fe5fcc39683821fb79962c4eb3",
+        "native_log": "226d5e278f29508125857cbca4bf64895ddbd4e6a3b18e77725b19a71ec00146"
+      },
+      "metrics": {
+        "oa": 91.84225629253095,
+        "aa": 92.985755141898,
+        "kappa": 91.14186179849997
+      }
+    },
+    {
+      "id": "U01_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.75batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "e4a231227f910e3e014a75ffad9fc9b1c6a2fe0d3ac15fb1b8935b785e6113ea",
+        "report": "bb209e36e34db37385ea2faae5441b62a7c534636336a0db72c3c5436cfa7740",
+        "stdout": "b54c7f0138c92ec7a8334f06c94b848c1d39e5af1f574014251266d2f3c5fbce",
+        "stderr": "9d2c9e59b31dd47842e33935d09adcd8b94af5c9d2477fb8283abad291ac5797",
+        "native_log": "0ef57770b04e183d7d9d976eab46f7d455b0051db321c08796dc07cde7f086b3"
+      },
+      "metrics": {
+        "oa": 90.24350250061491,
+        "aa": 91.71997870729494,
+        "kappa": 89.40590144462101
+      }
+    },
+    {
+      "id": "U02_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.83batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "361af08ff4ab5498ee4a8bbf407d10b42f3b3e10989b1f9b0df8ae72bb9d44ed",
+        "report": "29387f777098083bc02b701ebc8d9fb88389dfe096bcfb9388a9c226b39d1bae",
+        "stdout": "250ea5683322cf5582ed720685f9518fc751cb3a3b562e34cf97a91efe1274d9",
+        "stderr": "dcf29db6fff07fa8a5ae0bd66ce8fb00be5fc5ca3056a173be76b4d25cf8f952",
+        "native_log": "000b950818c39b5673d1045ab76d96f0148e5ed178c4a7a26eb210ae55ae7d97"
+      },
+      "metrics": {
+        "oa": 90.42387472329261,
+        "aa": 91.86525266660169,
+        "kappa": 89.60200303514945
+      }
+    },
+    {
+      "id": "U03_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.83batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "83d3016f23c9c3910e178618b86d604b2116efe9b555c428fb8d7b80992969c5",
+        "report": "11b39403be609071cfb4ba3e544eb26a3acfa20c8e3954ad93e9d0fc939f9faf",
+        "stdout": "7d1833695cb89ec98b902bbf3c126a29793f980a902d8fcbf24a6649595c118a",
+        "stderr": "78585c67d8f2bcb8aa5a9c2ab1bc8a77980a438e680c8c7a627a701fa5af5d02",
+        "native_log": "b8a4b3aeb51085d579f6bbcae41d3fdad964245259dd6a9c230480c5b2b825b3"
+      },
+      "metrics": {
+        "oa": 88.275805525949,
+        "aa": 90.28437818405902,
+        "kappa": 87.26873755725961
+      }
+    },
+    {
+      "id": "U04_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.79batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "65f22c4d61c67466a82cf4ae2c6d8ef8485e0f15f08f37fbcb5d6304e4a32151",
+        "report": "2489c1ecb28cccb577b867b8c7afc257568d17cd44c256f984debea5d0242c90",
+        "stdout": "e9bc0c51fd2adbe18caa7a1581baa3e38a70d594c1f4837a27ea0a203e16e957",
+        "stderr": "ce511aea17ea73e3021db4b69ce545387a8b341bfd8576543bcda5a4f351bf26",
+        "native_log": "30ce2c2a143754da38ad3a75a70062e957d2bc5a597e04dcf277f0e4fee48c3b"
+      },
+      "metrics": {
+        "oa": 88.43978027383783,
+        "aa": 90.35838948390477,
+        "kappa": 87.44706967308916
+      }
+    },
+    {
+      "id": "D01_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.76batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "4d6129694c4fda086aa11fd79bd18d6d903ea3413a595f9db3fde0edd7549809",
+        "report": "50aed7ba3a1368dec4d28c5cf83dd9586852b5ed5df7d5d9328347e5a46b32c0",
+        "stdout": "3a17a7f4caefd411979f98768d91ebf09c740578ca9a84a41a7d62d70e412b41",
+        "stderr": "1d30f157fd939a2956c01a60e01b040337292e05b59d16414f95393c629ffb4c",
+        "native_log": "7a44fc8e1c90c9d3e99603e3efa725b06977ff59449dcf365c748a59d96af9ad"
+      },
+      "metrics": {
+        "oa": 91.58809543330328,
+        "aa": 92.7529542085326,
+        "kappa": 90.86476433796446
+      }
+    },
+    {
+      "id": "D02_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.75batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "866df21ad7b1fbd3ec80bd4320a9ea3dc3423e0a652e88fbfbfc8ba46aa45ac8",
+        "report": "a2c886f75e21b45ab6966472f3c941d436a8e26a457d9e67a99bfa082b874a44",
+        "stdout": "d3cb318df982c86b4b18c3d5768db6a5f41d79670562e01559e1dd74caf3bdfb",
+        "stderr": "23b456b462390208093ae119f35b2a3988d27ce177e840d05bc1179a0d440c26",
+        "native_log": "df1736e05a7b84dff2d6dfda97de96efac1d489f85815b7b254ec2001e3db672"
+      },
+      "metrics": {
+        "oa": 90.85020906780356,
+        "aa": 92.25454636267477,
+        "kappa": 90.06322636619421
+      }
+    },
+    {
+      "id": "D03_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:13<00:00,  1.69batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "7a5ae9b7a84b407c6429ca548c4cb31e219847204d7701f54273b70191d71dda",
+        "report": "7e08a2062827a87890d035536ae2ec32636bb49bb37ee79b7d2f719d0808f3c2",
+        "stdout": "58c237c232c5e3b5d26442d4b7b2eba21f7c1a863548e0919a26ba0919401ce2",
+        "stderr": "fa04db6bf12dc6f7bb7e451b786ea17e3e3eb9d439ddfad847d543c6f0d4eb36",
+        "native_log": "d552e6ac86546db3c1779532c6f62af650a853c09e10fd0729107d7a000ae6f4"
+      },
+      "metrics": {
+        "oa": 91.30113962449784,
+        "aa": 92.64597791654504,
+        "kappa": 90.55467018832515
+      }
+    },
+    {
+      "id": "D04_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:14<00:00,  1.52batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "2a26ad2b5f4178beecbcf51a546e2cef1e346576f3a1e975247d37568b892fbd",
+        "report": "8c3915d5ff5161f685c174f83cca0c8772d8ab1fadf17c6c2d634bdf0794c5b7",
+        "stdout": "37e11c15e4631e4ee7f5f581c6aa7f56edefd71c2c92375b883b895794bef6cf",
+        "stderr": "cc365511176dddeee4b7e0369779c359656534e522703b416014bfaec1d0b68a",
+        "native_log": "4810a156b283bf61c699f7289f72743d19a7f86217a45cfad804963f2ec85bbd"
+      },
+      "metrics": {
+        "oa": 91.72747396900877,
+        "aa": 92.9051229167213,
+        "kappa": 91.01741409346938
+      }
+    }
+  ],
+  "note": "Excerpts and SHA256 read from original full logs; full logs and checkpoints remain local."
+}

@@ -1,0 +1,412 @@
+{
+  "status": "approved",
+  "training_authorized": true,
+  "approved_at": "2026-11-02T16:58:25.581844+08:00",
+  "authorization": "User explicitly requested completion of current batch followed by seeds 7 and 8 for the same full matrix; future experiments require at least seeds 6,7,8.",
+  "run_tag": "fusion_transfer_seed78_20261102",
+  "source_batch": "fusion_transfer_seed6_20261102",
+  "source_plan": "docs/experiments/20261102_三篇融合机制_实验矩阵_已批准.json",
+  "protocol": {
+    "dataset": "Houston2013",
+    "split": "official",
+    "train_samples": 2832,
+    "test_samples": 12197,
+    "pca_channels": 30,
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 0,
+    "optimizer": "native AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "data_entry": "src/data.py",
+    "evaluation_entries": [
+      "src/evaluator.py",
+      "src/metrics.py"
+    ],
+    "selection": "unchanged native test-OA checkpoint selection and evaluation epochs",
+    "backbone": "A: native local/global fixed 1:1 channel split + SR2",
+    "sr_spatial_sigma": 3.0,
+    "sr_spectral_scale": 0.2775005102157593,
+    "initialization": "from scratch; original backbone construction order; verify original initial tensor equality",
+    "randomness": "preserve native settings; same seed does not imply same trajectory after new random operations"
+  },
+  "groups": [
+    {
+      "id": "A00",
+      "direction": "baseline",
+      "seed": 6,
+      "epochs": 100,
+      "action": "reuse_after_audit",
+      "module": "A",
+      "loss": "CE"
+    },
+    {
+      "id": "F01",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "full-band weighted fusion + weighted full-band shallow compensation",
+      "loss": "CE",
+      "role": "capacity and ordinary fusion control"
+    },
+    {
+      "id": "F02",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion without shallow compensation",
+      "loss": "CE",
+      "role": "frequency fusion alone"
+    },
+    {
+      "id": "F03",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion + weighted full-band shallow compensation",
+      "loss": "CE",
+      "role": "full-band compensation control"
+    },
+    {
+      "id": "F04",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion + weighted high-frequency shallow compensation",
+      "loss": "CE",
+      "role": "full mechanism adaptation"
+    },
+    {
+      "id": "U01",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "deterministic dual-head content representation and ordinary content gate",
+      "loss": "CE",
+      "role": "ordinary gating and active-capacity control"
+    },
+    {
+      "id": "U02",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "Gaussian UAM and channel/spatial modulation; confidence fixed at one",
+      "loss": "CE + 0.001*KL",
+      "role": "probabilistic representation without reliability gating"
+    },
+    {
+      "id": "U03",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "Gaussian UAM + spatial confidence-guided CGM",
+      "loss": "CE + 0.001*KL",
+      "role": "full mechanism adaptation"
+    },
+    {
+      "id": "U04",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "U03 with confidence map spatially averaged and broadcast",
+      "loss": "CE + 0.001*KL",
+      "role": "global versus spatial confidence control"
+    },
+    {
+      "id": "D01",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "32 shared + 32 unique channels per modality; task refiners",
+      "loss": "CE",
+      "role": "projection capacity control; names do not prove factorization"
+    },
+    {
+      "id": "D02",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D01 + reconstruction and branch auxiliary classification",
+      "loss": "CE + 0.10*aux_CE + 0.01*reconstruction",
+      "role": "ordinary auxiliary supervision control"
+    },
+    {
+      "id": "D03",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D02 + shared/unique MI decomposition",
+      "loss": "D02_loss + 0.01*decomposition_MI + 0.01*decomposition_critic_fit",
+      "role": "factorization objective"
+    },
+    {
+      "id": "D04",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D03 + label-conditioned task-relevance MI",
+      "loss": "D03_loss + 0.01*task_MI + 0.01*task_critic_fit",
+      "role": "full FTRE-core adaptation"
+    }
+  ],
+  "new_jobs": [
+    {
+      "id": "F01_seed7",
+      "group": "F01",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "F02_seed7",
+      "group": "F02",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "F03_seed7",
+      "group": "F03",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "F04_seed7",
+      "group": "F04",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "U01_seed7",
+      "group": "U01",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "U02_seed7",
+      "group": "U02",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "U03_seed7",
+      "group": "U03",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "U04_seed7",
+      "group": "U04",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "D01_seed7",
+      "group": "D01",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "D02_seed7",
+      "group": "D02",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "D03_seed7",
+      "group": "D03",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "D04_seed7",
+      "group": "D04",
+      "seed": 7,
+      "epochs": 100
+    },
+    {
+      "id": "F01_seed8",
+      "group": "F01",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "F02_seed8",
+      "group": "F02",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "F03_seed8",
+      "group": "F03",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "F04_seed8",
+      "group": "F04",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "U01_seed8",
+      "group": "U01",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "U02_seed8",
+      "group": "U02",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "U03_seed8",
+      "group": "U03",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "U04_seed8",
+      "group": "U04",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "D01_seed8",
+      "group": "D01",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "D02_seed8",
+      "group": "D02",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "D03_seed8",
+      "group": "D03",
+      "seed": 8,
+      "epochs": 100
+    },
+    {
+      "id": "D04_seed8",
+      "group": "D04",
+      "seed": 8,
+      "epochs": 100
+    }
+  ],
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "supplement_seeds": [
+    7,
+    8
+  ],
+  "new_training_runs": 24,
+  "reused_results_after_seed6_completion": 15,
+  "final_results": 39,
+  "baseline_seed78_audit": [
+    {
+      "id": "A00_seed7",
+      "source": {
+        "id": "M3_seed7",
+        "group": "M3",
+        "seed": 7,
+        "model": "TransMixer_SR2",
+        "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed7.json",
+        "reused": false,
+        "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.pth",
+        "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed7.stdout.log",
+        "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed7.stderr.log"
+      },
+      "seal": {
+        "id": "M3_seed7",
+        "reused": false,
+        "verified": true,
+        "checkpoint_sha256": "a2c0f2931c9c2c40d5a56df2145d33a721ea4e2cbca25b262d2e3df79eddd49f",
+        "report_sha256": "32942e2263f898624148d36924f42002d3fb06bd1f7fa8302cb857251c80782e"
+      },
+      "metrics": {
+        "oa": 87.68549643354923,
+        "aa": 89.33857986484632,
+        "kappa": 86.62561251052117
+      }
+    },
+    {
+      "id": "A00_seed8",
+      "source": {
+        "id": "M3_seed8",
+        "group": "M3",
+        "seed": 8,
+        "model": "TransMixer_SR2",
+        "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed8.json",
+        "reused": false,
+        "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.pth",
+        "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+        "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed8.stdout.log",
+        "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed8.stderr.log"
+      },
+      "seal": {
+        "id": "M3_seed8",
+        "reused": false,
+        "verified": true,
+        "checkpoint_sha256": "304a686b7d8a09928a28022236ad9db222cab273d2ce2f8a97a22aa19a7d4937",
+        "report_sha256": "acc65045f0f5a0d2786ad018f42d483a27b5b0c8df1372a2b66d721a665e5fcd"
+      },
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 90.09449487537687,
+        "kappa": 87.08268936294795
+      }
+    }
+  ],
+  "comparisons": {
+    "primary": [
+      "F04-A00",
+      "U03-A00",
+      "D04-A00"
+    ],
+    "mechanism": [
+      "F03-F01",
+      "F04-F03",
+      "F04-F02",
+      "U03-U01",
+      "U03-U02",
+      "U03-U04",
+      "D04-D02",
+      "D03-D02",
+      "D04-D03"
+    ],
+    "confounding_notes": [
+      "F04-F02 includes compensation branch capacity",
+      "U03-U01 includes sampling, KL and representation differences",
+      "capacity audit required before strict single-factor claims",
+      "FINE adaptation does not reproduce official optimization"
+    ]
+  },
+  "execution_policy": "Wait for current batch completion, original completion audit and all native training PIDs to exit; never overlap or silently retry. Preserve all architecture/loss/data/optimizer/selection settings; only change seed and unique batch name.",
+  "authorized_deferred_source_changes": [
+    "src/models/transmixer_fusion_v2/adapter.py: allow seeds6/7/8 without changing computation",
+    "AGENTS.md: future experiments require at least seeds6/7/8"
+  ],
+  "aggregation": "For each group report all seed6/7/8 OA/AA/Kappa and mean +/- sample std ddof=1; paired per-seed differences, mean differences and positive counts; preserve test-OA selection limitation."
+}

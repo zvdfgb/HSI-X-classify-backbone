@@ -1,0 +1,27 @@
+{
+  "id": "U04_seed6",
+  "seed": 6,
+  "started_at": "2026-11-02T16:15:36.000545+08:00",
+  "finished_at": "2026-11-02T16:40:39.588248+08:00",
+  "elapsed_seconds": 1503.5872722999775,
+  "epochs": 100,
+  "metrics": {
+    "oa": 88.43978027383783,
+    "aa": 90.35838948390477,
+    "kappa": 87.44706967308916
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "U04",
+    "alpha_h": -0.08923424035310745,
+    "h_update_rms": 2.6052260398864746,
+    "confidence_mean": 0.6357855200767517,
+    "confidence_spatial_std": 0.0,
+    "logvar_mean": -1.0017765760421753,
+    "kl": 0.0
+  },
+  "checkpoint_sha256": "65f22c4d61c67466a82cf4ae2c6d8ef8485e0f15f08f37fbcb5d6304e4a32151",
+  "report_sha256": "2489c1ecb28cccb577b867b8c7afc257568d17cd44c256f984debea5d0242c90",
+  "stdout_sha256": "e9bc0c51fd2adbe18caa7a1581baa3e38a70d594c1f4837a27ea0a203e16e957",
+  "stderr_sha256": "ce511aea17ea73e3021db4b69ce545387a8b341bfd8576543bcda5a4f351bf26",
+  "native_log_sha256": "30ce2c2a143754da38ad3a75a70062e957d2bc5a597e04dcf277f0e4fee48c3b"
+}

@@ -1,0 +1,49 @@
+{
+  "captured_at_beijing": "2026-11-03T17:33:29.559083+08:00",
+  "scope": "2026-11-02/03 new experiments plus final B1 context from2026-11-01",
+  "unique_current_results": 45,
+  "current_new_training_runs": 42,
+  "current_reused_baselines": 3,
+  "batches": [
+    {
+      "batch": "fusion_transfer_seed6_20261102",
+      "archive": "docs/results/fusion_transfer_seed6_20261102",
+      "snapshot": "docs/results/fusion_transfer_seed6_20261102/SNAPSHOT.json",
+      "results": 13,
+      "new_training_runs": 12,
+      "reused": 1,
+      "role": "current_window"
+    },
+    {
+      "batch": "fusion_transfer_seed78_20261102",
+      "archive": "docs/results/fusion_transfer_seed78_20261102",
+      "snapshot": "docs/results/fusion_transfer_seed78_20261102/SNAPSHOT.json",
+      "results": 39,
+      "new_training_runs": 24,
+      "reused": 15,
+      "role": "current_window"
+    },
+    {
+      "batch": "sr_lg_prior_seed678_20261103",
+      "archive": "docs/results/sr_lg_prior_seed678_20261103",
+      "snapshot": "docs/results/sr_lg_prior_seed678_20261103/SNAPSHOT.json",
+      "results": 9,
+      "new_training_runs": 6,
+      "reused": 3,
+      "role": "current_window"
+    },
+    {
+      "batch": "fusion_B1_seed78_20261101",
+      "archive": "docs/results/fusion_B1_seed78_20261101_final_20261103",
+      "snapshot": "docs/results/fusion_B1_seed78_20261101_final_20261103/SNAPSHOT.json",
+      "results": 18,
+      "new_training_runs": 8,
+      "reused": 10,
+      "role": "historical_context"
+    }
+  ],
+  "consolidated_csv": {
+    "path": "docs/results/fusion_20261102_03_results.csv",
+    "sha256": "898b15ec74cb0cab282280e534a6aa0858381c7221b72d500000406a91c03b4b"
+  }
+}

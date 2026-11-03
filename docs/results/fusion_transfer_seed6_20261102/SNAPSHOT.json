@@ -1,0 +1,240 @@
+{
+  "captured_at_beijing": "2026-11-03T17:33:29.559083+08:00",
+  "batch": "fusion_transfer_seed6_20261102",
+  "completed_at_capture": 13,
+  "new_training_runs": 12,
+  "reused": 1,
+  "source_state_updated_at": "2026-11-02T18:24:23.955893+08:00",
+  "immutable_snapshot": true,
+  "note": "Original byte hashes preserved; datasets/checkpoints/full logs excluded. Original report/model/log directories remain untouched.",
+  "files": [
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/final_integrity_audit.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/final_integrity_audit.json",
+      "sha256": "e9475464efd9b44aa13be978071baf5d59daadd277a6b1205dd2647858f08e64",
+      "bytes": 17013
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/manifest.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/manifest.json",
+      "sha256": "802921f9f12bad98493e174da9a451731dc8cb632c87ac1304b420c349e6e1e2",
+      "bytes": 29729
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/power_protection.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/power_protection.json",
+      "sha256": "93b9384da56a464af439641ea5622f76580e661ad93880ea925bc6a41a9d929c",
+      "bytes": 430
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/preflight.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/preflight.json",
+      "sha256": "42094995ea6f9f741970fdd93187a9eacd1cddcf2caea5a7269cac94249715c6",
+      "bytes": 15050
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/reuse_audit.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/reuse_audit.json",
+      "sha256": "92724a3bf5c3d90edeff0b30f87aa1797047295d9f8614eafd4b5166ad60ccee",
+      "bytes": 1621
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/summary.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/summary.json",
+      "sha256": "f134ea02d1c93ad96ee9dacf317cc9701ef76d085aaaf347bb0ef31a7d723336",
+      "bytes": 7739
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/实验报告.md",
+      "export": "docs/results/fusion_transfer_seed6_20261102/实验报告.md",
+      "sha256": "840d09d4ef371f5118515c999e1791e888771fb0304fdab85c80ffd70d384b7f",
+      "bytes": 2646
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/运行状态.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/运行状态.json",
+      "sha256": "3752354a7d18c71b94918b6f3c271759440e2f20dd68c26cfb3220eec351e778",
+      "bytes": 476
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/逐组结果.csv",
+      "export": "docs/results/fusion_transfer_seed6_20261102/逐组结果.csv",
+      "sha256": "5de075b7672e59241e5bb0f65c3b1f0008e845116f8982e08d3e400482699e52",
+      "bytes": 3268
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/D01_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/D01_seed6.json",
+      "sha256": "564acf9a43a3b4d4410f93388193d8f322f10bd2749c6e0a316de5722e833e6f",
+      "bytes": 991
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/D02_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/D02_seed6.json",
+      "sha256": "8ed2a7dca6e0d998e7334c7668396466139aed468da1b5b563514503ef7881d0",
+      "bytes": 1073
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/D03_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/D03_seed6.json",
+      "sha256": "5ee3fedd9eee9758924a4dff81417f77d43adccb893ea6b232a8abb4464220f4",
+      "bytes": 1172
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/D04_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/D04_seed6.json",
+      "sha256": "830f994220b9c5f321236e182094ebe768cb64e332c11afc8fc475caaeedb708",
+      "bytes": 1289
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/F01_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/F01_seed6.json",
+      "sha256": "4b401ec7815496157f9da6077e6e8b839e09cc5412388f15fef1ae052a0b3980",
+      "bytes": 1550
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/F02_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/F02_seed6.json",
+      "sha256": "3928befe0656913a838e6ff47bde2b9af3310c4c17b04996fc2f176211ab52f9",
+      "bytes": 1467
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/F03_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/F03_seed6.json",
+      "sha256": "64d9e9809fca0b1282a397f0955b30f67c2423ddabc4738007aaca57f56d7063",
+      "bytes": 1553
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/F04_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/F04_seed6.json",
+      "sha256": "bd8b2e1e2c7bd769e6e3161c5e320dc4d5f61f6b20245c92fa8a4e741d5cc238",
+      "bytes": 1553
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/U01_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/U01_seed6.json",
+      "sha256": "5046054d750f6779d2e54fdbb402c153fcb9d6eeb7f40f0558ff783af990077e",
+      "bytes": 1070
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/U02_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/U02_seed6.json",
+      "sha256": "7c578a3cb4bb034859ad9e7c41d93137f1a90174ac1b6fe08da8646767ede7d2",
+      "bytes": 1038
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/U03_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/U03_seed6.json",
+      "sha256": "9200be35939a07db4de54dba5023461c6a9853cca8cd2a11326e63189e5460a9",
+      "bytes": 1065
+    },
+    {
+      "source": "report/fusion_papers/fusion_transfer_seed6_20261102/completed/U04_seed6.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/completed/U04_seed6.json",
+      "sha256": "c9d036854b21cbe25f4fe95af50e2c19ab6f3a0a87d10d0eba1ee56b1a0a1d0e",
+      "bytes": 1053
+    },
+    {
+      "source": "derived from original manifest (no environment changes)",
+      "export": "docs/results/fusion_transfer_seed6_20261102/RUNTIME.json",
+      "sha256": "627eb6fd45a0dc8fb5beb61cf70a94877298b0da4da784a30dca768001d60e9a",
+      "bytes": 221
+    },
+    {
+      "source": "report/TransMixer_SR2/Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/A00_seed6.txt",
+      "sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FV2_F01/Houston2013_report_fusion_transfer_seed6_20261102_F01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/F01_seed6.txt",
+      "sha256": "e2ddadc53e4add28221dd936e6b0a0422b11bba985c98a06ea8c2bc3fe54d4b1",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FV2_F02/Houston2013_report_fusion_transfer_seed6_20261102_F02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/F02_seed6.txt",
+      "sha256": "bc6ed1b4bf9dc3d6602175c69b22dfe4b3c162e3d16d989cd51b3f49e964683b",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_F03/Houston2013_report_fusion_transfer_seed6_20261102_F03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/F03_seed6.txt",
+      "sha256": "2cd074440a348754e2998503a5dde436b7c6d3370a370f311d1eb9f7383955d9",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_F04/Houston2013_report_fusion_transfer_seed6_20261102_F04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/F04_seed6.txt",
+      "sha256": "90109dfe03589b57ed2d39a5e7f5c33029e2798514769513d8b69a1ee0ca51fe",
+      "bytes": 2702
+    },
+    {
+      "source": "report/TransMixer_FV2_U01/Houston2013_report_fusion_transfer_seed6_20261102_U01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/U01_seed6.txt",
+      "sha256": "bb209e36e34db37385ea2faae5441b62a7c534636336a0db72c3c5436cfa7740",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_U02/Houston2013_report_fusion_transfer_seed6_20261102_U02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/U02_seed6.txt",
+      "sha256": "29387f777098083bc02b701ebc8d9fb88389dfe096bcfb9388a9c226b39d1bae",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_U03/Houston2013_report_fusion_transfer_seed6_20261102_U03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/U03_seed6.txt",
+      "sha256": "11b39403be609071cfb4ba3e544eb26a3acfa20c8e3954ad93e9d0fc939f9faf",
+      "bytes": 2702
+    },
+    {
+      "source": "report/TransMixer_FV2_U04/Houston2013_report_fusion_transfer_seed6_20261102_U04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/U04_seed6.txt",
+      "sha256": "2489c1ecb28cccb577b867b8c7afc257568d17cd44c256f984debea5d0242c90",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_D01/Houston2013_report_fusion_transfer_seed6_20261102_D01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/D01_seed6.txt",
+      "sha256": "50aed7ba3a1368dec4d28c5cf83dd9586852b5ed5df7d5d9328347e5a46b32c0",
+      "bytes": 2703
+    },
+    {
+      "source": "report/TransMixer_FV2_D02/Houston2013_report_fusion_transfer_seed6_20261102_D02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/D02_seed6.txt",
+      "sha256": "a2c886f75e21b45ab6966472f3c941d436a8e26a457d9e67a99bfa082b874a44",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_D03/Houston2013_report_fusion_transfer_seed6_20261102_D03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/D03_seed6.txt",
+      "sha256": "7e08a2062827a87890d035536ae2ec32636bb49bb37ee79b7d2f719d0808f3c2",
+      "bytes": 2704
+    },
+    {
+      "source": "report/TransMixer_FV2_D04/Houston2013_report_fusion_transfer_seed6_20261102_D04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "export": "docs/results/fusion_transfer_seed6_20261102/native_reports/D04_seed6.txt",
+      "sha256": "8c3915d5ff5161f685c174f83cca0c8772d8ab1fadf17c6c2d634bdf0794c5b7",
+      "bytes": 2703
+    },
+    {
+      "source": "derived by read-only verification of original native logs and artifacts",
+      "export": "docs/results/fusion_transfer_seed6_20261102/COMPLETION_EVIDENCE.json",
+      "sha256": "fe6054b18088fcb326ba6eeb8750e08ae2b34d5d2f47a1ef48d07424b7656051",
+      "bytes": 10611
+    },
+    {
+      "source": "derived without metric changes from summary.json",
+      "export": "docs/results/fusion_transfer_seed6_20261102/逐种子结果.csv",
+      "sha256": "ba91cab844ed7bc52f3d19fa235a1e3cd74d166abe05755ed4942183e3be082d",
+      "bytes": 896
+    },
+    {
+      "source": "generated archive navigation",
+      "export": "docs/results/fusion_transfer_seed6_20261102/README.md",
+      "sha256": "99d673549d07f5c211adeb593ac8adf1b985726e159c40c611ba97ced4f43686",
+      "bytes": 1299
+    }
+  ]
+}

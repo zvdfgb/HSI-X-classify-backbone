@@ -1,0 +1,116 @@
+{
+  "captured_at_beijing": "2026-11-03T17:33:29.559083+08:00",
+  "all_passed": true,
+  "new_training_runs": 6,
+  "runs": [
+    {
+      "id": "P01_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:12<00:00,  1.83batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "1f7262213a6fd264dfb7ca72db668a93ea5809d950cbb725746d76998d560238",
+        "report": "a129436e0a55dbea248710488301f5a3b46a8df8385b2bdef4df02af03497958",
+        "stdout": "23d77ad86b69c9912d1245fdee6cd754de506096c51b4fe44b170f4e9aedbbe8",
+        "stderr": "f5242b2ab38eb811e0bd6cf0e197c6190159de5a5fa61287c23fe348260353c3",
+        "native_log": "0fb1b6ffdad6733be6bbffb7c3b2d17014831809ed77e89797abc5ae9dea844f"
+      },
+      "metrics": {
+        "oa": 92.42436664753629,
+        "aa": 93.53524227487756,
+        "kappa": 91.77318768373777
+      }
+    },
+    {
+      "id": "P02_seed6",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:11<00:00,  1.87batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "97de34cfa8c021555fd0b82bae3352eb105383d4f2bd4a2beb12f95f9b1b5596",
+        "report": "3748de2c8bd207a89c543964890b5d68f142a898697812272e92ca82e8e751e3",
+        "stdout": "b0724b945a758498f8c1fc1ffae35da1c4bf8ff6d64f00b5bcf03b105cb12177",
+        "stderr": "965a862dc15e15b7443f90f57f2896983ec7626f45a405d5af158596db31c3af",
+        "native_log": "c9abdd21044c384629c4e4d73759a6d60fc53dac4d419e38147ed19fd537f0f2"
+      },
+      "metrics": {
+        "oa": 92.41616791014184,
+        "aa": 93.5122533582319,
+        "kappa": 91.76424729429677
+      }
+    },
+    {
+      "id": "P01_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:11<00:00,  1.86batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "016b9cc5524f6d22e5ecb00216917f3a9df842a7c45bcc1af6be55eb60d87489",
+        "report": "aceae0e435a5b66a1567c520cfd7d096855acbf755be046011765209ec40e0ec",
+        "stdout": "0cee2b360a40fcce5fabe47d114c2b9124b69f9a33df4b04e5580e551967d088",
+        "stderr": "2a1825fc54dc3d97f4d2ec1256bca6f41a5dff7c7845869220907432f876fcfa",
+        "native_log": "7abc360a739a8e43be60a85cd7b38d9786e71463b340dc91ed5fc6da9929031f"
+      },
+      "metrics": {
+        "oa": 87.80027875707141,
+        "aa": 89.41335307273897,
+        "kappa": 86.75035555087646
+      }
+    },
+    {
+      "id": "P02_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:11<00:00,  1.90batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "76272395666febb8d051bce13b6549cbc9f317835dacae8bd20c74a4f9fd6659",
+        "report": "5840fff1e0833c9ceb6440c4f755c2afe6376c6732e9c4861741e862948c2655",
+        "stdout": "7d0a18dc0302024186b2026354507e1951ac207cf615c5bedc1dcc88f2c16b36",
+        "stderr": "439e8aec1f03a3e901c08ea1fa5e4f0f4393d27b14c9ae8c768aea4efd560d7c",
+        "native_log": "b18e04bcdda3e3fc97145c5742a9f3db3b555a99787b88cec687d4b7edd51a77"
+      },
+      "metrics": {
+        "oa": 87.7018939083381,
+        "aa": 89.35133093178754,
+        "kappa": 86.6435063097396
+      }
+    },
+    {
+      "id": "P01_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:17<00:00,  1.27batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "2b1e54c4497f9107939e601b55f776024d934387e4a6801dde4f7de36d094192",
+        "report": "b46e1e15e2ce429d8f88b1e49616ba6ef7bf99ab9df2793a68985a0b964ab9ec",
+        "stdout": "bdff7bde78172f89fb13630ae8eebc43430f3802fcfd7df7e1b88190acdfd4ed",
+        "stderr": "8e642b91b29418a18d29e30b8052c15dbd67168919ad5503e77c4d659d0b7e09",
+        "native_log": "3c1da8c4cdf9473ca3d672e93133b6b0620d09b0a8611627878911ec89222adc"
+      },
+      "metrics": {
+        "oa": 88.13642699024349,
+        "aa": 90.11993749819909,
+        "kappa": 87.11830139770524
+      }
+    },
+    {
+      "id": "P02_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:11<00:00,  1.87batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "dc69b77fe3a6d6d35fd05da78136e59d8cb0878fc680bbf7fb28ac49073e5ff7",
+        "report": "1b3770164e4e6486227d9fad79b5ec895c04cefe2983a9eaf6a1692bf19bea6f",
+        "stdout": "a4343aa20fad7695af36d21b2c5f78bdf60d80ae4abf0f6918a95aa69e2a70bc",
+        "stderr": "62e9307d853dee44a9f5ba184148dc245853ff21dc2fd38d0e441de897853dbf",
+        "native_log": "c5457815710a639519ddf271b58fb8dc8010bbdc544607532c1dffac1e884671"
+      },
+      "metrics": {
+        "oa": 88.08723456587686,
+        "aa": 90.08165577031875,
+        "kappa": 87.06488258482376
+      }
+    }
+  ],
+  "note": "Excerpts and SHA256 read from original full logs; full logs and checkpoints remain local."
+}

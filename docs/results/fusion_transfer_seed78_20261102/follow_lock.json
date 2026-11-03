@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-11-02T17:04:04.782365+08:00",
+  "plan_sha256": "b687c6a46aac7cf07aa8d62910c231a5ee5550bdedc03c2b270b39ffdd969a01",
+  "script_sha256": "ce2c4306264e5f9f23cfbcb13ced3064729ee7e3c97de6ddf9cafdec975c8d93",
+  "source_manifest_sha256": "802921f9f12bad98493e174da9a451731dc8cb632c87ac1304b420c349e6e1e2",
+  "authorization": "User explicitly requested completion of current batch followed by seeds 7 and 8 for the same full matrix; future experiments require at least seeds 6,7,8."
+}

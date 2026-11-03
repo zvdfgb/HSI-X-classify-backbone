@@ -1,0 +1,28 @@
+{
+  "experiment_name": "fusion_transfer_seed6_20261102_U01_seed6",
+  "dataset_type": 0,
+  "model_name": "TransMixer_FV2_U01",
+  "cuda_device": "cuda:0",
+  "learning_rate": 0.0001,
+  "epochs": 100,
+  "batch_size": 128,
+  "num_workers": 0,
+  "random_seed": 6,
+  "channels": 30,
+  "window_size": 11,
+  "enable_training": true,
+  "enable_testing": true,
+  "enable_visualization": false,
+  "enable_tsne": false,
+  "enable_erf": false,
+  "enable_email_notification": false,
+  "email_recipient_override": "",
+  "ablation_mode": "decoupled",
+  "sr": {
+    "spatial_sigma": 3.0,
+    "spectral_scale": 0.2775005102157593
+  },
+  "paper_transfer": {
+    "group": "U01"
+  }
+}

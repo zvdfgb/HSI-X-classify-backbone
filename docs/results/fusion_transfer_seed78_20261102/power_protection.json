@@ -1,0 +1,13 @@
+{
+  "state": "released",
+  "phase": "training",
+  "helper_pid": 84416,
+  "queue_pid": 84416,
+  "native_request_succeeded": true,
+  "power_plan_changed": false,
+  "display_required": false,
+  "ac_connected": true,
+  "battery_percent": 100,
+  "checked_at": "2026-11-03T04:49:56.927233+08:00",
+  "updated_at": "2026-11-03T04:49:58.634560+08:00"
+}

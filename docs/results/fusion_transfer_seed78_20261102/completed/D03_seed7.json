@@ -1,0 +1,29 @@
+{
+  "id": "D03_seed7",
+  "seed": 7,
+  "epochs": 100,
+  "started_at": "2026-11-02T23:00:32.768815+08:00",
+  "finished_at": "2026-11-02T23:26:26.351299+08:00",
+  "elapsed_seconds": 1553.5824904000037,
+  "metrics": {
+    "oa": 87.91506108059359,
+    "aa": 89.49747774860835,
+    "kappa": 86.87559298307067
+  },
+  "checkpoint_sha256": "7fff70731eff2912f9ec96242badd66e7e6073496b5ae663b96c5a1f947aad41",
+  "report_sha256": "a7657b76872a3cbdfec8de7a18cdc6c1727b47a4da08a36e04beb4c41eaa57ea",
+  "stdout_sha256": "62a98e938163ebe53c5ad5a8dff0da0e75555c103193961babfa97c4040d789d",
+  "stderr_sha256": "c79b7bfcae5aec1aa33c6651e0026fd382bca8af7c7f889a1c3c5ef19b2ab694",
+  "native_log_sha256": "1b58d65d106404d8ac8f8bbfa9703d031ec04451ea80b101486cab311ffb5d3e",
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "D03",
+    "alpha_h": -0.08769889920949936,
+    "h_update_rms": 0.3562658727169037,
+    "l_update_rms": 0.33776211738586426,
+    "aux_ce": 0.8894246220588684,
+    "reconstruction": 0.18237487971782684,
+    "decomposition_mi": -0.5026884078979492,
+    "decomposition_critic_fit": -0.9734842777252197,
+    "alpha_l": 0.055041100829839706
+  }
+}

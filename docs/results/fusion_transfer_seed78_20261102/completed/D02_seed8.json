@@ -1,0 +1,27 @@
+{
+  "id": "D02_seed8",
+  "seed": 8,
+  "epochs": 100,
+  "started_at": "2026-11-03T03:34:01.268491+08:00",
+  "finished_at": "2026-11-03T03:58:24.430714+08:00",
+  "elapsed_seconds": 1463.162220600003,
+  "metrics": {
+    "oa": 87.34934820037714,
+    "aa": 89.50544959510084,
+    "kappa": 86.26399152745343
+  },
+  "checkpoint_sha256": "7625ae11d6fd0b023d637340534d1d7d9b2799c64c195ef54a8e3b29afb9dffc",
+  "report_sha256": "9fa3df4169f2b0b5a3bbbb06260edd5fd19390c835042a5f6f584a37ba713c76",
+  "stdout_sha256": "8c154d1c52de8db6478101c2bb0bb49fbcb36af7feba32af0e3f27b42293bf2e",
+  "stderr_sha256": "8d4537e2b9c4890608772a431e18e2485dce91d964e5a46fccc064c9f6471801",
+  "native_log_sha256": "4c074e4d6c9895c73ca3adb0595631767aefe3115975dbf820e26b1e9a651599",
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "D02",
+    "alpha_h": 0.0837138295173645,
+    "h_update_rms": 0.34719452261924744,
+    "l_update_rms": 0.24331499636173248,
+    "aux_ce": 0.9244900345802307,
+    "reconstruction": 0.2058858871459961,
+    "alpha_l": 0.04315024986863136
+  }
+}

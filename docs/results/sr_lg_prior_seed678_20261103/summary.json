@@ -1,0 +1,262 @@
+{
+  "total": 9,
+  "completed": 9,
+  "reused": 3,
+  "new_completed": 6,
+  "new_total": 6,
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "runs": [
+    {
+      "id": "A00_seed6",
+      "group": "A00",
+      "seed": 6,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.4079691727474,
+      "aa": 93.50584925960878,
+      "kappa": 91.75534305565003
+    },
+    {
+      "id": "A00_seed7",
+      "group": "A00",
+      "seed": 7,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.68549643354923,
+      "aa": 89.33857986484632,
+      "kappa": 86.62561251052117
+    },
+    {
+      "id": "A00_seed8",
+      "group": "A00",
+      "seed": 8,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.10363204066573,
+      "aa": 90.09449487537687,
+      "kappa": 87.08268936294795
+    },
+    {
+      "id": "P01_seed6",
+      "group": "P01",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P01\\Houston2013_report_sr_lg_prior_seed678_20261103_P01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.42436664753629,
+      "aa": 93.53524227487756,
+      "kappa": 91.77318768373777
+    },
+    {
+      "id": "P02_seed6",
+      "group": "P02",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P02\\Houston2013_report_sr_lg_prior_seed678_20261103_P02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.41616791014184,
+      "aa": 93.5122533582319,
+      "kappa": 91.76424729429677
+    },
+    {
+      "id": "P01_seed7",
+      "group": "P01",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P01\\Houston2013_report_sr_lg_prior_seed678_20261103_P01_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.80027875707141,
+      "aa": 89.41335307273897,
+      "kappa": 86.75035555087646
+    },
+    {
+      "id": "P02_seed7",
+      "group": "P02",
+      "seed": 7,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P02\\Houston2013_report_sr_lg_prior_seed678_20261103_P02_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 87.7018939083381,
+      "aa": 89.35133093178754,
+      "kappa": 86.6435063097396
+    },
+    {
+      "id": "P01_seed8",
+      "group": "P01",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P01\\Houston2013_report_sr_lg_prior_seed678_20261103_P01_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.13642699024349,
+      "aa": 90.11993749819909,
+      "kappa": 87.11830139770524
+    },
+    {
+      "id": "P02_seed8",
+      "group": "P02",
+      "seed": 8,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SRP_P02\\Houston2013_report_sr_lg_prior_seed678_20261103_P02_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.08723456587686,
+      "aa": 90.08165577031875,
+      "kappa": 87.06488258482376
+    }
+  ],
+  "aggregates": [
+    {
+      "group": "A00",
+      "n": 3,
+      "complete": true,
+      "oa": {
+        "mean": 89.39903254898745,
+        "sample_std": 2.61418898529498
+      },
+      "aa": {
+        "mean": 90.97964133327733,
+        "sample_std": 2.2201681785579344
+      },
+      "kappa": {
+        "mean": 88.48788164303971,
+        "sample_std": 2.838918433916189
+      }
+    },
+    {
+      "group": "P01",
+      "n": 3,
+      "complete": true,
+      "oa": {
+        "mean": 89.45369079828373,
+        "sample_std": 2.5781650761084873
+      },
+      "aa": {
+        "mean": 91.02284428193855,
+        "sample_std": 2.204296519021139
+      },
+      "kappa": {
+        "mean": 88.5472815441065,
+        "sample_std": 2.7997676426504996
+      }
+    },
+    {
+      "group": "P02",
+      "n": 3,
+      "complete": true,
+      "oa": {
+        "mean": 89.40176546145227,
+        "sample_std": 2.61764941265773
+      },
+      "aa": {
+        "mean": 90.9817466867794,
+        "sample_std": 2.2216979099650636
+      },
+      "kappa": {
+        "mean": 88.49087872962005,
+        "sample_std": 2.8426388816487487
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "comparison": "P01-A00",
+      "n": 3,
+      "per_seed_delta_pp": [
+        {
+          "seed": 6,
+          "oa": 0.016397474788888644,
+          "aa": 0.029393015268780687,
+          "kappa": 0.017844628087743786
+        },
+        {
+          "seed": 7,
+          "oa": 0.11478232352217788,
+          "aa": 0.07477320789264752,
+          "kappa": 0.12474304035529826
+        },
+        {
+          "seed": 8,
+          "oa": 0.03279494957776308,
+          "aa": 0.025442622822225758,
+          "kappa": 0.03561203475729258
+        }
+      ],
+      "mean_delta_pp": {
+        "oa": 0.05465824929627653,
+        "aa": 0.04320294866121799,
+        "kappa": 0.059399901066778206
+      },
+      "positive_counts": {
+        "oa": 3,
+        "aa": 3,
+        "kappa": 3
+      }
+    },
+    {
+      "comparison": "P02-A00",
+      "n": 3,
+      "per_seed_delta_pp": [
+        {
+          "seed": 6,
+          "oa": 0.008198737394437217,
+          "aa": 0.006404098623121968,
+          "kappa": 0.008904238646735507
+        },
+        {
+          "seed": 7,
+          "oa": 0.016397474788874433,
+          "aa": 0.012751066941220301,
+          "kappa": 0.017893799218441586
+        },
+        {
+          "seed": 8,
+          "oa": -0.016397474788874433,
+          "aa": -0.012839105058120026,
+          "kappa": -0.017806778124182188
+        }
+      ],
+      "mean_delta_pp": {
+        "oa": 0.0027329124648124057,
+        "aa": 0.002105353502074081,
+        "kappa": 0.002997086580331635
+      },
+      "positive_counts": {
+        "oa": 2,
+        "aa": 2,
+        "kappa": 2
+      }
+    },
+    {
+      "comparison": "P01-P02",
+      "n": 3,
+      "per_seed_delta_pp": [
+        {
+          "seed": 6,
+          "oa": 0.008198737394451427,
+          "aa": 0.02298891664565872,
+          "kappa": 0.008940389441008278
+        },
+        {
+          "seed": 7,
+          "oa": 0.09838484873330344,
+          "aa": 0.06202214095142722,
+          "kappa": 0.10684924113685668
+        },
+        {
+          "seed": 8,
+          "oa": 0.04919242436663751,
+          "aa": 0.038281727880345784,
+          "kappa": 0.053418812881474764
+        }
+      ],
+      "mean_delta_pp": {
+        "oa": 0.05192533683146413,
+        "aa": 0.04109759515914391,
+        "kappa": 0.05640281448644657
+      },
+      "positive_counts": {
+        "oa": 3,
+        "aa": 3,
+        "kappa": 3
+      }
+    }
+  ],
+  "limitations": "three seeds, one dataset, original test OA selection; no independent test or direct significance claim; fixed misalignment is a mechanism control not all possible permutations"
+}

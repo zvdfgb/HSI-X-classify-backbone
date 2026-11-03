@@ -1,0 +1,99 @@
+{
+  "all_passed": true,
+  "verified_at": "2026-11-03T14:17:33.117936+08:00",
+  "reused": 3,
+  "new_training_runs": 6,
+  "source_config_data_pins_verified": true,
+  "results": [
+    {
+      "id": "A00_seed6",
+      "metrics": {
+        "oa": 92.4079691727474,
+        "aa": 93.50584925960878,
+        "kappa": 91.75534305565003
+      },
+      "checkpoint_sha256": "eaecd5efb8cd3dc76b3dfaa1cd5eb0d26f24b594871cf60855aa30b11d31badd",
+      "report_sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878"
+    },
+    {
+      "id": "A00_seed7",
+      "metrics": {
+        "oa": 87.68549643354923,
+        "aa": 89.33857986484632,
+        "kappa": 86.62561251052117
+      },
+      "checkpoint_sha256": "a2c0f2931c9c2c40d5a56df2145d33a721ea4e2cbca25b262d2e3df79eddd49f",
+      "report_sha256": "32942e2263f898624148d36924f42002d3fb06bd1f7fa8302cb857251c80782e"
+    },
+    {
+      "id": "A00_seed8",
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 90.09449487537687,
+        "kappa": 87.08268936294795
+      },
+      "checkpoint_sha256": "304a686b7d8a09928a28022236ad9db222cab273d2ce2f8a97a22aa19a7d4937",
+      "report_sha256": "acc65045f0f5a0d2786ad018f42d483a27b5b0c8df1372a2b66d721a665e5fcd"
+    },
+    {
+      "id": "P01_seed6",
+      "metrics": {
+        "oa": 92.42436664753629,
+        "aa": 93.53524227487756,
+        "kappa": 91.77318768373777
+      },
+      "checkpoint_sha256": "1f7262213a6fd264dfb7ca72db668a93ea5809d950cbb725746d76998d560238",
+      "report_sha256": "a129436e0a55dbea248710488301f5a3b46a8df8385b2bdef4df02af03497958"
+    },
+    {
+      "id": "P02_seed6",
+      "metrics": {
+        "oa": 92.41616791014184,
+        "aa": 93.5122533582319,
+        "kappa": 91.76424729429677
+      },
+      "checkpoint_sha256": "97de34cfa8c021555fd0b82bae3352eb105383d4f2bd4a2beb12f95f9b1b5596",
+      "report_sha256": "3748de2c8bd207a89c543964890b5d68f142a898697812272e92ca82e8e751e3"
+    },
+    {
+      "id": "P01_seed7",
+      "metrics": {
+        "oa": 87.80027875707141,
+        "aa": 89.41335307273897,
+        "kappa": 86.75035555087646
+      },
+      "checkpoint_sha256": "016b9cc5524f6d22e5ecb00216917f3a9df842a7c45bcc1af6be55eb60d87489",
+      "report_sha256": "aceae0e435a5b66a1567c520cfd7d096855acbf755be046011765209ec40e0ec"
+    },
+    {
+      "id": "P02_seed7",
+      "metrics": {
+        "oa": 87.7018939083381,
+        "aa": 89.35133093178754,
+        "kappa": 86.6435063097396
+      },
+      "checkpoint_sha256": "76272395666febb8d051bce13b6549cbc9f317835dacae8bd20c74a4f9fd6659",
+      "report_sha256": "5840fff1e0833c9ceb6440c4f755c2afe6376c6732e9c4861741e862948c2655"
+    },
+    {
+      "id": "P01_seed8",
+      "metrics": {
+        "oa": 88.13642699024349,
+        "aa": 90.11993749819909,
+        "kappa": 87.11830139770524
+      },
+      "checkpoint_sha256": "2b1e54c4497f9107939e601b55f776024d934387e4a6801dde4f7de36d094192",
+      "report_sha256": "b46e1e15e2ce429d8f88b1e49616ba6ef7bf99ab9df2793a68985a0b964ab9ec"
+    },
+    {
+      "id": "P02_seed8",
+      "metrics": {
+        "oa": 88.08723456587686,
+        "aa": 90.08165577031875,
+        "kappa": 87.06488258482376
+      },
+      "checkpoint_sha256": "dc69b77fe3a6d6d35fd05da78136e59d8cb0878fc680bbf7fb28ac49073e5ff7",
+      "report_sha256": "1b3770164e4e6486227d9fad79b5ec895c04cefe2983a9eaf6a1692bf19bea6f"
+    }
+  ]
+}

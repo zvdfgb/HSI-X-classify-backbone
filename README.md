@@ -2,7 +2,20 @@
 
 当前研究方向：固定1:1局部／全局通道分工＋SR邻域加权汇总。后续训练严格使用实验室原入口和原规则，详见 [项目目录与训练导航](docs/PROJECT_GUIDE.md) 和 [代码复用规则](AGENTS.md)。
 
-最新进度见 [2026-11-01研究进度](docs/RESEARCH_PROGRESS_20261101.md)：实验室原流程SR批次27项、三篇论文融合seed6批次15项均已完成；当前仅补充B1四组的seed7、8，共8次新训。详细成绩、核验记录及上传时进度快照均已归档。
+最新进度（2026-11-03）：这两天已完成三篇论文融合机制迁移36次及SR先验协同6次新训；连同复用的3个A基线，共45项不重复结果，全部使用seed6/7/8。详见[两日研究总结](docs/RESEARCH_PROGRESS_20261103.md)、[45项逐种子CSV](docs/results/fusion_20261102_03_results.csv)和[结果目录](docs/results/README.md)。当前训练与守护均已结束。
+
+| 方向／完整候选 | 三种子平均OA % | 相对A00平均OA差（百分点） | 正向种子数 |
+|---|---:|---:|---:|
+| A00：固定1:1局部／全局＋SR2 | 89.3990 | — | — |
+| F04：三频带融合＋高频补偿 | 89.1503 | −0.2487 | 0/3（1项持平） |
+| U03：概率表示＋空间置信融合 | 87.1007 | −2.2984 | 0/3 |
+| D04：共享／特有分解＋任务约束 | 88.6775 | −0.7215 | 0/3 |
+| P01：正确SR先验进入全局注意力 | 89.4537 | +0.0547 | 3/3 |
+| P02：固定错位先验对照 | 89.4018 | +0.0027 | 2/3 |
+
+F/U/D完整候选未提升原A；P01相对P02平均OA +0.0519个百分点，仅是很小的正向线索。全部均保留原测试OA选模，不构成独立测试或统计显著性证明。原始数据、完整日志与checkpoint留在本机；Git收录代码、配置及带哈希的轻量报告证据。
+
+B1三种子也已完成，见[最终18项快照](docs/results/fusion_B1_seed78_20261101_final_20261103/README.md)：在纯SSM上平均OA +0.9374个百分点，在A上−0.1202。原[11月1日进度](docs/RESEARCH_PROGRESS_20261101.md)及10/18快照按历史状态保留。
 
 此前三篇论文迁移实验27项的历史结果保留、不重跑，见 [论文迁移结果](docs/results/paper_20261028/README.md)。不同训练协议的成绩分别报告。
 
@@ -55,15 +68,16 @@
 ```text
 HSI-X-classify-backbone/
 ├── configs/                  # 训练等脚本默认读取的配置文件目录
-├── data/                     # 项目内数据目录（当前仓库下也保留了一份数据）
-├── environment.yml           # 推荐 Conda 环境定义（CUDA 12.1 / Torch 2.4.1）
+├── data/                     # 本机数据，不纳入Git
+├── environment.yml           # 通用环境模板；批次实际环境见RUNTIME.json
 ├── requirements.txt          # 精简 pip 依赖列表
 ├── Makefile                  # 常用命令封装
 ├── log/                      # 训练日志输出
 ├── model/                    # 模型权重输出
 ├── pic/                      # 分类可视化图输出
 ├── report/                   # 分类报告输出
-├── scripts/                  # 训练/测试/批量运行脚本
+├── docs/                     # 研究总结、审核矩阵与结果证据导航
+├── scripts/                  # 原训练入口、已批准批次控制器、只读核验
 └── src/
     ├── config.py             # 统一配置系统
     ├── data.py               # 数据读取、PCA、归一化、DataLoader
@@ -89,6 +103,10 @@ HSI-X-classify-backbone/
         ├── macn/
         ├── rscnet/
         ├── transmixer_net/
+        ├── transmixer_sr/
+        ├── transmixer_fusion_papers/
+        ├── transmixer_fusion_v2/
+        ├── transmixer_sr_prior/
         ├── transmixer_ablation/
         └── transmixer_deg/
 ```
@@ -141,7 +159,7 @@ src.models.<model>.adapter
 
 #### 训练与评估层
 - [src/trainer.py](src/trainer.py)
-  - 训练、验证、最佳权重保存、日志记录
+  - 原生训练、测试OA选模、整模型保存、日志记录
 - [src/evaluator.py](src/evaluator.py)
   - 加载训练好的模型并生成报告
 - [src/metrics.py](src/metrics.py)
@@ -222,6 +240,8 @@ HSI-X-classify-backbone/
 - `TransMixer_LocalConv`、`TransMixer_GlobalAttention`、`TransMixer_PureSSM`：结构对照组
 - `TransMixer_DEG`、`TransMixer_DEGOnly`：方向引导边缘门控卷积及纯 DEGConv 对照
 
+当前研究接入的模型还包括`TransMixer_SR1/SR2`、`TransMixer_FV2_F01`至`F04`、`U01`至`U04`、`D01`至`D04`（后三族均带`TransMixer_FV2_`前缀），以及`TransMixer_SRP_P01/P02`。对应设计、已完成状态与使用边界见[实验导航](docs/experiments/README.md)。历史B1/B2/B3命名须按批次理解，不能把上述旧局部残差B1与后来的交错扫描B1混为同一个模型。
+
 旧配置中的 `TransMixerNet`、`TransMixer_B1` 等名称仍可读取，会自动映射到上述规范名称；新实验只使用规范名称，避免 `train_all.py` 重复训练别名。
 
 - `FusAtNet`
@@ -258,9 +278,9 @@ src/models/<model_name>/
 
 ## 5. 环境安装
 
-### 5.1 推荐环境
+### 5.1 通用模板与批次实际环境
 
-当前项目已提供一份较完整的 Conda 环境文件 [environment.yml](environment.yml)。
+项目提供通用Conda模板[environment.yml](environment.yml)。2026-11-02—03研究批次实际使用Python3.13.5、PyTorch2.6.0+cu124、NumPy2.3.5和RTX4060 Laptop GPU，见[批次环境记录](docs/results/fusion_transfer_seed78_20261102/RUNTIME.json)。下面模板版本与实际批次不同，不能当作精确复现锁定文件。
 
 关键信息如下：
 
@@ -271,7 +291,7 @@ src/models/<model_name>/
 - CUDA 运行时：`cu121`
 - cuDNN：`9.1.0`
 
-也就是说，**当前依赖是面向 NVIDIA RTX 4090 常用环境的 CUDA 12.1 版本**，对应环境文件中这几项：
+模板包含CUDA12.1依赖，例如：
 
 - `torch==2.4.1+cu121`
 - `torchvision==0.19.1+cu121`
@@ -279,7 +299,7 @@ src/models/<model_name>/
 - `nvidia-cuda-runtime-cu12==12.1.105`
 - `nvidia-cudnn-cu12==9.1.0.70`
 
-如果你当前机器是 4090，并且驱动支持 CUDA 12.x，这份环境是最优先建议使用的。
+安装前核对GPU驱动与Torch兼容性；精确追溯已有实验时，以对应批次RUNTIME.json及manifest为准。
 
 ### 5.2 使用 Conda 安装（推荐）
 
@@ -316,7 +336,7 @@ pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1
 pip install -r requirements.txt
 ```
 
-如果你希望严格复现当前作者环境，优先使用 `environment.yml`。
+此处是通用安装示例；严格复查已有研究需核对对应批次环境，不能仅依赖模板。
 
 ### 5.4 常见环境说明
 
@@ -324,11 +344,7 @@ pip install -r requirements.txt
 推荐直接使用仓库内 `environment.yml`。
 
 #### 只有 CPU
-可以运行，但训练和可视化会很慢。运行时显式指定：
-
-```bash
-python -m scripts.train --cuda cpu
-```
+CPU可用于接口检查；正式科研实验仍需批准配置。若要使用CPU，在独立配置副本中设置`cuda_device`为`cpu`，再用`python scripts/train.py --config <配置路径>`运行；该入口不支持逐项传入`--cuda`。
 
 #### 已有不同 CUDA 版本
 如果你本机 PyTorch 来自其他 CUDA 版本，请注意：
@@ -369,7 +385,7 @@ make train-all
 make train ARGS="--help"
 ```
 
-> 注意：当前 `scripts/train.py` 是“脚本内写死配置”的风格，不是完整 CLI 风格；真正完整的 CLI 入口在 [src/config.py:303-367](src/config.py#L303-L367) 的 `create_experiment_config_from_cli()`。
+> 当前原生训练入口支持`--config`，默认读取`configs/train.json`。研究实验使用批准的独立配置文件，不修改入口或另写训练循环。
 
 ### 6.2 直接运行脚本
 
@@ -400,15 +416,11 @@ python scripts/train.py
 # 直接运行：优先读取 configs/train.json，不存在则走 quick config
 python scripts/train.py
 
-# 指定另一份配置文件
-python scripts/train.py --config configs/train_rscnet.json
+# 指定新审核的独立配置文件（替换为实际路径）
+python scripts/train.py --config <已批准的新配置路径>
 ```
 
-如果你希望长期固定一套训练参数，推荐新建：
-
-```text
-configs/train.json
-```
+原`configs/train.json`作为默认标准保留；研究实验从它派生到`configs/runs/<新批次>/`，不原地覆盖默认或已封存配置。
 
 配置文件里只需要保留你真正想控制的实验参数，例如数据集、模型、学习率、epoch、batch size、窗口大小、是否可视化等。
 
@@ -520,34 +532,14 @@ runner.run_experiment()
 
 ### 6.4 CLI 配置方式
 
-虽然 `scripts/train.py` / `scripts/test.py` 当前仍以脚本硬编码配置为主，但 [src/config.py](src/config.py) 已提供完整的命令行配置解析能力。你可以自行增加一个轻量入口，例如：
+原生入口已经支持配置文件，无需新增CLI或训练入口：
 
-```python
-from src.config import create_experiment_config_from_cli
-from src.runner import ExperimentRunner
-
-config = create_experiment_config_from_cli()
-runner = ExperimentRunner(config)
-runner.run_experiment()
+```bash
+python scripts/train.py --help
+python scripts/train.py --config <新批准的逐组逐种子配置>
 ```
 
-其支持的主要参数包括：
-
-- `--experiment-name`
-- `--dataset`
-- `--model`
-- `--cuda`
-- `--lr`
-- `--epochs`
-- `--batch-size`
-- `--channels`
-- `--window-size`
-- `--no-visualization`
-- `--tsne`
-- `--train-only`
-- `--test-only`
-- `--config`
-- `--save-config`
+模型、seed、设备和训练参数通过JSON配置提供；当前研究配置在`configs/runs/`按批次保存。已有完成批次禁止覆盖重跑，下一轮仍先审核矩阵。`src/config.py`的通用CLI辅助函数不等同于`train.py`实际支持的参数。
 
 ---
 
@@ -666,22 +658,11 @@ report/RSCNet/Augsburg_report_train_experiment_pca=30_window=11_lr=0.0001_epochs
 pic/RSCNet/Augsburg_train_experiment_pca=30_window=11_lr=0.0001_epochs=100.png
 ```
 
-### 7.3 推荐实验起步配置
+### 7.4 推荐实验起步配置
 
-#### 快速冒烟
+#### 科研实验准备
 
-```python
-ExperimentConfig(
-    dataset_type=0,
-    model_name="FusAtNet",
-    learning_rate=1e-4,
-    epochs=1,
-    batch_size=32,
-    channels=30,
-    window_size=11,
-    enable_visualization=False,
-)
-```
+先完成合成张量接口检查并批准组别与独立配置；正式实验固定100轮且至少seed6/7/8，不以1轮数据试训替代审核。下面的单配置只表示结构示例，不代表完整三种子矩阵。
 
 #### 正式单模型实验
 
@@ -713,7 +694,7 @@ python scripts/train_all.py --models RSCNet FusAtNet ExViT --datasets 0 4 5 --ep
 
 ### 8.1 模型权重
 
-训练时会在验证精度提升后保存最佳模型：
+训练器按既定评估轮次，在**测试OA提升**时保存最佳整模型；不存在独立验证集选模。最终报告沿用该checkpoint，不能描述为独立测试：
 
 - 输出目录：`model/<模型名>/`
 - 保存逻辑见 [src/trainer.py:97-100](src/trainer.py#L97-L100)
@@ -814,20 +795,9 @@ MODEL_REGISTRY = {
 }
 ```
 
-#### 第四步：验证训练链路
-最小验证建议：
+#### 第四步：先检查接口，再审核正式实验
 
-```python
-from src.runner import quick_run
-
-quick_run(
-    dataset_type=0,
-    model_name="MyModel",
-    epochs=1,
-    enable_visualization=False,
-    enable_testing=True,
-)
-```
+先用合成张量核对形状、有限梯度、参数量和整模型保存加载，已有示例为`python -m unittest src.models.transmixer_sr.test_sr -v`。模型接口检查不产生科研成绩。新实验必须先批准组别与配置，再通过原入口按100轮及至少seed6/7/8执行；不自行增加1轮科研数据试训或改变训练协议。
 
 ### 9.2 如何新增一个数据集
 
@@ -880,7 +850,7 @@ if __name__ == "__main__":
 - 优先通过 `ExperimentConfig` 注入参数，不要回到散落的硬编码方式
 - 模型差异尽量放在 `adapter.py` 中吸收，避免污染统一训练器
 - 新增数据集时同步补齐报告与可视化，不然主流程虽然能跑，但结果不完整
-- 正式实验前先做 1 epoch 冒烟验证，避免长时间训练后才发现数据 key 或 shape 不匹配
+- 正式实验前先完成合成接口与配置检查；科研数据上的新训练需按批准矩阵执行
 
 ---
 
@@ -939,12 +909,12 @@ ExperimentConfig(
 
 如果你第一次接手这个项目，建议按下面顺序：
 
-1. 创建并激活 Conda 环境
-2. 按约定放好一个数据集（推荐 Houston2013 或 Augsburg）
-3. 修改 [scripts/train.py](scripts/train.py) 中配置为 1 epoch 冒烟测试
-4. 运行 `python scripts/train.py`
-5. 检查 `model/`、`log/`、`report/`、`pic/` 是否正常生成输出
-6. 再开始切换模型或批量实验
+1. 阅读[项目导航](docs/PROJECT_GUIDE.md)、[最新研究总结](docs/RESEARCH_PROGRESS_20261103.md)与[代码复用规则](AGENTS.md)。
+2. 核对批次实际环境和本机数据目录，保留现有源码／数据／结果。
+3. 执行`python scripts/verify_fusion_archives.py`检查已归档证据；接口检查使用合成张量。
+4. 如需新实验，先展示组别、变量、配置与数量供审核，至少seed6/7/8。
+5. 审核后用`python scripts/train.py --config <新配置>`运行，禁止覆盖或补跑已完成批次。
+6. 使用原生报告归档结果，注明原测试OA选模限制。
 
 ---
 

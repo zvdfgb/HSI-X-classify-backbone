@@ -4,3 +4,11 @@ docs/archive/assistant_experiments_20261029/** -text whitespace=cr-at-eol
 docs/results/sr_native_20261029/** -text whitespace=cr-at-eol
 docs/results/fusion_papers_seed6_20261031/** -text whitespace=cr-at-eol
 docs/results/fusion_B1_seed78_20261101/** -text whitespace=cr-at-eol
+docs/results/fusion_B1_seed78_20261101_final_20261103/** -text whitespace=cr-at-eol
+docs/results/fusion_transfer_seed6_20261102/** -text whitespace=cr-at-eol
+docs/results/fusion_transfer_seed78_20261102/** -text whitespace=cr-at-eol
+docs/results/sr_lg_prior_seed678_20261103/** -text whitespace=cr-at-eol
+docs/experiments/provenance/fusion_transfer_seed6_20261102/** -text whitespace=cr-at-eol
+docs/experiments/provenance/fusion_transfer_seed78_20261102/** -text whitespace=cr-at-eol
+docs/experiments/provenance/sr_lg_prior_seed678_20261103/** -text whitespace=cr-at-eol
+docs/results/fusion_20261102_03_results.csv -text

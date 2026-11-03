@@ -1,46 +1,52 @@
 # 项目训练与目录导航
 
-更新：2026-10-29。当前研究方向：固定1:1局部／全局通道分工＋SR2邻域加权汇总。新实验等待审核，上轮27项保留、不重跑。
+更新：2026-11-03。当前主线为固定1:1局部／全局通道分工＋SR2。三篇融合机制三种子和SR先验协同批次均已完成，当前没有待继续的训练队列。最新判断见[两日研究总结](RESEARCH_PROGRESS_20261103.md)。
 
-## 日常只看这些位置
+## 目录职责
 
 | 位置 | 用途 |
 |---|---|
-| `configs/train.json` | 实验室默认训练标准，保持原文件 |
-| `scripts/train.py`、`scripts/test.py` | 单次训练／测试入口 |
-| `scripts/train_all.py`、`scripts/run_batch.py` | 实验室已有批量入口，显式指定所需模型 |
-| `src/data.py` | 唯一数据加载、PCA、归一化、增强与官方划分实现 |
-| `src/trainer.py`、`src/evaluator.py` | 唯一训练、选模、测试实现 |
-| `src/models/transmixer_net/` | 原骨干、固定1:1和纯SSM模式 |
-| `src/models/transmixer_sr/adapter.py` | SR1／SR2接入原流程，只有模型设置和前向接口 |
-| `src/model_registry.py` | 当前模型与历史兼容模型分开登记 |
-| `docs/experiments/` | 待审核／已审核的实验设计；执行前核对状态 |
-| `docs/results/` | 已封存的结果证据，按批次查阅 |
-| `docs/archive/assistant_experiments_20261029/` | 撤出日常入口的助手脚本、旧配置和失效方案 |
-| `data/`、`model/`、`log/`、`report/`、`pic/` | 本机数据、权重、日志、报告和图像；不移动、不覆盖、不纳入Git |
+| `configs/train.json` | 实验室默认标准，保留原文件 |
+| `configs/runs/<批次>/` | 已批准的逐组逐种子配置；原文件保持封存，不原地覆盖复跑 |
+| `scripts/train.py`、`scripts/test.py` | 单次原生训练／评估入口 |
+| `src/runner.py`、`src/trainer.py` | 原实验调度、训练、AdamW与选模 |
+| `src/data.py`、`src/evaluator.py`、`src/metrics.py` | 唯一科研数据处理、最终评估及指标实现 |
+| `src/models/transmixer_net/` | 实验室骨干及固定1:1／纯SSM对照 |
+| `src/models/transmixer_sr/` | SR1／SR2的标准adapter；复用NeighborTransMixer |
+| `src/models/transmixer_fusion_papers/` | 首轮B1/B2/B3迁移与兼容代码 |
+| `src/models/transmixer_fusion_v2/` | F/U/D机制模型及附加损失adapter |
+| `src/models/transmixer_sr_prior/` | P01/P02：复用原全局注意力与SR，仅增加先验偏置 |
+| `src/model_registry.py` | 当前模型与历史兼容模型注册 |
+| [experiments/](experiments/README.md) | 审核矩阵、执行记录、迁移源码证据 |
+| [results/](results/README.md) | 轻量、可核验的结果快照和合并表 |
+| `scripts/run_fusion_transfer*.py`、`scripts/run_sr_lg_prior.py` | 已完成批次的封存、排队与审计控制器；训练仍调用原入口 |
+| `scripts/verify_fusion_archives.py` | 仅校验Git内快照、原报告解析值及汇总算术 |
+| `docs/archive/` | 只读历史追溯，不恢复为日常入口 |
+| `data/`、`model/`、`log/`、`report/`、`pic/` | 本机数据与运行产物，不移动、不覆盖、不纳入Git |
 
-## 后续训练流程
+## 新实验执行约定
 
-1. 审核实验组与固定参数。
-2. 复制原 `configs/train.json` 形成每组每种子的配置；只修改明确列出的模型设置、种子与实验名称。原训练参数不变。
-3. SR2的距离尺度通过原 `getMyData` 返回的训练 Dataset 输入估计，估计过程独立执行，不读取测试标签或重写PCA。相同种子下SR2各组共用一个尺度并记录来源，禁止照搬旧验证划分的数值。此准备步骤待实验审核后落实。
-4. 使用原入口运行，例如 `python scripts/train.py --config <已审核的配置文件>`。不要直接运行未指定模型的全模型队列：SR2要求显式提供模型尺度；历史兼容模型不在默认队列中。
-5. 原 `src/evaluator.py` 生成OA、AA、Kappa等报告；额外汇总只读取这些结果，不另写预测／指标流程。
+1. 先展示并审核组别、变量、设置与数量。后续各组至少seed6/7/8，不自动增加模型、种子或调参。
+2. 从`configs/train.json`派生独立配置，只改批准字段，实验名包含批次／组别／seed，禁止覆盖旧结果。
+3. SR2光谱尺度由原`getMyData`训练Dataset输入统计，不读取测试标签，不重写PCA。本次已完成批次使用封存值0.2775005102157593、spatial_sigma=3；来源见批次配置／manifest。新设计需核对数据和已有统计的适用性。
+4. 原入口为`python scripts/train.py --config <新批准配置>`。不要重跑已完成队列或直接调用无明确模型列表的全模型批量入口。
+5. 新模型只通过adapter挂接；确有接口缺口先说明并做最小修改。原生报告产生后才能汇总，不另写预测／科研指标替代流程。
 
-SR模型名为 `TransMixer_SR1`、`TransMixer_SR2`；`ablation_mode` 支持现成的 `decoupled`（固定1:1）和 `pure_ssm`（无局部／全局分工）。配置字段 `sr` 仅包含 `spatial_sigma` 与 `spectral_scale`。SR1不需要光谱尺度；SR2缺少尺度会明确报错。模型直接复用上一轮 `NeighborTransMixer` 和实验室 `TransMixerNet`，没有复制网络主体。
+## 固定协议与解释限制
 
-## 原实验室规则
+Houston2013官方2832训练／12197测试，无新增验证划分；PCA30、11×11反射补边、原归一化与同步翻转。batch128、drop_last=True、workers0；100轮、AdamW lr=1e-4、weight_decay=0.01。原随机数及cuDNN设置不额外更换。
 
-Houston2013官方2832训练／12197测试，不再切出验证集。PCA30，11×11反射补边；HSI／辅助模态归一化、同步翻转全按 `src/data.py`。batch128，训练 `drop_last=True`，workers0；100轮，AdamW，lr=0.0001，weight_decay=0.01。随机性与cuDNN设置完全由原代码执行，不额外强制另一套确定性开关。
+原训练器在第1、10、20、…、100轮以及85、95轮使用测试OA保存最佳整模型。此规则未经单独授权不改，结果不称为独立测试。F/U/D中的附加损失是批准的实验变量；具体系数与梯度隔离见对应矩阵和源码。
 
-原训练器在第1、10、20、…、100轮以及85、95轮评估，用测试OA保存最好整模型。后续比较沿用这条规则，并在结果中标明“实验室原流程”，不称作验证选模后的独立测试。用户未批准前不改变这条规则。
+## 只读复查与历史兼容
 
-## 旧实验与兼容代码
+```bash
+python scripts/verify_fusion_archives.py
+python -m unittest src.models.transmixer_sr.test_sr src.models.transmixer_fusion_papers.test_fusion -v
+```
 
-- [paper_20261028结果](results/paper_20261028/README.md)：27项已完成，验证选模口径。SR2相对G0平均提高3.3342个百分点，作为继续研究的依据。
-- [周末归档](results/weekend_20261024_25/README.md)：包含不同口径的结果，分表查阅。原流程固定1:1基线seed6为88.8907%；不能用它与旧验证流程85.3270%均值直接算增益。
-- `transmixer_paper`、`transmixer_fusion`、`transmixer_ablation`、`transmixer_distill`、`transmixer_deg` 中的历史类保留原路径，防止旧整模型权重加载失效。PN／OC／SR3等仅作兼容，不进入新研究队列。SR1／SR2复用的旧模型类仍是当前依赖。
-- 已撤出的27个文件及原始哈希见归档 `archive_manifest.json`。历史脚本还原运行应检出对应历史提交，不能直接在归档目录执行。
-- `protected_core_sha256.json` 记录整理前13个核心文件的哈希；此次整理后逐一比对，验证实验室核心没有被改写。
+第一条只验证仓库证据与算术，无需GPU／科研数据；第二条使用合成张量检查接口、梯度和保存加载，不训练科研实验。原机完整产物核验依照批次执行记录，调用批次运行器中的只读审计接口。`verify_fusion_transfer.py`／`verify_sr_lg_prior.py`是运行前接口预检工具，可能写入preflight.json，不能当作归档只读核验命令直接重跑；也不重跑launch。
 
-合成接口检查命令：`python -m unittest src.models.transmixer_sr.test_sr -v`。它只检查模型接口、梯度、参数一致与整模型保存加载，不读取科研数据、不生成实验成绩。
+历史整模型checkpoint依赖原类路径，`transmixer_paper`、`transmixer_fusion`、`transmixer_ablation`、`transmixer_distill`、`transmixer_deg`等保留。PN／OC／蒸馏等停止新增实验；被SR复用的旧类仍是当前依赖。旧验证选模结果与原流程成绩分开查阅，禁止混算增益；2026-10-28的27项不重跑。
+
+本次整理只补导航与证据归档，不搬迁原模型／训练代码。实际批次环境在各结果快照`RUNTIME.json`，通用`environment.yml`不是这些批次的精确锁定环境。

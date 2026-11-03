@@ -1,0 +1,8 @@
+{
+  "applied_at": "2026-11-03T11:51:29.735157+08:00",
+  "authorized": true,
+  "reason": "User-approved SR attention-prior experiment; two registry entries only",
+  "before_sha256": "59f5eecc56f5e457a2d555e655b65526b35c3005668657815d616d03573851b5",
+  "after_sha256": "ab7162ff0268e7959e95f1d379ebdb5afbf6a9202686ce281d3a101307cb66cb",
+  "protected_lab_files_unchanged": true
+}

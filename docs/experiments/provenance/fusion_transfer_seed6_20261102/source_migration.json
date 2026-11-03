@@ -1,0 +1,28 @@
+{
+  "source_batch": "fusion_B1_seed78_20261101",
+  "verified_source_files": 117,
+  "verified_data_files": 4,
+  "registry_before_sha256": "4e51de7a35d9d3ec544018fbf8037558cdd645bbea6126ffaf87cdbe358a4d5d",
+  "baseline": {
+    "id": "G01_seed6",
+    "group": "G01",
+    "seed": 6,
+    "model": "TransMixer_SR2",
+    "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed6.json",
+    "reused": true,
+    "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+    "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+    "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+    "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed6.stdout.log",
+    "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed6.stderr.log",
+    "checkpoint_sha256": "eaecd5efb8cd3dc76b3dfaa1cd5eb0d26f24b594871cf60855aa30b11d31badd",
+    "report_sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878",
+    "reuse_source": "G01_seed6"
+  },
+  "authorized_changes": [
+    "add new model family and minimal registry entries",
+    "new batch orchestration and configs; preserve native lab training/data/evaluation and original artifacts"
+  ],
+  "registry_after_sha256": "59f5eecc56f5e457a2d555e655b65526b35c3005668657815d616d03573851b5",
+  "verified_at": "2026-11-02T13:16:58.262633+08:00"
+}

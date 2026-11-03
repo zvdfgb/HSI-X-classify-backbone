@@ -1,0 +1,27 @@
+{
+  "id": "U04_seed8",
+  "seed": 8,
+  "epochs": 100,
+  "started_at": "2026-11-03T02:46:20.129712+08:00",
+  "finished_at": "2026-11-03T03:09:43.089561+08:00",
+  "elapsed_seconds": 1402.9598444000003,
+  "metrics": {
+    "oa": 86.79183405755514,
+    "aa": 89.08802069477623,
+    "kappa": 85.65763765799414
+  },
+  "checkpoint_sha256": "6d2b176c5cdade81cde5d692e15f3cd6113c3fc1350a3dc2c522e68ef838eda8",
+  "report_sha256": "c200b1e5a4f3f7f03ea141d58632c73ff0ac7ee09f0ab34803c781a24315d6ac",
+  "stdout_sha256": "37461f879f60b22a95c57737ad2f3ddb36b8c0efcc3b71eda5b5ed5b5ccd861c",
+  "stderr_sha256": "26e5d16ef000e44ed779fa891b7a250c1ad306e753f5e6a18a08f5f28ec9e5bc",
+  "native_log_sha256": "f1bee7fab8fde74757be5243cef76321a71b078ebf54c2c16c6a40485cb61113",
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "U04",
+    "alpha_h": -0.0831127017736435,
+    "h_update_rms": 1.8386268615722656,
+    "confidence_mean": 0.47010305523872375,
+    "confidence_spatial_std": 0.0,
+    "logvar_mean": -0.8494389057159424,
+    "kl": 0.0
+  }
+}

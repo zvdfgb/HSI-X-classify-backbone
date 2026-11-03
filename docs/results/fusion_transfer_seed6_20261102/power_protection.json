@@ -1,0 +1,13 @@
+{
+  "helper_pid": 18896,
+  "scope": "temporary idle sleep protection during approved queue",
+  "power_plan_changed": false,
+  "display_required": false,
+  "started_at": "2026-11-02T13:19:42.919255+08:00",
+  "state": "released",
+  "native_request_succeeded": true,
+  "ac_connected": true,
+  "battery_percent": 100,
+  "checked_at": "2026-11-02T18:24:16.607710+08:00",
+  "updated_at": "2026-11-02T18:24:46.615020+08:00"
+}

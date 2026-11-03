@@ -1,0 +1,14 @@
+{
+  "helper_pid": 52272,
+  "power_plan_changed": false,
+  "display_required": false,
+  "scope": "temporary idle-sleep protection while queue or training child is alive",
+  "state": "released",
+  "native_request_succeeded": true,
+  "queue_pid": 93572,
+  "training_pid": 97408,
+  "ac_connected": true,
+  "battery_percent": 100,
+  "checked_at": "2026-11-03T14:17:31.365430+08:00",
+  "updated_at": "2026-11-03T14:17:51.371499+08:00"
+}

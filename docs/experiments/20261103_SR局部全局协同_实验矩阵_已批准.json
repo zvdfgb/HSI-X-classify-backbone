@@ -1,0 +1,98 @@
+{
+  "run_tag": "sr_lg_prior_seed678_20261103",
+  "training_authorized": true,
+  "authorization": "用户：按照你推荐的实验，严格按照之前的实验标准，开始进行实验验证",
+  "approved_at": "2026-11-03T11:47:30.554400+08:00",
+  "groups": [
+    {
+      "id": "A00",
+      "method": "原局部/全局固定1:1+SR2",
+      "planned_action": "reuse",
+      "seeds": [
+        6,
+        7,
+        8
+      ],
+      "source_batch": "sr_native_20261029",
+      "source_group": "M3"
+    },
+    {
+      "id": "P01",
+      "method": "正确位置SR先验指导原全局注意力",
+      "planned_action": "train",
+      "seeds": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "P02",
+      "method": "错位SR先验指导原全局注意力",
+      "planned_action": "train",
+      "seeds": [
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "total": 9,
+  "reused": 3,
+  "new_training": 6,
+  "protocol": {
+    "dataset": "Houston2013 official split",
+    "pca": 30,
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "optimizer": "native AdamW",
+    "seeds": [
+      6,
+      7,
+      8
+    ],
+    "ablation_mode": "decoupled",
+    "split_ratio": 0.5,
+    "loss": "native cross entropy only",
+    "checkpoint_selection": "native test OA best",
+    "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "native_data_evaluator_metrics": true,
+    "spatial_sigma": 3.0,
+    "spectral_scale": 0.2775005102157593
+  },
+  "attention_prior": {
+    "formula": "attn_logits[i,j] += beta_block * log(w[j] + 1e-8)",
+    "beta": "one trainable unconstrained scalar per existing block, initialized to zero; 2 total",
+    "scope": "global-attention key positions only, both original blocks",
+    "SR_readout": "unchanged correct-position SR2 in both groups",
+    "permutation": "one fixed label-independent derangement of all 121 positions, local CPU Generator seed20261103; shared across training seeds/blocks/heads",
+    "input_derived_weights": "same original neighbor_weights under no_grad; no labels, no new preprocessing"
+  },
+  "new_job_order": [
+    "P01_seed6",
+    "P02_seed6",
+    "P01_seed7",
+    "P02_seed7",
+    "P01_seed8",
+    "P02_seed8"
+  ],
+  "comparisons": [
+    "P01-A00",
+    "P02-A00",
+    "P01-P02"
+  ],
+  "validation": [
+    "zero-beta matches baseline with identical shared parameters",
+    "P01/P02 share parameter initialization and RNG state",
+    "nonzero-beta agrees with explicit additive key bias",
+    "permutation is nonidentity derangement and preserves multiset",
+    "native batch128 forward/backward finite and beta gradients nonzero",
+    "checkpoint full-model save/reload",
+    "protected file hashes unchanged"
+  ],
+  "limitations": "three seeds, one dataset, original test OA selection; no independent test or direct significance claim; fixed misalignment is a mechanism control not all possible permutations",
+  "no_automatic_extensions": true
+}

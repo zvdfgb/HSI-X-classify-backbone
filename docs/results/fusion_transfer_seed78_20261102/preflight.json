@@ -1,0 +1,224 @@
+{
+  "scope": "synthetic checks only; no real data or optimizer",
+  "seed6_regression": [
+    {
+      "group": "F01",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "F02",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "F03",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "F04",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "U01",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "U02",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "U03",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "U04",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "D01",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "D02",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "D03",
+      "parameters_bit_exact": true
+    },
+    {
+      "group": "D04",
+      "parameters_bit_exact": true
+    }
+  ],
+  "jobs": [
+    {
+      "id": "F01_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "F02_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 147385
+    },
+    {
+      "id": "F03_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "F04_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "U01_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "U02_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118521
+    },
+    {
+      "id": "U03_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "U04_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "D01_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 122617
+    },
+    {
+      "id": "D02_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 141237
+    },
+    {
+      "id": "D03_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 149687
+    },
+    {
+      "id": "D04_seed7",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 162842
+    },
+    {
+      "id": "F01_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "F02_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 147385
+    },
+    {
+      "id": "F03_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "F04_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 168186
+    },
+    {
+      "id": "U01_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "U02_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118521
+    },
+    {
+      "id": "U03_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "U04_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 118554
+    },
+    {
+      "id": "D01_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 122617
+    },
+    {
+      "id": "D02_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 141237
+    },
+    {
+      "id": "D03_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 149687
+    },
+    {
+      "id": "D04_seed8",
+      "passed": true,
+      "batch128": true,
+      "original_initialization_and_disabled_logits_exact": true,
+      "parameters": 162842
+    }
+  ],
+  "seed9_rejected": true
+}

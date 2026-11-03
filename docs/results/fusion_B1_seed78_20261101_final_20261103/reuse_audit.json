@@ -1,0 +1,131 @@
+{
+  "protected_original_files": {
+    "configs/train.json": "4c8b9655c3d871af3cb12550cbb8e54366d33643bb025bb66021365743359ea9",
+    "scripts/train.py": "b6a1e36fa4aad35442c90a71e3e6398bb87f40e876a7c4512457c5f87ac7e1b1",
+    "src/trainer.py": "ae2afdd4f13e6855be4772b3328dcfaa61ed2789b4f7b639c5e897c22d5c8ef9",
+    "src/runner.py": "ab4d5abdb92b9c45def9eaea1e8ca46f8bd456e7b34e2db14701081c3b1889fe",
+    "src/data.py": "cecd41de320260943be5230269e33b4398d761ecfb0d4b750651225986fe70d5",
+    "src/evaluator.py": "1217bce1d0c82b652d26541b18bec6fb651bc3cbfccd5d858443e96560646866",
+    "src/metrics.py": "1f3f331c8dc3613e771a1ec115b37ed9102c4854ba9321ee1d253c9d586fcf37",
+    "src/config.py": "cf2e82c1514323a1d879dcb8a6b590df15640d21dc2fa12ac18af71ea8e01fb9",
+    "src/models/transmixer_net/model.py": "e1b387b5d79235e3834ba223e971b23b9b53f0da4fcf2c989216b6fe6298fbe2",
+    "src/models/transmixer_paper/model.py": "9983233985e66a77a4f1579876be8cf695c87559d9c818557666103ad142b43d",
+    "src/models/transmixer_sr/adapter.py": "d02d0ca3cd678b4e2411d5d0fa75aeead2ff05f01f2efb900a95f42a90f56879"
+  },
+  "reused": [
+    {
+      "id": "G00_seed6",
+      "source": "G00_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 87.69369517094367,
+        "aa": 89.87053055462906,
+        "kappa": 86.63781272993324
+      }
+    },
+    {
+      "id": "G01_seed6",
+      "source": "G01_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 92.4079691727474,
+        "aa": 93.50584925960878,
+        "kappa": 91.75534305565003
+      }
+    },
+    {
+      "id": "G02_seed6",
+      "source": "G02_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 92.30958432401411,
+        "aa": 92.91597557442431,
+        "kappa": 91.6472593167618
+      }
+    },
+    {
+      "id": "G03_seed6",
+      "source": "G03_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 92.35877674838075,
+        "aa": 93.22057818523228,
+        "kappa": 91.7013507004047
+      }
+    },
+    {
+      "id": "G04_seed6",
+      "source": "G04_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 91.91604492908093,
+        "aa": 92.74131357327788,
+        "kappa": 91.22023181158613
+      }
+    },
+    {
+      "id": "G05_seed6",
+      "source": "G05_seed6",
+      "accepted": true,
+      "metrics": {
+        "oa": 87.75108633270476,
+        "aa": 89.99393289610192,
+        "kappa": 86.70077743627095
+      }
+    },
+    {
+      "id": "G00_seed7",
+      "source": "M0_seed7",
+      "accepted": true,
+      "metrics": {
+        "oa": 86.69344920882183,
+        "aa": 88.03214551529389,
+        "kappa": 85.5550306084859
+      }
+    },
+    {
+      "id": "G01_seed7",
+      "source": "M3_seed7",
+      "accepted": true,
+      "metrics": {
+        "oa": 87.68549643354923,
+        "aa": 89.33857986484632,
+        "kappa": 86.62561251052117
+      }
+    },
+    {
+      "id": "G00_seed8",
+      "source": "M0_seed8",
+      "accepted": true,
+      "metrics": {
+        "oa": 86.80003279494957,
+        "aa": 88.73215966365457,
+        "kappa": 85.6655644471468
+      }
+    },
+    {
+      "id": "G01_seed8",
+      "source": "M3_seed8",
+      "accepted": true,
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 90.09449487537687,
+        "kappa": 87.08268936294795
+      }
+    }
+  ],
+  "data_files_verified": 4,
+  "spectral_scale": 0.2775005102157593,
+  "sr_statistics_source": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\sr_native\\sr_native_20261029\\training_input_statistics.json",
+  "source_migration": {
+    "approved_at": "2026-11-01T10:35:55.787964+08:00",
+    "previous_batch_manifest": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\fusion_papers\\fusion_papers_seed6_20261031\\manifest.json",
+    "all_previous_pins_verified_before_change": true,
+    "only_authorized_existing_source_change": "src/models/transmixer_fusion_papers/adapter.py",
+    "old_adapter_sha256": "7ace4b9fc71c8f356f994667830470ae7054929da1e8765b27f6cf7f93d248e2",
+    "archive": "adapter_seed6_before_extension.py.txt",
+    "reason": "Permit seeds7/8 only for existing B1 groups G02-G05; no model computation change.",
+    "new_adapter_sha256": "fe62f4ad98038c234d2200973b4a47a9ae21df4b8b3d68cf24b513d8ac255d0e",
+    "verified_at": "2026-11-01T10:38:52.148790+08:00"
+  }
+}

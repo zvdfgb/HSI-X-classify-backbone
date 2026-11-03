@@ -1,0 +1,25 @@
+{
+  "id": "D01_seed6",
+  "seed": 6,
+  "started_at": "2026-11-02T16:40:41.555722+08:00",
+  "finished_at": "2026-11-02T17:05:45.186842+08:00",
+  "elapsed_seconds": 1503.63117529999,
+  "epochs": 100,
+  "metrics": {
+    "oa": 91.58809543330328,
+    "aa": 92.7529542085326,
+    "kappa": 90.86476433796446
+  },
+  "best_checkpoint_fusion_diagnostics": {
+    "group": "D01",
+    "alpha_h": -0.09320396929979324,
+    "h_update_rms": 0.7829117178916931,
+    "l_update_rms": 0.3226855993270874,
+    "alpha_l": 0.06633420288562775
+  },
+  "checkpoint_sha256": "4d6129694c4fda086aa11fd79bd18d6d903ea3413a595f9db3fde0edd7549809",
+  "report_sha256": "50aed7ba3a1368dec4d28c5cf83dd9586852b5ed5df7d5d9328347e5a46b32c0",
+  "stdout_sha256": "3a17a7f4caefd411979f98768d91ebf09c740578ca9a84a41a7d62d70e412b41",
+  "stderr_sha256": "1d30f157fd939a2956c01a60e01b040337292e05b59d16414f95393c629ffb4c",
+  "native_log_sha256": "7a44fc8e1c90c9d3e99603e3efa725b06977ff59449dcf365c748a59d96af9ad"
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "status": "approved",
+  "training_authorized_for_this_matrix": true,
+  "executable_training_config": false,
+  "design_document": "20261102_三篇融合机制_实验审核稿.md",
+  "scope": {
+    "total_results": 13,
+    "reused_results": 1,
+    "new_training_runs": 12,
+    "new_training_epochs_total": 1200,
+    "seeds": [
+      6
+    ],
+    "combined_directions": false,
+    "automatic_seed_extension": false,
+    "automatic_hyperparameter_search": false
+  },
+  "fixed_protocol": {
+    "dataset": "Houston2013",
+    "split": "official",
+    "train_samples": 2832,
+    "test_samples": 12197,
+    "pca_channels": 30,
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 0,
+    "optimizer": "native AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "data_entry": "src/data.py",
+    "evaluation_entries": [
+      "src/evaluator.py",
+      "src/metrics.py"
+    ],
+    "selection": "unchanged native test-OA checkpoint selection and evaluation epochs",
+    "backbone": "A: native local/global fixed 1:1 channel split + SR2",
+    "sr_spatial_sigma": 3.0,
+    "sr_spectral_scale": 0.2775005102157593,
+    "initialization": "from scratch; original backbone construction order; verify original initial tensor equality",
+    "randomness": "preserve native settings; same seed does not imply same trajectory after new random operations"
+  },
+  "baseline": {
+    "id": "A00",
+    "source_id": "G01_seed6 / sr_native_20261029_M3_seed6",
+    "summary": "report/fusion_papers/fusion_B1_seed78_20261101/summary.json",
+    "oa_percent": 92.4079691727474,
+    "aa_percent": 93.50584925960878,
+    "kappa_percent": 91.75534305565003,
+    "reuse_condition": "verify source configuration, completion evidence, report and checkpoint hashes before execution; stop on mismatch"
+  },
+  "groups": [
+    {
+      "id": "A00",
+      "direction": "baseline",
+      "seed": 6,
+      "epochs": 100,
+      "action": "reuse_after_audit",
+      "module": "A",
+      "loss": "CE"
+    },
+    {
+      "id": "F01",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "full-band weighted fusion + weighted full-band shallow compensation",
+      "loss": "CE",
+      "role": "capacity and ordinary fusion control"
+    },
+    {
+      "id": "F02",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion without shallow compensation",
+      "loss": "CE",
+      "role": "frequency fusion alone"
+    },
+    {
+      "id": "F03",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion + weighted full-band shallow compensation",
+      "loss": "CE",
+      "role": "full-band compensation control"
+    },
+    {
+      "id": "F04",
+      "direction": "MFDNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "adaptive three-band fusion + weighted high-frequency shallow compensation",
+      "loss": "CE",
+      "role": "full mechanism adaptation"
+    },
+    {
+      "id": "U01",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "deterministic dual-head content representation and ordinary content gate",
+      "loss": "CE",
+      "role": "ordinary gating and active-capacity control"
+    },
+    {
+      "id": "U02",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "Gaussian UAM and channel/spatial modulation; confidence fixed at one",
+      "loss": "CE + 0.001*KL",
+      "role": "probabilistic representation without reliability gating"
+    },
+    {
+      "id": "U03",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "Gaussian UAM + spatial confidence-guided CGM",
+      "loss": "CE + 0.001*KL",
+      "role": "full mechanism adaptation"
+    },
+    {
+      "id": "U04",
+      "direction": "UMFNet",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "U03 with confidence map spatially averaged and broadcast",
+      "loss": "CE + 0.001*KL",
+      "role": "global versus spatial confidence control"
+    },
+    {
+      "id": "D01",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "32 shared + 32 unique channels per modality; task refiners",
+      "loss": "CE",
+      "role": "projection capacity control; names do not prove factorization"
+    },
+    {
+      "id": "D02",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D01 + reconstruction and branch auxiliary classification",
+      "loss": "CE + 0.10*aux_CE + 0.01*reconstruction",
+      "role": "ordinary auxiliary supervision control"
+    },
+    {
+      "id": "D03",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D02 + shared/unique MI decomposition",
+      "loss": "D02_loss + 0.01*decomposition_MI + 0.01*decomposition_critic_fit",
+      "role": "factorization objective"
+    },
+    {
+      "id": "D04",
+      "direction": "FINE",
+      "seed": 6,
+      "epochs": 100,
+      "action": "new_after_review",
+      "module": "D03 + label-conditioned task-relevance MI",
+      "loss": "D03_loss + 0.01*task_MI + 0.01*task_critic_fit",
+      "role": "full FTRE-core adaptation"
+    }
+  ],
+  "adaptation_constants": {
+    "frequency": {
+      "axes": "spatial H/W only",
+      "bands": 3,
+      "normalized_radius_edges": [
+        0,
+        0.3333333333333333,
+        0.6666666666666666,
+        1
+      ],
+      "fft_norm": "ortho",
+      "high_frequency_radius_above": 0.6666666666666666,
+      "compensation_weight_source": "coarse fused feature",
+      "parameter_matching": "F01/F03/F04 same active-head/projection specification; audit actual counts; no dead parameters"
+    },
+    "uncertainty": {
+      "reference": "HSI",
+      "guide": "LiDAR",
+      "latent_channels": 32,
+      "logvar_clamp": [
+        -10,
+        10
+      ],
+      "kl_reduction": "mean over batch, spatial and latent dimensions, then modalities",
+      "training_sampling": true,
+      "evaluation_sampling": false,
+      "evaluation": "mean once; no Monte Carlo ensemble",
+      "parameter_control": "U03/U04 identical; report U02 removed confidence-head parameters; U01 both heads active"
+    },
+    "factorization": {
+      "shared_channels": 32,
+      "unique_channels": 32,
+      "label_embedding_channels": 32,
+      "infonce_temperature": 0.1,
+      "reconstruction_target_detached": true,
+      "conditional_singleton_policy": "skip classes with fewer than two batch samples; zero conditional term when none valid; log effective count",
+      "loss_reduction": "mean over valid examples and then terms",
+      "optimization": "one native AdamW and one backward/step; detached critic weights in representation objective; detached features/labels in critic-fit objective",
+      "official_optimization_difference": "synchronous gradient-isolated adaptation instead of official internal Adam optimizers and alternating critic updates",
+      "queue": false,
+      "qformer_experts": false
+    }
+  },
+  "comparisons": {
+    "primary": [
+      "F04-A00",
+      "U03-A00",
+      "D04-A00"
+    ],
+    "mechanism": [
+      "F03-F01",
+      "F04-F03",
+      "F04-F02",
+      "U03-U01",
+      "U03-U02",
+      "U03-U04",
+      "D04-D02",
+      "D03-D02",
+      "D04-D03"
+    ],
+    "confounding_notes": [
+      "F04-F02 includes compensation branch capacity",
+      "U03-U01 includes sampling, KL and representation differences",
+      "capacity audit required before strict single-factor claims",
+      "FINE adaptation does not reproduce official optimization"
+    ]
+  },
+  "interpretation": {
+    "report_all_groups": true,
+    "priority_screen": "OA improvement >= 0.2 percentage points; AA and Kappa nondecreasing; also inspect mechanism controls and per-class tradeoffs",
+    "priority_screen_is_significance_test": false,
+    "metrics": [
+      "OA",
+      "AA",
+      "Kappa",
+      "native per-class metrics and confusion matrix"
+    ],
+    "limitations": [
+      "single seed",
+      "single dataset",
+      "test OA participates in checkpoint selection",
+      "cross-task mechanism adaptations; not full paper reproductions",
+      "no guaranteed improvement"
+    ]
+  },
+  "preflight_required_after_review": [
+    "original initialization and disabled-residual output agreement",
+    "batch128 shapes and finite forward/backward",
+    "spatial FFT reconstruction and nonempty bands",
+    "train-sample versus eval-mean behavior",
+    "MI representation/critic gradient isolation",
+    "active parameter counts",
+    "no test-label use in forward",
+    "original artifacts and source/config/data hash audit"
+  ],
+  "completion_evidence": [
+    "100 epochs",
+    "Report Success",
+    "native report",
+    "checkpoint hash"
+  ],
+  "not_authorized_by_this_document": [
+    "start training",
+    "change native training/data/selection code",
+    "overwrite old results",
+    "rerun baseline",
+    "add seeds or combinations",
+    "tune using test OA",
+    "create additional optimizers",
+    "push to GitHub"
+  ],
+  "authorization": "User explicitly approved this matrix and requested training plus hourly reporting in this chat on 2026-11-02"
+}

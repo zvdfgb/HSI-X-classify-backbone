@@ -1,0 +1,223 @@
+{
+  "total": 13,
+  "completed": 13,
+  "reused": 1,
+  "new_completed": 12,
+  "new_total": 12,
+  "seeds": [
+    6
+  ],
+  "runs": [
+    {
+      "id": "A00_seed6",
+      "group": "A00",
+      "seed": 6,
+      "reused": true,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 92.4079691727474,
+      "aa": 93.50584925960878,
+      "kappa": 91.75534305565003
+    },
+    {
+      "id": "F01_seed6",
+      "group": "F01",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_F01\\Houston2013_report_fusion_transfer_seed6_20261102_F01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.08797245224235,
+      "aa": 92.5895386963006,
+      "kappa": 90.32328183835165
+    },
+    {
+      "id": "F02_seed6",
+      "group": "F02",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_F02\\Houston2013_report_fusion_transfer_seed6_20261102_F02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 90.33368861195376,
+      "aa": 91.79297882927823,
+      "kappa": 89.50209155684873
+    },
+    {
+      "id": "F03_seed6",
+      "group": "F03",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_F03\\Houston2013_report_fusion_transfer_seed6_20261102_F03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.70287775682546,
+      "aa": 92.97231815553975,
+      "kappa": 90.99093895317506
+    },
+    {
+      "id": "F04_seed6",
+      "group": "F04",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_F04\\Houston2013_report_fusion_transfer_seed6_20261102_F04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.84225629253095,
+      "aa": 92.985755141898,
+      "kappa": 91.14186179849997
+    },
+    {
+      "id": "U01_seed6",
+      "group": "U01",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_U01\\Houston2013_report_fusion_transfer_seed6_20261102_U01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 90.24350250061491,
+      "aa": 91.71997870729494,
+      "kappa": 89.40590144462101
+    },
+    {
+      "id": "U02_seed6",
+      "group": "U02",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_U02\\Houston2013_report_fusion_transfer_seed6_20261102_U02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 90.42387472329261,
+      "aa": 91.86525266660169,
+      "kappa": 89.60200303514945
+    },
+    {
+      "id": "U03_seed6",
+      "group": "U03",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_U03\\Houston2013_report_fusion_transfer_seed6_20261102_U03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.275805525949,
+      "aa": 90.28437818405902,
+      "kappa": 87.26873755725961
+    },
+    {
+      "id": "U04_seed6",
+      "group": "U04",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_U04\\Houston2013_report_fusion_transfer_seed6_20261102_U04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 88.43978027383783,
+      "aa": 90.35838948390477,
+      "kappa": 87.44706967308916
+    },
+    {
+      "id": "D01_seed6",
+      "group": "D01",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_D01\\Houston2013_report_fusion_transfer_seed6_20261102_D01_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.58809543330328,
+      "aa": 92.7529542085326,
+      "kappa": 90.86476433796446
+    },
+    {
+      "id": "D02_seed6",
+      "group": "D02",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_D02\\Houston2013_report_fusion_transfer_seed6_20261102_D02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 90.85020906780356,
+      "aa": 92.25454636267477,
+      "kappa": 90.06322636619421
+    },
+    {
+      "id": "D03_seed6",
+      "group": "D03",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_D03\\Houston2013_report_fusion_transfer_seed6_20261102_D03_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.30113962449784,
+      "aa": 92.64597791654504,
+      "kappa": 90.55467018832515
+    },
+    {
+      "id": "D04_seed6",
+      "group": "D04",
+      "seed": 6,
+      "reused": false,
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV2_D04\\Houston2013_report_fusion_transfer_seed6_20261102_D04_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "oa": 91.72747396900877,
+      "aa": 92.9051229167213,
+      "kappa": 91.01741409346938
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "F04-A00",
+      "oa_delta_pp": -0.5657128802164522,
+      "aa_delta_pp": -0.5200941177107836,
+      "kappa_delta_pp": -0.6134812571500561
+    },
+    {
+      "comparison": "U03-A00",
+      "oa_delta_pp": -4.1321636467984035,
+      "aa_delta_pp": -3.2214710755497578,
+      "kappa_delta_pp": -4.486605498390418
+    },
+    {
+      "comparison": "D04-A00",
+      "oa_delta_pp": -0.68049520373863,
+      "aa_delta_pp": -0.6007263428874836,
+      "kappa_delta_pp": -0.7379289621806464
+    },
+    {
+      "comparison": "F03-F01",
+      "oa_delta_pp": 0.6149053045831039,
+      "aa_delta_pp": 0.3827794592391598,
+      "kappa_delta_pp": 0.6676571148234132
+    },
+    {
+      "comparison": "F04-F03",
+      "oa_delta_pp": 0.13937853570548953,
+      "aa_delta_pp": 0.01343698635824353,
+      "kappa_delta_pp": 0.15092284532491362
+    },
+    {
+      "comparison": "F04-F02",
+      "oa_delta_pp": 1.5085676805771868,
+      "aa_delta_pp": 1.1927763126197704,
+      "kappa_delta_pp": 1.6397702416512487
+    },
+    {
+      "comparison": "U03-U01",
+      "oa_delta_pp": -1.9676969746659125,
+      "aa_delta_pp": -1.4356005232359195,
+      "kappa_delta_pp": -2.137163887361396
+    },
+    {
+      "comparison": "U03-U02",
+      "oa_delta_pp": -2.1480691973436166,
+      "aa_delta_pp": -1.5808744825426686,
+      "kappa_delta_pp": -2.3332654778898387
+    },
+    {
+      "comparison": "U03-U04",
+      "oa_delta_pp": -0.1639747478888296,
+      "aa_delta_pp": -0.0740112998457505,
+      "kappa_delta_pp": -0.1783321158295479
+    },
+    {
+      "comparison": "D04-D02",
+      "oa_delta_pp": 0.8772649012052085,
+      "aa_delta_pp": 0.6505765540465234,
+      "kappa_delta_pp": 0.9541877272751691
+    },
+    {
+      "comparison": "D03-D02",
+      "oa_delta_pp": 0.4509305566942743,
+      "aa_delta_pp": 0.3914315538702624,
+      "kappa_delta_pp": 0.4914438221309325
+    },
+    {
+      "comparison": "D04-D03",
+      "oa_delta_pp": 0.4263343445109342,
+      "aa_delta_pp": 0.25914500017626096,
+      "kappa_delta_pp": 0.4627439051442366
+    }
+  ],
+  "limitations": [
+    "single seed",
+    "single dataset",
+    "test OA participates in checkpoint selection",
+    "cross-task mechanism adaptations; not full paper reproductions",
+    "no guaranteed improvement"
+  ]
+}

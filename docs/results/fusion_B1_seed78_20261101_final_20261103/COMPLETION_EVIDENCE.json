@@ -1,0 +1,152 @@
+{
+  "captured_at_beijing": "2026-11-03T17:33:29.559083+08:00",
+  "all_passed": true,
+  "new_training_runs": 8,
+  "runs": [
+    {
+      "id": "G02_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:33<00:00,  1.52s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "c5800df29609a60563ff5ee7246285c774397475db33841738915f558df74b07",
+        "report": "a4c37131d7d38f26ec2ba85b750798b655cf350de969a4bcc51022816f392fce",
+        "stdout": "cf91591ca5a10e246377cd132bd79f6c974dadcfd44f443e45b633419b0e83f0",
+        "stderr": "d1ac0080df937b4efbc735ebf52f540af505e9dd22fc94a4e1ab0c157dc4c7b3",
+        "native_log": "d08317a2622a7c7a24f8ca33f63baa00a2231db2f8f59272409738fd54766ad8"
+      },
+      "metrics": {
+        "oa": 87.87406739362137,
+        "aa": 89.5115749212215,
+        "kappa": 86.83117528289591
+      }
+    },
+    {
+      "id": "G03_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:38<00:00,  1.75s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "e968193ae7521205b852a602785e01afd719857da2fd3137c0ac89af8d7ad412",
+        "report": "e7fd1242fb0b94458ed87b36df8649543c51073a78a799697464d757faf7330e",
+        "stdout": "92dddf45c143e4f67dc101aa93a36c4a514a56178793e6dbeaafe332f43cd82c",
+        "stderr": "544afac19f457ce92428aec55eeba0926f60c628a35dd87b8faf505f075a5d25",
+        "native_log": "5cea30a0b684541b0b8fa24611cb7aee19328ae6d37bc135410c1342d4f04523"
+      },
+      "metrics": {
+        "oa": 87.79208001967696,
+        "aa": 89.40637955450808,
+        "kappa": 86.741979398665
+      }
+    },
+    {
+      "id": "G04_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:37<00:00,  1.72s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "2f294f0d91b92cc10e852288c64ad9453a9189f9390bf1882917c3c3192cae54",
+        "report": "2c9876205ecfbe77934cc5c1992539eb8b161970ab4d6a83ba224b1953666aeb",
+        "stdout": "88301c510d90b520dc8a3bfbc416cdb8fbf3fb16b305a049e8100e8726ad83c0",
+        "stderr": "d2606449c13e838b4814e1a1612613755cef0a5645696187086e819c81461d75",
+        "native_log": "c158564478b9795584feafe3d5c69335f2685e96460c752e191b4c1b8c3c4710"
+      },
+      "metrics": {
+        "oa": 87.69369517094367,
+        "aa": 89.3447455799537,
+        "kappa": 86.63494074580879
+      }
+    },
+    {
+      "id": "G05_seed7",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:37<00:00,  1.72s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "a1d5edaecc87c9725dc4138cd05959116ca19148ca92abe210ea8a3047269a59",
+        "report": "d894ad87cfc61116bf1e265dd5df7ac78b0bd6a41e80890c83060c360863f3e4",
+        "stdout": "0826cb9ceac25496f1e48ebb528bccef5136481be4527eb1b7466c066a7d8f99",
+        "stderr": "38b44205ddc96c997d7a682049e2395eabe2c5e9fab7045e19d68ef7e5a189fd",
+        "native_log": "b3ee2f72f01b03e0f0d2e82708eabe218e846b2d8ec65e23702ae3b551a15c7b"
+      },
+      "metrics": {
+        "oa": 88.8907108305321,
+        "aa": 90.09698681163495,
+        "kappa": 87.93553002789548
+      }
+    },
+    {
+      "id": "G02_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:35<00:00,  1.60s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "94b039b4d8fbf55930352eb1b57d603fdf52862444c13341799eaf1b3ea871ea",
+        "report": "0d2b99ee6b8ece2713f484175f3c618a36529465a4178a22533e9ed9fa3b0dfb",
+        "stdout": "9867bee8320aac8e6adec57c329783b3426f866640fd68304d7246d5bacbbb39",
+        "stderr": "e10fbb8197fe0162b92bbd95b83d3f7f78c93cccd7938b9644ca274616706e75",
+        "native_log": "45e1bfa6c396625a2abd1f505b0d24ef8acc9d0065b667c4d017c67d176701ed"
+      },
+      "metrics": {
+        "oa": 87.997048454538,
+        "aa": 90.0214011203212,
+        "kappa": 86.9773805126845
+      }
+    },
+    {
+      "id": "G03_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:34<00:00,  1.56s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "ee88af6d5fd755cd4d0c302a710540adad2f8a3c9f149117c05f533fb3779e6b",
+        "report": "f4f0a5f7539c9a760691c5d8d536c87d94b6ba4f258b1e3367a0b7c8ea955b72",
+        "stdout": "504eee859b89705f0175b7b51c0ba0abdc2c2669a7d42567afa3be99f33b3cbc",
+        "stderr": "a95e3edc6a3425348d6dec8d42b7f670e8e3b6102125770873d328e034a066ae",
+        "native_log": "daa53e7490629bb1401b89cde6832cb16f42d53955becf220b2ccd92f1f35be8"
+      },
+      "metrics": {
+        "oa": 88.0380421415102,
+        "aa": 90.06987003254768,
+        "kappa": 87.02213398828222
+      }
+    },
+    {
+      "id": "G04_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:36<00:00,  1.67s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "ce69c5a46ea806bb1481755ee6a486a87e4ab1ef09dcc4b557e311a110344f85",
+        "report": "3211ed63509dbb34d7c2bc3e7c6265327931d0bb1b7d5a028e6c5c7ecd4dd26e",
+        "stdout": "6d4c882df0a06e6037038ae06c018e10cc4797efb98eec04d05e56a5a8e6d099",
+        "stderr": "efe2c9f111a90f7c88f81a9d52cee7045e668139dd777ba6117f497ba4d917de",
+        "native_log": "c9e683e258badcd8f107bd44f62457861e72d8f29e6c899a2e22963ec1312a46"
+      },
+      "metrics": {
+        "oa": 88.22661310158236,
+        "aa": 90.21595398957119,
+        "kappa": 87.22392241509635
+      }
+    },
+    {
+      "id": "G05_seed8",
+      "epochs": 100,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:33<00:00,  1.54s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "e11f8068d105813828825a33e97e7dbb1abf074df3fff69889a948e255946edf",
+        "report": "709d45072c4290967a5da20f2d264302d9ba9c0017deb3f3aebbe8c8a64b3514",
+        "stdout": "9b1687f8fab43c2d122c99baed43b26cc4929f340edf891d49dca18c96a67b99",
+        "stderr": "45465b0c9bd181a6ffa0af313bd93aecf613bbf92d5edbdcf3178fa057955b1f",
+        "native_log": "da7641ccd395297313cff8d2db361a873be15a442e58987429b0499c3ab22c87"
+      },
+      "metrics": {
+        "oa": 87.35754693777157,
+        "aa": 89.13942722312663,
+        "kappa": 86.27182507140262
+      }
+    }
+  ],
+  "note": "Excerpts and SHA256 read from original full logs; full logs and checkpoints remain local."
+}
