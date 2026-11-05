@@ -1,0 +1,113 @@
+{
+  "all_passed": true,
+  "baselines": [
+    {
+      "id": "A0_seed6",
+      "group": "A0",
+      "seed": 6,
+      "reused": true,
+      "reuse_source": "sr_native_20261029/M3_seed6",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed6.json",
+      "config_sha256": "a7af71c615baadbc12f841a8245a540e176bd66385b65f2dc5541cd3ed56998c",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "eaecd5efb8cd3dc76b3dfaa1cd5eb0d26f24b594871cf60855aa30b11d31badd",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878",
+      "metrics": {
+        "oa": 92.4079691727474,
+        "aa": 93.50584925960878,
+        "kappa": 91.75534305565003
+      }
+    },
+    {
+      "id": "A0_seed7",
+      "group": "A0",
+      "seed": 7,
+      "reused": true,
+      "reuse_source": "sr_native_20261029/M3_seed7",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed7.json",
+      "config_sha256": "51cc8b376a44d79d73d211bd857d2c631c430878350efaeb97b491f79e8e6003",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "a2c0f2931c9c2c40d5a56df2145d33a721ea4e2cbca25b262d2e3df79eddd49f",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "32942e2263f898624148d36924f42002d3fb06bd1f7fa8302cb857251c80782e",
+      "metrics": {
+        "oa": 87.68549643354923,
+        "aa": 89.33857986484632,
+        "kappa": 86.62561251052117
+      }
+    },
+    {
+      "id": "A0_seed8",
+      "group": "A0",
+      "seed": 8,
+      "reused": true,
+      "reuse_source": "sr_native_20261029/M3_seed8",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed8.json",
+      "config_sha256": "9476d5cd26479cf088eac2df9d421ee97d018435af1fffc33b391cc3b8e4190e",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "304a686b7d8a09928a28022236ad9db222cab273d2ce2f8a97a22aa19a7d4937",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "acc65045f0f5a0d2786ad018f42d483a27b5b0c8df1372a2b66d721a665e5fcd",
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 90.09449487537687,
+        "kappa": 87.08268936294795
+      }
+    },
+    {
+      "id": "C02_seed6",
+      "group": "C02",
+      "seed": 6,
+      "reused": true,
+      "reuse_source": "fusion_transfer_v3_seed678_20261104/C02_seed6",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\fusion_transfer_v3_seed678_20261104\\C02_seed6.json",
+      "config_sha256": "27a3119c333953244e3955a69691aa8316a9e74a7c0916c84c65b16261a3b2c4",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_FV3_C02\\Houston2013_model_fusion_transfer_v3_seed678_20261104_C02_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "998ce7add2e59844af4c81a5a3182731f7fa91fee9556893628a3c12c9eb535d",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV3_C02\\Houston2013_report_fusion_transfer_v3_seed678_20261104_C02_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "739cee7c54f8edeafd792eaa5aa65ffbf34ec5d518ec9c1142664cfe7b17b0b5",
+      "metrics": {
+        "oa": 88.29220300073789,
+        "aa": 90.36882137533267,
+        "kappa": 87.2848836742
+      }
+    },
+    {
+      "id": "C02_seed7",
+      "group": "C02",
+      "seed": 7,
+      "reused": true,
+      "reuse_source": "fusion_transfer_v3_seed678_20261104/C02_seed7",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\fusion_transfer_v3_seed678_20261104\\C02_seed7.json",
+      "config_sha256": "a2d6da4756d728ad3484efe22eea8ae589511478732141134c15a00a9f48126a",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_FV3_C02\\Houston2013_model_fusion_transfer_v3_seed678_20261104_C02_seed7_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "3d24ffd082e67ea11fa9e02877d39e85e4b122f16d26bfd199281549a159cc1a",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV3_C02\\Houston2013_report_fusion_transfer_v3_seed678_20261104_C02_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "82b9fd6091d581ca350a5ae206f3d31a6f278b8550b3206cca0667aedca3397a",
+      "metrics": {
+        "oa": 92.49815528408625,
+        "aa": 93.48240251435054,
+        "kappa": 91.8556695019795
+      }
+    },
+    {
+      "id": "C02_seed8",
+      "group": "C02",
+      "seed": 8,
+      "reused": true,
+      "reuse_source": "fusion_transfer_v3_seed678_20261104/C02_seed8",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\fusion_transfer_v3_seed678_20261104\\C02_seed8.json",
+      "config_sha256": "2b4a6460846a8e73f51eb0538bc47f12472d49c1b63e317909a170c39e03d5d1",
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_FV3_C02\\Houston2013_model_fusion_transfer_v3_seed678_20261104_C02_seed8_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "checkpoint_sha256": "9e59b2ca83853a51abaa12e6cbfcab227004addd5ca0689fcd0d2cc428275463",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_FV3_C02\\Houston2013_report_fusion_transfer_v3_seed678_20261104_C02_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "report_sha256": "86e5d878346f5355a6fd8bcb6ad47a668db8b8a2d4acdfd9e64fa225e12d35a9",
+      "metrics": {
+        "oa": 91.68648028203657,
+        "aa": 93.09978878784112,
+        "kappa": 90.97161453795015
+      }
+    }
+  ]
+}

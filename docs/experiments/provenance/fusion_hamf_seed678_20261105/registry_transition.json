@@ -1,0 +1,15 @@
+{
+  "authorized": true,
+  "applied_at": "2026-11-05T23:41:23.711680+08:00",
+  "before_sha256": "e0caee692ba0967571bc3126a9e0b1bfd5be72e051be281db685b3610c917716",
+  "after_sha256": "a0b3ca99f510638c54be2b22e7aff8baa061db6c0d7d3d3bed2594638405ef29",
+  "only_added_names": [
+    "TransMixer_HAMF_M00",
+    "TransMixer_HAMF_M01",
+    "TransMixer_HAMF_M02",
+    "TransMixer_HAMF_M03",
+    "TransMixer_HAMF_M04",
+    "TransMixer_HAMF_M05"
+  ],
+  "historical_mappings_unchanged": true
+}

@@ -1,0 +1,145 @@
+{
+  "training_authorized": true,
+  "approved_at_recorded": "2026-11-05T23:41:23.764520+08:00",
+  "user_instruction": "可以 / 严格按照我之前的实验要求，开启这组实验吧。并上传github这两天的工作",
+  "review_document": "docs/experiments/20261105_轻量多尺度SR引导融合_实验审核稿.md",
+  "review_sha256": "d08b2c4b800a29a212740dd36f58bf2bd1490c9bfc264a1da1149c1ef56d68b2",
+  "total_groups": 8,
+  "total_results": 24,
+  "reused": 6,
+  "new_training_runs": 18,
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "epochs": 100,
+  "groups": [
+    "A0",
+    "C02",
+    "M00",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05"
+  ],
+  "verified_parameters": {
+    "A0": 80887,
+    "C02": 680311,
+    "M00": 136183,
+    "M01": 159993,
+    "M02": 161017,
+    "M03": 163132,
+    "M04": 163380,
+    "M05": 163380
+  },
+  "new_jobs": [
+    {
+      "id": "M00_seed6",
+      "group": "M00",
+      "seed": 6
+    },
+    {
+      "id": "M01_seed6",
+      "group": "M01",
+      "seed": 6
+    },
+    {
+      "id": "M02_seed6",
+      "group": "M02",
+      "seed": 6
+    },
+    {
+      "id": "M03_seed6",
+      "group": "M03",
+      "seed": 6
+    },
+    {
+      "id": "M04_seed6",
+      "group": "M04",
+      "seed": 6
+    },
+    {
+      "id": "M05_seed6",
+      "group": "M05",
+      "seed": 6
+    },
+    {
+      "id": "M00_seed7",
+      "group": "M00",
+      "seed": 7
+    },
+    {
+      "id": "M01_seed7",
+      "group": "M01",
+      "seed": 7
+    },
+    {
+      "id": "M02_seed7",
+      "group": "M02",
+      "seed": 7
+    },
+    {
+      "id": "M03_seed7",
+      "group": "M03",
+      "seed": 7
+    },
+    {
+      "id": "M04_seed7",
+      "group": "M04",
+      "seed": 7
+    },
+    {
+      "id": "M05_seed7",
+      "group": "M05",
+      "seed": 7
+    },
+    {
+      "id": "M00_seed8",
+      "group": "M00",
+      "seed": 8
+    },
+    {
+      "id": "M01_seed8",
+      "group": "M01",
+      "seed": 8
+    },
+    {
+      "id": "M02_seed8",
+      "group": "M02",
+      "seed": 8
+    },
+    {
+      "id": "M03_seed8",
+      "group": "M03",
+      "seed": 8
+    },
+    {
+      "id": "M04_seed8",
+      "group": "M04",
+      "seed": 8
+    },
+    {
+      "id": "M05_seed8",
+      "group": "M05",
+      "seed": 8
+    }
+  ],
+  "main_comparison": "M04-A0",
+  "predefined_comparisons": [
+    "M04-A0",
+    "M04-C02",
+    "M02-A0",
+    "M02-C02",
+    "M02-M00",
+    "M02-M01",
+    "M03-M02",
+    "M04-M02",
+    "M04-M03",
+    "M04-M05"
+  ],
+  "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+  "checkpoint_selection": "unchanged native scheduled test OA maximum; not independent test",
+  "retrain_on_failure": false
+}
