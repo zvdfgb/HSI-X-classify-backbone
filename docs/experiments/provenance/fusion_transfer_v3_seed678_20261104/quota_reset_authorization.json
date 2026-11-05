@@ -1,0 +1,10 @@
+{
+  "authorized_at_recorded": "2026-11-04T12:37:15.352041+08:00",
+  "user_instruction": "如果额度剩余只剩1%就自己使用重置卡",
+  "max_successful_resets": 1,
+  "threshold_remaining_percent": 1,
+  "purchase_authorized": false,
+  "idempotencyKey": "7ad23964-8467-4a20-bb76-947e643315e6",
+  "result_file": "quota_reset_result.json",
+  "check_both_five_hour_and_weekly": true
+}

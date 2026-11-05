@@ -1,0 +1,14 @@
+{
+  "helper_pid": 44664,
+  "power_plan_changed": false,
+  "display_required": false,
+  "started_at": "2026-11-04T16:52:44.871504+08:00",
+  "state": "released",
+  "native_request_succeeded": true,
+  "checked_at": "2026-11-05T09:01:27.768210+08:00",
+  "queue_pid": 20500,
+  "training_pid": 52972,
+  "ac_connected": true,
+  "battery_percent": 95,
+  "updated_at": "2026-11-05T09:01:47.779291+08:00"
+}

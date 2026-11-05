@@ -1,0 +1,7 @@
+﻿comparison,gained_in_all_three,lost_in_all_three,gained_in_at_least_one,lost_in_at_least_one,gain_one_seed_loss_another
+L_alone,15,103,1096,970,128
+SR_alone,94,21,608,442,21
+SR_on_L,70,6,1434,887,416
+L_on_SR,40,6,885,578,117
+spectral_vs_distance,13,6,1088,498,188
+combined,111,27,1058,568,70

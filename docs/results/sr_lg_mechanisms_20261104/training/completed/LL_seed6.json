@@ -1,0 +1,18 @@
+{
+  "id": "LL_seed6",
+  "seed": 6,
+  "epochs": 100,
+  "started_at": "2026-11-04T11:33:37.897554+08:00",
+  "finished_at": "2026-11-04T12:02:11.030772+08:00",
+  "elapsed_seconds": 1713.1332515000004,
+  "metrics": {
+    "oa": 89.62039845863737,
+    "aa": 91.3914757871155,
+    "kappa": 88.74086947551267
+  },
+  "checkpoint_sha256": "b3784e7a6708a4884f96323431e2c4b9a9ce0a35118a58592750d1de79a20658",
+  "report_sha256": "639f7480a5576138ee5e7adc49e86e40c440f7bcd7598e79c94aa266387722fe",
+  "native_log_sha256": "b5b06d0395cfe7b0a7a57073c3b70cc66182a642dbc19babe4004f2ad0f1dab5",
+  "stdout_sha256": "47d0481e986158e26693ecd0b42bb4c579f9ff614ae69a35615a5621b7cb0468",
+  "stderr_sha256": "0f1a18acbb4d92dde3465d9428b75a2793976fd489fe372e92bbfe541c2d8b56"
+}

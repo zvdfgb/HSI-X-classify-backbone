@@ -1,0 +1,74 @@
+[
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "仅组合判对",
+    "index": 601,
+    "row": 20,
+    "col": 1800,
+    "class": "树木"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "仅组合判对",
+    "index": 625,
+    "row": 21,
+    "col": 1382,
+    "class": "道路"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "仅组合判对",
+    "index": 626,
+    "row": 21,
+    "col": 1383,
+    "class": "道路"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR纠正分工错误",
+    "index": 240,
+    "row": 13,
+    "col": 1609,
+    "class": "住宅区"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR纠正分工错误",
+    "index": 344,
+    "row": 16,
+    "col": 1755,
+    "class": "道路"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR纠正分工错误",
+    "index": 355,
+    "row": 16,
+    "col": 1796,
+    "class": "树木"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR引入错误",
+    "index": 82,
+    "row": 9,
+    "col": 1548,
+    "class": "住宅区"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR引入错误",
+    "index": 83,
+    "row": 9,
+    "col": 1549,
+    "class": "住宅区"
+  },
+  {
+    "selection": "first three test indices per predefined outcome",
+    "case": "SR引入错误",
+    "index": 114,
+    "row": 10,
+    "col": 1547,
+    "class": "住宅区"
+  }
+]

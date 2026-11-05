@@ -1,0 +1,16 @@
+{
+  "all_passed": true,
+  "checked_at": "2026-11-04T16:52:29.394103+08:00",
+  "completed": 4,
+  "reused": 3,
+  "new_completed": 1,
+  "remaining": 35,
+  "accepted_metrics": {
+    "oa": 86.57866688529965,
+    "aa": 89.03128574107332,
+    "kappa": 85.42275132281313
+  },
+  "original_six_artifacts_unchanged": true,
+  "completed_marker_sha256": "ce66d393cc1e28c987e54e9fdb693e0a24c086acee07a78f021f6bc3011e6108",
+  "manifest_after_sha256": "b1dde572478ee0cdbcf4d12463e1af53636f51a6ecf9e064f045524c87f2d8f9"
+}

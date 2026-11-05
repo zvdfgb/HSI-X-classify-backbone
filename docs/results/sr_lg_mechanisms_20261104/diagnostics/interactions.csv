@@ -1,0 +1,4 @@
+﻿seed,interaction_pp,sum_correctness_interaction,positive_sample_n,negative_sample_n,only_combined_correct,both_single_correct_combination_wrong
+6,2.623595966221202,320,716,424,398,22
+7,1.8775108633270476,229,683,447,96,158
+8,-0.6886939411330655,-84,500,586,75,54

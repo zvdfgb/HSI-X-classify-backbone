@@ -1,0 +1,649 @@
+﻿seed,comparison,stratum,class,class_cn,n,gained,lost,net
+6,L_alone,observed_mixed_supported,Healthy grass,健康草地,161,2,6,-4
+6,L_alone,observed_mixed_supported,Stressed grass,受胁草地,109,82,0,82
+6,L_alone,observed_mixed_supported,Synthetic grass,人造草地,281,1,2,-1
+6,L_alone,observed_mixed_supported,Water,水体,16,0,0,0
+6,L_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,L_alone,observed_mixed_supported,Road,道路,12,0,0,0
+6,L_alone,observed_mixed_supported,Running track,跑道,273,0,0,0
+6,L_alone,no_other_observed_supported,Healthy grass,健康草地,807,0,4,-4
+6,L_alone,no_other_observed_supported,Stressed grass,受胁草地,578,57,0,57
+6,L_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,L_alone,no_other_observed_supported,Trees,树木,278,0,23,-23
+6,L_alone,no_other_observed_supported,Soil,土壤,854,0,0,0
+6,L_alone,no_other_observed_supported,Water,水体,95,0,0,0
+6,L_alone,no_other_observed_supported,Residential,住宅区,365,0,0,0
+6,L_alone,no_other_observed_supported,Commercial,商业区,370,0,0,0
+6,L_alone,no_other_observed_supported,Road,道路,233,0,4,-4
+6,L_alone,no_other_observed_supported,Highway,高速公路,766,11,1,10
+6,L_alone,no_other_observed_supported,Railway,铁路,663,3,29,-26
+6,L_alone,no_other_observed_supported,Parking lot 1,停车场1,869,0,2,-2
+6,L_alone,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,L_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,L_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,L_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,8,-8
+6,L_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,11,0,11
+6,L_alone,low_neighbor_label_coverage,Trees,树木,778,10,30,-20
+6,L_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,L_alone,low_neighbor_label_coverage,Water,水体,32,0,1,-1
+6,L_alone,low_neighbor_label_coverage,Residential,住宅区,707,118,25,93
+6,L_alone,low_neighbor_label_coverage,Commercial,商业区,681,48,15,33
+6,L_alone,low_neighbor_label_coverage,Road,道路,814,46,45,1
+6,L_alone,low_neighbor_label_coverage,Highway,高速公路,270,3,3,0
+6,L_alone,low_neighbor_label_coverage,Railway,铁路,391,0,46,-46
+6,L_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,10,1,9
+6,L_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,8,19,-11
+6,L_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,L_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+6,SR_alone,observed_mixed_supported,Healthy grass,健康草地,161,7,0,7
+6,SR_alone,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+6,SR_alone,observed_mixed_supported,Synthetic grass,人造草地,281,8,0,8
+6,SR_alone,observed_mixed_supported,Water,水体,16,0,0,0
+6,SR_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,SR_alone,observed_mixed_supported,Road,道路,12,0,0,0
+6,SR_alone,observed_mixed_supported,Running track,跑道,273,0,8,-8
+6,SR_alone,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+6,SR_alone,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+6,SR_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,SR_alone,no_other_observed_supported,Trees,树木,278,11,0,11
+6,SR_alone,no_other_observed_supported,Soil,土壤,854,0,1,-1
+6,SR_alone,no_other_observed_supported,Water,水体,95,0,0,0
+6,SR_alone,no_other_observed_supported,Residential,住宅区,365,2,0,2
+6,SR_alone,no_other_observed_supported,Commercial,商业区,370,0,0,0
+6,SR_alone,no_other_observed_supported,Road,道路,233,0,2,-2
+6,SR_alone,no_other_observed_supported,Highway,高速公路,766,10,28,-18
+6,SR_alone,no_other_observed_supported,Railway,铁路,663,8,16,-8
+6,SR_alone,no_other_observed_supported,Parking lot 1,停车场1,869,0,1,-1
+6,SR_alone,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,SR_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,SR_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,SR_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,13,0,13
+6,SR_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,3,0,3
+6,SR_alone,low_neighbor_label_coverage,Trees,树木,778,39,5,34
+6,SR_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,SR_alone,low_neighbor_label_coverage,Water,水体,32,0,6,-6
+6,SR_alone,low_neighbor_label_coverage,Residential,住宅区,707,72,28,44
+6,SR_alone,low_neighbor_label_coverage,Commercial,商业区,681,39,15,24
+6,SR_alone,low_neighbor_label_coverage,Road,道路,814,51,24,27
+6,SR_alone,low_neighbor_label_coverage,Highway,高速公路,270,1,2,-1
+6,SR_alone,low_neighbor_label_coverage,Railway,铁路,391,0,27,-27
+6,SR_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,0,0,0
+6,SR_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,9,2,7
+6,SR_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,SR_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+6,SR_on_L,observed_mixed_supported,Healthy grass,健康草地,161,11,0,11
+6,SR_on_L,observed_mixed_supported,Stressed grass,受胁草地,109,0,82,-82
+6,SR_on_L,observed_mixed_supported,Synthetic grass,人造草地,281,9,0,9
+6,SR_on_L,observed_mixed_supported,Water,水体,16,0,0,0
+6,SR_on_L,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,SR_on_L,observed_mixed_supported,Road,道路,12,0,0,0
+6,SR_on_L,observed_mixed_supported,Running track,跑道,273,0,6,-6
+6,SR_on_L,no_other_observed_supported,Healthy grass,健康草地,807,5,0,5
+6,SR_on_L,no_other_observed_supported,Stressed grass,受胁草地,578,0,57,-57
+6,SR_on_L,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,SR_on_L,no_other_observed_supported,Trees,树木,278,40,0,40
+6,SR_on_L,no_other_observed_supported,Soil,土壤,854,0,1,-1
+6,SR_on_L,no_other_observed_supported,Water,水体,95,0,0,0
+6,SR_on_L,no_other_observed_supported,Residential,住宅区,365,1,0,1
+6,SR_on_L,no_other_observed_supported,Commercial,商业区,370,0,0,0
+6,SR_on_L,no_other_observed_supported,Road,道路,233,4,14,-10
+6,SR_on_L,no_other_observed_supported,Highway,高速公路,766,289,0,289
+6,SR_on_L,no_other_observed_supported,Railway,铁路,663,34,0,34
+6,SR_on_L,no_other_observed_supported,Parking lot 1,停车场1,869,2,1,1
+6,SR_on_L,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,SR_on_L,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,SR_on_L,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,SR_on_L,low_neighbor_label_coverage,Healthy grass,健康草地,85,21,0,21
+6,SR_on_L,low_neighbor_label_coverage,Stressed grass,受胁草地,377,3,11,-8
+6,SR_on_L,low_neighbor_label_coverage,Trees,树木,778,78,1,77
+6,SR_on_L,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,SR_on_L,low_neighbor_label_coverage,Water,水体,32,0,5,-5
+6,SR_on_L,low_neighbor_label_coverage,Residential,住宅区,707,83,86,-3
+6,SR_on_L,low_neighbor_label_coverage,Commercial,商业区,681,20,48,-28
+6,SR_on_L,low_neighbor_label_coverage,Road,道路,814,49,2,47
+6,SR_on_L,low_neighbor_label_coverage,Highway,高速公路,270,49,6,43
+6,SR_on_L,low_neighbor_label_coverage,Railway,铁路,391,24,0,24
+6,SR_on_L,low_neighbor_label_coverage,Parking lot 1,停车场1,172,4,0,4
+6,SR_on_L,low_neighbor_label_coverage,Parking lot 2,停车场2,164,23,0,23
+6,SR_on_L,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,SR_on_L,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+6,L_on_SR,observed_mixed_supported,Healthy grass,健康草地,161,0,0,0
+6,L_on_SR,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+6,L_on_SR,observed_mixed_supported,Synthetic grass,人造草地,281,0,0,0
+6,L_on_SR,observed_mixed_supported,Water,水体,16,0,0,0
+6,L_on_SR,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,L_on_SR,observed_mixed_supported,Road,道路,12,0,0,0
+6,L_on_SR,observed_mixed_supported,Running track,跑道,273,3,1,2
+6,L_on_SR,no_other_observed_supported,Healthy grass,健康草地,807,0,0,0
+6,L_on_SR,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+6,L_on_SR,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,L_on_SR,no_other_observed_supported,Trees,树木,278,6,0,6
+6,L_on_SR,no_other_observed_supported,Soil,土壤,854,0,0,0
+6,L_on_SR,no_other_observed_supported,Water,水体,95,0,0,0
+6,L_on_SR,no_other_observed_supported,Residential,住宅区,365,0,1,-1
+6,L_on_SR,no_other_observed_supported,Commercial,商业区,370,0,0,0
+6,L_on_SR,no_other_observed_supported,Road,道路,233,2,14,-12
+6,L_on_SR,no_other_observed_supported,Highway,高速公路,766,317,0,317
+6,L_on_SR,no_other_observed_supported,Railway,铁路,663,16,0,16
+6,L_on_SR,no_other_observed_supported,Parking lot 1,停车场1,869,1,1,0
+6,L_on_SR,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,L_on_SR,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,L_on_SR,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Trees,树木,778,26,3,23
+6,L_on_SR,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Water,水体,32,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Residential,住宅区,707,49,3,46
+6,L_on_SR,low_neighbor_label_coverage,Commercial,商业区,681,20,39,-19
+6,L_on_SR,low_neighbor_label_coverage,Road,道路,814,27,6,21
+6,L_on_SR,low_neighbor_label_coverage,Highway,高速公路,270,50,6,44
+6,L_on_SR,low_neighbor_label_coverage,Railway,铁路,391,10,5,5
+6,L_on_SR,low_neighbor_label_coverage,Parking lot 1,停车场1,172,13,0,13
+6,L_on_SR,low_neighbor_label_coverage,Parking lot 2,停车场2,164,5,0,5
+6,L_on_SR,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,L_on_SR,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+6,spectral_vs_distance,observed_mixed_supported,Healthy grass,健康草地,161,9,0,9
+6,spectral_vs_distance,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+6,spectral_vs_distance,observed_mixed_supported,Synthetic grass,人造草地,281,2,0,2
+6,spectral_vs_distance,observed_mixed_supported,Water,水体,16,0,0,0
+6,spectral_vs_distance,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,spectral_vs_distance,observed_mixed_supported,Road,道路,12,0,0,0
+6,spectral_vs_distance,observed_mixed_supported,Running track,跑道,273,0,6,-6
+6,spectral_vs_distance,no_other_observed_supported,Healthy grass,健康草地,807,10,0,10
+6,spectral_vs_distance,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Trees,树木,278,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Soil,土壤,854,0,1,-1
+6,spectral_vs_distance,no_other_observed_supported,Water,水体,95,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Residential,住宅区,365,1,0,1
+6,spectral_vs_distance,no_other_observed_supported,Commercial,商业区,370,112,0,112
+6,spectral_vs_distance,no_other_observed_supported,Road,道路,233,0,14,-14
+6,spectral_vs_distance,no_other_observed_supported,Highway,高速公路,766,354,0,354
+6,spectral_vs_distance,no_other_observed_supported,Railway,铁路,663,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Parking lot 1,停车场1,869,0,1,-1
+6,spectral_vs_distance,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,spectral_vs_distance,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Trees,树木,778,19,1,18
+6,spectral_vs_distance,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Water,水体,32,0,6,-6
+6,spectral_vs_distance,low_neighbor_label_coverage,Residential,住宅区,707,38,25,13
+6,spectral_vs_distance,low_neighbor_label_coverage,Commercial,商业区,681,50,18,32
+6,spectral_vs_distance,low_neighbor_label_coverage,Road,道路,814,43,0,43
+6,spectral_vs_distance,low_neighbor_label_coverage,Highway,高速公路,270,55,6,49
+6,spectral_vs_distance,low_neighbor_label_coverage,Railway,铁路,391,6,22,-16
+6,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 1,停车场1,172,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 2,停车场2,164,1,2,-1
+6,spectral_vs_distance,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,spectral_vs_distance,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+6,combined,observed_mixed_supported,Healthy grass,健康草地,161,7,0,7
+6,combined,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+6,combined,observed_mixed_supported,Synthetic grass,人造草地,281,8,0,8
+6,combined,observed_mixed_supported,Water,水体,16,0,0,0
+6,combined,observed_mixed_supported,Commercial,商业区,2,0,0,0
+6,combined,observed_mixed_supported,Road,道路,12,0,0,0
+6,combined,observed_mixed_supported,Running track,跑道,273,0,6,-6
+6,combined,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+6,combined,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+6,combined,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+6,combined,no_other_observed_supported,Trees,树木,278,17,0,17
+6,combined,no_other_observed_supported,Soil,土壤,854,0,1,-1
+6,combined,no_other_observed_supported,Water,水体,95,0,0,0
+6,combined,no_other_observed_supported,Residential,住宅区,365,1,0,1
+6,combined,no_other_observed_supported,Commercial,商业区,370,0,0,0
+6,combined,no_other_observed_supported,Road,道路,233,0,14,-14
+6,combined,no_other_observed_supported,Highway,高速公路,766,299,0,299
+6,combined,no_other_observed_supported,Railway,铁路,663,8,0,8
+6,combined,no_other_observed_supported,Parking lot 1,停车场1,869,0,1,-1
+6,combined,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+6,combined,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+6,combined,no_other_observed_supported,Running track,跑道,193,0,0,0
+6,combined,low_neighbor_label_coverage,Healthy grass,健康草地,85,13,0,13
+6,combined,low_neighbor_label_coverage,Stressed grass,受胁草地,377,3,0,3
+6,combined,low_neighbor_label_coverage,Trees,树木,778,60,3,57
+6,combined,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+6,combined,low_neighbor_label_coverage,Water,水体,32,0,6,-6
+6,combined,low_neighbor_label_coverage,Residential,住宅区,707,103,13,90
+6,combined,low_neighbor_label_coverage,Commercial,商业区,681,20,15,5
+6,combined,low_neighbor_label_coverage,Road,道路,814,65,17,48
+6,combined,low_neighbor_label_coverage,Highway,高速公路,270,49,6,43
+6,combined,low_neighbor_label_coverage,Railway,铁路,391,0,22,-22
+6,combined,low_neighbor_label_coverage,Parking lot 1,停车场1,172,13,0,13
+6,combined,low_neighbor_label_coverage,Parking lot 2,停车场2,164,13,1,12
+6,combined,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+6,combined,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,L_alone,observed_mixed_supported,Healthy grass,健康草地,161,15,5,10
+7,L_alone,observed_mixed_supported,Stressed grass,受胁草地,109,1,0,1
+7,L_alone,observed_mixed_supported,Synthetic grass,人造草地,281,4,0,4
+7,L_alone,observed_mixed_supported,Water,水体,16,0,0,0
+7,L_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,L_alone,observed_mixed_supported,Road,道路,12,0,0,0
+7,L_alone,observed_mixed_supported,Running track,跑道,273,0,0,0
+7,L_alone,no_other_observed_supported,Healthy grass,健康草地,807,0,34,-34
+7,L_alone,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+7,L_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,L_alone,no_other_observed_supported,Trees,树木,278,0,42,-42
+7,L_alone,no_other_observed_supported,Soil,土壤,854,0,0,0
+7,L_alone,no_other_observed_supported,Water,水体,95,0,0,0
+7,L_alone,no_other_observed_supported,Residential,住宅区,365,0,53,-53
+7,L_alone,no_other_observed_supported,Commercial,商业区,370,65,6,59
+7,L_alone,no_other_observed_supported,Road,道路,233,0,97,-97
+7,L_alone,no_other_observed_supported,Highway,高速公路,766,124,6,118
+7,L_alone,no_other_observed_supported,Railway,铁路,663,10,62,-52
+7,L_alone,no_other_observed_supported,Parking lot 1,停车场1,869,0,58,-58
+7,L_alone,no_other_observed_supported,Parking lot 2,停车场2,121,2,0,2
+7,L_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,L_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,L_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,10,0,10
+7,L_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,2,0,2
+7,L_alone,low_neighbor_label_coverage,Trees,树木,778,12,57,-45
+7,L_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,L_alone,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,L_alone,low_neighbor_label_coverage,Residential,住宅区,707,55,34,21
+7,L_alone,low_neighbor_label_coverage,Commercial,商业区,681,26,25,1
+7,L_alone,low_neighbor_label_coverage,Road,道路,814,6,146,-140
+7,L_alone,low_neighbor_label_coverage,Highway,高速公路,270,9,16,-7
+7,L_alone,low_neighbor_label_coverage,Railway,铁路,391,8,98,-90
+7,L_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,13,0,13
+7,L_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,28,3,25
+7,L_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,L_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,SR_alone,observed_mixed_supported,Healthy grass,健康草地,161,19,0,19
+7,SR_alone,observed_mixed_supported,Stressed grass,受胁草地,109,1,0,1
+7,SR_alone,observed_mixed_supported,Synthetic grass,人造草地,281,6,0,6
+7,SR_alone,observed_mixed_supported,Water,水体,16,0,0,0
+7,SR_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,SR_alone,observed_mixed_supported,Road,道路,12,0,0,0
+7,SR_alone,observed_mixed_supported,Running track,跑道,273,0,6,-6
+7,SR_alone,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+7,SR_alone,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+7,SR_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,SR_alone,no_other_observed_supported,Trees,树木,278,4,17,-13
+7,SR_alone,no_other_observed_supported,Soil,土壤,854,0,1,-1
+7,SR_alone,no_other_observed_supported,Water,水体,95,0,0,0
+7,SR_alone,no_other_observed_supported,Residential,住宅区,365,0,44,-44
+7,SR_alone,no_other_observed_supported,Commercial,商业区,370,0,12,-12
+7,SR_alone,no_other_observed_supported,Road,道路,233,0,0,0
+7,SR_alone,no_other_observed_supported,Highway,高速公路,766,36,0,36
+7,SR_alone,no_other_observed_supported,Railway,铁路,663,10,0,10
+7,SR_alone,no_other_observed_supported,Parking lot 1,停车场1,869,8,0,8
+7,SR_alone,no_other_observed_supported,Parking lot 2,停车场2,121,2,0,2
+7,SR_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,SR_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,SR_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,23,0,23
+7,SR_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,2,0,2
+7,SR_alone,low_neighbor_label_coverage,Trees,树木,778,77,1,76
+7,SR_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,SR_alone,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,SR_alone,low_neighbor_label_coverage,Residential,住宅区,707,81,42,39
+7,SR_alone,low_neighbor_label_coverage,Commercial,商业区,681,47,15,32
+7,SR_alone,low_neighbor_label_coverage,Road,道路,814,8,8,0
+7,SR_alone,low_neighbor_label_coverage,Highway,高速公路,270,1,0,1
+7,SR_alone,low_neighbor_label_coverage,Railway,铁路,391,5,2,3
+7,SR_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,7,0,7
+7,SR_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,55,1,54
+7,SR_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,SR_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,SR_on_L,observed_mixed_supported,Healthy grass,健康草地,161,9,0,9
+7,SR_on_L,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+7,SR_on_L,observed_mixed_supported,Synthetic grass,人造草地,281,2,0,2
+7,SR_on_L,observed_mixed_supported,Water,水体,16,0,0,0
+7,SR_on_L,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,SR_on_L,observed_mixed_supported,Road,道路,12,0,0,0
+7,SR_on_L,observed_mixed_supported,Running track,跑道,273,0,6,-6
+7,SR_on_L,no_other_observed_supported,Healthy grass,健康草地,807,35,0,35
+7,SR_on_L,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+7,SR_on_L,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,SR_on_L,no_other_observed_supported,Trees,树木,278,18,5,13
+7,SR_on_L,no_other_observed_supported,Soil,土壤,854,0,0,0
+7,SR_on_L,no_other_observed_supported,Water,水体,95,0,0,0
+7,SR_on_L,no_other_observed_supported,Residential,住宅区,365,1,0,1
+7,SR_on_L,no_other_observed_supported,Commercial,商业区,370,6,0,6
+7,SR_on_L,no_other_observed_supported,Road,道路,233,97,27,70
+7,SR_on_L,no_other_observed_supported,Highway,高速公路,766,16,138,-122
+7,SR_on_L,no_other_observed_supported,Railway,铁路,663,29,0,29
+7,SR_on_L,no_other_observed_supported,Parking lot 1,停车场1,869,58,4,54
+7,SR_on_L,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+7,SR_on_L,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,SR_on_L,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Healthy grass,健康草地,85,13,0,13
+7,SR_on_L,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Trees,树木,778,116,1,115
+7,SR_on_L,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Residential,住宅区,707,51,17,34
+7,SR_on_L,low_neighbor_label_coverage,Commercial,商业区,681,69,0,69
+7,SR_on_L,low_neighbor_label_coverage,Road,道路,814,146,0,146
+7,SR_on_L,low_neighbor_label_coverage,Highway,高速公路,270,30,29,1
+7,SR_on_L,low_neighbor_label_coverage,Railway,铁路,391,11,12,-1
+7,SR_on_L,low_neighbor_label_coverage,Parking lot 1,停车场1,172,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Parking lot 2,停车场2,164,6,1,5
+7,SR_on_L,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,SR_on_L,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,L_on_SR,observed_mixed_supported,Healthy grass,健康草地,161,0,0,0
+7,L_on_SR,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+7,L_on_SR,observed_mixed_supported,Synthetic grass,人造草地,281,0,0,0
+7,L_on_SR,observed_mixed_supported,Water,水体,16,0,0,0
+7,L_on_SR,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,L_on_SR,observed_mixed_supported,Road,道路,12,0,0,0
+7,L_on_SR,observed_mixed_supported,Running track,跑道,273,0,0,0
+7,L_on_SR,no_other_observed_supported,Healthy grass,健康草地,807,0,0,0
+7,L_on_SR,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+7,L_on_SR,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,L_on_SR,no_other_observed_supported,Trees,树木,278,2,18,-16
+7,L_on_SR,no_other_observed_supported,Soil,土壤,854,1,0,1
+7,L_on_SR,no_other_observed_supported,Water,水体,95,0,0,0
+7,L_on_SR,no_other_observed_supported,Residential,住宅区,365,0,8,-8
+7,L_on_SR,no_other_observed_supported,Commercial,商业区,370,77,0,77
+7,L_on_SR,no_other_observed_supported,Road,道路,233,0,27,-27
+7,L_on_SR,no_other_observed_supported,Highway,高速公路,766,70,110,-40
+7,L_on_SR,no_other_observed_supported,Railway,铁路,663,0,33,-33
+7,L_on_SR,no_other_observed_supported,Parking lot 1,停车场1,869,0,12,-12
+7,L_on_SR,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+7,L_on_SR,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,L_on_SR,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Trees,树木,778,0,6,-6
+7,L_on_SR,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Residential,住宅区,707,38,22,16
+7,L_on_SR,low_neighbor_label_coverage,Commercial,商业区,681,38,0,38
+7,L_on_SR,low_neighbor_label_coverage,Road,道路,814,22,16,6
+7,L_on_SR,low_neighbor_label_coverage,Highway,高速公路,270,35,42,-7
+7,L_on_SR,low_neighbor_label_coverage,Railway,铁路,391,5,99,-94
+7,L_on_SR,low_neighbor_label_coverage,Parking lot 1,停车场1,172,6,0,6
+7,L_on_SR,low_neighbor_label_coverage,Parking lot 2,停车场2,164,2,26,-24
+7,L_on_SR,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,L_on_SR,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,spectral_vs_distance,observed_mixed_supported,Healthy grass,健康草地,161,8,0,8
+7,spectral_vs_distance,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+7,spectral_vs_distance,observed_mixed_supported,Synthetic grass,人造草地,281,1,0,1
+7,spectral_vs_distance,observed_mixed_supported,Water,水体,16,0,0,0
+7,spectral_vs_distance,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,spectral_vs_distance,observed_mixed_supported,Road,道路,12,0,0,0
+7,spectral_vs_distance,observed_mixed_supported,Running track,跑道,273,1,6,-5
+7,spectral_vs_distance,no_other_observed_supported,Healthy grass,健康草地,807,5,0,5
+7,spectral_vs_distance,no_other_observed_supported,Stressed grass,受胁草地,578,8,0,8
+7,spectral_vs_distance,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Trees,树木,278,8,16,-8
+7,spectral_vs_distance,no_other_observed_supported,Soil,土壤,854,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Water,水体,95,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Residential,住宅区,365,0,6,-6
+7,spectral_vs_distance,no_other_observed_supported,Commercial,商业区,370,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Road,道路,233,17,27,-10
+7,spectral_vs_distance,no_other_observed_supported,Highway,高速公路,766,2,137,-135
+7,spectral_vs_distance,no_other_observed_supported,Railway,铁路,663,31,0,31
+7,spectral_vs_distance,no_other_observed_supported,Parking lot 1,停车场1,869,18,11,7
+7,spectral_vs_distance,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,spectral_vs_distance,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,spectral_vs_distance,low_neighbor_label_coverage,Healthy grass,健康草地,85,3,0,3
+7,spectral_vs_distance,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+7,spectral_vs_distance,low_neighbor_label_coverage,Trees,树木,778,90,1,89
+7,spectral_vs_distance,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,spectral_vs_distance,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,spectral_vs_distance,low_neighbor_label_coverage,Residential,住宅区,707,41,59,-18
+7,spectral_vs_distance,low_neighbor_label_coverage,Commercial,商业区,681,41,27,14
+7,spectral_vs_distance,low_neighbor_label_coverage,Road,道路,814,93,0,93
+7,spectral_vs_distance,low_neighbor_label_coverage,Highway,高速公路,270,0,23,-23
+7,spectral_vs_distance,low_neighbor_label_coverage,Railway,铁路,391,20,6,14
+7,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 1,停车场1,172,6,0,6
+7,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 2,停车场2,164,2,4,-2
+7,spectral_vs_distance,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,spectral_vs_distance,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+7,combined,observed_mixed_supported,Healthy grass,健康草地,161,19,0,19
+7,combined,observed_mixed_supported,Stressed grass,受胁草地,109,1,0,1
+7,combined,observed_mixed_supported,Synthetic grass,人造草地,281,6,0,6
+7,combined,observed_mixed_supported,Water,水体,16,0,0,0
+7,combined,observed_mixed_supported,Commercial,商业区,2,0,0,0
+7,combined,observed_mixed_supported,Road,道路,12,0,0,0
+7,combined,observed_mixed_supported,Running track,跑道,273,0,6,-6
+7,combined,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+7,combined,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+7,combined,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+7,combined,no_other_observed_supported,Trees,树木,278,4,33,-29
+7,combined,no_other_observed_supported,Soil,土壤,854,0,0,0
+7,combined,no_other_observed_supported,Water,水体,95,0,0,0
+7,combined,no_other_observed_supported,Residential,住宅区,365,0,52,-52
+7,combined,no_other_observed_supported,Commercial,商业区,370,65,0,65
+7,combined,no_other_observed_supported,Road,道路,233,0,27,-27
+7,combined,no_other_observed_supported,Highway,高速公路,766,70,74,-4
+7,combined,no_other_observed_supported,Railway,铁路,663,10,33,-23
+7,combined,no_other_observed_supported,Parking lot 1,停车场1,869,5,9,-4
+7,combined,no_other_observed_supported,Parking lot 2,停车场2,121,2,0,2
+7,combined,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+7,combined,no_other_observed_supported,Running track,跑道,193,0,0,0
+7,combined,low_neighbor_label_coverage,Healthy grass,健康草地,85,23,0,23
+7,combined,low_neighbor_label_coverage,Stressed grass,受胁草地,377,2,0,2
+7,combined,low_neighbor_label_coverage,Trees,树木,778,71,1,70
+7,combined,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+7,combined,low_neighbor_label_coverage,Water,水体,32,0,0,0
+7,combined,low_neighbor_label_coverage,Residential,住宅区,707,78,23,55
+7,combined,low_neighbor_label_coverage,Commercial,商业区,681,85,15,70
+7,combined,low_neighbor_label_coverage,Road,道路,814,22,16,6
+7,combined,low_neighbor_label_coverage,Highway,高速公路,270,35,41,-6
+7,combined,low_neighbor_label_coverage,Railway,铁路,391,8,99,-91
+7,combined,low_neighbor_label_coverage,Parking lot 1,停车场1,172,13,0,13
+7,combined,low_neighbor_label_coverage,Parking lot 2,停车场2,164,32,2,30
+7,combined,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+7,combined,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,L_alone,observed_mixed_supported,Healthy grass,健康草地,161,0,10,-10
+8,L_alone,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,L_alone,observed_mixed_supported,Synthetic grass,人造草地,281,3,0,3
+8,L_alone,observed_mixed_supported,Water,水体,16,0,0,0
+8,L_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,L_alone,observed_mixed_supported,Road,道路,12,0,0,0
+8,L_alone,observed_mixed_supported,Running track,跑道,273,0,0,0
+8,L_alone,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+8,L_alone,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,L_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,L_alone,no_other_observed_supported,Trees,树木,278,21,2,19
+8,L_alone,no_other_observed_supported,Soil,土壤,854,0,0,0
+8,L_alone,no_other_observed_supported,Water,水体,95,0,0,0
+8,L_alone,no_other_observed_supported,Residential,住宅区,365,1,0,1
+8,L_alone,no_other_observed_supported,Commercial,商业区,370,7,0,7
+8,L_alone,no_other_observed_supported,Road,道路,233,0,49,-49
+8,L_alone,no_other_observed_supported,Highway,高速公路,766,257,29,228
+8,L_alone,no_other_observed_supported,Railway,铁路,663,0,28,-28
+8,L_alone,no_other_observed_supported,Parking lot 1,停车场1,869,0,0,0
+8,L_alone,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,L_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,L_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,L_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,0,0
+8,L_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,L_alone,low_neighbor_label_coverage,Trees,树木,778,28,23,5
+8,L_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,L_alone,low_neighbor_label_coverage,Water,水体,32,0,0,0
+8,L_alone,low_neighbor_label_coverage,Residential,住宅区,707,130,40,90
+8,L_alone,low_neighbor_label_coverage,Commercial,商业区,681,30,32,-2
+8,L_alone,low_neighbor_label_coverage,Road,道路,814,7,72,-65
+8,L_alone,low_neighbor_label_coverage,Highway,高速公路,270,42,6,36
+8,L_alone,low_neighbor_label_coverage,Railway,铁路,391,0,64,-64
+8,L_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,3,0,3
+8,L_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,22,1,21
+8,L_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,L_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,SR_alone,observed_mixed_supported,Healthy grass,健康草地,161,6,0,6
+8,SR_alone,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,SR_alone,observed_mixed_supported,Synthetic grass,人造草地,281,7,0,7
+8,SR_alone,observed_mixed_supported,Water,水体,16,0,0,0
+8,SR_alone,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,SR_alone,observed_mixed_supported,Road,道路,12,0,0,0
+8,SR_alone,observed_mixed_supported,Running track,跑道,273,0,7,-7
+8,SR_alone,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+8,SR_alone,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,SR_alone,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,SR_alone,no_other_observed_supported,Trees,树木,278,0,28,-28
+8,SR_alone,no_other_observed_supported,Soil,土壤,854,0,1,-1
+8,SR_alone,no_other_observed_supported,Water,水体,95,0,0,0
+8,SR_alone,no_other_observed_supported,Residential,住宅区,365,2,0,2
+8,SR_alone,no_other_observed_supported,Commercial,商业区,370,7,0,7
+8,SR_alone,no_other_observed_supported,Road,道路,233,0,13,-13
+8,SR_alone,no_other_observed_supported,Highway,高速公路,766,0,21,-21
+8,SR_alone,no_other_observed_supported,Railway,铁路,663,0,3,-3
+8,SR_alone,no_other_observed_supported,Parking lot 1,停车场1,869,0,80,-80
+8,SR_alone,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,SR_alone,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,SR_alone,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,SR_alone,low_neighbor_label_coverage,Healthy grass,健康草地,85,23,0,23
+8,SR_alone,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,SR_alone,low_neighbor_label_coverage,Trees,树木,778,35,2,33
+8,SR_alone,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,SR_alone,low_neighbor_label_coverage,Water,水体,32,0,0,0
+8,SR_alone,low_neighbor_label_coverage,Residential,住宅区,707,87,15,72
+8,SR_alone,low_neighbor_label_coverage,Commercial,商业区,681,35,15,20
+8,SR_alone,low_neighbor_label_coverage,Road,道路,814,12,14,-2
+8,SR_alone,low_neighbor_label_coverage,Highway,高速公路,270,2,1,1
+8,SR_alone,low_neighbor_label_coverage,Railway,铁路,391,0,1,-1
+8,SR_alone,low_neighbor_label_coverage,Parking lot 1,停车场1,172,1,0,1
+8,SR_alone,low_neighbor_label_coverage,Parking lot 2,停车场2,164,32,2,30
+8,SR_alone,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,SR_alone,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,SR_on_L,observed_mixed_supported,Healthy grass,健康草地,161,16,0,16
+8,SR_on_L,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,SR_on_L,observed_mixed_supported,Synthetic grass,人造草地,281,4,0,4
+8,SR_on_L,observed_mixed_supported,Water,水体,16,0,0,0
+8,SR_on_L,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,SR_on_L,observed_mixed_supported,Road,道路,12,0,0,0
+8,SR_on_L,observed_mixed_supported,Running track,跑道,273,0,6,-6
+8,SR_on_L,no_other_observed_supported,Healthy grass,健康草地,807,0,0,0
+8,SR_on_L,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,SR_on_L,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,SR_on_L,no_other_observed_supported,Trees,树木,278,2,11,-9
+8,SR_on_L,no_other_observed_supported,Soil,土壤,854,0,1,-1
+8,SR_on_L,no_other_observed_supported,Water,水体,95,0,0,0
+8,SR_on_L,no_other_observed_supported,Residential,住宅区,365,3,0,3
+8,SR_on_L,no_other_observed_supported,Commercial,商业区,370,0,0,0
+8,SR_on_L,no_other_observed_supported,Road,道路,233,32,2,30
+8,SR_on_L,no_other_observed_supported,Highway,高速公路,766,51,241,-190
+8,SR_on_L,no_other_observed_supported,Railway,铁路,663,28,5,23
+8,SR_on_L,no_other_observed_supported,Parking lot 1,停车场1,869,0,6,-6
+8,SR_on_L,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,SR_on_L,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,SR_on_L,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,SR_on_L,low_neighbor_label_coverage,Healthy grass,健康草地,85,23,0,23
+8,SR_on_L,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,SR_on_L,low_neighbor_label_coverage,Trees,树木,778,46,18,28
+8,SR_on_L,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,SR_on_L,low_neighbor_label_coverage,Water,水体,32,0,0,0
+8,SR_on_L,low_neighbor_label_coverage,Residential,住宅区,707,53,97,-44
+8,SR_on_L,low_neighbor_label_coverage,Commercial,商业区,681,22,23,-1
+8,SR_on_L,low_neighbor_label_coverage,Road,道路,814,79,0,79
+8,SR_on_L,low_neighbor_label_coverage,Highway,高速公路,270,0,57,-57
+8,SR_on_L,low_neighbor_label_coverage,Railway,铁路,391,64,0,64
+8,SR_on_L,low_neighbor_label_coverage,Parking lot 1,停车场1,172,8,1,7
+8,SR_on_L,low_neighbor_label_coverage,Parking lot 2,停车场2,164,3,3,0
+8,SR_on_L,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,SR_on_L,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,L_on_SR,observed_mixed_supported,Healthy grass,健康草地,161,0,0,0
+8,L_on_SR,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,L_on_SR,observed_mixed_supported,Synthetic grass,人造草地,281,0,0,0
+8,L_on_SR,observed_mixed_supported,Water,水体,16,0,0,0
+8,L_on_SR,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,L_on_SR,observed_mixed_supported,Road,道路,12,0,0,0
+8,L_on_SR,observed_mixed_supported,Running track,跑道,273,1,0,1
+8,L_on_SR,no_other_observed_supported,Healthy grass,健康草地,807,0,0,0
+8,L_on_SR,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,L_on_SR,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,L_on_SR,no_other_observed_supported,Trees,树木,278,38,0,38
+8,L_on_SR,no_other_observed_supported,Soil,土壤,854,0,0,0
+8,L_on_SR,no_other_observed_supported,Water,水体,95,0,0,0
+8,L_on_SR,no_other_observed_supported,Residential,住宅区,365,2,0,2
+8,L_on_SR,no_other_observed_supported,Commercial,商业区,370,0,0,0
+8,L_on_SR,no_other_observed_supported,Road,道路,233,13,19,-6
+8,L_on_SR,no_other_observed_supported,Highway,高速公路,766,61,2,59
+8,L_on_SR,no_other_observed_supported,Railway,铁路,663,0,2,-2
+8,L_on_SR,no_other_observed_supported,Parking lot 1,停车场1,869,76,2,74
+8,L_on_SR,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,L_on_SR,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,L_on_SR,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Healthy grass,健康草地,85,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Trees,树木,778,1,1,0
+8,L_on_SR,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Water,水体,32,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Residential,住宅区,707,6,32,-26
+8,L_on_SR,low_neighbor_label_coverage,Commercial,商业区,681,20,43,-23
+8,L_on_SR,low_neighbor_label_coverage,Road,道路,814,30,14,16
+8,L_on_SR,low_neighbor_label_coverage,Highway,高速公路,270,1,23,-22
+8,L_on_SR,low_neighbor_label_coverage,Railway,铁路,391,1,0,1
+8,L_on_SR,low_neighbor_label_coverage,Parking lot 1,停车场1,172,9,0,9
+8,L_on_SR,low_neighbor_label_coverage,Parking lot 2,停车场2,164,3,12,-9
+8,L_on_SR,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,L_on_SR,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,spectral_vs_distance,observed_mixed_supported,Healthy grass,健康草地,161,5,0,5
+8,spectral_vs_distance,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,spectral_vs_distance,observed_mixed_supported,Synthetic grass,人造草地,281,3,0,3
+8,spectral_vs_distance,observed_mixed_supported,Water,水体,16,0,0,0
+8,spectral_vs_distance,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,spectral_vs_distance,observed_mixed_supported,Road,道路,12,0,0,0
+8,spectral_vs_distance,observed_mixed_supported,Running track,跑道,273,0,6,-6
+8,spectral_vs_distance,no_other_observed_supported,Healthy grass,健康草地,807,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Trees,树木,278,7,5,2
+8,spectral_vs_distance,no_other_observed_supported,Soil,土壤,854,0,1,-1
+8,spectral_vs_distance,no_other_observed_supported,Water,水体,95,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Residential,住宅区,365,0,3,-3
+8,spectral_vs_distance,no_other_observed_supported,Commercial,商业区,370,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Road,道路,233,0,8,-8
+8,spectral_vs_distance,no_other_observed_supported,Highway,高速公路,766,3,59,-56
+8,spectral_vs_distance,no_other_observed_supported,Railway,铁路,663,2,0,2
+8,spectral_vs_distance,no_other_observed_supported,Parking lot 1,停车场1,869,1,2,-1
+8,spectral_vs_distance,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,spectral_vs_distance,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,spectral_vs_distance,low_neighbor_label_coverage,Healthy grass,健康草地,85,6,0,6
+8,spectral_vs_distance,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,spectral_vs_distance,low_neighbor_label_coverage,Trees,树木,778,13,1,12
+8,spectral_vs_distance,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,spectral_vs_distance,low_neighbor_label_coverage,Water,水体,32,0,6,-6
+8,spectral_vs_distance,low_neighbor_label_coverage,Residential,住宅区,707,38,8,30
+8,spectral_vs_distance,low_neighbor_label_coverage,Commercial,商业区,681,2,0,2
+8,spectral_vs_distance,low_neighbor_label_coverage,Road,道路,814,27,26,1
+8,spectral_vs_distance,low_neighbor_label_coverage,Highway,高速公路,270,4,3,1
+8,spectral_vs_distance,low_neighbor_label_coverage,Railway,铁路,391,0,0,0
+8,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 1,停车场1,172,1,0,1
+8,spectral_vs_distance,low_neighbor_label_coverage,Parking lot 2,停车场2,164,3,1,2
+8,spectral_vs_distance,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,spectral_vs_distance,low_neighbor_label_coverage,Running track,跑道,7,0,0,0
+8,combined,observed_mixed_supported,Healthy grass,健康草地,161,6,0,6
+8,combined,observed_mixed_supported,Stressed grass,受胁草地,109,0,0,0
+8,combined,observed_mixed_supported,Synthetic grass,人造草地,281,7,0,7
+8,combined,observed_mixed_supported,Water,水体,16,0,0,0
+8,combined,observed_mixed_supported,Commercial,商业区,2,0,0,0
+8,combined,observed_mixed_supported,Road,道路,12,0,0,0
+8,combined,observed_mixed_supported,Running track,跑道,273,0,6,-6
+8,combined,no_other_observed_supported,Healthy grass,健康草地,807,1,0,1
+8,combined,no_other_observed_supported,Stressed grass,受胁草地,578,0,0,0
+8,combined,no_other_observed_supported,Synthetic grass,人造草地,224,0,0,0
+8,combined,no_other_observed_supported,Trees,树木,278,16,6,10
+8,combined,no_other_observed_supported,Soil,土壤,854,0,1,-1
+8,combined,no_other_observed_supported,Water,水体,95,0,0,0
+8,combined,no_other_observed_supported,Residential,住宅区,365,4,0,4
+8,combined,no_other_observed_supported,Commercial,商业区,370,7,0,7
+8,combined,no_other_observed_supported,Road,道路,233,0,19,-19
+8,combined,no_other_observed_supported,Highway,高速公路,766,43,5,38
+8,combined,no_other_observed_supported,Railway,铁路,663,0,5,-5
+8,combined,no_other_observed_supported,Parking lot 1,停车场1,869,0,6,-6
+8,combined,no_other_observed_supported,Parking lot 2,停车场2,121,0,0,0
+8,combined,no_other_observed_supported,Tennis court,网球场,246,0,0,0
+8,combined,no_other_observed_supported,Running track,跑道,193,0,0,0
+8,combined,low_neighbor_label_coverage,Healthy grass,健康草地,85,23,0,23
+8,combined,low_neighbor_label_coverage,Stressed grass,受胁草地,377,0,0,0
+8,combined,low_neighbor_label_coverage,Trees,树木,778,35,2,33
+8,combined,low_neighbor_label_coverage,Soil,土壤,202,0,0,0
+8,combined,low_neighbor_label_coverage,Water,水体,32,0,0,0
+8,combined,low_neighbor_label_coverage,Residential,住宅区,707,76,30,46
+8,combined,low_neighbor_label_coverage,Commercial,商业区,681,29,32,-3
+8,combined,low_neighbor_label_coverage,Road,道路,814,26,12,14
+8,combined,low_neighbor_label_coverage,Highway,高速公路,270,0,21,-21
+8,combined,low_neighbor_label_coverage,Railway,铁路,391,0,0,0
+8,combined,low_neighbor_label_coverage,Parking lot 1,停车场1,172,10,0,10
+8,combined,low_neighbor_label_coverage,Parking lot 2,停车场2,164,22,1,21
+8,combined,low_neighbor_label_coverage,Tennis court,网球场,1,0,0,0
+8,combined,low_neighbor_label_coverage,Running track,跑道,7,0,0,0

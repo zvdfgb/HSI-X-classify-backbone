@@ -1,0 +1,10 @@
+{
+  "old_sha256": "ab7162ff0268e7959e95f1d379ebdb5afbf6a9202686ce281d3a101307cb66cb",
+  "new_sha256": "4c5d4526661ba19b7a08ac84bd8e15f57f609ff294780acc1a72824d6a96716b",
+  "only_added_names": [
+    "TransMixer_LG_LL_SR2",
+    "TransMixer_LG_GG_SR2"
+  ],
+  "diagnostic_source_audit_passed_before_transition": true,
+  "historical_mappings_unchanged": true
+}

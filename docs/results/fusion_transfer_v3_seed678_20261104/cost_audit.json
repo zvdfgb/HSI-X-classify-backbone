@@ -1,0 +1,123 @@
+{
+  "runs": [
+    {
+      "group": "A0",
+      "parameters": 80887,
+      "estimated_clean_macs_per_patch": 11847568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 95.1067800000601
+    },
+    {
+      "group": "C01",
+      "parameters": 253559,
+      "estimated_clean_macs_per_patch": 35528720,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 95.38511999999173
+    },
+    {
+      "group": "C02",
+      "parameters": 680311,
+      "estimated_clean_macs_per_patch": 87072784,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 100.2323400000023
+    },
+    {
+      "group": "C03",
+      "parameters": 270135,
+      "estimated_clean_macs_per_patch": 35561488,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 95.22761999978684
+    },
+    {
+      "group": "C04",
+      "parameters": 696887,
+      "estimated_clean_macs_per_patch": 87105552,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 95.15301999999792
+    },
+    {
+      "group": "S01",
+      "parameters": 114167,
+      "estimated_clean_macs_per_patch": 14587792,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 99.60928000000422
+    },
+    {
+      "group": "S02",
+      "parameters": 114744,
+      "estimated_clean_macs_per_patch": 14657488,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 96.95307999973011
+    },
+    {
+      "group": "S03",
+      "parameters": 114744,
+      "estimated_clean_macs_per_patch": 14657488,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 96.77817999981926
+    },
+    {
+      "group": "S04",
+      "parameters": 114744,
+      "estimated_clean_macs_per_patch": 14657488,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 101.523140000063
+    },
+    {
+      "group": "I01",
+      "parameters": 89207,
+      "estimated_clean_macs_per_patch": 12838800,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 150.72178000009444
+    },
+    {
+      "group": "I02",
+      "parameters": 89207,
+      "estimated_clean_macs_per_patch": 12838800,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 100.12948000003234
+    },
+    {
+      "group": "I03",
+      "parameters": 89207,
+      "estimated_clean_macs_per_patch": 12838800,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 91.19715999986511
+    },
+    {
+      "group": "I04",
+      "parameters": 89207,
+      "estimated_clean_macs_per_patch": 12838800,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 90.64942000004521
+    }
+  ],
+  "mac_estimator": "Conv/Linear/MHA, two explicit cross-attention matrix products, SSM recurrence/readout; excludes nonlinear/normalization/FFT and auxiliary training losses",
+  "not_an_exact_total_flop_count": true
+}

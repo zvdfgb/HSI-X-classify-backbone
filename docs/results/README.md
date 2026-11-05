@@ -1,9 +1,11 @@
 # 实验结果导航
 
-更新：2026-11-03。先读[两日研究总结](../RESEARCH_PROGRESS_20261103.md)，再按批次查询。指标来自实验室原生报告；不同协议不能混算增益。
+更新：2026-11-05。新完成[第三批三篇新论文融合迁移](fusion_transfer_v3_seed678_20261104/README.md)与[局部／全局与SR机制分析](sr_lg_mechanisms_20261104/README.md)；阶段汇总见[11月4—5日研究记录](../RESEARCH_PROGRESS_20261105.md)和[11月2—3日研究总结](../RESEARCH_PROGRESS_20261103.md)。指标来自实验室原生报告；不同协议不能混算增益。
 
 | 批次／快照 | 状态与数量 | 口径 |
 |---|---|---|
+| [第三批融合子机制迁移（CF-IPT/ISFuse/IID）](fusion_transfer_v3_seed678_20261104/README.md) | 39/39＝3复用＋36新训 | C01–C04/S01–S04/I01–I04，seed6/7/8；含开销审计与逐类表 |
+| [局部／全局与SR机制研究](sr_lg_mechanisms_20261104/README.md) | 15个历史模型只读诊断＋6次新训；LG三种子复用 | LL／GG各seed6/7/8；含类别与邻域分析、冻结干预及完整核验 |
 | [两日去重CSV](fusion_20261102_03_results.csv) | 45项＝3基线＋42新训 | seed6/7/8；OA/AA/Kappa及同种子OA差 |
 | [三篇机制seed6](fusion_transfer_seed6_20261102/README.md) | 13/13＝1复用＋12新训 | F/U/D首轮，后被补种子汇总复用 |
 | [三篇机制三种子完整汇总](fusion_transfer_seed78_20261102/README.md) | 39/39＝15复用＋24新训 | F01–F04/U01–U04/D01–D04，含首轮seed6 |

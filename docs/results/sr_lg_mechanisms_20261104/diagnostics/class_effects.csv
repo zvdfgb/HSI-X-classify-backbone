@@ -1,0 +1,271 @@
+﻿seed,comparison,class,class_cn,n,gained,lost,net,recall_delta_pp
+6,L_alone,Healthy grass,健康草地,1053,2,18,-16,-1.519468186134853
+6,L_alone,Stressed grass,受胁草地,1064,150,0,150,14.097744360902256
+6,L_alone,Synthetic grass,人造草地,505,1,2,-1,-0.19801980198019803
+6,L_alone,Trees,树木,1056,10,53,-43,-4.071969696969697
+6,L_alone,Soil,土壤,1056,0,0,0,0.0
+6,L_alone,Water,水体,143,0,1,-1,-0.6993006993006993
+6,L_alone,Residential,住宅区,1072,118,25,93,8.675373134328359
+6,L_alone,Commercial,商业区,1053,48,15,33,3.133903133903134
+6,L_alone,Road,道路,1059,46,49,-3,-0.28328611898017
+6,L_alone,Highway,高速公路,1036,14,4,10,0.9652509652509652
+6,L_alone,Railway,铁路,1054,3,75,-72,-6.83111954459203
+6,L_alone,Parking lot 1,停车场1,1041,10,3,7,0.6724303554274735
+6,L_alone,Parking lot 2,停车场2,285,8,19,-11,-3.8596491228070176
+6,L_alone,Tennis court,网球场,247,0,0,0,0.0
+6,L_alone,Running track,跑道,473,0,0,0,0.0
+6,SR_alone,Healthy grass,健康草地,1053,21,0,21,1.9943019943019944
+6,SR_alone,Stressed grass,受胁草地,1064,3,0,3,0.2819548872180451
+6,SR_alone,Synthetic grass,人造草地,505,8,0,8,1.5841584158415842
+6,SR_alone,Trees,树木,1056,50,5,45,4.261363636363637
+6,SR_alone,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+6,SR_alone,Water,水体,143,0,6,-6,-4.195804195804196
+6,SR_alone,Residential,住宅区,1072,74,28,46,4.291044776119403
+6,SR_alone,Commercial,商业区,1053,39,15,24,2.2792022792022792
+6,SR_alone,Road,道路,1059,51,26,25,2.360717658168083
+6,SR_alone,Highway,高速公路,1036,11,30,-19,-1.833976833976834
+6,SR_alone,Railway,铁路,1054,8,43,-35,-3.3206831119544593
+6,SR_alone,Parking lot 1,停车场1,1041,0,1,-1,-0.09606147934678194
+6,SR_alone,Parking lot 2,停车场2,285,9,2,7,2.456140350877193
+6,SR_alone,Tennis court,网球场,247,0,0,0,0.0
+6,SR_alone,Running track,跑道,473,0,8,-8,-1.6913319238900635
+6,SR_on_L,Healthy grass,健康草地,1053,37,0,37,3.5137701804368473
+6,SR_on_L,Stressed grass,受胁草地,1064,3,150,-147,-13.81578947368421
+6,SR_on_L,Synthetic grass,人造草地,505,9,0,9,1.7821782178217822
+6,SR_on_L,Trees,树木,1056,118,1,117,11.079545454545455
+6,SR_on_L,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+6,SR_on_L,Water,水体,143,0,5,-5,-3.4965034965034967
+6,SR_on_L,Residential,住宅区,1072,84,86,-2,-0.1865671641791045
+6,SR_on_L,Commercial,商业区,1053,20,48,-28,-2.6590693257359925
+6,SR_on_L,Road,道路,1059,53,16,37,3.493862134088763
+6,SR_on_L,Highway,高速公路,1036,338,6,332,32.04633204633205
+6,SR_on_L,Railway,铁路,1054,58,0,58,5.502846299810247
+6,SR_on_L,Parking lot 1,停车场1,1041,6,1,5,0.4803073967339097
+6,SR_on_L,Parking lot 2,停车场2,285,23,0,23,8.070175438596491
+6,SR_on_L,Tennis court,网球场,247,0,0,0,0.0
+6,SR_on_L,Running track,跑道,473,0,6,-6,-1.2684989429175475
+6,L_on_SR,Healthy grass,健康草地,1053,0,0,0,0.0
+6,L_on_SR,Stressed grass,受胁草地,1064,0,0,0,0.0
+6,L_on_SR,Synthetic grass,人造草地,505,0,0,0,0.0
+6,L_on_SR,Trees,树木,1056,32,3,29,2.746212121212121
+6,L_on_SR,Soil,土壤,1056,0,0,0,0.0
+6,L_on_SR,Water,水体,143,0,0,0,0.0
+6,L_on_SR,Residential,住宅区,1072,49,4,45,4.197761194029851
+6,L_on_SR,Commercial,商业区,1053,20,39,-19,-1.8043684710351378
+6,L_on_SR,Road,道路,1059,29,20,9,0.8498583569405099
+6,L_on_SR,Highway,高速公路,1036,367,6,361,34.84555984555985
+6,L_on_SR,Railway,铁路,1054,26,5,21,1.9924098671726755
+6,L_on_SR,Parking lot 1,停车场1,1041,14,1,13,1.2487992315081653
+6,L_on_SR,Parking lot 2,停车场2,285,5,0,5,1.7543859649122806
+6,L_on_SR,Tennis court,网球场,247,0,0,0,0.0
+6,L_on_SR,Running track,跑道,473,3,1,2,0.42283298097251587
+6,spectral_vs_distance,Healthy grass,健康草地,1053,19,0,19,1.8043684710351378
+6,spectral_vs_distance,Stressed grass,受胁草地,1064,0,0,0,0.0
+6,spectral_vs_distance,Synthetic grass,人造草地,505,2,0,2,0.39603960396039606
+6,spectral_vs_distance,Trees,树木,1056,19,1,18,1.7045454545454546
+6,spectral_vs_distance,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+6,spectral_vs_distance,Water,水体,143,0,6,-6,-4.195804195804196
+6,spectral_vs_distance,Residential,住宅区,1072,39,25,14,1.3059701492537314
+6,spectral_vs_distance,Commercial,商业区,1053,162,18,144,13.675213675213675
+6,spectral_vs_distance,Road,道路,1059,43,14,29,2.7384324834749765
+6,spectral_vs_distance,Highway,高速公路,1036,409,6,403,38.8996138996139
+6,spectral_vs_distance,Railway,铁路,1054,6,22,-16,-1.5180265654648957
+6,spectral_vs_distance,Parking lot 1,停车场1,1041,0,1,-1,-0.09606147934678194
+6,spectral_vs_distance,Parking lot 2,停车场2,285,1,2,-1,-0.3508771929824561
+6,spectral_vs_distance,Tennis court,网球场,247,0,0,0,0.0
+6,spectral_vs_distance,Running track,跑道,473,0,6,-6,-1.2684989429175475
+6,combined,Healthy grass,健康草地,1053,21,0,21,1.9943019943019944
+6,combined,Stressed grass,受胁草地,1064,3,0,3,0.2819548872180451
+6,combined,Synthetic grass,人造草地,505,8,0,8,1.5841584158415842
+6,combined,Trees,树木,1056,77,3,74,7.007575757575758
+6,combined,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+6,combined,Water,水体,143,0,6,-6,-4.195804195804196
+6,combined,Residential,住宅区,1072,104,13,91,8.488805970149254
+6,combined,Commercial,商业区,1053,20,15,5,0.4748338081671415
+6,combined,Road,道路,1059,65,31,34,3.210576015108593
+6,combined,Highway,高速公路,1036,348,6,342,33.011583011583014
+6,combined,Railway,铁路,1054,8,22,-14,-1.3282732447817838
+6,combined,Parking lot 1,停车场1,1041,13,1,12,1.1527377521613833
+6,combined,Parking lot 2,停车场2,285,13,1,12,4.2105263157894735
+6,combined,Tennis court,网球场,247,0,0,0,0.0
+6,combined,Running track,跑道,473,0,6,-6,-1.2684989429175475
+7,L_alone,Healthy grass,健康草地,1053,25,39,-14,-1.3295346628679963
+7,L_alone,Stressed grass,受胁草地,1064,3,0,3,0.2819548872180451
+7,L_alone,Synthetic grass,人造草地,505,4,0,4,0.7920792079207921
+7,L_alone,Trees,树木,1056,12,99,-87,-8.238636363636363
+7,L_alone,Soil,土壤,1056,0,0,0,0.0
+7,L_alone,Water,水体,143,0,0,0,0.0
+7,L_alone,Residential,住宅区,1072,55,87,-32,-2.985074626865672
+7,L_alone,Commercial,商业区,1053,91,31,60,5.698005698005698
+7,L_alone,Road,道路,1059,6,243,-237,-22.379603399433428
+7,L_alone,Highway,高速公路,1036,133,22,111,10.714285714285714
+7,L_alone,Railway,铁路,1054,18,160,-142,-13.472485768500949
+7,L_alone,Parking lot 1,停车场1,1041,13,58,-45,-4.322766570605188
+7,L_alone,Parking lot 2,停车场2,285,30,3,27,9.473684210526315
+7,L_alone,Tennis court,网球场,247,0,0,0,0.0
+7,L_alone,Running track,跑道,473,0,0,0,0.0
+7,SR_alone,Healthy grass,健康草地,1053,43,0,43,4.083570750237417
+7,SR_alone,Stressed grass,受胁草地,1064,3,0,3,0.2819548872180451
+7,SR_alone,Synthetic grass,人造草地,505,6,0,6,1.188118811881188
+7,SR_alone,Trees,树木,1056,81,18,63,5.965909090909091
+7,SR_alone,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+7,SR_alone,Water,水体,143,0,0,0,0.0
+7,SR_alone,Residential,住宅区,1072,81,86,-5,-0.4664179104477612
+7,SR_alone,Commercial,商业区,1053,47,27,20,1.899335232668566
+7,SR_alone,Road,道路,1059,8,8,0,0.0
+7,SR_alone,Highway,高速公路,1036,37,0,37,3.5714285714285716
+7,SR_alone,Railway,铁路,1054,15,2,13,1.2333965844402277
+7,SR_alone,Parking lot 1,停车场1,1041,15,0,15,1.440922190201729
+7,SR_alone,Parking lot 2,停车场2,285,57,1,56,19.649122807017545
+7,SR_alone,Tennis court,网球场,247,0,0,0,0.0
+7,SR_alone,Running track,跑道,473,0,6,-6,-1.2684989429175475
+7,SR_on_L,Healthy grass,健康草地,1053,57,0,57,5.413105413105413
+7,SR_on_L,Stressed grass,受胁草地,1064,0,0,0,0.0
+7,SR_on_L,Synthetic grass,人造草地,505,2,0,2,0.39603960396039606
+7,SR_on_L,Trees,树木,1056,134,6,128,12.121212121212121
+7,SR_on_L,Soil,土壤,1056,0,0,0,0.0
+7,SR_on_L,Water,水体,143,0,0,0,0.0
+7,SR_on_L,Residential,住宅区,1072,52,17,35,3.264925373134328
+7,SR_on_L,Commercial,商业区,1053,75,0,75,7.122507122507122
+7,SR_on_L,Road,道路,1059,243,27,216,20.39660056657224
+7,SR_on_L,Highway,高速公路,1036,46,167,-121,-11.67953667953668
+7,SR_on_L,Railway,铁路,1054,40,12,28,2.6565464895635675
+7,SR_on_L,Parking lot 1,停车场1,1041,58,4,54,5.187319884726225
+7,SR_on_L,Parking lot 2,停车场2,285,6,1,5,1.7543859649122806
+7,SR_on_L,Tennis court,网球场,247,0,0,0,0.0
+7,SR_on_L,Running track,跑道,473,0,6,-6,-1.2684989429175475
+7,L_on_SR,Healthy grass,健康草地,1053,0,0,0,0.0
+7,L_on_SR,Stressed grass,受胁草地,1064,0,0,0,0.0
+7,L_on_SR,Synthetic grass,人造草地,505,0,0,0,0.0
+7,L_on_SR,Trees,树木,1056,2,24,-22,-2.0833333333333335
+7,L_on_SR,Soil,土壤,1056,1,0,1,0.0946969696969697
+7,L_on_SR,Water,水体,143,0,0,0,0.0
+7,L_on_SR,Residential,住宅区,1072,38,30,8,0.746268656716418
+7,L_on_SR,Commercial,商业区,1053,115,0,115,10.921177587844255
+7,L_on_SR,Road,道路,1059,22,43,-21,-1.9830028328611897
+7,L_on_SR,Highway,高速公路,1036,105,152,-47,-4.536679536679537
+7,L_on_SR,Railway,铁路,1054,5,132,-127,-12.049335863377609
+7,L_on_SR,Parking lot 1,停车场1,1041,6,12,-6,-0.5763688760806917
+7,L_on_SR,Parking lot 2,停车场2,285,2,26,-24,-8.421052631578947
+7,L_on_SR,Tennis court,网球场,247,0,0,0,0.0
+7,L_on_SR,Running track,跑道,473,0,0,0,0.0
+7,spectral_vs_distance,Healthy grass,健康草地,1053,16,0,16,1.519468186134853
+7,spectral_vs_distance,Stressed grass,受胁草地,1064,8,0,8,0.7518796992481203
+7,spectral_vs_distance,Synthetic grass,人造草地,505,1,0,1,0.19801980198019803
+7,spectral_vs_distance,Trees,树木,1056,98,17,81,7.670454545454546
+7,spectral_vs_distance,Soil,土壤,1056,0,0,0,0.0
+7,spectral_vs_distance,Water,水体,143,0,0,0,0.0
+7,spectral_vs_distance,Residential,住宅区,1072,41,65,-24,-2.2388059701492535
+7,spectral_vs_distance,Commercial,商业区,1053,41,27,14,1.3295346628679963
+7,spectral_vs_distance,Road,道路,1059,110,27,83,7.837582625118036
+7,spectral_vs_distance,Highway,高速公路,1036,2,160,-158,-15.250965250965251
+7,spectral_vs_distance,Railway,铁路,1054,51,6,45,4.269449715370019
+7,spectral_vs_distance,Parking lot 1,停车场1,1041,24,11,13,1.2487992315081653
+7,spectral_vs_distance,Parking lot 2,停车场2,285,2,4,-2,-0.7017543859649122
+7,spectral_vs_distance,Tennis court,网球场,247,0,0,0,0.0
+7,spectral_vs_distance,Running track,跑道,473,1,6,-5,-1.0570824524312896
+7,combined,Healthy grass,健康草地,1053,43,0,43,4.083570750237417
+7,combined,Stressed grass,受胁草地,1064,3,0,3,0.2819548872180451
+7,combined,Synthetic grass,人造草地,505,6,0,6,1.188118811881188
+7,combined,Trees,树木,1056,75,34,41,3.882575757575758
+7,combined,Soil,土壤,1056,0,0,0,0.0
+7,combined,Water,水体,143,0,0,0,0.0
+7,combined,Residential,住宅区,1072,78,75,3,0.2798507462686567
+7,combined,Commercial,商业区,1053,150,15,135,12.820512820512821
+7,combined,Road,道路,1059,22,43,-21,-1.9830028328611897
+7,combined,Highway,高速公路,1036,105,115,-10,-0.9652509652509652
+7,combined,Railway,铁路,1054,18,132,-114,-10.815939278937382
+7,combined,Parking lot 1,停车场1,1041,18,9,9,0.8645533141210374
+7,combined,Parking lot 2,停车场2,285,34,2,32,11.228070175438596
+7,combined,Tennis court,网球场,247,0,0,0,0.0
+7,combined,Running track,跑道,473,0,6,-6,-1.2684989429175475
+8,L_alone,Healthy grass,健康草地,1053,1,10,-9,-0.8547008547008547
+8,L_alone,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,L_alone,Synthetic grass,人造草地,505,3,0,3,0.594059405940594
+8,L_alone,Trees,树木,1056,49,25,24,2.272727272727273
+8,L_alone,Soil,土壤,1056,0,0,0,0.0
+8,L_alone,Water,水体,143,0,0,0,0.0
+8,L_alone,Residential,住宅区,1072,131,40,91,8.488805970149254
+8,L_alone,Commercial,商业区,1053,37,32,5,0.4748338081671415
+8,L_alone,Road,道路,1059,7,121,-114,-10.76487252124646
+8,L_alone,Highway,高速公路,1036,299,35,264,25.482625482625483
+8,L_alone,Railway,铁路,1054,0,92,-92,-8.72865275142315
+8,L_alone,Parking lot 1,停车场1,1041,3,0,3,0.2881844380403458
+8,L_alone,Parking lot 2,停车场2,285,22,1,21,7.368421052631579
+8,L_alone,Tennis court,网球场,247,0,0,0,0.0
+8,L_alone,Running track,跑道,473,0,0,0,0.0
+8,SR_alone,Healthy grass,健康草地,1053,30,0,30,2.849002849002849
+8,SR_alone,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,SR_alone,Synthetic grass,人造草地,505,7,0,7,1.386138613861386
+8,SR_alone,Trees,树木,1056,35,30,5,0.4734848484848485
+8,SR_alone,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+8,SR_alone,Water,水体,143,0,0,0,0.0
+8,SR_alone,Residential,住宅区,1072,89,15,74,6.902985074626866
+8,SR_alone,Commercial,商业区,1053,42,15,27,2.5641025641025643
+8,SR_alone,Road,道路,1059,12,27,-15,-1.4164305949008498
+8,SR_alone,Highway,高速公路,1036,2,22,-20,-1.9305019305019304
+8,SR_alone,Railway,铁路,1054,0,4,-4,-0.3795066413662239
+8,SR_alone,Parking lot 1,停车场1,1041,1,80,-79,-7.588856868395773
+8,SR_alone,Parking lot 2,停车场2,285,32,2,30,10.526315789473685
+8,SR_alone,Tennis court,网球场,247,0,0,0,0.0
+8,SR_alone,Running track,跑道,473,0,7,-7,-1.4799154334038056
+8,SR_on_L,Healthy grass,健康草地,1053,39,0,39,3.7037037037037037
+8,SR_on_L,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,SR_on_L,Synthetic grass,人造草地,505,4,0,4,0.7920792079207921
+8,SR_on_L,Trees,树木,1056,48,29,19,1.7992424242424243
+8,SR_on_L,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+8,SR_on_L,Water,水体,143,0,0,0,0.0
+8,SR_on_L,Residential,住宅区,1072,56,97,-41,-3.824626865671642
+8,SR_on_L,Commercial,商业区,1053,22,23,-1,-0.0949667616334283
+8,SR_on_L,Road,道路,1059,111,2,109,10.292728989612842
+8,SR_on_L,Highway,高速公路,1036,51,298,-247,-23.841698841698843
+8,SR_on_L,Railway,铁路,1054,92,5,87,8.25426944971537
+8,SR_on_L,Parking lot 1,停车场1,1041,8,7,1,0.09606147934678194
+8,SR_on_L,Parking lot 2,停车场2,285,3,3,0,0.0
+8,SR_on_L,Tennis court,网球场,247,0,0,0,0.0
+8,SR_on_L,Running track,跑道,473,0,6,-6,-1.2684989429175475
+8,L_on_SR,Healthy grass,健康草地,1053,0,0,0,0.0
+8,L_on_SR,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,L_on_SR,Synthetic grass,人造草地,505,0,0,0,0.0
+8,L_on_SR,Trees,树木,1056,39,1,38,3.5984848484848486
+8,L_on_SR,Soil,土壤,1056,0,0,0,0.0
+8,L_on_SR,Water,水体,143,0,0,0,0.0
+8,L_on_SR,Residential,住宅区,1072,8,32,-24,-2.2388059701492535
+8,L_on_SR,Commercial,商业区,1053,20,43,-23,-2.184235517568851
+8,L_on_SR,Road,道路,1059,43,33,10,0.9442870632672332
+8,L_on_SR,Highway,高速公路,1036,62,25,37,3.5714285714285716
+8,L_on_SR,Railway,铁路,1054,1,2,-1,-0.09487666034155598
+8,L_on_SR,Parking lot 1,停车场1,1041,85,2,83,7.973102785782901
+8,L_on_SR,Parking lot 2,停车场2,285,3,12,-9,-3.1578947368421053
+8,L_on_SR,Tennis court,网球场,247,0,0,0,0.0
+8,L_on_SR,Running track,跑道,473,1,0,1,0.21141649048625794
+8,spectral_vs_distance,Healthy grass,健康草地,1053,11,0,11,1.0446343779677112
+8,spectral_vs_distance,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,spectral_vs_distance,Synthetic grass,人造草地,505,3,0,3,0.594059405940594
+8,spectral_vs_distance,Trees,树木,1056,20,6,14,1.3257575757575757
+8,spectral_vs_distance,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+8,spectral_vs_distance,Water,水体,143,0,6,-6,-4.195804195804196
+8,spectral_vs_distance,Residential,住宅区,1072,38,11,27,2.5186567164179103
+8,spectral_vs_distance,Commercial,商业区,1053,2,0,2,0.1899335232668566
+8,spectral_vs_distance,Road,道路,1059,27,34,-7,-0.6610009442870632
+8,spectral_vs_distance,Highway,高速公路,1036,7,62,-55,-5.308880308880309
+8,spectral_vs_distance,Railway,铁路,1054,2,0,2,0.18975332068311196
+8,spectral_vs_distance,Parking lot 1,停车场1,1041,2,2,0,0.0
+8,spectral_vs_distance,Parking lot 2,停车场2,285,3,1,2,0.7017543859649122
+8,spectral_vs_distance,Tennis court,网球场,247,0,0,0,0.0
+8,spectral_vs_distance,Running track,跑道,473,0,6,-6,-1.2684989429175475
+8,combined,Healthy grass,健康草地,1053,30,0,30,2.849002849002849
+8,combined,Stressed grass,受胁草地,1064,0,0,0,0.0
+8,combined,Synthetic grass,人造草地,505,7,0,7,1.386138613861386
+8,combined,Trees,树木,1056,51,8,43,4.071969696969697
+8,combined,Soil,土壤,1056,0,1,-1,-0.0946969696969697
+8,combined,Water,水体,143,0,0,0,0.0
+8,combined,Residential,住宅区,1072,80,30,50,4.664179104477612
+8,combined,Commercial,商业区,1053,36,32,4,0.3798670465337132
+8,combined,Road,道路,1059,26,31,-5,-0.4721435316336166
+8,combined,Highway,高速公路,1036,43,26,17,1.640926640926641
+8,combined,Railway,铁路,1054,0,5,-5,-0.47438330170777987
+8,combined,Parking lot 1,停车场1,1041,10,6,4,0.38424591738712777
+8,combined,Parking lot 2,停车场2,285,22,1,21,7.368421052631579
+8,combined,Tennis court,网球场,247,0,0,0,0.0
+8,combined,Running track,跑道,473,0,6,-6,-1.2684989429175475

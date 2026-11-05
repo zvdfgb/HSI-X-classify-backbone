@@ -1,0 +1,71 @@
+{
+  "all_passed": true,
+  "baselines": [
+    {
+      "id": "A0_seed6",
+      "group": "A0",
+      "seed": 6,
+      "model": "TransMixer_SR2",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed6.json",
+      "reused": true,
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed6_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed6.stdout.log",
+      "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed6.stderr.log",
+      "reuse_source": "sr_native_20261029/M3_seed6",
+      "config_sha256": "a7af71c615baadbc12f841a8245a540e176bd66385b65f2dc5541cd3ed56998c",
+      "checkpoint_sha256": "eaecd5efb8cd3dc76b3dfaa1cd5eb0d26f24b594871cf60855aa30b11d31badd",
+      "report_sha256": "f7fe201d3fd5d632c121f61c93fa47f60aef37030d9e4ac5e0e20c7f771d5878",
+      "metrics": {
+        "oa": 92.4079691727474,
+        "aa": 93.50584925960878,
+        "kappa": 91.75534305565003
+      }
+    },
+    {
+      "id": "A0_seed7",
+      "group": "A0",
+      "seed": 7,
+      "model": "TransMixer_SR2",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed7.json",
+      "reused": true,
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed7_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed7.stdout.log",
+      "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed7.stderr.log",
+      "reuse_source": "sr_native_20261029/M3_seed7",
+      "config_sha256": "51cc8b376a44d79d73d211bd857d2c631c430878350efaeb97b491f79e8e6003",
+      "checkpoint_sha256": "a2c0f2931c9c2c40d5a56df2145d33a721ea4e2cbca25b262d2e3df79eddd49f",
+      "report_sha256": "32942e2263f898624148d36924f42002d3fb06bd1f7fa8302cb857251c80782e",
+      "metrics": {
+        "oa": 87.68549643354923,
+        "aa": 89.33857986484632,
+        "kappa": 86.62561251052117
+      }
+    },
+    {
+      "id": "A0_seed8",
+      "group": "A0",
+      "seed": 8,
+      "model": "TransMixer_SR2",
+      "config": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\sr_native_20261029\\M3_seed8.json",
+      "reused": true,
+      "checkpoint": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\model\\TransMixer_SR2\\Houston2013_model_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.pth",
+      "report": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\TransMixer_SR2\\Houston2013_report_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "native_log": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\TransMixer_SR2\\Houston2013_log_sr_native_20261029_M3_seed8_pca=30_window=11_lr=0.0001_epochs=100.txt",
+      "stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed8.stdout.log",
+      "stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\sr_native\\sr_native_20261029\\M3_seed8.stderr.log",
+      "reuse_source": "sr_native_20261029/M3_seed8",
+      "config_sha256": "9476d5cd26479cf088eac2df9d421ee97d018435af1fffc33b391cc3b8e4190e",
+      "checkpoint_sha256": "304a686b7d8a09928a28022236ad9db222cab273d2ce2f8a97a22aa19a7d4937",
+      "report_sha256": "acc65045f0f5a0d2786ad018f42d483a27b5b0c8df1372a2b66d721a665e5fcd",
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 90.09449487537687,
+        "kappa": 87.08268936294795
+      }
+    }
+  ]
+}

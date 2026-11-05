@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-11-04T16:54:18.038818+08:00",
+  "all_passed": true,
+  "state": {
+    "state": "training",
+    "completed": 4,
+    "total": 39,
+    "reused": 3,
+    "new_completed": 1,
+    "new_total": 36,
+    "current": "C02_seed6",
+    "training_pid": 45828,
+    "queue_pid": 20500,
+    "gpu_started": true,
+    "updated_at": "2026-11-04T16:54:07.721171+08:00",
+    "started_at": "2026-11-04T12:36:20.575158+08:00",
+    "predecessor": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\sr_lg_operator_controls_20261104",
+    "helper_pid": 44664,
+    "predecessor_state": "completed",
+    "predecessor_current": null,
+    "predecessor_epoch": 100,
+    "predecessor_new_completed": 6,
+    "group": "C02",
+    "seed": 6,
+    "current_epoch": 2,
+    "current_started_at": "2026-11-04T16:52:47.549283+08:00",
+    "elapsed_seconds": 80.2,
+    "log_updated_at": "2026-11-04T16:54:07.107260+08:00",
+    "error": null,
+    "failed_at": null,
+    "recovery_authorization": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\experiments\\provenance\\fusion_transfer_v3_seed678_20261104\\recovery_20261104_state_write\\authorization.json",
+    "previous_failure_archived": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\docs\\experiments\\provenance\\fusion_transfer_v3_seed678_20261104\\recovery_20261104_state_write\\运行状态.json",
+    "recovery_queue_stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_transfer_v3_seed678_20261104\\queue.resume_20261104_165229.stdout.log",
+    "recovery_queue_stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_transfer_v3_seed678_20261104\\queue.resume_20261104_165229.stderr.log",
+    "resumed_at": "2026-11-04T16:52:44.145344+08:00",
+    "recovery_attempt": "20261104_165244_145278",
+    "queue_stdout": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_transfer_v3_seed678_20261104\\queue.resume_20261104_165229.stdout.log",
+    "queue_stderr": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\log\\fusion_papers\\fusion_transfer_v3_seed678_20261104\\queue.resume_20261104_165229.stderr.log"
+  },
+  "power": {
+    "helper_pid": 44664,
+    "power_plan_changed": false,
+    "display_required": false,
+    "started_at": "2026-11-04T16:52:44.871504+08:00",
+    "state": "active",
+    "native_request_succeeded": true,
+    "checked_at": "2026-11-04T16:54:04.933442+08:00",
+    "queue_pid": 20500,
+    "training_pid": 45828,
+    "ac_connected": true,
+    "battery_percent": 96
+  },
+  "actual_processes": [
+    {
+      "ProcessId": 20500,
+      "CreationDate": "/Date(1793782361239)/",
+      "CommandLine": "\"C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -X utf8 -u scripts/run_fusion_transfer_v3.py resume"
+    },
+    {
+      "ProcessId": 44664,
+      "CreationDate": "/Date(1793782364156)/",
+      "CommandLine": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -X utf8 -u C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\scripts\\run_fusion_transfer_v3.py guard"
+    },
+    {
+      "ProcessId": 45828,
+      "CreationDate": "/Date(1793782367562)/",
+      "CommandLine": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -X utf8 -u scripts/train.py --config C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\configs\\runs\\fusion_transfer_v3_seed678_20261104\\C02_seed6.json"
+    }
+  ],
+  "c01_original_artifacts_unchanged": true,
+  "all_current_manifest_pins_passed": true,
+  "native_training_started": "C02_seed6",
+  "verified_epoch": 2,
+  "hourly_automation": {
+    "id": "automation-3",
+    "status": "ACTIVE"
+  },
+  "queue_stderr_empty": true,
+  "tests_passed": 11,
+  "completed": 4,
+  "reused": 3,
+  "new_completed": 1,
+  "remaining": 35
+}

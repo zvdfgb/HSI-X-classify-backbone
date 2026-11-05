@@ -1,0 +1,9 @@
+{
+  "authorized": true,
+  "user_instruction": "修复",
+  "scope": "Fix queue state persistence; verify/adopt C01_seed6 without retraining; resume remaining 35 original jobs from C02_seed6; restore hourly reports and temporary sleep protection",
+  "archived_at": "2026-11-04T16:48:55.604752+08:00",
+  "original_manifest_sha256": "3f549ffa3ddb830870d156a5eda8e66162e3633a6dddbe75562e6af4c88ef684",
+  "original_queue_sha256": "5ebe8d0cb007408b89a6fb85d29427000bc2e32800327dc3c00429a8c2bc7540",
+  "scientific_protocol_unchanged": true
+}

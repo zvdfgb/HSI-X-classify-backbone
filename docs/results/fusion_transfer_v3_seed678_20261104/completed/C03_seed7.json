@@ -1,0 +1,21 @@
+{
+  "id": "C03_seed7",
+  "seed": 7,
+  "group": "C03",
+  "epochs": 100,
+  "training_steps": 2200,
+  "started_at": "2026-11-04T23:09:15.350383+08:00",
+  "finished_at": "2026-11-05T00:02:43.989355+08:00",
+  "elapsed_seconds": 3208.638974600006,
+  "metrics": {
+    "oa": 88.99729441665983,
+    "aa": 89.98049089471264,
+    "kappa": 88.05032523244736
+  },
+  "checkpoint_sha256": "5f43bf15b86f64f6e216d5c12ce6d73815e998637163aa4c49779cfd288cbee2",
+  "report_sha256": "b0129e33a435a539a8f85a2fbb4cc60491eb2ff7d5dd8e80fc5a7db14c11d26b",
+  "native_log_sha256": "e5f031e1220bf66411cdd7e1135202c75340c98ae50a14ee414f235c6665f3c5",
+  "stdout_sha256": "18b8217cf76538ef964a9cbd97dda47625adedd5fc500942e3f0d3832c8f1ac9",
+  "stderr_sha256": "6b34972aac20da74c0262088fc054ad01d18af7b96d86f68d5f3e34089109f5b",
+  "diagnostics_sha256": "bc9cb240a51943842f9c256daea83cd20d5a8e771e9f9380a5627300dfbf7d75"
+}

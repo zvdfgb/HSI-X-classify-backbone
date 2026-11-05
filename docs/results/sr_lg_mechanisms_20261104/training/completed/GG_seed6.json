@@ -1,0 +1,18 @@
+{
+  "id": "GG_seed6",
+  "seed": 6,
+  "epochs": 100,
+  "started_at": "2026-11-04T12:02:13.721290+08:00",
+  "finished_at": "2026-11-04T12:30:37.163614+08:00",
+  "elapsed_seconds": 1703.4423448999996,
+  "metrics": {
+    "oa": 88.24301057637123,
+    "aa": 90.04018356729841,
+    "kappa": 87.23422880953267
+  },
+  "checkpoint_sha256": "52239ffc83e5e77c50486255e97588ce6c56baf35dfa637ab56f48501d10c5c8",
+  "report_sha256": "ca5316b4dd301ec15ff1c0ed78015499ad422dda9a99012ca316e7233bbfb540",
+  "native_log_sha256": "350d3e001e7f973c48a861ef15032c7f253d474e49b3f8de03543fa3296605bd",
+  "stdout_sha256": "add2235ee82948f659ea3bada47b19a01802d50362aa0546574c918c4453bfa3",
+  "stderr_sha256": "b9d0ec540e65ec605e1d7d1ab1a30bac3946040eacad5a9b553e3f8c26124dd2"
+}

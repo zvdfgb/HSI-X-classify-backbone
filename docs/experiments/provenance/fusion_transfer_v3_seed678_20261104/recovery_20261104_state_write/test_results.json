@@ -1,0 +1,16 @@
+{
+  "all_passed": true,
+  "tests": 11,
+  "command": "C:\\Users\\mmm\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -X utf8 -m scripts.test_fusion_transfer_v3_recovery",
+  "verified_at": "2026-11-04T16:52:28.753428+08:00",
+  "test_sha256": "25dcaa425d751bec6675d9c6246b8f5a1a825676aa5a39db1f52095c0872768b",
+  "coverage": [
+    "actual Windows handle denies replace until released",
+    "persistent denial preserves destination",
+    "non-sharing errors are not retried",
+    "concurrent writers/readers",
+    "bounded read retries",
+    "only verified contiguous prefix skipped",
+    "reject corrupt, unknown, gap or unsealed outputs"
+  ]
+}

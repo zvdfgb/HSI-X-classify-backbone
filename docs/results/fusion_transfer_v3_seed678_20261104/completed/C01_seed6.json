@@ -1,0 +1,26 @@
+{
+  "id": "C01_seed6",
+  "seed": 6,
+  "group": "C01",
+  "epochs": 100,
+  "training_steps": 2200,
+  "started_at": "2026-11-04T14:34:24.006897+08:00",
+  "finished_at": "2026-11-04T14:59:40.654447+08:00",
+  "elapsed_seconds": 1516.64755,
+  "time_basis": "Original queue start timestamp to final stdout mtime; approximate wall time, not monotonic measurement",
+  "recovered_at": "2026-11-04T16:52:28.721356+08:00",
+  "recovered_after_queue_error": true,
+  "recovery_evidence": "C:\\Users\\mmm\\Desktop\\HSI-X-classify-backbone\\report\\fusion_papers\\fusion_transfer_v3_seed678_20261104\\monitoring\\20261104_154324_failure_audit.json",
+  "failure_audit_sha256": "c38fb186894d6e7ae8bc13a96d587be6335cec7cfbe0da23a96b9f767b6bd896",
+  "metrics": {
+    "oa": 86.57866688529965,
+    "aa": 89.03128574107332,
+    "kappa": 85.42275132281313
+  },
+  "checkpoint_sha256": "600e11e08adf151d34bcb05477b7648883bf65881014c522a0374b37bc976429",
+  "report_sha256": "916cec52bf3e462fd84be3f6cf489ddef3f411839dd714d865d8483a13da81df",
+  "native_log_sha256": "f88993d7668510c6d2230fbcc4652197341adf9d8a3c7ea3a042afac64adc142",
+  "stdout_sha256": "21cae9c24091ad46fc46f45c5ea0c59eea956544ab4a30fe19f0d7f1d2c5af7b",
+  "stderr_sha256": "cb0c349df5acf0a644c20edb88e4955a5951ad5ac607c263ea0c4237036b97c5",
+  "diagnostics_sha256": "3e9dba7da336386b294e0827762f6083eb199ca25cf846420d3a89c29bb9c963"
+}

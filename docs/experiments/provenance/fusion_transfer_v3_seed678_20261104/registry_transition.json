@@ -1,0 +1,22 @@
+{
+  "authorized": true,
+  "applied_at": "2026-11-04T14:32:49.787907+08:00",
+  "before_sha256": "4c5d4526661ba19b7a08ac84bd8e15f57f609ff294780acc1a72824d6a96716b",
+  "after_sha256": "e0caee692ba0967571bc3126a9e0b1bfd5be72e051be281db685b3610c917716",
+  "only_added_names": [
+    "TransMixer_FV3_C01",
+    "TransMixer_FV3_C02",
+    "TransMixer_FV3_C03",
+    "TransMixer_FV3_C04",
+    "TransMixer_FV3_S01",
+    "TransMixer_FV3_S02",
+    "TransMixer_FV3_S03",
+    "TransMixer_FV3_S04",
+    "TransMixer_FV3_I01",
+    "TransMixer_FV3_I02",
+    "TransMixer_FV3_I03",
+    "TransMixer_FV3_I04"
+  ],
+  "historical_mappings_unchanged": true,
+  "predecessor_complete_and_exited_before_change": true
+}

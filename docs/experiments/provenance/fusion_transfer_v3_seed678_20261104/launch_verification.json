@@ -1,0 +1,14 @@
+{
+  "verified_at": "2026-11-04T12:37:16.325375+08:00",
+  "controller_pid": 32028,
+  "helper_pid": 3140,
+  "state": "waiting_for_predecessor",
+  "new_training_processes": 0,
+  "gpu_started": false,
+  "power_guard_active": true,
+  "predecessor_locked_files_unchanged": true,
+  "registry_unchanged": true,
+  "configs": 36,
+  "cpu_checks": 36,
+  "reused_baselines": 3
+}

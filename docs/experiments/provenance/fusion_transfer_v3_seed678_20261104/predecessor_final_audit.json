@@ -1,0 +1,7 @@
+{
+  "all_passed": true,
+  "checked_at": "2026-11-04T14:32:47.821763+08:00",
+  "source_config_data_and_six_outputs_verified": true,
+  "no_active_predecessor_or_training": true,
+  "final_audit_sha256": "13ff5b1130619ac0662c2f1f2d9820fd9cd71550f953d08ccc5ccd595829239e"
+}

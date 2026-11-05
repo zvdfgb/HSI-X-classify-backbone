@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04",
+  "training_authorized": true,
+  "authorization": "用户在已明确列出两路局部/两路全局、每组seed6/7/8共6次新训后，要求：你自己按照你上述说明的方法，给我详细分析并探索这两个创新点。该授权仅覆盖上述6次，不扩展模型、组合、种子或训练规则。",
+  "new_training_runs": 6,
+  "reused_baselines": 3,
+  "groups": [
+    {"id": "LL", "model": "TransMixer_LG_LL_SR2", "variable": "保留SSM、原固定32/32分流、两分支原包装与SR2；第一支的注意力算子替换为局部深度卷积"},
+    {"id": "GG", "model": "TransMixer_LG_GG_SR2", "variable": "保留SSM、原固定32/32分流、两分支原包装与SR2；第二支的局部卷积算子替换为归一化自注意力"}
+  ],
+  "protocol": {
+    "seeds": [6, 7, 8], "dataset": "Houston2013 official split", "pca": 30,
+    "window": 11, "epochs": 100, "batch": 128,
+    "optimizer": "original AdamW lr=0.0001 weight_decay=0.01",
+    "loss": "original CE only", "selection": "unchanged test-OA best at native evaluation intervals",
+    "entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+    "data_metrics": "original src/data.py, src/evaluator.py, src/metrics.py"
+  },
+  "limitations": [
+    "算子配置对照，参数量不同且如实报告，不宣称完全容量匹配",
+    "第一支原有归一化与残差、第二支原包装保留，解释限于现有结构",
+    "不能由本对照证明1:1是所有通道比例中的最优值",
+    "原模型检查点只读，所有新组从头训练，禁止覆盖旧产物、自动重训、调参或早停"
+  ],
+  "acceptance": [
+    "共享初始化与全局随机状态保持原样；替回原算子后完整前向精确一致",
+    "原生batch128前后向数值有限，替换算子有非零梯度，整模型保存加载精确一致",
+    "每项100轮22/22及Report Success，检查点/报告/stdout/stderr/native_log五类哈希",
+    "旧M3三个种子检查点与报告封存哈希核验复用；当前源码配置数据封存核验"
+  ]
+}

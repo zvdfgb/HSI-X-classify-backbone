@@ -1,0 +1,74 @@
+[
+  {
+    "seed": 6,
+    "kind": "LL",
+    "parameters": 75319,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 1.2074073981493711,
+    "whole_model_roundtrip_exact": true
+  },
+  {
+    "seed": 6,
+    "kind": "GG",
+    "parameters": 86583,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 0.4962713534478098,
+    "whole_model_roundtrip_exact": true
+  },
+  {
+    "seed": 7,
+    "kind": "LL",
+    "parameters": 75319,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 1.1611300613731146,
+    "whole_model_roundtrip_exact": true
+  },
+  {
+    "seed": 7,
+    "kind": "GG",
+    "parameters": 86583,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 0.4689441965892911,
+    "whole_model_roundtrip_exact": true
+  },
+  {
+    "seed": 8,
+    "kind": "LL",
+    "parameters": 75319,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 1.2723382525146008,
+    "whole_model_roundtrip_exact": true
+  },
+  {
+    "seed": 8,
+    "kind": "GG",
+    "parameters": 86583,
+    "baseline_parameters": 80887,
+    "shared_parameters_exact": true,
+    "base_rng_exact": true,
+    "restored_base_forward_exact": true,
+    "native_batch128_finite_gradient": true,
+    "replacement_gradient_l1": 0.4756189859472215,
+    "whole_model_roundtrip_exact": true
+  }
+]

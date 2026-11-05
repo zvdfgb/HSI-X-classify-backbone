@@ -1,0 +1,224 @@
+{
+  "training_authorized": true,
+  "approved_at_recorded": "2026-11-04T12:34:30.727172+08:00",
+  "user_instruction": "按照上述设计开始实验，严格遵循之前的实验标准并复用代码；等待另一个训练结束后再gpu上训练",
+  "review_document": "docs\\experiments\\20261104_三篇新论文融合迁移_实验审核稿.md",
+  "review_sha256": "d91119f8c50c57690d60fc1b0881fc66a21aac95e0c5aeacd2ba8dc647288247",
+  "total_groups": 13,
+  "total_results": 39,
+  "reused": 3,
+  "new_training_runs": 36,
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "epochs": 100,
+  "groups": [
+    "A0",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "I01",
+    "I02",
+    "I03",
+    "I04"
+  ],
+  "new_jobs": [
+    {
+      "id": "C01_seed6",
+      "group": "C01",
+      "seed": 6
+    },
+    {
+      "id": "C02_seed6",
+      "group": "C02",
+      "seed": 6
+    },
+    {
+      "id": "C03_seed6",
+      "group": "C03",
+      "seed": 6
+    },
+    {
+      "id": "C04_seed6",
+      "group": "C04",
+      "seed": 6
+    },
+    {
+      "id": "S01_seed6",
+      "group": "S01",
+      "seed": 6
+    },
+    {
+      "id": "S02_seed6",
+      "group": "S02",
+      "seed": 6
+    },
+    {
+      "id": "S03_seed6",
+      "group": "S03",
+      "seed": 6
+    },
+    {
+      "id": "S04_seed6",
+      "group": "S04",
+      "seed": 6
+    },
+    {
+      "id": "I01_seed6",
+      "group": "I01",
+      "seed": 6
+    },
+    {
+      "id": "I02_seed6",
+      "group": "I02",
+      "seed": 6
+    },
+    {
+      "id": "I03_seed6",
+      "group": "I03",
+      "seed": 6
+    },
+    {
+      "id": "I04_seed6",
+      "group": "I04",
+      "seed": 6
+    },
+    {
+      "id": "C01_seed7",
+      "group": "C01",
+      "seed": 7
+    },
+    {
+      "id": "C02_seed7",
+      "group": "C02",
+      "seed": 7
+    },
+    {
+      "id": "C03_seed7",
+      "group": "C03",
+      "seed": 7
+    },
+    {
+      "id": "C04_seed7",
+      "group": "C04",
+      "seed": 7
+    },
+    {
+      "id": "S01_seed7",
+      "group": "S01",
+      "seed": 7
+    },
+    {
+      "id": "S02_seed7",
+      "group": "S02",
+      "seed": 7
+    },
+    {
+      "id": "S03_seed7",
+      "group": "S03",
+      "seed": 7
+    },
+    {
+      "id": "S04_seed7",
+      "group": "S04",
+      "seed": 7
+    },
+    {
+      "id": "I01_seed7",
+      "group": "I01",
+      "seed": 7
+    },
+    {
+      "id": "I02_seed7",
+      "group": "I02",
+      "seed": 7
+    },
+    {
+      "id": "I03_seed7",
+      "group": "I03",
+      "seed": 7
+    },
+    {
+      "id": "I04_seed7",
+      "group": "I04",
+      "seed": 7
+    },
+    {
+      "id": "C01_seed8",
+      "group": "C01",
+      "seed": 8
+    },
+    {
+      "id": "C02_seed8",
+      "group": "C02",
+      "seed": 8
+    },
+    {
+      "id": "C03_seed8",
+      "group": "C03",
+      "seed": 8
+    },
+    {
+      "id": "C04_seed8",
+      "group": "C04",
+      "seed": 8
+    },
+    {
+      "id": "S01_seed8",
+      "group": "S01",
+      "seed": 8
+    },
+    {
+      "id": "S02_seed8",
+      "group": "S02",
+      "seed": 8
+    },
+    {
+      "id": "S03_seed8",
+      "group": "S03",
+      "seed": 8
+    },
+    {
+      "id": "S04_seed8",
+      "group": "S04",
+      "seed": 8
+    },
+    {
+      "id": "I01_seed8",
+      "group": "I01",
+      "seed": 8
+    },
+    {
+      "id": "I02_seed8",
+      "group": "I02",
+      "seed": 8
+    },
+    {
+      "id": "I03_seed8",
+      "group": "I03",
+      "seed": 8
+    },
+    {
+      "id": "I04_seed8",
+      "group": "I04",
+      "seed": 8
+    }
+  ],
+  "main_comparisons": [
+    "C04-A0",
+    "S04-A0",
+    "I04-A0"
+  ],
+  "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+  "wait_for": "report\\sr_lg_operator_controls_20261104",
+  "no_gpu_until_predecessor_exits": true,
+  "registry_transition_after_predecessor_audit_only": true,
+  "retrain_on_failure": false
+}
