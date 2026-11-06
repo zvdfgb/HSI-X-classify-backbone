@@ -1,0 +1,87 @@
+{
+  "runs": [
+    {
+      "group": "A0",
+      "parameters": 80887,
+      "estimated_clean_macs_per_patch": 11847568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 96.88632000470534
+    },
+    {
+      "group": "N00",
+      "parameters": 157799,
+      "estimated_clean_macs_per_patch": 21087128,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 91.58349999925122
+    },
+    {
+      "group": "N01",
+      "parameters": 171919,
+      "estimated_clean_macs_per_patch": 25619304,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 98.71941999881528
+    },
+    {
+      "group": "N02",
+      "parameters": 182631,
+      "estimated_clean_macs_per_patch": 26926104,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 99.46752000250854
+    },
+    {
+      "group": "N03",
+      "parameters": 184729,
+      "estimated_clean_macs_per_patch": 27177784,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 103.02897999645211
+    },
+    {
+      "group": "N04",
+      "parameters": 185041,
+      "estimated_clean_macs_per_patch": 27214568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 105.56732000550255
+    },
+    {
+      "group": "N05",
+      "parameters": 185041,
+      "estimated_clean_macs_per_patch": 27214568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 104.16724000242539
+    }
+  ],
+  "mac_estimator": "Conv/Linear/MHA, explicit cross-modal matrix products, SSM recurrence/readout; excludes nonlinear/normalization/pooling/local-variance",
+  "not_an_exact_total_flop_count": true,
+  "reference_c01_from_fv3": {
+    "group": "C01",
+    "parameters": 253559,
+    "estimated_clean_macs_per_patch": 35528720,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 95.38511999999173
+  },
+  "reference_c02_from_fv3": {
+    "group": "C02",
+    "parameters": 680311,
+    "estimated_clean_macs_per_patch": 87072784,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 100.2323400000023
+  }
+}

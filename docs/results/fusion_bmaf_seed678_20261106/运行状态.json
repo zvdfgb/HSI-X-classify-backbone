@@ -1,0 +1,22 @@
+{
+  "state": "completed",
+  "completed": 27,
+  "total": 27,
+  "reused": 9,
+  "new_completed": 18,
+  "new_total": 18,
+  "current": null,
+  "training_pid": null,
+  "queue_pid": 69860,
+  "gpu_preflight_passed": true,
+  "updated_at": "2026-11-07T00:11:02.680675+08:00",
+  "started_at": "2026-11-06T13:11:38.694070+08:00",
+  "helper_pid": 55392,
+  "group": null,
+  "seed": null,
+  "current_epoch": 100,
+  "current_started_at": "2026-11-06T23:02:56.796548+08:00",
+  "elapsed_seconds": 3742.5,
+  "log_updated_at": "2026-11-07T00:03:40.208422+08:00",
+  "finished_at": "2026-11-07T00:11:02.679243+08:00"
+}

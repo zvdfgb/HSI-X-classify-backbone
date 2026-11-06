@@ -1,0 +1,368 @@
+{
+  "captured_at_beijing": "2026-11-07T00:12:25.554829+08:00",
+  "all_passed": true,
+  "new_training_runs": 18,
+  "reused_baselines": 9,
+  "runs": [
+    {
+      "id": "N00_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:13<00:00,  1.65batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "d4933a03d75158357782fd8e8f707bd6d2fbba8f7f64ac79d8d178e21e9f0c17",
+        "report": "bc38e80e445b11e4d48702d8d87e98b0ab72e88f43430b89be18a666a53b2afe",
+        "stdout": "51c8ca986f8b2bb8675e1ac84ca1561a8e60d9700d8d40260dca85f70b8e6e00",
+        "stderr": "af72e5478a1b6b7c2ba152fddce55b86994311bd68a11bfa49c742fe78bf2c24",
+        "native_log": "9f7b2cb55d9559f82516189c8456efa73c9b1eeacbe9eb1de583d53f31211ea9",
+        "diagnostics": "dc6ebc6d4ff40ae3dde5e55e525b8bee8aeac8cbd896544d2c1cd86d7cc2bc77"
+      },
+      "metrics": {
+        "oa": 88.85791588095432,
+        "aa": 90.69364914067573,
+        "kappa": 87.90084318356996
+      }
+    },
+    {
+      "id": "N01_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:13<00:00,  1.65batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "197b8b4123c56bb355dc7bc703a84c231df33239dddfe3ea4dc4bdb6a2f6f16c",
+        "report": "891d0332fb09c2cf67c3c5ee42ff70f1a61d232e1a61392002381c7a9c000378",
+        "stdout": "7d8d17a92517797a2c55c18e747f4acc5d50961c59756e768010607354e8c743",
+        "stderr": "72bfadd4b7c4696eb4af65e7ffcbe73ffb7d15757a2644977609b9980fbd53b1",
+        "native_log": "4d243c146828f0652b9458ad1b8bfaa5c657875d04aebca29d9f83b3c697311b",
+        "diagnostics": "3681605aff37c84fb6fec7ae1eb8b999ad0102d2644e827f9625d631105650f1"
+      },
+      "metrics": {
+        "oa": 87.83307370664917,
+        "aa": 89.43859920162998,
+        "kappa": 86.78634416972444
+      }
+    },
+    {
+      "id": "N02_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:13<00:00,  1.61batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "cd27f9e144b8db1cc842236282d8f44ba2785f42778676836b6c5de91d9688e2",
+        "report": "f557301ca1d4e8de47edf04c9d2c709620f0e9dfbabe23a3734547d97d50097c",
+        "stdout": "57901474e8f61607eefb136e289ed320026e02c392940e71619260545bdb0ecb",
+        "stderr": "36b3b1c931c86de4af0f635aae718081a1f2cdfaf7bb5824da0d1ba0b903be68",
+        "native_log": "1439b3a4fdfa3e2cecc9f51ef842b5f14076bebd4b94d44aa1f5a7a3a88bfd5a",
+        "diagnostics": "3c62bce99abc313eea999fff345b549497bd52c80f94f2627ad9bf430eef3d3a"
+      },
+      "metrics": {
+        "oa": 89.25145527588751,
+        "aa": 90.56633885863809,
+        "kappa": 88.32458589991012
+      }
+    },
+    {
+      "id": "N03_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:18<00:00,  1.20batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "2a1a956e73764135409a1c6bb7018f6bb3d3d03962b5a5cd1062cefea1a4ad18",
+        "report": "4ffe6c98fb1852d50b02ce86d8f2df018ae0860443b622224274d4df75330148",
+        "stdout": "aa2f5e6d6bd21af3215324209a147d48e0414da46633b0ac6616f3f9d2ce2975",
+        "stderr": "0298f4047470ac33dadb1293b225aa8dae6c9f7d94f1ba571a07b96a7e8a964d",
+        "native_log": "3585bf43d021815fa14ad6a43783bde431bd86064f469c85862714363896d08c",
+        "diagnostics": "d8fc1023e1b43c6427396e600115de95fc7192baf829b8af011ed14a3f648654"
+      },
+      "metrics": {
+        "oa": 88.10363204066573,
+        "aa": 89.90371030655132,
+        "kappa": 87.07879778337188
+      }
+    },
+    {
+      "id": "N04_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:17<00:00,  1.28batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "a6cf233088c57947388e937400b02ec66e24fd8d9a834db849ed1c26bd7e5287",
+        "report": "cf671c5f8cd226d67f23b27ccc870a16810153cc4a55422fd80d7eb5c43ba269",
+        "stdout": "8cb4ccb8eb91165befe49436f5398393f1dd3aa7ba6247ce51096e107ab7e663",
+        "stderr": "ff7017afc9c2ab555f0d3e48282479dd615d78424a78794b6cb8498e87d1e32c",
+        "native_log": "f3022c34b8d7d61a6818497dfa023e6437bccd0bd0910dc0cc002ce548efb408",
+        "diagnostics": "50cba74794c5fac531eac77ce974b5778e1b7eed219353366de945faf210d3e2"
+      },
+      "metrics": {
+        "oa": 88.85791588095432,
+        "aa": 90.41676406852753,
+        "kappa": 87.8978663901684
+      }
+    },
+    {
+      "id": "N05_seed6",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:17<00:00,  1.28batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "190b6003ef884baf2d3452f583f3d20544b0b9255ce458111f0c38c1c4d0af5b",
+        "report": "9a373e51ca51f5765a10eb6ba9f3fea52bbeb46c30b28346ef565a39ffab51c7",
+        "stdout": "8c58372e7b74e2f2ef2ff9bf28f9e259fdad30f25227150fecc42d76985cded3",
+        "stderr": "90daf01df753533321f02da1398ae6c941886411a362f784b86cdc7d719ddf6c",
+        "native_log": "4ac6aa333d8856304f1722bfa794a959ee682a188b08e663dfe5b1501c672cf0",
+        "diagnostics": "7e41815585300f5413985d4511be4854198e0fe456c8d97ccc84bbce71a4ced4"
+      },
+      "metrics": {
+        "oa": 88.84151840616545,
+        "aa": 90.50211246961824,
+        "kappa": 87.88079213562986
+      }
+    },
+    {
+      "id": "N00_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:15<00:00,  1.39batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "fd1a73544b92ed79faa88519a49517ec84143b5859bda3364a87b5465bd5c718",
+        "report": "f1c27e2edc65dd3bb8f748e42d3541d0e7f4fba1e80c567a66e403ec542d03bb",
+        "stdout": "6c83f29d6a8df348b9b60cb3782b9779f951a0c0b6645dd7e6ae3aeac4b73b9d",
+        "stderr": "9984ad8175f28a34935b9a29567e2488ad3346d6006ae34763c24f73442f8bd2",
+        "native_log": "191e337378e0659ad01520f29b975b1f3c7832315a0725bc5320cea0f06e034d",
+        "diagnostics": "f8f5182f588dcdf43097ad4bc555430091a992e1c5758014f66fa4dd6a6a2b3c"
+      },
+      "metrics": {
+        "oa": 90.41567598589818,
+        "aa": 91.67808448754771,
+        "kappa": 89.59050761410832
+      }
+    },
+    {
+      "id": "N01_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:16<00:00,  1.37batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "4c64269de80d5a9a43992fe80e94a22d0701b785fb108429b2a1af5816abb16a",
+        "report": "280dd40b977d0cb426d7dd3a91da565e7e30be1455d8c0ecef340541b28880cb",
+        "stdout": "d689c31ff00017863bd7a4a1409898dc9b8a8eae59e3f4d9ec45e3196f699575",
+        "stderr": "0131a35b29e238657393879de0d495307c28d1e990a03481e74cf30804afcdec",
+        "native_log": "c485f412a82b6e92d6de5275e4c71ab5de66cd99b1d681d0b51654989283e852",
+        "diagnostics": "497d8063ebbd5372b48508a018628ec5f8ab5cf4e62e1681bf6c7cca68c57803"
+      },
+      "metrics": {
+        "oa": 89.5876035090596,
+        "aa": 91.29660774598915,
+        "kappa": 88.69901084873626
+      }
+    },
+    {
+      "id": "N02_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:14<00:00,  1.49batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "2174524f16c75cdb6420eb96c9cf15c515940931972052056ff860152284c442",
+        "report": "cd7cda9f1223bc4277a9b9916bcae15f9c25afd01d869384b96bd71bf9ba4bda",
+        "stdout": "a9156db0e4799c4951148ae6b528bada601cd77a20e25bf19fb5c27438d46759",
+        "stderr": "4ad9f4df991b4be4d032624ffbb630d4eb84aaf66c13166468cf0b092a936c88",
+        "native_log": "3e87b382d2a540129710ca0a4991853ae00eccae67c97cf744249fb31bd3431b",
+        "diagnostics": "0e7b7419dcbd5e26250056d0bcd895b0e81aee71cd36ae2c80ef067b95263d80"
+      },
+      "metrics": {
+        "oa": 90.19431007624826,
+        "aa": 91.67491142783102,
+        "kappa": 89.35117155412324
+      }
+    },
+    {
+      "id": "N03_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:16<00:00,  1.29batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "c7b646c5b5912100bcec9059036a36731af429f53a8d1c2a7cde26b75f7dccec",
+        "report": "a0644b731ee362fb4515273d922dea42dd6f278495484eaa516088e7d216f91d",
+        "stdout": "168ce22773cc56bac42844c8126a00f27852d4e6edffea139a1a3c9205eda186",
+        "stderr": "f7dd294bb4507eb692978f657c2c945b00265a8d4b219fd8bb300c238a22243b",
+        "native_log": "688924e0efa3603ba3a68aa2be321eb2eb3162c0a82514219e124e9094d21950",
+        "diagnostics": "d26e322b5f5eae5947d32f8c7e650412d00608f7b00ffb7363c7d2ce79fd0297"
+      },
+      "metrics": {
+        "oa": 89.2678527506764,
+        "aa": 90.91024435817683,
+        "kappa": 88.34476642050126
+      }
+    },
+    {
+      "id": "N04_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:17<00:00,  1.26batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "51490f6285c61fee3b7f6289dde055abda085a4b712a7b6eaf02b366044ce8dd",
+        "report": "2cd9b98f1ef8958cf559077c15b3f71c839349b9dbaa5880b80207eb4e604dc6",
+        "stdout": "6f9916fe534583ca2017d85dc84a0f72cd8836d98e5ca3575a7b968d9588f82e",
+        "stderr": "4b020e30fd4f693186c5bee476feead295fd1f8c71e7f7c92328f25c9d210ffa",
+        "native_log": "37392a2421f6480ca962688c00ba886dfee992cdfbfc23d3f0d5bca6b334639f",
+        "diagnostics": "aaf4bef7ae8626048d861e87ef912dc81f4736381f840d3eb6261c659a469b02"
+      },
+      "metrics": {
+        "oa": 89.2678527506764,
+        "aa": 90.7733882550163,
+        "kappa": 88.34408766372914
+      }
+    },
+    {
+      "id": "N05_seed7",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:16<00:00,  1.36batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "563148b1a957563bf36db52ccb55ed5d8337e471f13c28ff4523b5e6a417fe6b",
+        "report": "e61ea0275a5fa633ffcf9b860ab5dab6424b1aa1ea92def322c81420a29c0ce7",
+        "stdout": "53be92ada6f51775a537213be726a9f26c8e479036a20ae86f3855000650ead7",
+        "stderr": "5f841fb72ef1175a5f9f8441b3e6022f9715540efae4292bcd2bc02579fc1ec8",
+        "native_log": "bfe4ae2d65580f44b24f8b9c0b9587101bfbefbb5e37cb2024a9302a76711e53",
+        "diagnostics": "03d68673095134ee0f3efd5dd3700273050e1921466abb3e61082e1da5d8622b"
+      },
+      "metrics": {
+        "oa": 89.27605148807083,
+        "aa": 90.89945038421425,
+        "kappa": 88.35363999029815
+      }
+    },
+    {
+      "id": "N00_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:16<00:00,  1.33batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "9d06215db4bd1a37dac3b7c23fef071be8f7123b3e3ccabd3e33d57b803fcf17",
+        "report": "cccc0c185246f4ea7d873694f48ffd1e3442c96fe1764dd4300073857c68b4c9",
+        "stdout": "613a6e14f9acbfaf6e5295877083f2c67f0e769a7a2bb0cfb283a1e9ee298aa5",
+        "stderr": "7f229b3e539b614faa4658aa16de97843b06c72c79c8a13f87338740cdd0660c",
+        "native_log": "e1cf0fde7588449f6a4839bfadbe9339d7142a10de7d289d42ec1070cc805d90",
+        "diagnostics": "4c200910e5526ecbdecb587272b3cdc15fc205c8249a04f7b97921166571a4c2"
+      },
+      "metrics": {
+        "oa": 90.23530376322046,
+        "aa": 92.05066700915599,
+        "kappa": 89.39638834209862
+      }
+    },
+    {
+      "id": "N01_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:16<00:00,  1.36batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "137f961fdbeff3576f2a09140d44c137bc32c13daf70a1e8d362f48916de38b5",
+        "report": "a9de1c85e36d9031ba535305d77496c1ca2b63ad2347bfb51c60035f07822eb9",
+        "stdout": "0c368e705fc72956c19696f0e919cce3eae78a7bee78d2eba8de32bdc23a4a01",
+        "stderr": "51b5db68f64db7a1c8b72958eb384f32369714f56e799c20a99f334fa4e3180d",
+        "native_log": "66daaeedd87de9d74ad9d5a01424d47454a28439b31a94c910da1e59d9250d09",
+        "diagnostics": "568c20ab84686c481ae9507d82719f290bbae9580cef056efffbd76d224634fa"
+      },
+      "metrics": {
+        "oa": 90.68623431991473,
+        "aa": 91.47276473534728,
+        "kappa": 89.8852705574523
+      }
+    },
+    {
+      "id": "N02_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:18<00:00,  1.16batch/s]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "5e673b7ba6b8b4abda21429bdac31baa923e193e8c6e76b649e39396a7509bfb",
+        "report": "2bc5c3553df38cd07155b31544b9e208c2e2694354385020edf4ae7c9a72bce1",
+        "stdout": "e219a0c387c5a78ca3fe4fa21ca6b6df99a921077b784cb3f1bf8147b48c8788",
+        "stderr": "df188c92088b0d9ce6c82c6308f97720015c59926f3ccff13434cc0a3034cb49",
+        "native_log": "48ac1f2fbbd51506e16c361c67ba9934b2fc67dc5d91d98bf33114917a220d24",
+        "diagnostics": "883698adaf91caf467ced36fe01a73ada728d0c84f1f9fe2a2de847251f41036"
+      },
+      "metrics": {
+        "oa": 90.60424694597032,
+        "aa": 92.04150187924978,
+        "kappa": 89.79643877240002
+      }
+    },
+    {
+      "id": "N03_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:29<00:00,  1.35s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "71377070ab4c784a04fcc5a399e97ecba51a8ab0de5e4bc62ac6bcc93fa813af",
+        "report": "461aa8c2748e89f57bdbce1a2a598c6f847e184333216706e8dcf146d2e608fb",
+        "stdout": "73e204d2adb9bc0510da03ef40f70596f2d0daf777f3068677ffb95c6f621aea",
+        "stderr": "486df6d4b859a8b60cc0dfcbbd640b8da11a7e9553eae78420eb9c1805c8971b",
+        "native_log": "14556d56e2270b07ab9fe6b823aa9a634b927a054c0a71eab635c2573d620efb",
+        "diagnostics": "04d6eb66c00da9cca05eeed93405d5b860ff0eb465c3e8259e49eb9e15b82cb7"
+      },
+      "metrics": {
+        "oa": 91.42412068541445,
+        "aa": 92.53842573407638,
+        "kappa": 90.68656487959375
+      }
+    },
+    {
+      "id": "N04_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:39<00:00,  1.78s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "acc8abcba234358297b0210541769bbfa1dcf72dc838601e811967c9fc2576cf",
+        "report": "baf4790faff219be930de5f9736c5a4bcd803f95c748624a4d7fdbc9a5978e8c",
+        "stdout": "47deca8a7b23a9a0b716c9321cf6c7b917692077b654863b0eb211f1c6beafaa",
+        "stderr": "58b5c6bdf9cef5b666617a4feab349c58033dbb9ced94f9740cf7aa5d1a8cc74",
+        "native_log": "0256f4bbf8140ba49f5e247a159c34e882b8114feb12c36c014a121712bfd86e",
+        "diagnostics": "a9f68190df5fd77cf384ce9d45e82fd4071468f48cb767a4e8379bb9f8e23d5d"
+      },
+      "metrics": {
+        "oa": 91.05517750266459,
+        "aa": 92.25226723977727,
+        "kappa": 90.28712175934467
+      }
+    },
+    {
+      "id": "N05_seed8",
+      "epochs": 100,
+      "training_steps": 2200,
+      "final_epoch_progress_excerpt": "Epoch 100/100: 100%|██████████| 22/22 [00:28<00:00,  1.31s/batch]",
+      "report_success_excerpt": "Report Success!",
+      "original_artifact_sha256": {
+        "checkpoint": "7157cfda60899df7fe98c4fe8f340e34ff9f67e5a8443ba67c965e9e667104dc",
+        "report": "1f380b5564cec3b9cdf475bc8ad51e0d6bc23414b0a19147a305dde7f4c54a7f",
+        "stdout": "7e077931ac1c1ccf88136cdbae7f72dc2b53b074eb2e69fafd3256f3b2840a09",
+        "stderr": "e48e0ad3d720de65c6eade46ad218becd3a1bb9eeb7cd7e8bb994ee92501518c",
+        "native_log": "03db01904ceb1c9ca1c962665e8fa463cab9181cc7be303852d96f1eda7ece99",
+        "diagnostics": "cd27102b45c199366f4277be57f5fab47d6b48eeccb644c3868fad4f2e8c4180"
+      },
+      "metrics": {
+        "oa": 90.59604820857588,
+        "aa": 92.15091225875952,
+        "kappa": 89.78816884724694
+      }
+    }
+  ]
+}
