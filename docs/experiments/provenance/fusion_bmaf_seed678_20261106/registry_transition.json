@@ -1,0 +1,15 @@
+{
+  "authorized": true,
+  "applied_at": "2026-11-06T13:09:42.331498+08:00",
+  "before_sha256": "a0b3ca99f510638c54be2b22e7aff8baa061db6c0d7d3d3bed2594638405ef29",
+  "after_sha256": "0b594253144b76f51221bd063be64f980eb50908469a2ecaa2bf9a2668ed3fb7",
+  "only_added_names": [
+    "TransMixer_BMAF_N00",
+    "TransMixer_BMAF_N01",
+    "TransMixer_BMAF_N02",
+    "TransMixer_BMAF_N03",
+    "TransMixer_BMAF_N04",
+    "TransMixer_BMAF_N05"
+  ],
+  "historical_mappings_unchanged": true
+}

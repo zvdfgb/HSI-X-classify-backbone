@@ -1,0 +1,151 @@
+{
+  "training_authorized": true,
+  "approved_at_recorded": "2026-11-06T13:09:42.401423+08:00",
+  "user_instruction": "开始",
+  "review_document": "docs/experiments/20261106_跨模态瓶颈密集多尺度与边界感知融合_实验审核稿.md",
+  "review_sha256": "98feaee0a3f02be8b6323c9a73a210332f9aa58eba4cf64ffef27d7882318264",
+  "total_groups": 9,
+  "total_results": 27,
+  "reused": 9,
+  "new_training_runs": 18,
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "epochs": 100,
+  "groups": [
+    "A0",
+    "C01",
+    "C02",
+    "N00",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05"
+  ],
+  "verified_parameters": {
+    "A0": 80887,
+    "C01": 253559,
+    "C02": 680311,
+    "N00": 157799,
+    "N01": 171919,
+    "N02": 182631,
+    "N03": 184729,
+    "N04": 185041,
+    "N05": 185041
+  },
+  "new_jobs": [
+    {
+      "id": "N00_seed6",
+      "group": "N00",
+      "seed": 6
+    },
+    {
+      "id": "N01_seed6",
+      "group": "N01",
+      "seed": 6
+    },
+    {
+      "id": "N02_seed6",
+      "group": "N02",
+      "seed": 6
+    },
+    {
+      "id": "N03_seed6",
+      "group": "N03",
+      "seed": 6
+    },
+    {
+      "id": "N04_seed6",
+      "group": "N04",
+      "seed": 6
+    },
+    {
+      "id": "N05_seed6",
+      "group": "N05",
+      "seed": 6
+    },
+    {
+      "id": "N00_seed7",
+      "group": "N00",
+      "seed": 7
+    },
+    {
+      "id": "N01_seed7",
+      "group": "N01",
+      "seed": 7
+    },
+    {
+      "id": "N02_seed7",
+      "group": "N02",
+      "seed": 7
+    },
+    {
+      "id": "N03_seed7",
+      "group": "N03",
+      "seed": 7
+    },
+    {
+      "id": "N04_seed7",
+      "group": "N04",
+      "seed": 7
+    },
+    {
+      "id": "N05_seed7",
+      "group": "N05",
+      "seed": 7
+    },
+    {
+      "id": "N00_seed8",
+      "group": "N00",
+      "seed": 8
+    },
+    {
+      "id": "N01_seed8",
+      "group": "N01",
+      "seed": 8
+    },
+    {
+      "id": "N02_seed8",
+      "group": "N02",
+      "seed": 8
+    },
+    {
+      "id": "N03_seed8",
+      "group": "N03",
+      "seed": 8
+    },
+    {
+      "id": "N04_seed8",
+      "group": "N04",
+      "seed": 8
+    },
+    {
+      "id": "N05_seed8",
+      "group": "N05",
+      "seed": 8
+    }
+  ],
+  "main_comparisons": [
+    "N04-A0",
+    "N02-A0"
+  ],
+  "predefined_comparisons": [
+    "N04-A0",
+    "N02-A0",
+    "N04-C02",
+    "N02-C02",
+    "N02-C01",
+    "N02-N00",
+    "N02-N01",
+    "N03-N02",
+    "N04-N02",
+    "N04-N03",
+    "N04-N05"
+  ],
+  "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+  "checkpoint_selection": "unchanged native scheduled test OA maximum; not independent test",
+  "retrain_on_failure": false
+}
