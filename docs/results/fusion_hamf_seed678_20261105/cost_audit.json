@@ -1,0 +1,78 @@
+{
+  "runs": [
+    {
+      "group": "A0",
+      "parameters": 80887,
+      "estimated_clean_macs_per_patch": 11847568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 98.84841999737546
+    },
+    {
+      "group": "M00",
+      "parameters": 136183,
+      "estimated_clean_macs_per_patch": 18337040,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 100.84589999751188
+    },
+    {
+      "group": "M01",
+      "parameters": 159993,
+      "estimated_clean_macs_per_patch": 24052112,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 104.72468000371009
+    },
+    {
+      "group": "M02",
+      "parameters": 161017,
+      "estimated_clean_macs_per_patch": 24176016,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 104.00882000103593
+    },
+    {
+      "group": "M03",
+      "parameters": 163132,
+      "estimated_clean_macs_per_patch": 24429632,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 100.22256000083871
+    },
+    {
+      "group": "M04",
+      "parameters": 163380,
+      "estimated_clean_macs_per_patch": 24458672,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 99.85712000052445
+    },
+    {
+      "group": "M05",
+      "parameters": 163380,
+      "estimated_clean_macs_per_patch": 24458672,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 105.93000000226311
+    }
+  ],
+  "mac_estimator": "Conv/Linear/MHA, explicit cross-modal matrix products, SSM recurrence/readout; excludes nonlinear/normalization/pooling",
+  "not_an_exact_total_flop_count": true,
+  "reference_c02_from_fv3": {
+    "group": "C02",
+    "parameters": 680311,
+    "estimated_clean_macs_per_patch": 87072784,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 100.2323400000023
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "seed": 6,
+      "group": "M00",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 136183,
+      "baseline_parameters": 80887,
+      "added_parameters": 55296,
+      "peak_allocated_bytes_including_reference_model": 650814464,
+      "elapsed_seconds": 3.5603645000082906
+    },
+    {
+      "seed": 6,
+      "group": "M01",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 159993,
+      "baseline_parameters": 80887,
+      "added_parameters": 79106,
+      "peak_allocated_bytes_including_reference_model": 701977600,
+      "elapsed_seconds": 2.0324026999878697
+    },
+    {
+      "seed": 6,
+      "group": "M02",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 161017,
+      "baseline_parameters": 80887,
+      "added_parameters": 80130,
+      "peak_allocated_bytes_including_reference_model": 702183424,
+      "elapsed_seconds": 2.0491781000164337
+    },
+    {
+      "seed": 6,
+      "group": "M03",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 163132,
+      "baseline_parameters": 80887,
+      "added_parameters": 82245,
+      "peak_allocated_bytes_including_reference_model": 711327744,
+      "elapsed_seconds": 2.089487499993993
+    },
+    {
+      "seed": 6,
+      "group": "M04",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 163380,
+      "baseline_parameters": 80887,
+      "added_parameters": 82493,
+      "peak_allocated_bytes_including_reference_model": 712035840,
+      "elapsed_seconds": 2.0890116000082344
+    },
+    {
+      "seed": 6,
+      "group": "M05",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_by_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 163380,
+      "baseline_parameters": 80887,
+      "added_parameters": 82493,
+      "peak_allocated_bytes_including_reference_model": 712039936,
+      "elapsed_seconds": 1.9625791999860667
+    }
+  ],
+  "m04_m05_identical_init_and_params_verified": true,
+  "derangement_verified": true,
+  "invalid_protocol_rejected": true
+}
