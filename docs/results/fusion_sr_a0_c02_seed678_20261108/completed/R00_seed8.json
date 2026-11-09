@@ -1,0 +1,21 @@
+{
+  "id": "R00_seed8",
+  "seed": 8,
+  "group": "R00",
+  "epochs": 100,
+  "training_steps": 2200,
+  "started_at": "2026-11-08T20:47:52.081108+08:00",
+  "finished_at": "2026-11-08T21:48:51.024818+08:00",
+  "elapsed_seconds": 3658.943705499987,
+  "metrics": {
+    "oa": 91.38312699844224,
+    "aa": 92.9044802726496,
+    "kappa": 90.64280995613049
+  },
+  "checkpoint_sha256": "2f23fb0facac326d40f55bd52d10fd2cf6fa96a69e1c70c69201514fdb3e7588",
+  "report_sha256": "aab35e107c5e7cab1044d8c2ece503681f126c947a79a6e49dd090344e438b12",
+  "native_log_sha256": "5df2046972494281e947a265e521bed8c2e06a54c70214431a3153f77c4d767d",
+  "stdout_sha256": "0d758a9b43771b68d8a250c3abbe1b45e85bc02553d6cf95a7c555c91e00ced6",
+  "stderr_sha256": "d6ac928abd6c7e7bfb9ba9571804195704c81dcca21abec91c594e9a83ac4e21",
+  "diagnostics_sha256": "91439955f4070322202f30221e1fd377c010c4627f4136f103ef65ffb942420a"
+}

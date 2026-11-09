@@ -1,0 +1,23 @@
+{
+  "batch": "fusion_sr_ncf_seed678_20261107",
+  "python_version": "3.13.5",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.3.5",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "protocol": {
+    "dataset": "Houston2013 official",
+    "channels": 30,
+    "window": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "workers": 0,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "seeds": [
+      6,
+      7,
+      8
+    ]
+  },
+  "checkpoint_selection": "unchanged native scheduled test OA maximum; not independent test"
+}

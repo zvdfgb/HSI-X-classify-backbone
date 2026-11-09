@@ -1,9 +1,11 @@
 # 实验结果导航
 
-更新：2026-11-07。新完成[轻量化BMAF分通道密集多尺度与边界感知融合](fusion_bmaf_seed678_20261106/README.md)、[轻量化HAMF多尺度融合验证](fusion_hamf_seed678_20261105/README.md)、[第三批三篇新论文融合迁移](fusion_transfer_v3_seed678_20261104/README.md)与[局部／全局与SR机制分析](sr_lg_mechanisms_20261104/README.md)；阶段汇总见[11月4—7日研究记录](../RESEARCH_PROGRESS_20261105.md)和[11月2—3日研究总结](../RESEARCH_PROGRESS_20261103.md)。指标来自实验室原生报告；不同协议不能混算增益。
+更新：2026-11-09。新完成[A0与C02接入原生SR引导邻域融合对照（R00–R05）](fusion_sr_a0_c02_seed678_20261108/README.md)、[核共享紧凑多尺度与原生SR引导邻域融合（SR-NCF）](fusion_sr_ncf_seed678_20261107/README.md)、[轻量化BMAF分通道密集多尺度与边界感知融合](fusion_bmaf_seed678_20261106/README.md)、[轻量化HAMF多尺度融合验证](fusion_hamf_seed678_20261105/README.md)、[第三批三篇新论文融合迁移](fusion_transfer_v3_seed678_20261104/README.md)与[局部／全局与SR机制分析](sr_lg_mechanisms_20261104/README.md)；阶段汇总见[11月4—9日研究记录](../RESEARCH_PROGRESS_20261105.md)和[11月2—3日研究总结](../RESEARCH_PROGRESS_20261103.md)。指标来自实验室原生报告；不同协议不能混算增益。
 
 | 批次／快照 | 状态与数量 | 口径 |
 |---|---|---|
+| [A0与C02接入原生SR引导邻域融合（R00–R05）](fusion_sr_a0_c02_seed678_20261108/README.md) | 33/33＝15复用＋18新训 | R00–R05，seed6/7/8；双基座均匀/正确/错位对照、开销审计与逐类表 |
+| [核共享紧凑多尺度与SR引导邻域融合（K00–K06）](fusion_sr_ncf_seed678_20261107/README.md) | 33/33＝12复用＋21新训 | K00–K06，seed6/7/8；含融合×读出SR四格对照、错位证伪与逐类表 |
 | [轻量化BMAF分通道密集多尺度融合（N00–N05）](fusion_bmaf_seed678_20261106/README.md) | 27/27＝9复用＋18新训 | N00–N05，seed6/7/8；含开销审计、逐类表与有界调制统计 |
 | [轻量化HAMF多尺度融合（M00–M05）](fusion_hamf_seed678_20261105/README.md) | 24/24＝6复用＋18新训 | M00–M05，seed6/7/8；含开销审计、逐类表与尺度门控统计 |
 | [第三批融合子机制迁移（CF-IPT/ISFuse/IID）](fusion_transfer_v3_seed678_20261104/README.md) | 39/39＝3复用＋36新训 | C01–C04/S01–S04/I01–I04，seed6/7/8；含开销审计与逐类表 |

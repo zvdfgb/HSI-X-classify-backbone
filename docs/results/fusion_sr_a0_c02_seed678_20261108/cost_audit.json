@@ -1,0 +1,87 @@
+{
+  "runs": [
+    {
+      "group": "A0",
+      "parameters": 80887,
+      "estimated_clean_macs_per_patch": 11847568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 238.93367999698967
+    },
+    {
+      "group": "R00",
+      "parameters": 134519,
+      "estimated_clean_macs_per_patch": 18360272,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 248.07353999931365
+    },
+    {
+      "group": "R01",
+      "parameters": 134519,
+      "estimated_clean_macs_per_patch": 18360272,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 240.24834000738338
+    },
+    {
+      "group": "R02",
+      "parameters": 134519,
+      "estimated_clean_macs_per_patch": 18360272,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 232.33818000881
+    },
+    {
+      "group": "R03",
+      "parameters": 680311,
+      "estimated_clean_macs_per_patch": 87599376,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 279.66407999629155
+    },
+    {
+      "group": "R04",
+      "parameters": 680311,
+      "estimated_clean_macs_per_patch": 87599376,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 247.9150200029835
+    },
+    {
+      "group": "R05",
+      "parameters": 680311,
+      "estimated_clean_macs_per_patch": 87599376,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 254.88086000550538
+    }
+  ],
+  "mac_estimator": "Conv/Linear/MHA, CrossModalRelations products, sr_modulated_conv2d products + tap modulation, SSM recurrence/readout; excludes nonlinear/normalization/pooling",
+  "not_an_exact_total_flop_count": true,
+  "reference_c02_from_fv3": {
+    "group": "C02",
+    "parameters": 680311,
+    "estimated_clean_macs_per_patch": 87072784,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 100.2323400000023
+  },
+  "reference_k02_from_srncf": {
+    "group": "K02",
+    "parameters": 108111,
+    "estimated_clean_macs_per_patch": 17113004,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 164.87989999586716
+  }
+}

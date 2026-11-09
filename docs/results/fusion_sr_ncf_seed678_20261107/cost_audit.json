@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "group": "A0",
+      "parameters": 80887,
+      "estimated_clean_macs_per_patch": 11847568,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 152.6444200077094
+    },
+    {
+      "group": "K00",
+      "parameters": 108615,
+      "estimated_clean_macs_per_patch": 15162968,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 152.0207199966535
+    },
+    {
+      "group": "K01",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 142.815180006437
+    },
+    {
+      "group": "K02",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 164.87989999586716
+    },
+    {
+      "group": "K03",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 162.0366399991326
+    },
+    {
+      "group": "K04",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 128.38735999539495
+    },
+    {
+      "group": "K05",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 133.1714399973862
+    },
+    {
+      "group": "K06",
+      "parameters": 108111,
+      "estimated_clean_macs_per_patch": 17113004,
+      "batch_size": 128,
+      "warmup_iterations": 3,
+      "measured_iterations": 5,
+      "batch_latency_ms": 172.90943999541923
+    }
+  ],
+  "mac_estimator": "Conv/Linear/MHA, shared atrous 3x3 evaluations (and neighbor modulation products where active), SSM recurrence/readout; excludes nonlinear/normalization/pooling",
+  "not_an_exact_total_flop_count": true,
+  "reference_c02_from_fv3": {
+    "group": "C02",
+    "parameters": 680311,
+    "estimated_clean_macs_per_patch": 87072784,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 100.2323400000023
+  },
+  "reference_n00_from_bmaf": {
+    "group": "N00",
+    "parameters": 157799,
+    "estimated_clean_macs_per_patch": 21087128,
+    "batch_size": 128,
+    "warmup_iterations": 3,
+    "measured_iterations": 5,
+    "batch_latency_ms": 91.58349999925122
+  }
+}

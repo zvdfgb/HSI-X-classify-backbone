@@ -1,0 +1,163 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "seed": 6,
+      "group": "R00",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 134519,
+      "baseline_parameters": 80887,
+      "added_parameters": 53632,
+      "peak_allocated_bytes_including_reference_model": 665606144,
+      "elapsed_seconds": 6.764426000008825
+    },
+    {
+      "seed": 6,
+      "group": "R01",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 134519,
+      "baseline_parameters": 80887,
+      "added_parameters": 53632,
+      "peak_allocated_bytes_including_reference_model": 666535424,
+      "elapsed_seconds": 5.331478899985086
+    },
+    {
+      "seed": 6,
+      "group": "R02",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 134519,
+      "baseline_parameters": 80887,
+      "added_parameters": 53632,
+      "peak_allocated_bytes_including_reference_model": 666597376,
+      "elapsed_seconds": 4.541639799950644
+    },
+    {
+      "seed": 6,
+      "group": "R03",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 680311,
+      "baseline_parameters": 80887,
+      "added_parameters": 599424,
+      "peak_allocated_bytes_including_reference_model": 1310521856,
+      "elapsed_seconds": 5.4805297999992035
+    },
+    {
+      "seed": 6,
+      "group": "R04",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 680311,
+      "baseline_parameters": 80887,
+      "added_parameters": 599424,
+      "peak_allocated_bytes_including_reference_model": 1313489408,
+      "elapsed_seconds": 4.731047299981583
+    },
+    {
+      "seed": 6,
+      "group": "R05",
+      "device": "cuda:0",
+      "batch_size": 128,
+      "passed": true,
+      "native_shared_initialization_exact": true,
+      "rng_preserved": true,
+      "disabled_logits_exact": true,
+      "single_native_forward_per_batch": {
+        "stem": 1,
+        "fusion": 1,
+        "pool": 1,
+        "head": 1
+      },
+      "finite_loss_and_gradients": true,
+      "all_new_parameters_nonzero_gradients_step1_and_step2": true,
+      "checkpoint_roundtrip_exact": true,
+      "parameters": 680311,
+      "baseline_parameters": 80887,
+      "added_parameters": 599424,
+      "peak_allocated_bytes_including_reference_model": 1313551360,
+      "elapsed_seconds": 4.62588720000349
+    }
+  ],
+  "expected_parameters": {
+    "R00": 134519,
+    "R01": 134519,
+    "R02": 134519,
+    "R03": 680311,
+    "R04": 680311,
+    "R05": 680311
+  },
+  "r00_to_r02_identical_init_and_params_verified": true,
+  "r03_to_r05_bit_identical_to_historical_c02_verified": true,
+  "r03_float64_full_forward_equal_to_c02_verified": true,
+  "local_mean_one_normalization_k3_and_k5_verified": true,
+  "fusion_only_derangement_zero_fixed_points_verified": true,
+  "invalid_protocol_rejected": true
+}

@@ -1,0 +1,13 @@
+{
+  "helper_pid": 98464,
+  "power_plan_changed": false,
+  "display_required": false,
+  "started_at": "2026-11-08T16:30:17.527160+08:00",
+  "state": "active",
+  "native_request_succeeded": true,
+  "checked_at": "2026-11-09T00:15:43.542869+08:00",
+  "queue_pid": 94528,
+  "training_pid": 108932,
+  "ac_connected": true,
+  "battery_percent": 100
+}
