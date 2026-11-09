@@ -15,8 +15,12 @@ docs/experiments/provenance/sr_lg_operator_controls_20261104/** -text whitespace
 docs/experiments/provenance/fusion_transfer_v3_seed678_20261104/** -text whitespace=cr-at-eol
 docs/experiments/provenance/fusion_hamf_seed678_20261105/** -text whitespace=cr-at-eol
 docs/experiments/provenance/fusion_bmaf_seed678_20261106/** -text whitespace=cr-at-eol
+docs/experiments/provenance/fusion_sr_ncf_seed678_20261107/** -text whitespace=cr-at-eol
+docs/experiments/provenance/fusion_sr_a0_c02_seed678_20261108/** -text whitespace=cr-at-eol
 docs/results/sr_lg_mechanisms_20261104/** -text whitespace=cr-at-eol
 docs/results/fusion_transfer_v3_seed678_20261104/** -text whitespace=cr-at-eol
 docs/results/fusion_hamf_seed678_20261105/** -text whitespace=cr-at-eol
 docs/results/fusion_bmaf_seed678_20261106/** -text whitespace=cr-at-eol
+docs/results/fusion_sr_ncf_seed678_20261107/** -text whitespace=cr-at-eol
+docs/results/fusion_sr_a0_c02_seed678_20261108/** -text whitespace=cr-at-eol
 docs/results/fusion_20261102_03_results.csv -text

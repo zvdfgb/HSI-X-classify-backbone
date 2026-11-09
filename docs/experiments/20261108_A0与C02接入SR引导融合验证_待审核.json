@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "batch_candidate": "fusion_sr_a0_c02_seed678_20261108",
+  "title": "A0与C02接入原生SR引导邻域融合对照实验（R00-R05）",
+  "created_at": "2026-11-08",
+  "training_authorized": false,
+  "status": "pending_user_approval",
+  "review_document": "docs/experiments/20261108_A0与C02接入SR引导融合验证_实验审核稿.md",
+  "protocol": {
+    "dataset": "Houston2013 official split",
+    "channels": 30,
+    "window_size": 11,
+    "epochs": 100,
+    "batch_size": 128,
+    "num_workers": 0,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "loss": "CrossEntropyLoss",
+    "ablation_mode": "decoupled",
+    "sr": {
+      "variant": "SR2",
+      "spatial_sigma": 3.0,
+      "spectral_scale": 0.2775005102157593
+    },
+    "seeds": [6, 7, 8],
+    "checkpoint_selection": "unchanged native scheduled test OA maximum; not independent test"
+  },
+  "reused_groups": ["A0", "K01", "K02", "K03", "C02"],
+  "new_groups": [
+    {
+      "group": "R00",
+      "base": "A0",
+      "fusion_prior": "uniform_1_over_121",
+      "readout": "SR2",
+      "parameters": 134519,
+      "description": "A0 + 单尺度1x1(64)直连与3x3(64)均匀跨通道邻域融合"
+    },
+    {
+      "group": "R01",
+      "base": "A0",
+      "fusion_prior": "true_SR2_local_mean_1",
+      "readout": "SR2",
+      "parameters": 134519,
+      "description": "A0 + 单尺度1x1(64)直连与3x3(64)正确SR2引导跨通道邻域融合"
+    },
+    {
+      "group": "R02",
+      "base": "A0",
+      "fusion_prior": "fusion_only_permuted_SR2_local_mean_1",
+      "readout": "SR2",
+      "parameters": 134519,
+      "description": "A0 + 单尺度1x1(64)直连与3x3(64)仅融合错位SR2对照"
+    },
+    {
+      "group": "R03",
+      "base": "C02",
+      "fusion_prior": "uniform_1_over_121",
+      "readout": "SR2",
+      "parameters": 680311,
+      "description": "C02同参数同初值unfold统一算子路径均匀邻域对照"
+    },
+    {
+      "group": "R04",
+      "base": "C02",
+      "fusion_prior": "true_SR2_local_mean_1_on_3x3_and_5x5",
+      "readout": "SR2",
+      "parameters": 680311,
+      "description": "C02 + 3x3与5x5分支正确SR2引导邻域融合（+0新增参数，与C02同初值）"
+    },
+    {
+      "group": "R05",
+      "base": "C02",
+      "fusion_prior": "fusion_only_permuted_SR2_local_mean_1_on_3x3_and_5x5",
+      "readout": "SR2",
+      "parameters": 680311,
+      "description": "C02 + 3x3与5x5分支仅融合错位SR2对照（+0新增参数，与C02同初值）"
+    }
+  ],
+  "counts": {
+    "reused_records": 15,
+    "new_training_runs": 18,
+    "total_records": 33
+  },
+  "main_comparisons": [
+    "R01-R00",
+    "R01-R02",
+    "R01-A0",
+    "R04-R03",
+    "R04-R05",
+    "R04-C02",
+    "R03-C02"
+  ],
+  "focus_classes": ["Highway", "Road", "Commercial", "Stressed grass"],
+  "fusion_derangement_seed": 20261107,
+  "fusion_derangement_zero_fixed_points": true,
+  "fusion_derangement_121": [
+    36, 14, 87, 35, 108, 45, 44, 41, 59, 47, 64, 30, 8, 33, 18, 40, 115, 84, 86, 49,
+    5, 79, 21, 75, 103, 60, 68, 92, 10, 89, 42, 1, 62, 31, 105, 101, 100, 77, 67, 3,
+    90, 73, 7, 58, 110, 57, 12, 99, 95, 9, 71, 52, 46, 43, 112, 22, 50, 72, 81, 113,
+    94, 93, 118, 80, 25, 16, 61, 2, 15, 28, 0, 4, 82, 109, 85, 96, 55, 114, 32, 98,
+    88, 39, 69, 23, 29, 11, 24, 17, 91, 107, 111, 48, 119, 27, 74, 104, 51, 19, 26, 53,
+    70, 63, 54, 116, 102, 13, 97, 65, 120, 106, 20, 6, 78, 76, 37, 56, 83, 34, 38, 117, 66
+  ]
+}

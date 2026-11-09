@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "applied_at": "2026-11-07T22:39:38.080633+08:00",
+  "before_sha256": "0b594253144b76f51221bd063be64f980eb50908469a2ecaa2bf9a2668ed3fb7",
+  "after_sha256": "95c96062fb1251ce948fb8f8c688abe069af8177fbcc4146c2b4d4fd30e20745",
+  "only_added_names": [
+    "TransMixer_SRNCF_K00",
+    "TransMixer_SRNCF_K01",
+    "TransMixer_SRNCF_K02",
+    "TransMixer_SRNCF_K03",
+    "TransMixer_SRNCF_K04",
+    "TransMixer_SRNCF_K05",
+    "TransMixer_SRNCF_K06"
+  ],
+  "historical_mappings_unchanged": true
+}

@@ -1,0 +1,29 @@
+{
+  "experiment_name": "fusion_sr_ncf_seed678_20261107_K04_seed8",
+  "dataset_type": 0,
+  "model_name": "TransMixer_SRNCF_K04",
+  "cuda_device": "cuda:0",
+  "learning_rate": 0.0001,
+  "epochs": 100,
+  "batch_size": 128,
+  "num_workers": 0,
+  "random_seed": 8,
+  "channels": 30,
+  "window_size": 11,
+  "enable_training": true,
+  "enable_testing": true,
+  "enable_visualization": false,
+  "enable_tsne": false,
+  "enable_erf": false,
+  "enable_email_notification": false,
+  "email_recipient_override": "",
+  "ablation_mode": "decoupled",
+  "sr": {
+    "spatial_sigma": 3.0,
+    "spectral_scale": 0.2775005102157593
+  },
+  "paper_transfer": {
+    "family": "SRNCF",
+    "group": "K04"
+  }
+}

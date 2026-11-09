@@ -1,0 +1,301 @@
+{
+  "training_authorized": true,
+  "approved_at_recorded": "2026-11-07T22:40:31.539067+08:00",
+  "user_instruction": "开启训练",
+  "review_document": "docs/experiments/20261107_紧凑共享多尺度与SR引导邻域融合_实验审核稿.md",
+  "review_sha256": "6bd3853c52a0d46ed6e052933f0c51e6481b1a54969bf3f54f5e86f6cb379fba",
+  "total_groups": 11,
+  "total_results": 33,
+  "reused": 12,
+  "new_training_runs": 21,
+  "seeds": [
+    6,
+    7,
+    8
+  ],
+  "epochs": 100,
+  "groups": [
+    "A0",
+    "M1",
+    "N00",
+    "C02",
+    "K00",
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06"
+  ],
+  "verified_parameters": {
+    "A0": 80887,
+    "M1": 80887,
+    "N00": 157799,
+    "C02": 680311,
+    "K00": 108615,
+    "K01": 108111,
+    "K02": 108111,
+    "K03": 108111,
+    "K04": 108111,
+    "K05": 108111,
+    "K06": 108111
+  },
+  "k03_fusion_derangement_121": [
+    36,
+    14,
+    87,
+    35,
+    108,
+    45,
+    44,
+    41,
+    59,
+    47,
+    64,
+    30,
+    8,
+    33,
+    18,
+    40,
+    115,
+    84,
+    86,
+    49,
+    5,
+    79,
+    21,
+    75,
+    103,
+    60,
+    68,
+    92,
+    10,
+    89,
+    42,
+    1,
+    62,
+    31,
+    105,
+    101,
+    100,
+    77,
+    67,
+    3,
+    90,
+    73,
+    7,
+    58,
+    110,
+    57,
+    12,
+    99,
+    95,
+    9,
+    71,
+    52,
+    46,
+    43,
+    112,
+    22,
+    50,
+    72,
+    81,
+    113,
+    94,
+    93,
+    118,
+    80,
+    25,
+    16,
+    61,
+    2,
+    15,
+    28,
+    0,
+    4,
+    82,
+    109,
+    85,
+    96,
+    55,
+    114,
+    32,
+    98,
+    88,
+    39,
+    69,
+    23,
+    29,
+    11,
+    24,
+    17,
+    91,
+    107,
+    111,
+    48,
+    119,
+    27,
+    74,
+    104,
+    51,
+    19,
+    26,
+    53,
+    70,
+    63,
+    54,
+    116,
+    102,
+    13,
+    97,
+    65,
+    120,
+    106,
+    20,
+    6,
+    78,
+    76,
+    37,
+    56,
+    83,
+    34,
+    38,
+    117,
+    66
+  ],
+  "new_jobs": [
+    {
+      "id": "K00_seed6",
+      "group": "K00",
+      "seed": 6
+    },
+    {
+      "id": "K01_seed6",
+      "group": "K01",
+      "seed": 6
+    },
+    {
+      "id": "K02_seed6",
+      "group": "K02",
+      "seed": 6
+    },
+    {
+      "id": "K03_seed6",
+      "group": "K03",
+      "seed": 6
+    },
+    {
+      "id": "K04_seed6",
+      "group": "K04",
+      "seed": 6
+    },
+    {
+      "id": "K05_seed6",
+      "group": "K05",
+      "seed": 6
+    },
+    {
+      "id": "K06_seed6",
+      "group": "K06",
+      "seed": 6
+    },
+    {
+      "id": "K00_seed7",
+      "group": "K00",
+      "seed": 7
+    },
+    {
+      "id": "K01_seed7",
+      "group": "K01",
+      "seed": 7
+    },
+    {
+      "id": "K02_seed7",
+      "group": "K02",
+      "seed": 7
+    },
+    {
+      "id": "K03_seed7",
+      "group": "K03",
+      "seed": 7
+    },
+    {
+      "id": "K04_seed7",
+      "group": "K04",
+      "seed": 7
+    },
+    {
+      "id": "K05_seed7",
+      "group": "K05",
+      "seed": 7
+    },
+    {
+      "id": "K06_seed7",
+      "group": "K06",
+      "seed": 7
+    },
+    {
+      "id": "K00_seed8",
+      "group": "K00",
+      "seed": 8
+    },
+    {
+      "id": "K01_seed8",
+      "group": "K01",
+      "seed": 8
+    },
+    {
+      "id": "K02_seed8",
+      "group": "K02",
+      "seed": 8
+    },
+    {
+      "id": "K03_seed8",
+      "group": "K03",
+      "seed": 8
+    },
+    {
+      "id": "K04_seed8",
+      "group": "K04",
+      "seed": 8
+    },
+    {
+      "id": "K05_seed8",
+      "group": "K05",
+      "seed": 8
+    },
+    {
+      "id": "K06_seed8",
+      "group": "K06",
+      "seed": 8
+    }
+  ],
+  "main_comparisons": [
+    "K02-K01",
+    "K02-K03",
+    "K04-K06",
+    "K02-A0"
+  ],
+  "predefined_comparisons": [
+    "K01-K00",
+    "K01-A0",
+    "K01-N00",
+    "K02-K01",
+    "K04-K06",
+    "K01-K06",
+    "K02-K03",
+    "K02-K04",
+    "K04-M1",
+    "K05-K02",
+    "K02-A0",
+    "K05-A0",
+    "K02-C02",
+    "K05-C02"
+  ],
+  "interaction_descriptives": [
+    "(K02-K01)-(K04-K06)"
+  ],
+  "training_entry": "scripts/train.py -> src/runner.py -> src/trainer.py",
+  "checkpoint_selection": "unchanged native scheduled test OA maximum; not independent test",
+  "retrain_on_failure": false
+}

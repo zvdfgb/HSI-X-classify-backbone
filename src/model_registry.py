@@ -4,6 +4,10 @@ from importlib import import_module
 # Only current models appear in CLI choices and the native train_all queue.
 # Historical adapters stay addressable for explicit old configurations.
 MODEL_REGISTRY = {
+    **{f"TransMixer_SRA0C02_R{i:02d}": "src.models.transmixer_sr_a0_c02.adapter"
+       for i in range(6)},
+    **{f"TransMixer_SRNCF_K{i:02d}": "src.models.transmixer_sr_ncf.adapter"
+       for i in range(7)},
     **{f"TransMixer_BMAF_N{i:02d}": "src.models.transmixer_bmaf.adapter"
        for i in range(6)},
     **{f"TransMixer_HAMF_M{i:02d}": "src.models.transmixer_hamf.adapter"

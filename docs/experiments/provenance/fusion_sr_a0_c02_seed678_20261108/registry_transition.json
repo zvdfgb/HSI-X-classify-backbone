@@ -1,0 +1,15 @@
+{
+  "authorized": true,
+  "applied_at": "2026-11-08T11:07:05.807036+08:00",
+  "before_sha256": "95c96062fb1251ce948fb8f8c688abe069af8177fbcc4146c2b4d4fd30e20745",
+  "after_sha256": "761be3934378ebff18b6c85782e59cc152cab696de93dfff4e134095faeca436",
+  "only_added_names": [
+    "TransMixer_SRA0C02_R00",
+    "TransMixer_SRA0C02_R01",
+    "TransMixer_SRA0C02_R02",
+    "TransMixer_SRA0C02_R03",
+    "TransMixer_SRA0C02_R04",
+    "TransMixer_SRA0C02_R05"
+  ],
+  "historical_mappings_unchanged": true
+}
